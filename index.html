@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>そうぜん鍼灸院グループ 全国総合予約ポータル</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    iframe {
+      position: fixed;
+      top: -48px; /* GAS上部の警告バナーを画面外へ押し出す */
+      left: 0;
+      width: 100vw;
+      height: calc(100vh + 48px);
+      height: calc(100dvh + 48px); /* スマホのアドレスバー変動にも対応 */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="function doGet() {
+  return HtmlService.createTemplateFromFile('index')
+    .evaluate()
+    .setTitle('そうぜん鍼灸院グループ 全国総合予約ポータル')
+    .addMetaTag('viewport', 'width=device-width, initial-scale=1')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+function getDriveImageBase64(fileId) {
+  try {
+    var file = DriveApp.getFileById(fileId);
+    var blob = file.getBlob();
+    var contentType = blob.getContentType();
+    var base64 = Utilities.base64Encode(blob.getBytes());
+    return 'data:' + contentType + ';base64,' + base64;
+  } catch (e) {
+    return '';
+  }
+}
+
+function getSafeImageDataUri(url) {
+  if (!url) return '';
+  const str = String(url).trim();
+  let fileId = '';
+  const driveMatch = str.match(/\/d\/([a-zA-Z0-9_-]{25,})/);
+  const idMatch = str.match(/[?&]id=([a-zA-Z0-9_-]{25,})/);
+  if (driveMatch && driveMatch[1]) fileId = driveMatch[1];
+  else if (idMatch && idMatch[1]) fileId = idMatch[1];
+  
+  if (fileId) {
+    try {
+      const file = DriveApp.getFileById(fileId);
+      if (file.getSharingAccess() !== DriveApp.Access.ANYONE_WITH_LINK) {
+        file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
+      }
+    } catch (e) {}
+    return 'https://drive.google.com/thumbnail?id=' + fileId + '&sz=w800';
+  }
+  return str;
+}
+
+function parseVideoUrl(url) {
+  if (!url) return null;
+  const str = String(url).trim();
+  const ytMatch = str.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=|shorts\/))([a-zA-Z0-9_-]{11})/);
+  if (ytMatch && ytMatch[1]) return { type: 'youtube', id: ytMatch[1] };
+  const driveMatch = str.match(/\/d\/([a-zA-Z0-9_-]{25,})/);
+  if (driveMatch && driveMatch[1]) return { type: 'drive', id: driveMatch[1] };
+  return null;
+}
+
+function getPortalData() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  
+  // 1. 医院データの取得
+  const clinicSheet = ss.getSheets()[0];
+  const lastRow = clinicSheet.getLastRow();
+  const clinics = [];
+  const tagSet = {};
+
+  if (lastRow >= 2) {
+    const maxCol = Math.max(clinicSheet.getLastColumn(), 17);
+    const values = clinicSheet.getRange(2, 1, lastRow - 1, maxCol).getValues();
+
+    for (let i = 0; i < values.length; i++) {
+      const row = values[i];
+      const pref = row[0], name = row[1], badge = row[2], access = row[3], hours = row[4], staff = row[5], rawTags = row[6], url = row[7], rawImageUrl = row[8], instaUrl = row[9], ytUrl = row[10], xUrl = row[11], tiktokUrl = row[12], ratingVal = row[13], reviewsVal = row[14], rawVideoUrl = row[15], rawPhone = row[16];
+
+      if (name && url) {
+        let tags = [];
+        if (rawTags) {
+          tags = String(rawTags).split(/[,、]/).map(t => t.trim()).filter(t => t !== '');
+          tags.forEach(t => { tagSet[t] = true; });
+        }
+        let rating = ratingVal !== '' && !isNaN(ratingVal) ? Number(ratingVal).toFixed(1) : (ratingVal ? String(ratingVal).trim() : '4.9');
+        let reviews = reviewsVal !== '' ? String(reviewsVal).trim() : '120';
+        const videoInfo = parseVideoUrl(rawVideoUrl);
+
+        clinics.push({
+          pref: String(pref).trim(), name: String(name).trim(), badge: badge ? String(badge).trim() : '', access: access ? String(access).trim() : '', hours: hours ? String(hours).trim() : '', staff: staff ? String(staff).trim() : '', tags: tags, url: String(url).trim(), imageUrl: getSafeImageDataUri(rawImageUrl), instaUrl: instaUrl ? String(instaUrl).trim() : '', ytUrl: ytUrl ? String(ytUrl).trim() : '', xUrl: xUrl ? String(xUrl).trim() : '', tiktokUrl: tiktokUrl ? String(tiktokUrl).trim() : '', rating: rating, reviews: reviews, videoInfo: videoInfo, phone: rawPhone ? String(rawPhone).trim() : ''
+        });
+      }
+    }
+  }
+
+  // 2. FAQ・ステップデータの取得
+  const faqs = [];
+  const steps = [];
+  const faqSheet = ss.getSheetByName('FAQ');
+  if (faqSheet) {
+    const faqLastRow = faqSheet.getLastRow();
+    if (faqLastRow >= 1) {
+      const faqValues = faqSheet.getRange(1, 1, faqLastRow, 3).getValues();
+      for (let j = 0; j < faqValues.length; j++) {
+        const q = String(faqValues[j][0] || '').trim(), a = String(faqValues[j][1] || '').trim(), stepRaw = String(faqValues[j][2] || '').trim();
+        if (q && a && !(j === 0 && (q === '質問' || q === 'Q' || q.toLowerCase() === 'question'))) { faqs.push({ q: q, a: a }); }
+        if (stepRaw) {
+          const lines = stepRaw.split(/\r?\n/);
+          steps.push({ title: lines[0].trim(), desc: lines.slice(1).join('\n').trim() });
+        }
+      }
+    }
+  }
+  if (faqs.length === 0) {
+    faqs.push(
+      { q: "鍼（はり）は痛いですか？", a: "極細鍼を使用し痛みを最小限に抑えています。ズーンという響きを感じることはありますが、リラックスして眠られる方も多いです。" },
+      { q: "着替えは用意されていますか？", a: "各院にて専用の患者着を無料でご用意しております。" }
+    );
+  }
+
+  // 3. 臨床事例データの取得（実際のシート列順に合わせて修正）
+  const cases = [];
+  const symptomSet = {};
+  const caseSheet = ss.getSheetByName('臨床事例');
+  if (caseSheet) {
+    const caseLastRow = caseSheet.getLastRow();
+    if (caseLastRow >= 2) {
+      // B(1):対象の院, C(2):疾患カテゴリー, D(3):属性, E(4):主訴(具体的なお悩み), F(5):回復までの期間・施術回数, G(6):症例画像, H(7):来院動機
+      const caseValues = caseSheet.getRange(2, 1, caseLastRow - 1, 8).getValues();
+      for (let k = 0; k < caseValues.length; k++) {
+        const cClinic = String(caseValues[k][1] || '').trim();      // B列
+        const cSymptom = String(caseValues[k][2] || '').trim();     // C列
+        const cDemographic = String(caseValues[k][3] || '').trim(); // D列
+        const cProblem = String(caseValues[k][4] || '').trim();     // E列
+        const cDuration = String(caseValues[k][5] || '').trim();    // F列（回復までの期間・施術回数）
+        const cImage = String(caseValues[k][6] || '').trim();       // G列（症例画像）
+        const cMotive = String(caseValues[k][7] || '').trim();      // H列（来院動機）
+
+        if (cClinic && cSymptom) {
+          cases.push({
+            clinic: cClinic,
+            symptom: cSymptom,
+            demographic: cDemographic,
+            problem: cProblem,
+            duration: cDuration,
+            imageUrl: getSafeImageDataUri(cImage),
+            motive: cMotive
+          });
+          const syms = cSymptom.split(/[,、]/).map(s => s.trim()).filter(s => s !== '');
+          syms.forEach(s => { symptomSet[s] = true; });
+        }
+      }
+    }
+  }
+
+  return {
+    clinics: clinics,
+    featureTags: Object.keys(tagSet),
+    faqs: faqs,
+    steps: steps,
+    cases: cases.reverse(),
+    symptoms: Object.keys(symptomSet)
+  };
+}" allow="geolocation"></iframe>
+</body>
+</html>
