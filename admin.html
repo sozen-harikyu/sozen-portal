@@ -1,0 +1,1136 @@
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;ja&quot;&gt;
+
+&lt;head&gt;
+
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+
+  &lt;meta name=&quot;robots&quot; content=&quot;noindex, nofollow&quot; /&gt;
+
+  &lt;title&gt;院長YouTube解説アップロード｜そうぜんポータル管理&lt;/title&gt;
+
+  &lt;style&gt;
+
+    :root {
+
+      --navy: #16284c;
+
+      --gold: #b68d40;
+
+      --bg: #f4f7fb;
+
+      --card: #ffffff;
+
+      --border: #dce3ec;
+
+      --text: #1e293b;
+
+      --muted: #64748b;
+
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+
+      margin: 0;
+
+      font-family: &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Yu Gothic&quot;, -apple-system, BlinkMacSystemFont, sans-serif;
+
+      background: var(--bg);
+
+      color: var(--text);
+
+      line-height: 1.65;
+
+      padding: 16px 12px 56px;
+
+    }
+
+    .wrap { max-width: 700px; margin: 0 auto; }
+
+    header {
+
+      background: var(--navy);
+
+      color: #fff;
+
+      border-radius: 16px 16px 0 0;
+
+      padding: 22px 20px;
+
+    }
+
+    header .badge {
+
+      display: inline-block;
+
+      background: var(--gold);
+
+      color: #fff;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+      padding: 3px 10px;
+
+      border-radius: 999px;
+
+      margin-bottom: 8px;
+
+    }
+
+    header h1 { margin: 0; font-size: 20px; line-height: 1.35; }
+
+    header p { margin: 6px 0 0; font-size: 13px; color: #cbd5e1; }
+
+    .card {
+
+      background: var(--card);
+
+      border: 1px solid var(--border);
+
+      border-top: none;
+
+      border-radius: 0 0 16px 16px;
+
+      padding: 22px 20px 28px;
+
+      box-shadow: 0 4px 16px rgba(22, 40, 76, 0.06);
+
+    }
+
+    .token-box {
+
+      background: #faf5eb;
+
+      border: 1px solid #e5d5b5;
+
+      border-radius: 12px;
+
+      padding: 14px 16px;
+
+      margin-bottom: 22px;
+
+    }
+
+    .token-box summary {
+
+      cursor: pointer;
+
+      font-weight: 700;
+
+      font-size: 13.5px;
+
+      color: var(--navy);
+
+    }
+
+    .token-row {
+
+      display: flex;
+
+      gap: 8px;
+
+      margin-top: 10px;
+
+      flex-wrap: wrap;
+
+    }
+
+    .token-row input { flex: 1; min-width: 200px; }
+
+    .btn-sm {
+
+      padding: 9px 14px;
+
+      border-radius: 8px;
+
+      border: none;
+
+      background: var(--navy);
+
+      color: #fff;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+    }
+
+    .btn-sm.sub {
+
+      background: #fff;
+
+      color: var(--muted);
+
+      border: 1px solid var(--border);
+
+    }
+
+    .field { margin-bottom: 18px; }
+
+    label {
+
+      display: block;
+
+      font-size: 13.5px;
+
+      font-weight: 700;
+
+      color: var(--navy);
+
+      margin-bottom: 6px;
+
+    }
+
+    .req { color: #dc2626; margin-left: 4px; }
+
+    .hint { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+    input[type=&quot;text&quot;],
+
+    input[type=&quot;url&quot;],
+
+    input[type=&quot;password&quot;],
+
+    select,
+
+    textarea {
+
+      width: 100%;
+
+      font-size: 16px;
+
+      padding: 11px 12px;
+
+      border: 1px solid var(--border);
+
+      border-radius: 10px;
+
+      background: #f8fafc;
+
+      color: var(--text);
+
+      font-family: inherit;
+
+    }
+
+    input:focus, textarea:focus, select:focus {
+
+      outline: none;
+
+      border-color: var(--navy);
+
+      background: #fff;
+
+    }
+
+    textarea { resize: vertical; min-height: 110px; }
+
+    .disease-results {
+
+      max-height: 220px;
+
+      overflow-y: auto;
+
+      border: 1px solid var(--border);
+
+      border-radius: 10px;
+
+      margin-top: 6px;
+
+      background: #fff;
+
+      display: none;
+
+    }
+
+    .disease-item {
+
+      padding: 10px 12px;
+
+      border-bottom: 1px solid #f1f5f9;
+
+      cursor: pointer;
+
+      font-size: 14px;
+
+    }
+
+    .disease-item:last-child { border-bottom: none; }
+
+    .disease-item:hover { background: #faf5eb; }
+
+    .disease-item small { display: block; color: var(--muted); font-size: 11.5px; }
+
+    .selected-pill {
+
+      display: none;
+
+      margin-top: 8px;
+
+      padding: 10px 12px;
+
+      border-radius: 10px;
+
+      background: #eef7fc;
+
+      border: 1px solid #cde6f5;
+
+      font-size: 13.5px;
+
+      color: var(--navy);
+
+      font-weight: 700;
+
+    }
+
+    .upload-box {
+
+      border: 2px dashed #cbd5e1;
+
+      border-radius: 12px;
+
+      padding: 16px;
+
+      text-align: center;
+
+      background: #f8fafc;
+
+    }
+
+    .preview-img {
+
+      display: none;
+
+      max-width: 100%;
+
+      max-height: 260px;
+
+      margin: 12px auto 0;
+
+      border-radius: 10px;
+
+      border: 1px solid var(--border);
+
+    }
+
+    button[type=&quot;submit&quot;] {
+
+      width: 100%;
+
+      padding: 14px;
+
+      border: none;
+
+      border-radius: 999px;
+
+      background: var(--navy);
+
+      color: #fff;
+
+      font-size: 16px;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+      margin-top: 8px;
+
+    }
+
+    button[type=&quot;submit&quot;]:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .status {
+
+      display: none;
+
+      margin-top: 16px;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      font-size: 14px;
+
+      line-height: 1.75;
+
+      word-break: break-word;
+
+    }
+
+    .status.ok { background: #ecfdf5; border: 1px solid #a7f3d0; color: #065f46; }
+
+    .status.err { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+
+    .status a { color: var(--navy); font-weight: 700; }
+
+  &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+  &lt;div class=&quot;wrap&quot;&gt;
+
+    &lt;header&gt;
+
+      &lt;span class=&quot;badge&quot;&gt;SOZEN PORTAL DIRECT UPLOAD&lt;/span&gt;
+
+      &lt;h1&gt;🎥 院長YouTube解説アップロード&lt;/h1&gt;
+
+      &lt;p&gt;Google認証不要・ブラウザから直接 sozen-portal の /disease/ へ自動反映します。&lt;/p&gt;
+
+    &lt;/header&gt;
+
+
+
+    <div class="card">
+
+      <details id="tokenDetails" class="token-box" open>
+
+        <summary id="tokenSummary">🔑 初回のみ：GitHubトークンを設定してください</summary>
+
+        <div class="hint">
+
+          トークンはこの端末のブラウザ内（localStorage）にのみ保存され、GitHubリポジトリには一切保存されません。
+
+        </div>
+
+        <div class="token-row">
+
+          <input id="ghToken" type="password" placeholder="github_pat_... を貼り付け" />
+
+          <button type="button" id="saveTokenBtn" class="btn-sm">この端末に保存</button>
+
+          <button type="button" id="clearTokenBtn" class="btn-sm sub">消去</button>
+
+        </div>
+
+      </details>
+
+
+
+      <form id="ytForm">
+
+        <div class="field">
+
+          <label for="diseaseSearch">1. 対象疾患を検索して選択<span class="req">*</span></label>
+
+          <input id="diseaseSearch" type="text" placeholder="例：頭鳴り、脳過敏、梨状筋、耳鳴り..." autocomplete="off" />
+
+          <div id="diseaseResults" class="disease-results"></div>
+
+          <div id="selectedPill" class="selected-pill"></div>
+
+          <input id="slug" type="hidden" required />
+
+          <input id="diseaseName" type="hidden" />
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="insertMode">追加位置</label>
+
+          <select id="insertMode">
+
+            <option value="append">既存のYouTube解説の「下」に追加する（おすすめ）</option>
+
+            <option value="prepend">既存のYouTube解説の「上」に追加する</option>
+
+            <option value="replace">この内容で上書き（既存を置き換える）</option>
+
+          </select>
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="heading">2. 見出し（＼ 〇〇 ／ になります）</label>
+
+          <input id="heading" type="text" placeholder="例：頭鳴りとは頭の中から音が聞こえること" />
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="imageFile">3. YouTube切り抜き画像</label>
+
+          <div class="upload-box">
+
+            <input id="imageFile" type="file" accept="image/*" />
+
+            <div class="hint">自動で軽量リサイズ（横最大1280px）して GitHub へ保存します</div>
+
+            <img id="previewImg" class="preview-img" alt="プレビュー" />
+
+          </div>
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="caption">画像のキャプション（任意）</label>
+
+          <input id="caption" type="text" placeholder="例：頭鳴りって本当に不思議（YouTube解説より）" />
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="points">4. ポイント箇条書き（水色枠・1行1項目）</label>
+
+          <textarea id="points" rows="3" placeholder="頭鳴りを見続けてきて11年&#10;鍼灸臨床数10万人を超えました。（2024年現在）"></textarea>
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="body">5. 文字起こし・解説本文</label>
+
+          <textarea id="body" rows="6" placeholder="この症状でやっかいなのは、MRIやCTなどでは問題が見られず「様子見」されることが多くあります。"></textarea>
+
+        </div>
+
+
+
+        <div class="field">
+
+          <label for="youtubeUrl">6. YouTube動画URL（任意・埋め込み表示）</label>
+
+          <input id="youtubeUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." />
+
+        </div>
+
+
+
+        <button id="submitBtn" type="submit">ポータルへアップロード＆自動反映する</button>
+
+        <div id="statusBox" class="status"></div>
+
+      </form>
+
+    </div>
+
+  &lt;/div&gt;
+
+
+
+  &lt;script&gt;
+
+    const OWNER = &quot;sozen-harikyu&quot;;
+
+    const REPO = &quot;sozen-portal&quot;;
+
+    const BRANCH = &quot;main&quot;;
+
+    const TOKEN_KEY = &quot;sozen_portal_github_token&quot;;
+
+
+
+    let allDiseases = [];
+
+    let resizedImageBase64 = &quot;&quot;;
+
+
+
+    const tokenInput = document.getElementById(&quot;ghToken&quot;);
+
+    const tokenDetails = document.getElementById(&quot;tokenDetails&quot;);
+
+    const tokenSummary = document.getElementById(&quot;tokenSummary&quot;);
+
+    const searchInput = document.getElementById(&quot;diseaseSearch&quot;);
+
+    const resultsBox = document.getElementById(&quot;diseaseResults&quot;);
+
+    const selectedPill = document.getElementById(&quot;selectedPill&quot;);
+
+    const slugInput = document.getElementById(&quot;slug&quot;);
+
+    const nameInput = document.getElementById(&quot;diseaseName&quot;);
+
+    const fileInput = document.getElementById(&quot;imageFile&quot;);
+
+    const previewImg = document.getElementById(&quot;previewImg&quot;);
+
+    const statusBox = document.getElementById(&quot;statusBox&quot;);
+
+    const submitBtn = document.getElementById(&quot;submitBtn&quot;);
+
+
+
+    function refreshTokenUi() {
+
+      const saved = localStorage.getItem(TOKEN_KEY) || &quot;&quot;;
+
+      if (saved) {
+
+        tokenInput.value = saved;
+
+        tokenSummary.textContent = &quot;✅ GitHubトークン設定済み（クリックで変更）&quot;;
+
+        tokenDetails.open = false;
+
+      } else {
+
+        tokenSummary.textContent = &quot;🔑 初回のみ：GitHubトークンを設定してください&quot;;
+
+        tokenDetails.open = true;
+
+      }
+
+    }
+
+
+
+    document.getElementById(&quot;saveTokenBtn&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+
+      const v = tokenInput.value.trim();
+
+      if (!v) return alert(&quot;トークンを入力してください。&quot;);
+
+      localStorage.setItem(TOKEN_KEY, v);
+
+      refreshTokenUi();
+
+      showStatus(&quot;トークンをこの端末に保存しました。&quot;, true);
+
+    });
+
+
+
+    document.getElementById(&quot;clearTokenBtn&quot;).addEventListener(&quot;click&quot;, () =&gt; {
+
+      localStorage.removeItem(TOKEN_KEY);
+
+      tokenInput.value = &quot;&quot;;
+
+      refreshTokenUi();
+
+    });
+
+
+
+    refreshTokenUi();
+
+
+
+    async function loadDiseases() {
+
+      const urls = [
+
+        &quot;./disease/diseases.json&quot;,
+
+        &quot;https://sozen-harikyu.github.io/sozen-portal/disease/diseases.json&quot;
+
+      ];
+
+      for (const u of urls) {
+
+        try {
+
+          const res = await fetch(u);
+
+          if (res.ok) {
+
+            allDiseases = await res.json();
+
+            return;
+
+          }
+
+        } catch (e) {}
+
+      }
+
+      showStatus(&quot;疾患リスト（diseases.json）の読み込みに失敗しました。公開URLから開いてください。&quot;, false);
+
+    }
+
+    loadDiseases();
+
+
+
+    searchInput.addEventListener(&quot;input&quot;, () =&gt; {
+
+      const q = searchInput.value.trim().toLowerCase();
+
+      if (!q) { resultsBox.style.display = &quot;none&quot;; return; }
+
+      const matches = allDiseases.filter((d) =&gt;
+
+        [d.name, d.keywords, d.slug, d.id].join(&quot; &quot;).toLowerCase().includes(q)
+
+      ).slice(0, 30);
+
+
+
+      resultsBox.innerHTML = matches.length
+
+        ? matches.map((d) =&gt;
+
+            `&lt;div class=&quot;disease-item&quot; data-slug=&quot;${esc(d.slug)}&quot; data-name=&quot;${esc(d.name)}&quot;&gt;` +
+
+            `&lt;strong&gt;${esc(d.name)}&lt;/strong&gt;` +
+
+            `&lt;small&gt;${esc(d.id)} / ${esc(d.category)} / slug: ${esc(d.slug)}&lt;/small&gt;&lt;/div&gt;`
+
+          ).join(&quot;&quot;)
+
+        : &#39;&lt;div class=&quot;disease-item&quot;&gt;該当する疾患が見つかりません&lt;/div&gt;&#39;;
+
+      resultsBox.style.display = &quot;block&quot;;
+
+    });
+
+
+
+    resultsBox.addEventListener(&quot;click&quot;, (e) =&gt; {
+
+      const item = e.target.closest(&quot;.disease-item[data-slug]&quot;);
+
+      if (!item) return;
+
+      slugInput.value = item.dataset.slug;
+
+      nameInput.value = item.dataset.name;
+
+      searchInput.value = item.dataset.name;
+
+      selectedPill.textContent = `選択中：${item.dataset.name}（/disease/${item.dataset.slug}.html）`;
+
+      selectedPill.style.display = &quot;block&quot;;
+
+      resultsBox.style.display = &quot;none&quot;;
+
+    });
+
+
+
+    fileInput.addEventListener(&quot;change&quot;, () =&gt; {
+
+      const file = fileInput.files &amp;&amp; fileInput.files[0];
+
+      if (!file) {
+
+        resizedImageBase64 = &quot;&quot;;
+
+        previewImg.style.display = &quot;none&quot;;
+
+        return;
+
+      }
+
+      const reader = new FileReader();
+
+      reader.onload = (ev) =&gt; {
+
+        const img = new Image();
+
+        img.onload = () =&gt; {
+
+          const maxW = 1280;
+
+          let w = img.width, h = img.height;
+
+          if (w &gt; maxW) { h = Math.round(h * (maxW / w)); w = maxW; }
+
+          const canvas = document.createElement(&quot;canvas&quot;);
+
+          canvas.width = w; canvas.height = h;
+
+          canvas.getContext(&quot;2d&quot;).drawImage(img, 0, 0, w, h);
+
+          const dataUrl = canvas.toDataURL(&quot;image/jpeg&quot;, 0.86);
+
+          resizedImageBase64 = dataUrl.split(&quot;,&quot;)[1];
+
+          previewImg.src = dataUrl;
+
+          previewImg.style.display = &quot;block&quot;;
+
+        };
+
+        img.src = ev.target.result;
+
+      };
+
+      reader.readAsDataURL(file);
+
+    });
+
+
+
+    function toBase64Utf8(str) {
+
+      const bytes = new TextEncoder().encode(str);
+
+      let bin = &quot;&quot;;
+
+      bytes.forEach((b) =&gt; { bin += String.fromCharCode(b); });
+
+      return btoa(bin);
+
+    }
+
+
+
+    function fromBase64Utf8(b64) {
+
+      const bin = atob(b64.replace(/\s/g, &quot;&quot;));
+
+      const bytes = Uint8Array.from(bin, (c) =&gt; c.charCodeAt(0));
+
+      return new TextDecoder(&quot;utf-8&quot;).decode(bytes);
+
+    }
+
+
+
+    async function ghFetch(path, token, opts = {}) {
+
+      const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}${path}`, {
+
+        ...opts,
+
+        headers: {
+
+          &quot;Authorization&quot;: `Bearer ${token}`,
+
+          &quot;Accept&quot;: &quot;application/vnd.github+json&quot;,
+
+          &quot;X-GitHub-Api-Version&quot;: &quot;2022-11-28&quot;,
+
+          ...(opts.headers || {})
+
+        }
+
+      });
+
+      return res;
+
+    }
+
+
+
+    async function getFileIfExists(repoPath, token) {
+
+      const res = await ghFetch(`/contents/${repoPath}?ref=${encodeURIComponent(BRANCH)}`, token);
+
+      if (res.status === 404) return null;
+
+      if (!res.ok) throw new Error(`ファイル取得エラー (${res.status}): ${await res.text()}`);
+
+      return await res.json();
+
+    }
+
+
+
+    async function putFile(repoPath, base64Content, message, token, sha = &quot;&quot;) {
+
+      const payload = { message, content: base64Content, branch: BRANCH };
+
+      if (sha) payload.sha = sha;
+
+      const res = await ghFetch(`/contents/${repoPath}`, token, {
+
+        method: &quot;PUT&quot;,
+
+        headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+
+        body: JSON.stringify(payload)
+
+      });
+
+      if (!res.ok) throw new Error(`GitHub保存エラー (${res.status}): ${await res.text()}`);
+
+      return await res.json();
+
+    }
+
+
+
+    document.getElementById(&quot;ytForm&quot;).addEventListener(&quot;submit&quot;, async (e) =&gt; {
+
+      e.preventDefault();
+
+      const token = (localStorage.getItem(TOKEN_KEY) || tokenInput.value || &quot;&quot;).trim();
+
+      if (!token) {
+
+        tokenDetails.open = true;
+
+        showStatus(&quot;先に上部の「GitHubトークン」を入力して保存してください。&quot;, false);
+
+        return;
+
+      }
+
+      const slug = slugInput.value.trim();
+
+      const diseaseName = nameInput.value.trim();
+
+      if (!slug) {
+
+        showStatus(&quot;先に「1. 対象疾患」を検索して一覧からタップして選択してください。&quot;, false);
+
+        return;
+
+      }
+
+
+
+      const heading = document.getElementById(&quot;heading&quot;).value.trim();
+
+      const caption = document.getElementById(&quot;caption&quot;).value.trim();
+
+      const points = document.getElementById(&quot;points&quot;).value.trim();
+
+      const body = document.getElementById(&quot;body&quot;).value.trim();
+
+      const youtubeUrl = document.getElementById(&quot;youtubeUrl&quot;).value.trim();
+
+      const insertMode = document.getElementById(&quot;insertMode&quot;).value;
+
+
+
+      if (!heading &amp;&amp; !body &amp;&amp; !resizedImageBase64 &amp;&amp; !youtubeUrl) {
+
+        showStatus(&quot;見出し・画像・本文・YouTube URLのいずれかを入力してください。&quot;, false);
+
+        return;
+
+      }
+
+
+
+      submitBtn.disabled = true;
+
+      submitBtn.textContent = &quot;GitHubへアップロード中...&quot;;
+
+      statusBox.style.display = &quot;none&quot;;
+
+
+
+      try {
+
+        // 1. 画像アップロード
+
+        let savedImg = &quot;&quot;;
+
+        if (resizedImageBase64) {
+
+          const now = new Date();
+
+          const pad = (n) =&gt; String(n).padStart(2, &quot;0&quot;);
+
+          const stamp = `${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}_${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+
+          savedImg = `yt_${stamp}.jpg`;
+
+          await putFile(
+
+            `images/youtube/${slug}/${savedImg}`,
+
+            resizedImageBase64,
+
+            `admin: ${diseaseName} のYouTube切り抜き画像を追加 (${savedImg})`,
+
+            token
+
+          );
+
+        }
+
+
+
+        // 2. Markdownブロック作成
+
+        const parts = [];
+
+        if (heading) parts.push(`## ${heading}`);
+
+        if (savedImg) parts.push(caption ? `[画像: ${savedImg} | ${caption}]` : `[画像: ${savedImg}]`);
+
+        if (points) {
+
+          const pLines = points.split(/\r?\n/).map((s) =&gt; s.trim()).filter(Boolean);
+
+          if (pLines.length) {
+
+            parts.push([&quot;[ポイント]&quot;, ...pLines.map((l) =&gt; l.replace(/^[・•\-*]\s*/, &quot;・&quot;)), &quot;[/ポイント]&quot;].join(&quot;\n&quot;));
+
+          }
+
+        }
+
+        if (body) parts.push(body);
+
+        if (youtubeUrl) parts.push(`[YouTube: ${youtubeUrl}]`);
+
+        const newBlock = parts.join(&quot;\n\n&quot;);
+
+
+
+        // 3. articles/&lt;slug&gt;_youtube.md を取得・結合・保存
+
+        const mdPath = `articles/${slug}_youtube.md`;
+
+        const existing = await getFileIfExists(mdPath, token);
+
+        const existingText = existing ? fromBase64Utf8(existing.content).trim() : &quot;&quot;;
+
+        let finalText = newBlock;
+
+        if (existingText &amp;&amp; insertMode === &quot;append&quot;) {
+
+          finalText = `${existingText}\n\n${newBlock}`;
+
+        } else if (existingText &amp;&amp; insertMode === &quot;prepend&quot;) {
+
+          finalText = `${newBlock}\n\n${existingText}`;
+
+        }
+
+
+
+        await putFile(
+
+          mdPath,
+
+          toBase64Utf8(finalText + &quot;\n&quot;),
+
+          `admin: ${diseaseName} のYouTube解説を更新`,
+
+          token,
+
+          existing ? existing.sha : &quot;&quot;
+
+        );
+
+
+
+        // 4. GitHub Actions を自動起動
+
+        const disp = await ghFetch(&quot;/dispatches&quot;, token, {
+
+          method: &quot;POST&quot;,
+
+          headers: { &quot;Content-Type&quot;: &quot;application/json&quot; },
+
+          body: JSON.stringify({ event_type: &quot;sheet-updated&quot; })
+
+        });
+
+
+
+        const pageUrl = `https://${OWNER}.github.io/${REPO}/disease/${slug}.html`;
+
+        if (disp.status === 204 || disp.status === 200) {
+
+          showStatus(
+
+            `✅ アップロード完了！GitHub Actionsが自動でページを更新しています（約30〜60秒後に反映）。&lt;br&gt;` +
+
+            `反映先：&lt;a href=&quot;${esc(pageUrl)}&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;${esc(pageUrl)}&lt;/a&gt;`,
+
+            true
+
+          );
+
+        } else {
+
+          showStatus(
+
+            `✅ 画像と解説はGitHubへ保存できました！（自動起動のみ権限不足のため、GitHubの &lt;a href=&quot;https://github.com/${OWNER}/${REPO}/actions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Actions&lt;/a&gt; から Run workflow を押すと反映されます）`,
+
+            true
+
+          );
+
+        }
+
+
+
+        document.getElementById(&quot;heading&quot;).value = &quot;&quot;;
+
+        document.getElementById(&quot;caption&quot;).value = &quot;&quot;;
+
+        document.getElementById(&quot;points&quot;).value = &quot;&quot;;
+
+        document.getElementById(&quot;body&quot;).value = &quot;&quot;;
+
+        document.getElementById(&quot;youtubeUrl&quot;).value = &quot;&quot;;
+
+        fileInput.value = &quot;&quot;;
+
+        resizedImageBase64 = &quot;&quot;;
+
+        previewImg.style.display = &quot;none&quot;;
+
+      } catch (err) {
+
+        showStatus(`❌ エラー：${esc(err.message)}`, false);
+
+      } finally {
+
+        submitBtn.disabled = false;
+
+        submitBtn.textContent = &quot;ポータルへアップロード＆自動反映する&quot;;
+
+      }
+
+    });
+
+
+
+    function showStatus(htmlMsg, isOk) {
+
+      statusBox.className = &quot;status &quot; + (isOk ? &quot;ok&quot; : &quot;err&quot;);
+
+      statusBox.innerHTML = htmlMsg;
+
+      statusBox.style.display = &quot;block&quot;;
+
+    }
+
+
+
+    function esc(s) {
+
+      return String(s || &quot;&quot;).replace(/[&amp;&lt;&gt;&quot;&#39;]/g, (m) =&gt; ({
+
+        &quot;&amp;&quot;: &quot;&amp;amp;&quot;, &quot;&lt;&quot;: &quot;&amp;lt;&quot;, &quot;&gt;&quot;: &quot;&amp;gt;&quot;, &#39;&quot;&#39;: &quot;&amp;quot;&quot;, &quot;&#39;&quot;: &quot;&amp;#39;&quot;
+
+      }[m]));
+
+    }
+
+  &lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+
