@@ -13,6 +13,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 DISEASE_DIR = BASE_DIR / "disease"
 IMAGES_DIR = BASE_DIR / "images" / "diseases"
+YOUTUBE_IMAGES_DIR = BASE_DIR / "images" / "youtube"
+ARTICLES_DIR = BASE_DIR / "articles"
 
 SHEET_CSV_URL = os.environ.get("SHEET_CSV_URL", "").strip()
 SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://sozen-harikyu.github.io/sozen-portal").rstrip("/")
@@ -121,6 +123,217 @@ def robots_meta_tag() -> str:
     return '<meta name="robots" content="index, follow" />' if ALLOW_INDEXING else '<meta name="robots" content="noindex, nofollow" />'
 
 
+def extract_youtube_id(url: str) -> str:
+    url = (url or "").strip()
+    patterns = [
+        r"(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/shorts/|youtube\.com/embed/)([a-zA-Z0-9_-]{11})",
+    ]
+    for pat in patterns:
+        m = re.search(pat, url)
+        if m:
+            return m.group(1)
+    return ""
+
+
+def resolve_youtube_image_src(filename: str, slug: str) -> str:
+    fn = filename.strip()
+    if not fn:
+        return ""
+    if fn.startswith(("http://", "https://", "data:", "../", "./")):
+        return fn
+    # Check images/youtube/<slug>/<fn>, then images/youtube/<fn>, then images/diseases/<fn>
+    candidates = [
+        (YOUTUBE_IMAGES_DIR / slug / fn, f"../images/youtube/{slug}/{fn}"),
+        (YOUTUBE_IMAGES_DIR / fn, f"../images/youtube/{fn}"),
+        (IMAGES_DIR / fn, f"../images/diseases/{fn}"),
+    ]
+    for path_obj, rel_src in candidates:
+        if path_obj.exists():
+            return rel_src
+    return ""
+
+
+def render_youtube_markdown(md_text: str, slug: str) -> str:
+    """
+    Convert simple Japanese markdown in articles/<slug>_youtube.md into mobile-friendly HTML blocks.
+    Supported syntax:
+      ## 見出し             -> ＼ 見出し ／ スタイル見出し
+      ### 小見出し          -> ゴールドアクセント付き小見出し
+      [画像: file.jpg]      -> images/youtube/<slug>/file.jpg または images/youtube/file.jpg を表示
+      [画像: file.jpg | キャプション]
+      [ポイント] ... [/ポイント] -> 淡い水色/ベージュの箇条書き強調ボックス
+      [YouTube: URL]        -> 16:9 レスポンシブ埋め込み動画プレーヤー
+      通常のテキスト行      -> 読みやすい段落
+    """
+    e = html.escape
+    lines = md_text.splitlines()
+    blocks: list[str] = []
+    in_points = False
+    point_items: list[str] = []
+    para_lines: list[str] = []
+
+    def flush_para() -> None:
+        if para_lines:
+            joined = "<br />".join(e(l) for l in para_lines)
+            blocks.append(f'<p class="yt-para text-slate-700 text-[15px] sm:text-base leading-[1.9] mb-4">{joined}</p>')
+            para_lines.clear()
+
+    def flush_points() -> None:
+        if point_items:
+            lis = "".join(
+                f'<li class="flex items-start gap-2.5 text-slate-800 text-[15px] sm:text-base leading-relaxed">'
+                f'<span class="text-[#16284c] font-bold mt-0.5">•</span><span>{e(item)}</span></li>'
+                for item in point_items
+            )
+            blocks.append(
+                f'<div class="rounded-xl bg-[#eef7fc] border border-[#cde6f5] px-5 py-4 my-5">'
+                f'<ul class="space-y-2">{lis}</ul></div>'
+            )
+            point_items.clear()
+
+    for raw in lines:
+        line = raw.strip()
+        if line.startswith("<!--") and line.endswith("-->"):
+            continue
+        if line.startswith("# ") and not line.startswith("## "):
+            # Top-level comment/title line ignored inside section
+            continue
+
+        if line == "[ポイント]":
+            flush_para()
+            in_points = True
+            continue
+        if line == "[/ポイント]":
+            in_points = False
+            flush_points()
+            continue
+
+        if in_points:
+            if line:
+                cleaned = re.sub(r"^[・•\-*]\s*", "", line)
+                point_items.append(cleaned)
+            continue
+
+        if not line:
+            flush_para()
+            continue
+
+        if line.startswith("## "):
+            flush_para()
+            title = line[3:].strip()
+            blocks.append(
+                f'<h2 class="yt-heading font-mincho text-xl sm:text-2xl font-bold text-[#16284c] text-center mt-8 mb-5 flex items-center justify-center gap-3">'
+                f'<span class="text-[#0ea5e9] font-normal select-none" aria-hidden="true">＼</span>'
+                f'<span>{e(title)}</span>'
+                f'<span class="text-[#0ea5e9] font-normal select-none" aria-hidden="true">／</span></h2>'
+            )
+            continue
+
+        if line.startswith("### "):
+            flush_para()
+            sub = line[4:].strip()
+            blocks.append(
+                f'<h3 class="font-mincho text-lg font-bold text-[#16284c] mt-6 mb-3 flex items-center gap-2">'
+                f'<span class="w-1.5 h-5 bg-[#b68d40] rounded-full inline-block"></span>{e(sub)}</h3>'
+            )
+            continue
+
+        img_match = re.match(r"^\[画像\s*[:：]\s*([^\]|]+?)(?:\s*\|\s*([^\]]+))?\]$", line)
+        if img_match:
+            flush_para()
+            fname = img_match.group(1).strip()
+            caption = (img_match.group(2) or "").strip()
+            src = resolve_youtube_image_src(fname, slug)
+            if src:
+                cap_html = f'<figcaption class="text-xs text-slate-500 text-center mt-2">{e(caption)}</figcaption>' if caption else ""
+                blocks.append(
+                    f'<figure class="my-5 max-w-xl mx-auto">'
+                    f'<img src="{e(src)}" alt="{e(caption or fname)}" loading="lazy" class="w-full rounded-xl border border-slate-200 shadow-sm" />'
+                    f'{cap_html}</figure>'
+                )
+            else:
+                blocks.append(f'<!-- 画像未配置: images/youtube/{e(slug)}/{e(fname)} または images/youtube/{e(fname)} にアップロードすると自動表示されます -->')
+            continue
+
+        yt_match = re.match(r"^\[YouTube\s*[:：]\s*([^\]]+)\]$", line, re.IGNORECASE)
+        if yt_match:
+            flush_para()
+            vid = extract_youtube_id(yt_match.group(1))
+            if vid:
+                blocks.append(
+                    f'<div class="my-6 max-w-2xl mx-auto rounded-xl overflow-hidden border border-slate-200 shadow-sm" style="aspect-ratio:16/9;">'
+                    f'<iframe src="https://www.youtube.com/embed/{e(vid)}" title="YouTube解説動画" '
+                    f'class="w-full h-full" frameborder="0" loading="lazy" '
+                    f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
+                )
+            continue
+
+        para_lines.append(line)
+
+    flush_para()
+    flush_points()
+
+    if not blocks:
+        return ""
+
+    inner = "\n".join(blocks)
+    return (
+        '<section class="yt-section mb-10 pb-8 border-b border-slate-200">'
+        '<div class="flex items-center justify-center mb-2">'
+        '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-[#faf5eb] text-[#8c6239] border border-[#e5d5b5]">'
+        '🎥 院長解説・YouTube切り抜き</span></div>'
+        f'{inner}'
+        '</section>'
+    )
+
+
+def load_custom_sections(slug: str) -> tuple[str, str]:
+    """Return (rich_article_html, youtube_section_html) if files exist in articles/."""
+    rich_path = ARTICLES_DIR / f"{slug}.html"
+    yt_path = ARTICLES_DIR / f"{slug}_youtube.md"
+    rich_html = rich_path.read_text(encoding="utf-8") if rich_path.exists() else ""
+    yt_html = render_youtube_markdown(yt_path.read_text(encoding="utf-8"), slug) if yt_path.exists() else ""
+    return rich_html, yt_html
+
+
+RICH_ARTICLE_CSS = """
+  .rich-article { color: #1e293b; font-size: 15.5px; line-height: 1.9; }
+  .rich-article h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.25rem, 2.6vw, 1.65rem); font-weight: 700; color: #16284c; margin: 2.5rem 0 1rem; padding-bottom: 0.45rem; border-bottom: 2px solid #e2e8f0; line-height: 1.4; }
+  .rich-article h3 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.05rem, 2vw, 1.2rem); font-weight: 700; color: #16284c; margin: 1.5rem 0 0.6rem; line-height: 1.45; }
+  .rich-article p { margin: 0 0 1rem; color: #334155; }
+  .rich-article a { color: #16284c; text-decoration: underline; text-underline-offset: 3px; }
+  .rich-article a:hover { color: #b68d40; }
+  .rich-article .verdict { border-top: 2px solid #16284c; border-bottom: 1px solid #cbd5e1; padding: 16px 0; margin: 0 0 24px; font-family: 'Noto Serif JP', serif; font-size: clamp(1rem, 2vw, 1.18rem); line-height: 1.75; color: #16284c; }
+  .rich-article .verdict strong { color: #8c6239; }
+  .rich-article .diagram-frame { margin: 24px 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 12px; }
+  .rich-article .diagram-frame img { display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 8px; }
+  .rich-article figcaption { font-size: 12.5px; color: #64748b; line-height: 1.65; margin-top: 10px; }
+  .rich-article .scroll-hint { display: none; }
+  .rich-article .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0 24px; border: 1px solid #e2e8f0; border-radius: 12px; background: #ffffff; }
+  .rich-article table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.65; }
+  .rich-article thead th { background: #16284c; color: #ffffff; text-align: left; font-weight: 600; padding: 11px 12px; white-space: nowrap; font-size: 13px; }
+  .rich-article tbody td { padding: 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; color: #334155; }
+  .rich-article tbody tr:last-child td { border-bottom: none; }
+  .rich-article .col-primary { font-weight: 700; color: #16284c; white-space: nowrap; background: #f8fafc; }
+  .rich-article .chart-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 18px 0 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; }
+  .rich-article .chart-inner { min-width: 560px; }
+  .rich-article .band-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; margin: 22px 0; }
+  .rich-article .warn-box { background: #fffbeb; border-left: 4px solid #b68d40; border-radius: 0 12px 12px 0; padding: 16px 18px; margin: 18px 0; }
+  .rich-article .pull-quote { border-left: 4px solid #16284c; padding: 12px 18px; margin: 24px 0; background: #faf5eb; border-radius: 0 12px 12px 0; font-family: 'Noto Serif JP', serif; color: #16284c; font-size: 15.5px; line-height: 1.8; }
+  .rich-article .ref-list { padding-left: 1.25rem; font-size: 13.5px; color: #475569; line-height: 1.75; }
+  .rich-article .ref-list li { margin-bottom: 8px; word-break: break-word; }
+  @media (max-width: 640px) {
+    .rich-article { font-size: 16px; line-height: 1.88; }
+    .rich-article .scroll-hint { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #8c6239; background: #faf5eb; border: 1px solid #e5d5b5; padding: 4px 10px; border-radius: 999px; margin-bottom: 8px; }
+    .rich-article table { min-width: 580px; font-size: 13.5px; }
+    .rich-article thead th:first-child,
+    .rich-article tbody td:first-child { position: sticky; left: 0; z-index: 2; box-shadow: 2px 0 6px rgba(15, 23, 42, 0.08); }
+    .rich-article thead th:first-child { background: #16284c; }
+    .rich-article tbody td:first-child { background: #f8fafc; }
+  }
+"""
+
+
 def render_detail_html(d: dict) -> str:
     e = html.escape
     symptoms = split_items(d["symptoms"])
@@ -128,6 +341,8 @@ def render_detail_html(d: dict) -> str:
     faqs = parse_faq(d["faq"])
     tags = [t.strip() for t in d["keywords"].split(",") if t.strip()][:6]
     canonical_url = f"{SITE_BASE_URL}/disease/{d['slug']}.html"
+
+    rich_html, yt_html = load_custom_sections(d["slug"])
 
     img_block = (
         f'<div class="rounded-2xl overflow-hidden border border-slate-200 bg-[#faf5eb] mb-6">'
@@ -167,6 +382,27 @@ def render_detail_html(d: dict) -> str:
 
     tags_html = "".join(f'<span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#{e(t)}</span>' for t in tags)
 
+    if rich_html:
+        if "<!-- YOUTUBE_SECTION -->" in rich_html:
+            body_content = rich_html.replace("<!-- YOUTUBE_SECTION -->", yt_html)
+        else:
+            body_content = yt_html + "\n" + rich_html
+        main_body_html = f'<div class="rich-article">{body_content}</div>{faq_html}'
+    else:
+        main_body_html = (
+            f'{img_block}'
+            f'{yt_html}'
+            f'{symptoms_html}'
+            f'<section class="mb-7">'
+            f'<h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c] mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-[#16284c] rounded-full inline-block"></span>原因・メカニズム</h2>'
+            f'<p class="text-slate-700 text-sm sm:text-base leading-relaxed">{e(d["mechanism"])}</p>'
+            f'</section>'
+            f'{approach_html}'
+            f'{faq_html}'
+        )
+
+    extra_css = RICH_ARTICLE_CSS if (rich_html or yt_html) else ""
+
     return f'''<!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -180,31 +416,24 @@ def render_detail_html(d: dict) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet" />
-  <style>body {{ font-family: 'Noto Sans JP', sans-serif; background-color: #f4f7fb; color: #1e293b; }} .font-mincho {{ font-family: 'Noto Serif JP', serif; }}</style>
+  <style>body {{ font-family: 'Noto Sans JP', sans-serif; background-color: #f4f7fb; color: #1e293b; }} .font-mincho {{ font-family: 'Noto Serif JP', serif; }}{extra_css}</style>
   {faq_ld_json}
 </head>
 <body class="min-h-screen antialiased">
-  <div class="max-w-3xl mx-auto px-4 py-8 sm:py-10">
-    <nav class="mb-5 text-xs text-slate-500 flex items-center gap-2">
+  <div class="max-w-3xl mx-auto px-3 sm:px-4 py-6 sm:py-10">
+    <nav class="mb-5 text-xs text-slate-500 flex flex-wrap items-center gap-2">
       <a href="{e(PORTAL_URL)}" class="hover:text-[#16284c] underline">総合ポータル</a><span>/</span>
       <a href="./index.html" class="hover:text-[#16284c] underline">症状・疾患から探す</a><span>/</span>
       <span class="text-[#16284c] font-medium">{e(d["name"])}</span>
     </nav>
     <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-      <header class="bg-[#16284c] text-white px-6 py-7">
+      <header class="bg-[#16284c] text-white px-5 sm:px-7 py-7">
         <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[#b68d40] text-white mb-3">{e(d["category"])}</span>
         <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug">{e(d["name"])}の鍼灸</h1>
         <p class="text-slate-200 text-sm mt-3 leading-relaxed">{e(d["summary"])}</p>
       </header>
-      <div class="p-6 sm:p-8">
-        {img_block}
-        {symptoms_html}
-        <section class="mb-7">
-          <h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c] mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-[#16284c] rounded-full inline-block"></span>原因・メカニズム</h2>
-          <p class="text-slate-700 text-sm sm:text-base leading-relaxed">{e(d["mechanism"])}</p>
-        </section>
-        {approach_html}
-        {faq_html}
+      <div class="p-5 sm:p-8">
+        {main_body_html}
         <div class="flex flex-wrap gap-2 mb-8">{tags_html}</div>
         <div class="rounded-2xl bg-[#faf5eb] border border-[#e5d5b5] p-6 text-center space-y-3">
           <p class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">おひとりで悩まず、まずはご相談ください</p>
