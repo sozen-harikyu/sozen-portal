@@ -25,7 +25,7 @@ jobs:
       - name: スプレッドシートCSVから疾患ページを自動生成
         env:
           SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
-          ALLOW_INDEXING: 'true'
+          ALLOW_INDEXING: 'false'
           INCLUDE_DRAFTS: 'true'
           SITE_BASE_URL: 'https://sozen-harikyu.github.io/sozen-portal'
           PORTAL_URL: 'https://sozen-harikyu.github.io/sozen-portal/'
