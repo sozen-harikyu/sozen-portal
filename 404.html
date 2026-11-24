@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ページを移動しています｜銀座そうぜん鍼灸院グループ</title>
+  <meta name="robots" content="noindex, follow" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; background-color: #f4f7fb; color: #1e293b; }
+    .font-mincho { font-family: 'Noto Serif JP', serif; }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 antialiased">
+  <main class="max-w-lg w-full bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8 text-center space-y-4">
+    <div id="status-icon" class="text-3xl">🔄</div>
+    <h1 id="status-title" class="font-mincho text-xl sm:text-2xl font-bold text-[#16284c]">新しい解説ページへ移動しています…</h1>
+    <p id="status-desc" class="text-sm text-slate-600 leading-relaxed">
+      銀座そうぜん鍼灸院の疾患解説ページは新しいポータルへ移行しました。自動的に切り替わらない場合は下のボタンからお進みください。
+    </p>
+    <div id="action-area" class="flex flex-wrap justify-center gap-3 pt-2">
+      <a id="primary-link" href="./disease/index.html" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">
+        症状・疾患一覧を見る →
+      </a>
+      <a id="portal-link" href="./" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">
+        総合ポータルへ戻る
+      </a>
+    </div>
+  </main>
+
+  <script>
+    (async function () {
+      const path = window.location.pathname || "";
+      const isGhPagesRepo = path.startsWith("/sozen-portal/");
+      const basePrefix = isGhPagesRepo ? "/sozen-portal" : "";
+      const trimmed = path.replace(/^\/sozen-portal\//, "/").replace(/^\/+|\/+$/g, "").replace(/\.html$/i, "");
+
+      const primaryLink = document.getElementById("primary-link");
+      const portalLink = document.getElementById("portal-link");
+      primaryLink.href = basePrefix + "/disease/index.html";
+      portalLink.href = basePrefix + "/";
+
+      if (trimmed) {
+        try {
+          const resp = await fetch(basePrefix + "/disease/legacy_redirects.json", { cache: "no-cache" });
+          if (resp.ok) {
+            const map = await resp.json();
+            const targetSlug = map[trimmed];
+            if (targetSlug) {
+              const targetUrl = basePrefix + "/disease/" + encodeURIComponent(targetSlug) + ".html";
+              primaryLink.href = targetUrl;
+              primaryLink.textContent = "新しい疾患解説ページを開く →";
+              window.location.replace(targetUrl);
+              return;
+            }
+          }
+        } catch (e) {
+          // Fallback to friendly 404 UI
+        }
+      }
+
+      document.getElementById("status-icon").textContent = "🌿";
+      document.getElementById("status-title").textContent = "お探しのページが見つかりませんでした";
+      document.getElementById("status-desc").textContent =
+        "URLが変更されたか、ページが移動した可能性があります。症状・疾患一覧ページからご希望のお悩みを検索していただけます。";
+    })();
+  </script>
+</body>
+</html>

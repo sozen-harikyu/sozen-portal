@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30秒・症状ナビ（お悩みセルフチェック）｜銀座そうぜん鍼灸院グループ</title>
+  <meta name="description" content="一番つらい部位や症状を2〜3タップ選ぶだけで、あなたに近い疾患解説ページと予約時に使える事前相談メモを自動作成します。" />
+  <meta name="robots" content="noindex, nofollow" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; background-color: #f4f7fb; color: #1e293b; }
+    .font-mincho { font-family: 'Noto Serif JP', serif; }
+    .opt-card[aria-pressed="true"] {
+      border-color: #16284c;
+      background-color: #eef3fa;
+      box-shadow: 0 0 0 2px rgba(22, 40, 76, 0.12);
+    }
+    .tag-btn[aria-pressed="true"] {
+      background-color: #16284c;
+      color: #ffffff;
+      border-color: #16284c;
+    }
+  </style>
+</head>
+<body class="min-h-screen antialiased pb-14">
+  <div class="max-w-3xl mx-auto px-3 sm:px-4 py-6 sm:py-10">
+    <nav class="mb-5 text-xs text-slate-500 flex flex-wrap items-center gap-2">
+      <a href="./" class="hover:text-[#16284c] underline">総合ポータル</a><span>/</span>
+      <a href="./disease/index.html" class="hover:text-[#16284c] underline">症状・疾患から探す</a><span>/</span>
+      <span class="text-[#16284c] font-medium">30秒・症状ナビ</span>
+    </nav>
+
+    <header class="bg-[#16284c] text-white rounded-2xl px-5 sm:px-7 py-7 mb-6 shadow-sm">
+      <span class="inline-block px-3 py-1 rounded-full text-[11px] font-semibold bg-[#b68d40] text-white mb-3">SOZEN SYMPTOM NAVIGATOR</span>
+      <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug">30秒・症状ナビ</h1>
+      <p class="text-slate-200 text-xs sm:text-sm mt-2.5 leading-relaxed">
+        気になる部位とお悩みの特徴を選ぶだけで、関連性の高い疾患解説ページと、ご予約時の備考欄にそのまま貼れる「事前相談メモ」を作成します。
+      </p>
+    </header>
+
+    <main class="space-y-6">
+      <!-- STEP 1 -->
+      <section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#16284c] text-white">STEP 1</span>
+          <h2 class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">一番つらいお悩み・部位を選んでください</h2>
+        </div>
+        <div id="step1-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+      </section>
+
+      <!-- STEP 2 -->
+      <section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-[#b68d40] text-white">STEP 2</span>
+          <h2 class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">あてはまる特徴（いくつでも選択可）</h2>
+        </div>
+        <p class="text-xs text-slate-500 mb-3">選択しなくてもそのまま候補を表示できます。</p>
+        <div id="step2-tags" class="flex flex-wrap gap-2"></div>
+      </section>
+
+      <!-- STEP 3: Optional Duration & Free Note -->
+      <section class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-600 text-white">STEP 3</span>
+          <h2 class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">続いている期間・補足（任意）</h2>
+        </div>
+        <div id="duration-tags" class="flex flex-wrap gap-2 mb-3"></div>
+        <input id="free-note" type="text" placeholder="例：病院で異常なしと言われた、夜に音が強くなる 等（任意）" class="w-full px-4 py-2.5 text-sm bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#16284c]" />
+      </section>
+
+      <!-- RESULTS -->
+      <section id="result-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 sm:p-6 hidden">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+          <div>
+            <p class="text-[11px] font-semibold tracking-widest text-[#b68d40] uppercase">RECOMMENDED PAGES</p>
+            <h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">あなたに近い疾患解説ページ</h2>
+          </div>
+          <span id="match-count" class="text-xs font-semibold text-slate-500"></span>
+        </div>
+        <div id="result-list" class="grid grid-cols-1 gap-3 mb-6"></div>
+
+        <!-- Copyable Memo Box -->
+        <div class="rounded-2xl bg-[#faf5eb] border border-[#e5d5b5] p-4 sm:p-5 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="font-mincho text-base font-bold text-[#16284c]">📋 ご予約時の備考欄に貼れる「事前相談メモ」</h3>
+            <button id="copy-memo-btn" type="button" class="px-4 py-1.5 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-xs font-semibold transition-colors">
+              メモをコピーする
+            </button>
+          </div>
+          <textarea id="memo-preview" rows="5" readonly class="w-full text-xs sm:text-sm bg-white border border-[#e5d5b5] rounded-xl p-3 text-slate-700 leading-relaxed focus:outline-none"></textarea>
+          <p id="copy-status" class="text-xs font-semibold text-emerald-700 hidden">✓ コピーしました！そのまま予約フォームの備考欄に貼り付けられます。</p>
+          <div class="flex flex-wrap justify-center gap-3 pt-2">
+            <a href="./" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">
+              📅 ご予約へ進む（各院ポータル）→
+            </a>
+            <a href="./disease/index.html" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">
+              全1,085疾患から検索する
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const AREAS = [
+      {
+        id: "head_ear",
+        icon: "👂",
+        title: "頭鳴り・耳鳴り・めまい・頭痛",
+        sub: "頭の中の音、難聴、聴覚過敏、片頭痛、ふらつき",
+        categories: ["特に対応することが多い症状", "耳鼻咽喉のお悩み", "脳神経のお悩み"],
+        boostSlugs: ["zunari", "nokabin", "tinnitus", "sudden-sensorineural-hearing-loss", "bppv-neuro", "migraine-headache", "facial-nerve-palsy-neuro"],
+        keywords: ["頭鳴り", "耳鳴り", "脳過敏", "難聴", "めまい", "片頭痛", "頭痛", "聴覚過敏", "顔面神経"]
+      },
+      {
+        id: "autonomic",
+        icon: "🌙",
+        title: "自律神経・不眠・倦怠感・メンタル",
+        sub: "眠れない、動悸、パニック、コロナ後遺症、起立性調節障害",
+        categories: ["自律神経のお悩み", "特に対応することが多い症状", "子供のお悩み"],
+        boostSlugs: ["jiritsushinkei", "insomnia-auto", "covid_kouisho", "panic-disorder-auto", "orthostatic-dysregulation-child", "nokabin"],
+        keywords: ["自律神経", "不眠", "動悸", "パニック", "倦怠感", "後遺症", "起立性", "過覚醒"]
+      },
+      {
+        id: "muscle_nerve",
+        icon: "🦴",
+        title: "首・肩・腰・お尻の痛み・しびれ",
+        sub: "坐骨神経痛、梨状筋症候群、五十肩、ヘルニア、帯状疱疹後神経痛",
+        categories: ["筋肉、骨のお悩み", "神経のお悩み", "特に対応することが多い症状"],
+        boostSlugs: ["rijokin", "sciatica", "gojukata", "kyokakudeguchi", "chubukan", "postherpetic-neuralgia", "yotsu", "katakori"],
+        keywords: ["坐骨神経痛", "梨状筋", "五十肩", "しびれ", "腰痛", "肩こり", "ヘルニア", "胸郭出口", "帯状疱疹"]
+      },
+      {
+        id: "internal",
+        icon: "🫁",
+        title: "咳・呼吸器・胃腸・内臓の不調",
+        sub: "薬の効かない咳喘息、過敏性腸症候群、逆流性食道炎、便秘",
+        categories: ["消化器のお悩み", "呼吸器のお悩み", "特に対応することが多い症状"],
+        boostSlugs: ["sekizensoku", "irritable-bowel-syndrome"],
+        keywords: ["咳", "喘息", "胃", "腸", "過敏性腸", "逆流", "便秘", "下痢", "吐き気"]
+      },
+      {
+        id: "women",
+        icon: "🌸",
+        title: "女性特有のお悩み・更年期・子宮",
+        sub: "更年期障害、子宮筋腫、生理痛、PMS、冷え・のぼせ",
+        categories: ["女性のお悩み", "特に対応することが多い症状"],
+        boostSlugs: ["menopausal-disorder", "shikyukinshu"],
+        keywords: ["更年期", "子宮筋腫", "生理", "月経", "PMS", "ホットフラッシュ", "冷え"]
+      },
+      {
+        id: "eye_skin",
+        icon: "👁️",
+        title: "眼・皮膚・アレルギー・その他",
+        sub: "眼精疲労、かすみ目、アトピー、蕁麻疹、アレルギー性鼻炎",
+        categories: ["眼のお悩み", "皮膚のお悩み", "耳鼻咽喉のお悩み"],
+        boostSlugs: ["eye-strain"],
+        keywords: ["眼精疲労", "目", "視力", "アトピー", "蕁麻疹", "痒み", "鼻炎", "皮膚"]
+      }
+    ];
+
+    const TRAITS = [
+      { id: "no_abnormality", label: "病院の検査で「異常なし」と言われた", kws: ["異常なし", "MRI", "自律神経", "脳過敏", "頭鳴り"] },
+      { id: "meds_hard", label: "薬や漢方だけでは変化を感じにくい", kws: ["薬", "効かない", "難治", "慢性"] },
+      { id: "sound_light", label: "音・光・においに過敏になっている", kws: ["頭鳴り", "耳鳴り", "過敏", "脳過敏", "片頭痛"] },
+      { id: "sleep_night", label: "夜や静かな時に悪化・眠れない", kws: ["不眠", "夜間", "眠れない", "自律神経", "五十肩"] },
+      { id: "numbness", label: "ピリピリ・ジリジリした痛みやしびれ", kws: ["しびれ", "神経痛", "坐骨", "梨状筋", "帯状疱疹", "肘部管"] },
+      { id: "neck_stiff", label: "首・肩・背中の強いコリを伴う", kws: ["首", "肩", "深層筋", "緊張", "めまい", "頭痛"] },
+      { id: "massage_worse", label: "マッサージやストレッチで悪化した", kws: ["マッサージ", "ストレッチ", "梨状筋", "頭鳴り", "脳過敏"] }
+    ];
+
+    const DURATIONS = ["1か月未満", "1〜3か月", "3か月〜1年", "1年以上", "再発を繰り返している"];
+
+    let allDiseases = [];
+    let selectedAreaId = "";
+    const selectedTraits = new Set();
+    let selectedDuration = "";
+
+    const esc = (s) => String(s || "").replace(/[&<>"']/g, (m) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+
+    function renderControls() {
+      document.getElementById("step1-grid").innerHTML = AREAS.map((a) => `
+        <button type="button" data-area="${a.id}" aria-pressed="${selectedAreaId === a.id}"
+          class="opt-card text-left p-4 rounded-xl border border-slate-200 hover:border-[#b68d40] transition-all flex items-start gap-3">
+          <span class="text-2xl leading-none mt-0.5">${a.icon}</span>
+          <span>
+            <span class="block font-mincho font-bold text-sm sm:text-base text-[#16284c]">${esc(a.title)}</span>
+            <span class="block text-xs text-slate-500 mt-1 leading-relaxed">${esc(a.sub)}</span>
+          </span>
+        </button>
+      `).join("");
+
+      document.getElementById("step2-tags").innerHTML = TRAITS.map((t) => `
+        <button type="button" data-trait="${t.id}" aria-pressed="${selectedTraits.has(t.id)}"
+          class="tag-btn px-3.5 py-2 rounded-full text-xs sm:text-sm font-medium border border-slate-200 bg-slate-50 text-slate-700 hover:border-[#16284c] transition-colors">
+          ${esc(t.label)}
+        </button>
+      `).join("");
+
+      document.getElementById("duration-tags").innerHTML = DURATIONS.map((dur) => `
+        <button type="button" data-dur="${esc(dur)}" aria-pressed="${selectedDuration === dur}"
+          class="tag-btn px-3.5 py-1.5 rounded-full text-xs font-medium border border-slate-200 bg-slate-50 text-slate-700 hover:border-[#16284c] transition-colors">
+          ${esc(dur)}
+        </button>
+      `).join("");
+    }
+
+    function updateResults() {
+      const sec = document.getElementById("result-section");
+      if (!selectedAreaId) {
+        sec.classList.add("hidden");
+        return;
+      }
+      sec.classList.remove("hidden");
+      const area = AREAS.find((a) => a.id === selectedAreaId);
+      const traitObjs = TRAITS.filter((t) => selectedTraits.has(t.id));
+      const traitKws = traitObjs.flatMap((t) => t.kws);
+
+      const scored = allDiseases.map((d) => {
+        let score = 0;
+        const text = [d.name, d.category, d.keywords, d.summary, d.symptoms].join(" ");
+        if (area.categories.includes(d.category)) score += 12;
+        if (area.boostSlugs.includes(d.slug)) score += 18;
+        if (d.has_rich) score += 6;
+        if (d.has_youtube) score += 4;
+        area.keywords.forEach((kw) => { if (text.includes(kw)) score += 5; });
+        traitKws.forEach((kw) => { if (text.includes(kw)) score += 4; });
+        return { d, score };
+      }).filter((x) => x.score >= 12)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 6);
+
+      document.getElementById("match-count").textContent = `おすすめ上位 ${scored.length} 件を表示`;
+      document.getElementById("result-list").innerHTML = scored.map(({ d }) => `
+        <a href="./disease/${esc(d.slug)}.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-4 transition-all">
+          <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#16284c] text-white">${esc(d.category)}</span>
+            ${d.has_youtube ? '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#eef7fc] text-[#0369a1] border border-[#bae6fd]">🎥 YouTube解説あり</span>' : ""}
+            ${d.has_rich ? '<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#faf5eb] text-[#8c6239] border border-[#e5d5b5]">★ 詳細解説</span>' : ""}
+          </div>
+          <div class="flex items-center justify-between gap-2">
+            <h3 class="font-mincho text-base sm:text-lg font-bold text-[#16284c] group-hover:text-[#b68d40]">${esc(d.name)}</h3>
+            <span class="text-xs font-semibold text-[#16284c] shrink-0">解説を読む →</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">${esc(d.summary)}</p>
+        </a>
+      `).join("") || '<p class="text-sm text-slate-500 py-4 text-center">候補を読み込み中です…</p>';
+
+      const note = document.getElementById("free-note").value.trim();
+      const lines = [
+        "【事前相談メモ（症状ナビより）】",
+        `■ 気になる部位・お悩み：${area.title}`,
+        traitObjs.length ? `■ あてはまる特徴：${traitObjs.map((t) => t.label).join("／")}` : "",
+        selectedDuration ? `■ 続いている期間：${selectedDuration}` : "",
+        note ? `■ 補足：${note}` : "",
+        scored.length ? `■ 気になった解説ページ：${scored.slice(0, 3).map((x) => x.d.name).join("、")}` : ""
+      ].filter(Boolean);
+      document.getElementById("memo-preview").value = lines.join("\n");
+    }
+
+    document.getElementById("step1-grid").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-area]");
+      if (!btn) return;
+      selectedAreaId = btn.dataset.area;
+      renderControls();
+      updateResults();
+      document.getElementById("result-section").scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+
+    document.getElementById("step2-tags").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-trait]");
+      if (!btn) return;
+      const id = btn.dataset.trait;
+      if (selectedTraits.has(id)) selectedTraits.delete(id);
+      else selectedTraits.add(id);
+      renderControls();
+      updateResults();
+    });
+
+    document.getElementById("duration-tags").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-dur]");
+      if (!btn) return;
+      selectedDuration = selectedDuration === btn.dataset.dur ? "" : btn.dataset.dur;
+      renderControls();
+      updateResults();
+    });
+
+    document.getElementById("free-note").addEventListener("input", updateResults);
+
+    document.getElementById("copy-memo-btn").addEventListener("click", async () => {
+      const text = document.getElementById("memo-preview").value;
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch (_) {
+        const ta = document.getElementById("memo-preview");
+        ta.select();
+        document.execCommand("copy");
+      }
+      const st = document.getElementById("copy-status");
+      st.classList.remove("hidden");
+      setTimeout(() => st.classList.add("hidden"), 4000);
+    });
+
+    renderControls();
+    fetch("./disease/diseases.json")
+      .then((r) => r.ok ? r.json() : [])
+      .then((data) => { allDiseases = Array.isArray(data) ? data : []; updateResults(); })
+      .catch(() => { allDiseases = []; });
+  </script>
+</body>
+</html>
