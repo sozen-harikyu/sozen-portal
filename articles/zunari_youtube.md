@@ -1,4 +1,4 @@
-<!-- Auto-imported (YouTube-filtered v2) from https://www.s-treatment.com/15426077685619 on 2026-11-25 06:41 JST -->
+<!-- Auto-imported (YouTube-filtered v2) from https://www.s-treatment.com/15426077685619 on 2026-11-25 06:45 JST -->
 
 ## 頭鳴りとは頭の中から音が聞こえること
 
