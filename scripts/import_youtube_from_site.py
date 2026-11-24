@@ -1,15 +1,9 @@
 #!/usr/bin/env python3
 """
-銀座そうぜん鍼灸院 ポータル用 YouTube切り抜き・画像・解説 自動移植スクリプト
-https://www.s-treatment.com/ の全疾患ページから、YouTube動画リンク・切り抜き画像・
-見出し・ポイント箇条書き・解説文を抽出し、GitHubリポジトリ内へ永続保存します。
-
-出力先:
-  - images/youtube/<slug>/clip_01.jpg ...
-  - articles/<slug>_youtube.md
-  - import_youtube_report.md (移植結果レポート)
-
-外部ライブラリ不要（Python 3 標準ライブラリのみ動作）。
+銀座そうぜん鍼灸院 ポータル用 YouTube切り抜き・動画リンク 厳選自動移植スクリプト（v2）
+https://www.s-treatment.com/ の各疾患ページから、
+「YouTube動画リンク」と「YouTube切り抜き画像（16:9横長比率 or 動画見出し配下）」のみを厳格に抽出し、
+関係のない院内写真やバナーを除外して移植します。
 """
 
 from __future__ import annotations
@@ -21,6 +15,7 @@ import html
 import io
 import os
 import re
+import shutil
 import struct
 import sys
 import time
@@ -43,27 +38,29 @@ OVERWRITE_EXISTING = os.environ.get("OVERWRITE_EXISTING", "false").lower() == "t
 EXTRACTION_MODE = os.environ.get("EXTRACTION_MODE", "youtube_and_clips").strip().lower()
 MAX_WORKERS = int(os.environ.get("MAX_WORKERS", "4") or "4")
 REQUEST_DELAY = float(os.environ.get("REQUEST_DELAY", "0.2") or "0.2")
+MAX_CLIPS_PER_PAGE = int(os.environ.get("MAX_CLIPS_PER_PAGE", "6") or "6")
 SITE_BASE_URL = os.environ.get("SITE_BASE_URL", "https://sozen-harikyu.github.io/sozen-portal").rstrip("/")
 
-USER_AGENT = "Mozilla/5.0 (compatible; SozenPortalMigrator/1.0; +https://sozen-harikyu.github.io/sozen-portal/)"
+USER_AGENT = "Mozilla/5.0 (compatible; SozenPortalMigrator/2.0; +https://sozen-harikyu.github.io/sozen-portal/)"
 
-# サイト共通のUIパーツ・バナー・予約ボタン等を除外するキーワード
 EXCLUDED_IMG_PATTERNS = re.compile(
     r"(logo|header|footer|navi|nav_|menu|btn|button|banner|bnr|icon|arrow|bullet|"
     r"spacer|blank|pixel|line_?btn|yoyaku|reserve|tel_|phone|contact|access|map_|"
     r"instagram|twitter|facebook|tiktok|sns_|share_|print_|pagetop|totop|"
     r"common/|parts/|template/|favicon|apple-touch|loading|spinner|noimage|"
-    r"badge|star|check_?mark|qa_|faq_?icon)",
+    r"badge|star|check_?mark|qa_|faq_?icon|staff|clinic|exterior|interior|room|bed|map)",
     re.IGNORECASE,
 )
 
 EXCLUDED_ALT_PATTERNS = re.compile(
     r"(ネット予約|LINE予約|電話予約|ご予約|お問い合わせ|アクセス|地図|ロゴ|"
-    r"バナー|ボタン|トップへ|ホーム|メニュー|インスタグラム|公式LINE|QRコード)",
+    r"バナー|ボタン|トップへ|ホーム|メニュー|インスタグラム|公式LINE|QRコード|"
+    r"院内|外観|スタッフ|受付|ベッド|料金表)",
     re.IGNORECASE,
 )
 
-# 記事本文以外の定型フッター・誘導文を除外
+YOUTUBE_CONTEXT_RE = re.compile(r"(youtube|ユーチューブ|動画|切り抜き|チャンネル|解説動画)", re.IGNORECASE)
+
 BOILERPLATE_TEXT_PATTERNS = re.compile(
     r"^(ご予約はこちら|ネット予約はこちら|LINE予約はこちら|お電話でのご予約|"
     r"お問い合わせはこちら|トップページへ戻る|ページトップへ|プライバシーポリシー|"
@@ -142,7 +139,7 @@ def sanitize_slug(slug: str, fallback_id: str) -> str:
 def fetch_csv_text(source: str) -> str:
     if os.path.exists(source):
         return Path(source).read_text(encoding="utf-8-sig")
-    data, ctype = fetch_url_bytes(source, timeout=30)
+    data, _ = fetch_url_bytes(source, timeout=30)
     return data.decode("utf-8-sig", errors="replace")
 
 
@@ -180,18 +177,14 @@ def load_diseases(csv_text: str) -> list[dict]:
 
 
 def detect_image_info(data: bytes) -> tuple[str, int, int]:
-    """純Pythonで画像フォーマットと縦横ピクセル数を判定する。"""
     if len(data) < 24:
         return "", 0, 0
-    # PNG
     if data[:8] == b"\x89PNG\r\n\x1a\n":
         w, h = struct.unpack(">II", data[16:24])
         return ".png", w, h
-    # GIF
     if data[:6] in (b"GIF87a", b"GIF89a"):
         w, h = struct.unpack("<HH", data[6:10])
         return ".gif", w, h
-    # WebP
     if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
         chunk = data[12:16]
         if chunk == b"VP8X" and len(data) >= 30:
@@ -209,7 +202,6 @@ def detect_image_info(data: bytes) -> tuple[str, int, int]:
             h = ((bits >> 14) & 0x3FFF) + 1
             return ".webp", w, h
         return ".webp", 0, 0
-    # JPEG
     if data[:2] == b"\xff\xd8":
         i = 2
         n = len(data)
@@ -254,8 +246,6 @@ def extract_youtube_id(url: str) -> str:
 
 
 class AkibareContentParser(HTMLParser):
-    """Akibare CMS（s-treatment.com）の本文から構造化ブロックを抽出するパーサー。"""
-
     def __init__(self, page_url: str) -> None:
         super().__init__(convert_charrefs=True)
         self.page_url = page_url
@@ -390,11 +380,10 @@ class AkibareContentParser(HTMLParser):
         elif tag == "li" and self.in_list_depth > 0:
             self.in_li = True
             self.li_buf = []
-        elif tag in ("p", "div", "blockquote"):
-            if tag == "p" and not self.in_li:
-                self._flush_active()
-                self.active_tag = "p"
-                self.active_buf = []
+        elif tag == "p" and not self.in_li:
+            self._flush_active()
+            self.active_tag = "p"
+            self.active_buf = []
         elif tag == "br":
             if self.in_li:
                 self.li_buf.append(" ")
@@ -434,7 +423,6 @@ class AkibareContentParser(HTMLParser):
         elif self.active_tag:
             self.active_buf.append(data)
         else:
-            # pタグ外のテキストにYouTube URLが生書きされているケースも拾う
             for m in YOUTUBE_URL_RE.finditer(data):
                 vid = extract_youtube_id(m.group(0))
                 if vid:
@@ -479,7 +467,6 @@ def fetch_and_parse_page(disease: dict) -> dict:
         if main_blocks:
             blocks = main_blocks
 
-    # 候補画像URLのみ残す
     filtered: list[dict] = []
     for b in blocks:
         if b["type"] == "image":
@@ -492,9 +479,8 @@ def fetch_and_parse_page(disease: dict) -> dict:
 
 
 def build_sections(blocks: list[dict], shared_img_urls: set[str]) -> list[dict]:
-    """ブロック列を見出し単位のセクションにまとめ、YouTube・切り抜き画像を含むセクションを抽出する。"""
     sections: list[dict] = []
-    current = {"heading": "", "heading_level": "h2", "blocks": [], "has_media": False}
+    current = {"heading": "", "heading_level": "h2", "blocks": [], "has_youtube": False, "has_image": False}
 
     for b in blocks:
         if b["type"] == "image" and b["url"] in shared_img_urls:
@@ -506,11 +492,16 @@ def build_sections(blocks: list[dict], shared_img_urls: set[str]) -> list[dict]:
                 "heading": b["text"],
                 "heading_level": b.get("level", "h2"),
                 "blocks": [],
-                "has_media": False,
+                "has_youtube": bool(YOUTUBE_CONTEXT_RE.search(b["text"])),
+                "has_image": False,
             }
             continue
-        if b["type"] in ("image", "youtube"):
-            current["has_media"] = True
+        if b["type"] == "youtube":
+            current["has_youtube"] = True
+        elif b["type"] == "image":
+            current["has_image"] = True
+            if YOUTUBE_CONTEXT_RE.search(b.get("alt", "")) or extract_youtube_id(b.get("link_href", "")):
+                current["has_youtube"] = True
         current["blocks"].append(b)
 
     if current["heading"] or current["blocks"]:
@@ -519,23 +510,32 @@ def build_sections(blocks: list[dict], shared_img_urls: set[str]) -> list[dict]:
     return sections
 
 
-def download_and_validate_image(url: str, page_url: str, dest_dir: Path, index: int) -> tuple[str, int, int] | None:
+def download_and_validate_youtube_clip(
+    url: str,
+    page_url: str,
+    dest_dir: Path,
+    index: int,
+    strict_16_9: bool,
+) -> tuple[str, int, int] | None:
+    """YouTube切り抜き画像のみを厳選して保存（16:9横長比率・320px以上を厳格チェック）。"""
     try:
         data, _ = fetch_url_bytes(url, referer=page_url, timeout=20, retries=2)
     except Exception:
         return None
-    if len(data) < 4000:
-        # 4KB未満はアイコンやスペーサーの可能性が高いため除外
+    if len(data) < 8000:
         return None
     ext, w, h = detect_image_info(data)
-    if not ext:
+    if not ext or w < 320 or h < 180:
         return None
-    if w > 0 and h > 0:
-        if w < 240 or h < 120:
+    ratio = w / max(h, 1)
+    if strict_16_9:
+        # YouTube動画の切り抜き（16:9 ≒ 1.77）に近い横長画像のみ採用（縦長写真・正方形アイコン・細長バナーを除外）
+        if not (1.50 <= ratio <= 2.02):
             return None
-        # 極端に細長いバナーリボン（横幅が高さの4.5倍以上）は除外
-        if w / max(h, 1) > 4.5:
+    else:
+        if not (1.20 <= ratio <= 2.40):
             return None
+
     dest_dir.mkdir(parents=True, exist_ok=True)
     filename = f"clip_{index:02d}{ext}"
     (dest_dir / filename).write_bytes(data)
@@ -547,24 +547,23 @@ def generate_youtube_markdown(
     sections: list[dict],
     mode: str,
 ) -> tuple[str, int, int]:
-    """抽出したセクションから articles/<slug>_youtube.md を生成し、画像もローカル保存する。"""
     slug = disease["slug"]
     page_url = disease["source_url"]
     img_dir = YOUTUBE_IMAGES_DIR / slug
 
-    has_any_media = any(s["has_media"] for s in sections)
-    if not has_any_media:
-        return "", 0, 0
+    # 上書きモード時は古い非YouTube画像を掃除してから再保存
+    if OVERWRITE_EXISTING and img_dir.exists():
+        shutil.rmtree(img_dir)
 
     selected_sections = (
         sections if mode == "all_sections_with_media"
-        else [s for s in sections if s["has_media"]]
+        else [s for s in sections if s["has_youtube"] or s["has_image"]]
     )
     if not selected_sections:
         return "", 0, 0
 
     md_lines: list[str] = [
-        f"<!-- Auto-imported from {page_url} on {datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M JST')} -->",
+        f"<!-- Auto-imported (YouTube-filtered v2) from {page_url} on {datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M JST')} -->",
         "",
     ]
 
@@ -576,6 +575,7 @@ def generate_youtube_markdown(
     for sec in selected_sections:
         sec_lines: list[str] = []
         sec_has_actual_media = False
+        strict_16_9 = not sec["has_youtube"]
 
         if sec["heading"]:
             prefix = "### " if sec["heading_level"] == "h3" else "## "
@@ -593,11 +593,15 @@ def generate_youtube_markdown(
                     saved_videos += 1
                     sec_has_actual_media = True
             elif btype == "image":
+                if saved_images >= MAX_CLIPS_PER_PAGE:
+                    continue
                 img_url = b["url"]
                 url_hash = hashlib.md5(img_url.encode("utf-8")).hexdigest()
                 if url_hash in seen_img_hashes:
                     continue
-                result = download_and_validate_image(img_url, page_url, img_dir, saved_images + 1)
+                result = download_and_validate_youtube_clip(
+                    img_url, page_url, img_dir, saved_images + 1, strict_16_9=strict_16_9
+                )
                 if result:
                     fname, _, _ = result
                     seen_img_hashes.add(url_hash)
@@ -621,7 +625,7 @@ def generate_youtube_markdown(
                     sec_lines.append(text)
                     sec_lines.append("")
 
-        if sec_has_actual_media or mode == "all_sections_with_media":
+        if sec_has_actual_media:
             md_lines.extend(sec_lines)
 
     if saved_images == 0 and saved_videos == 0:
@@ -641,22 +645,22 @@ def write_report(
     jst = timezone(timedelta(hours=9))
     now_str = datetime.now(jst).strftime("%Y-%m-%d %H:%M JST")
     lines = [
-        "# YouTube切り抜き・画像 自動移植レポート",
+        "# YouTube切り抜き・動画リンク 厳選自動移植レポート（v2）",
         "",
         f"- 実行日時: {now_str}",
         f"- 対象指定: `{TARGET_SLUGS_RAW}`",
         f"- 走査ページ数: {total_scanned} ページ",
         f"- 移植完了ページ数: **{len(migrated)} ページ**",
         f"- 既存ファイル保護スキップ: {len(skipped_existing)} ページ",
-        f"- 動画・切り抜き画像なしスキップ: {skipped_no_media} ページ",
-        f"- サイト共通バナー自動除外URL数: {shared_img_count} 件",
+        f"- YouTube動画・16:9切り抜きなしスキップ: {skipped_no_media} ページ",
+        f"- サイト共通画像 自動除外URL数: {shared_img_count} 件",
         f"- 取得エラー: {len(errors)} 件",
         "",
     ]
     if migrated:
         lines.append("## 移植完了ページ一覧")
         lines.append("")
-        lines.append("| ID | 疾患名 | slug | 画像枚数 | YouTube動画数 | 元ページ | ポータルURL |")
+        lines.append("| ID | 疾患名 | slug | 切り抜き画像 | YouTube動画 | 元ページ | ポータルURL |")
         lines.append("|---|---|---|---:|---:|---|---|")
         for m in migrated:
             portal_url = f"{SITE_BASE_URL}/disease/{m['slug']}.html"
@@ -697,7 +701,6 @@ def main() -> int:
     ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
     YOUTUBE_IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
-    # 既存ファイルチェック
     to_fetch: list[dict] = []
     skipped_existing: list[str] = []
     for d in diseases:
@@ -717,23 +720,19 @@ def main() -> int:
             if idx % 50 == 0 or idx == len(to_fetch):
                 print(f"  Fetched {idx}/{len(to_fetch)} pages...")
 
-    # 複数ページ走査時：5ページ以上に共通出現する画像URLはサイト共通バナーとして自動除外
     img_page_counter: Counter[str] = Counter()
     for res in parsed_results:
         unique_urls = {b["url"] for b in res["blocks"] if b["type"] == "image"}
         for u in unique_urls:
             img_page_counter[u] += 1
 
-    shared_threshold = 5 if len(parsed_results) >= 15 else 999999
+    shared_threshold = 4 if len(parsed_results) >= 12 else 999999
     shared_img_urls = {u for u, cnt in img_page_counter.items() if cnt >= shared_threshold}
-    if shared_img_urls:
-        print(f"Auto-excluded {len(shared_img_urls)} site-wide shared image URL(s).")
 
     migrated: list[dict] = []
     errors: list[dict] = []
     skipped_no_media = 0
 
-    # ID順に整列して処理
     parsed_results.sort(key=lambda r: r["disease"]["id"])
     for res in parsed_results:
         d = res["disease"]
@@ -757,7 +756,7 @@ def main() -> int:
             "videos": vid_cnt,
             "source_url": d["source_url"],
         })
-        print(f"  [OK] {d['id']} {d['name']} ({d['slug']}): {img_cnt} images, {vid_cnt} videos")
+        print(f"  [OK] {d['id']} {d['name']} ({d['slug']}): {img_cnt} clips, {vid_cnt} videos")
 
     write_report(
         total_scanned=len(to_fetch),
