@@ -1,0 +1,70 @@
+name: Import YouTube Clips from s-treatment.com
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_slugs:
+        description: '対象slug（まずテストなら zunari、全1,085ページ一括なら ALL、複数ならカンマ区切り）'
+        required: true
+        default: 'zunari'
+        type: string
+      overwrite_existing:
+        description: 'すでに移植・手動作成した _youtube.md を上書きするか（通常はチェック不要）'
+        required: false
+        default: false
+        type: boolean
+      extraction_mode:
+        description: '抽出範囲（youtube_and_clips: 動画・切り抜き画像のある見出しブロックのみ / all_sections_with_media: 動画・画像があるページの本文全体）'
+        required: false
+        default: 'youtube_and_clips'
+        type: choice
+        options:
+          - youtube_and_clips
+          - all_sections_with_media
+
+permissions:
+  contents: write
+
+jobs:
+  import-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Import YouTube clips & text from s-treatment.com
+        env:
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          TARGET_SLUGS: ${{ inputs.target_slugs }}
+          OVERWRITE_EXISTING: ${{ inputs.overwrite_existing }}
+          EXTRACTION_MODE: ${{ inputs.extraction_mode }}
+          SITE_BASE_URL: 'https://sozen-harikyu.github.io/sozen-portal'
+        run: |
+          python3 scripts/import_youtube_from_site.py
+
+      - name: Rebuild all disease pages
+        env:
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          ALLOW_INDEXING: 'false'
+          INCLUDE_DRAFTS: 'true'
+          SITE_BASE_URL: 'https://sozen-harikyu.github.io/sozen-portal'
+          PORTAL_URL: 'https://sozen-harikyu.github.io/sozen-portal/'
+        run: |
+          python3 scripts/build_diseases.py
+
+      - name: Commit imported clips and rebuilt pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add images/youtube/ articles/ disease/ sitemap.xml import_youtube_report.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Import YouTube clips from s-treatment.com (${{ inputs.target_slugs }})"
+            git push
+          fi
