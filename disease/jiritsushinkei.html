@@ -18,63 +18,64 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet" />
-  <style>body { font-family: 'Noto Sans JP', sans-serif; background-color: #f4f7fb; color: #1e293b; } .font-mincho { font-family: 'Noto Serif JP', serif; }
-  .rich-article { color: #1e293b; font-size: 15.5px; line-height: 1.9; }
-  .rich-article h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.25rem, 2.6vw, 1.65rem); font-weight: 700; color: #16284c; margin: 2.4rem 0 1rem; padding-bottom: 0.45rem; border-bottom: 2px solid #e2e8f0; line-height: 1.4; }
-  .rich-article h3 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.05rem, 2vw, 1.2rem); font-weight: 700; color: #16284c; margin: 1.5rem 0 0.6rem; line-height: 1.45; }
-  .rich-article p { margin: 0 0 1rem; color: #334155; }
+  <style>body { font-family: 'Noto Sans JP', sans-serif; background-color: #f6f4ef; color: #1e293b; } .font-mincho { font-family: 'Noto Serif JP', serif; }
+  html { scroll-behavior: smooth; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform 0.2s ease; }
+  .rich-article { color: #1e293b; font-size: 15px; line-height: 1.88; }
+  .rich-article h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.15rem, 2.3vw, 1.4rem); font-weight: 700; color: #16284c; margin: 2rem 0 0.85rem; padding-bottom: 0.4rem; border-bottom: 1.5px solid #e8e3d9; line-height: 1.4; }
+  .rich-article h2:first-child { margin-top: 0; }
+  .rich-article h3 { font-family: 'Noto Serif JP', serif; font-size: clamp(1rem, 1.9vw, 1.12rem); font-weight: 700; color: #16284c; margin: 1.35rem 0 0.5rem; line-height: 1.45; }
+  .rich-article p { margin: 0 0 0.9rem; color: #334155; }
   .rich-article a { color: #16284c; text-decoration: underline; text-underline-offset: 3px; }
   .rich-article a:hover { color: #b68d40; }
-  .rich-article .verdict { border-top: 2px solid #16284c; border-bottom: 1px solid #cbd5e1; padding: 16px 0; margin: 0 0 24px; font-family: 'Noto Serif JP', serif; font-size: clamp(1rem, 2vw, 1.16rem); line-height: 1.75; color: #16284c; }
+  .rich-article .verdict { background: #faf8f4; border-left: 4px solid #b68d40; border-radius: 0 16px 16px 0; padding: 16px 18px; margin: 0 0 20px; font-family: 'Noto Serif JP', serif; font-size: clamp(0.98rem, 1.9vw, 1.08rem); line-height: 1.78; color: #16284c; }
   .rich-article .verdict strong { color: #8c6239; }
-  .rich-article .diagram-frame { margin: 22px 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 12px; }
-  .rich-article .diagram-frame img { display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 8px; }
-  .rich-article figcaption { font-size: 12.5px; color: #64748b; line-height: 1.65; margin-top: 10px; }
-  .rich-article .scroll-hint { display: none; }
-  .rich-article .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0 24px; border: 1px solid #e2e8f0; border-radius: 12px; background: #ffffff; }
-  .rich-article table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.65; }
-  .rich-article thead th { background: #16284c; color: #ffffff; text-align: left; font-weight: 600; padding: 11px 12px; white-space: nowrap; font-size: 13px; }
-  .rich-article tbody td { padding: 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; color: #334155; }
+  .rich-article .diagram-frame { margin: 18px 0; background: #faf8f4; border: 1px solid #e8e3d9; border-radius: 16px; padding: 12px; }
+  .rich-article .diagram-frame img { display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 10px; }
+  .rich-article figcaption { font-size: 12px; color: #64748b; line-height: 1.6; margin-top: 8px; text-align: center; }
+  .rich-article .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 10px; background: #ffffff; }
+  .rich-article table { width: 100%; min-width: 540px; border-collapse: collapse; font-size: 13.5px; line-height: 1.65; }
+  .rich-article thead th { background: #16284c; color: #ffffff; text-align: left; font-weight: 600; padding: 10px 12px; white-space: nowrap; font-size: 12.5px; }
+  .rich-article tbody td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; color: #334155; }
   .rich-article tbody tr:last-child td { border-bottom: none; }
   .rich-article .col-primary { font-weight: 700; color: #16284c; white-space: nowrap; background: #f8fafc; }
-  .rich-article .chart-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 18px 0 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; }
-  .rich-article .chart-inner { min-width: 560px; }
-  .rich-article .band-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; margin: 22px 0; }
-  .rich-article .warn-box { background: #fffbeb; border-left: 4px solid #b68d40; border-radius: 0 12px 12px 0; padding: 16px 18px; margin: 18px 0; }
-  .rich-article .pull-quote { border-left: 4px solid #16284c; padding: 12px 18px; margin: 24px 0; background: #faf5eb; border-radius: 0 12px 12px 0; font-family: 'Noto Serif JP', serif; color: #16284c; font-size: 15.5px; line-height: 1.8; }
-  .rich-article .ref-list { padding-left: 1.25rem; font-size: 13.5px; color: #475569; line-height: 1.75; }
-  .rich-article .ref-list li { margin-bottom: 8px; word-break: break-word; }
-  @media (max-width: 640px) {
-    .rich-article { font-size: 16px; line-height: 1.88; }
-    .rich-article .scroll-hint { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #8c6239; background: #faf5eb; border: 1px solid #e5d5b5; padding: 4px 10px; border-radius: 999px; margin-bottom: 8px; }
-    .rich-article table { min-width: 580px; font-size: 13.5px; }
-    .rich-article thead th:first-child,
-    .rich-article tbody td:first-child { position: sticky; left: 0; z-index: 2; box-shadow: 2px 0 6px rgba(15, 23, 42, 0.08); }
-    .rich-article thead th:first-child { background: #16284c; }
-    .rich-article tbody td:first-child { background: #f8fafc; }
-  }
+  .rich-article .band-box { background: #faf8f4; border: 1px solid #e8e3d9; border-radius: 16px; padding: 18px; margin: 18px 0; }
+  .rich-article .warn-box { background: #fffbeb; border-left: 4px solid #b68d40; border-radius: 0 14px 14px 0; padding: 14px 16px; margin: 16px 0; }
+  .rich-article .pull-quote { border-left: 4px solid #16284c; padding: 12px 16px; margin: 20px 0; background: #faf5eb; border-radius: 0 14px 14px 0; font-family: 'Noto Serif JP', serif; color: #16284c; font-size: 15px; line-height: 1.8; }
+  .rich-article .ref-list { padding-left: 1.25rem; font-size: 12.5px; color: #475569; line-height: 1.75; }
+  .rich-article .ref-list li { margin-bottom: 6px; word-break: break-word; }
 </style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalWebPage", "name": "自律神経失調症の鍼灸｜銀座そうぜん鍼灸院グループ", "description": "不眠・倦怠感・めまい・動悸・胃腸の不調など多岐にわたる自律神経失調症に対し、交感神経と副交感神経の切り替えと全身の筋緊張を整える銀座そうぜん鍼灸院の鍼灸を解説します。", "url": "https://sozen-harikyu.github.io/sozen-portal/disease/jiritsushinkei.html", "inLanguage": "ja", "about": {"@type": "MedicalCondition", "name": "自律神経失調症"}, "publisher": {"@type": "MedicalClinic", "name": "銀座そうぜん鍼灸院グループ", "url": "https://sozen-harikyu.github.io/sozen-portal/"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "総合ポータル", "item": "https://sozen-harikyu.github.io/sozen-portal/"}, {"@type": "ListItem", "position": 2, "name": "症状・疾患から探す", "item": "https://sozen-harikyu.github.io/sozen-portal/disease/index.html"}, {"@type": "ListItem", "position": 3, "name": "自律神経失調症", "item": "https://sozen-harikyu.github.io/sozen-portal/disease/jiritsushinkei.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "精神的な弱さが原因なのでしょうか？", "acceptedAnswer": {"@type": "Answer", "text": "性格や精神的な強さとは関係なく、過労・睡眠不足・環境や体の不調が重なれば誰にでも起こります。"}}, {"@type": "Question", "name": "病院の検査で異常なしと言われましたが診てもらえますか？", "acceptedAnswer": {"@type": "Answer", "text": "自律神経の乱れは血液や画像検査に映らないことが多いため、体表のサインを見ながら施術方針を組み立てます。"}}, {"@type": "Question", "name": "マッサージや強い運動をすれば良くなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "体調が整う前の強いマッサージや激しい運動は逆効果になることがあるため、まずは体の緊張を穏やかに整えることを優先します。"}}]}</script>
 </head>
-<body class="min-h-screen antialiased pb-24 sm:pb-10">
-  <div class="max-w-3xl mx-auto px-3 sm:px-4 py-6 sm:py-10">
-    <nav class="mb-5 text-xs text-slate-500 flex flex-wrap items-center gap-2">
+<body class="min-h-screen antialiased pb-24 sm:pb-12">
+  <div class="max-w-3xl mx-auto px-3.5 sm:px-5 py-6 sm:py-9 space-y-6">
+    <nav class="text-xs text-slate-500 flex flex-wrap items-center gap-2">
       <a href="https://sozen-harikyu.github.io/sozen-portal/" class="hover:text-[#16284c] underline">総合ポータル</a><span>/</span>
       <a href="./index.html" class="hover:text-[#16284c] underline">症状・疾患から探す</a><span>/</span>
       <span class="text-[#16284c] font-medium">自律神経失調症</span>
     </nav>
-    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-      <header class="bg-[#16284c] text-white px-5 sm:px-7 py-7">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[#b68d40] text-white mb-3">特に対応することが多い症状</span>
-        <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug">自律神経失調症の鍼灸</h1>
-        <p class="text-slate-200 text-sm mt-3 leading-relaxed">交感神経と副交感神経のバランス崩れによる不眠・倦怠感・めまい・胃腸不調を、体と神経の両面から整える解説。</p>
-      </header>
-      <div class="p-5 sm:p-8">
-        <div class="rich-article">
 
-<div class="verdict">
+    <header class="bg-gradient-to-br from-[#16284c] via-[#1d3563] to-[#233d70] text-white rounded-3xl px-6 sm:px-8 py-7 sm:py-8 shadow-sm">
+      <div class="flex flex-wrap items-center gap-2 mb-3">
+        <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-[#b68d40] text-white">特に対応することが多い症状</span>
+        <span class="px-3 py-1 rounded-full text-[11px] font-medium bg-white/15 text-white/95">🎥 院長YouTube解説あり</span>
+      </div>
+      <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug tracking-tight">自律神経失調症の鍼灸</h1>
+      <p class="text-slate-200 text-sm sm:text-[15px] mt-3 leading-relaxed">交感神経と副交感神経のバランス崩れによる不眠・倦怠感・めまい・胃腸不調を、体と神経の両面から整える解説。</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-6 pt-5 border-t border-white/15">
+        <a href="#sec-youtube" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">🎥 院長解説</a>
+        <a href="#sec-acupoints" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📌 ツボ・解説</a>
+        <a href="#sec-evidence" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📊 論文根拠</a>
+        <a href="#sec-faq" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">❓ よくある質問</a>
+      </div>
+    </header>
+
+    <section id="sec-youtube" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-4"><div class="flex items-center justify-between flex-wrap gap-2"><div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#0ea5e9] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">院長YouTube解説・関連動画</h2></div><span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#eef7fc] text-[#0369a1] border border-[#bae6fd]">公式YouTube動画</span></div><div class="space-y-3"><a href="https://www.youtube.com/watch?v=Ec20TfSJ5Lo" target="_blank" rel="noopener" class="group grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="sm:col-span-5 relative rounded-xl overflow-hidden bg-slate-900 aspect-video"><img src="https://i.ytimg.com/vi/Ec20TfSJ5Lo/hqdefault.jpg" alt="【自律神経失調症】が劇的に整う！鍼灸治療の効果とは！？" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /><span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-md bg-red-600 text-white text-[10px] font-bold">▶ YouTube</span></div><div class="sm:col-span-7 space-y-1.5"><p class="font-mincho font-bold text-sm sm:text-[15px] text-[#16284c] group-hover:text-[#b68d40] leading-snug">【自律神経失調症】が劇的に整う！鍼灸治療の効果とは！？</p><p class="text-xs text-slate-600 leading-relaxed">脳の機能と体の不具合の両面から自律神経を整えていく鍼灸施術の考え方を解説している動画です。</p><span class="inline-block text-[11px] font-semibold text-[#0369a1]">動画を見る（YouTubeへ） →</span></div></a><details class="rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden"><summary class="px-4 py-3 flex items-center justify-between text-xs sm:text-sm font-semibold text-[#16284c] hover:bg-slate-100/70"><span>▶ 関連する院長YouTube動画をもっと見る（あと1本）</span><span class="chev text-slate-400">▼</span></summary><div class="p-3.5 space-y-3 bg-white border-t border-slate-200"><a href="https://www.youtube.com/watch?v=zsX5jODrw2k" target="_blank" rel="noopener" class="group grid grid-cols-1 sm:grid-cols-12 gap-3.5 items-center rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="sm:col-span-5 relative rounded-xl overflow-hidden bg-slate-900 aspect-video"><img src="https://i.ytimg.com/vi/zsX5jODrw2k/hqdefault.jpg" alt="自律神経を整えるためには”緊張”するべし" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" /><span class="absolute bottom-2 right-2 px-2 py-0.5 rounded-md bg-red-600 text-white text-[10px] font-bold">▶ YouTube</span></div><div class="sm:col-span-7 space-y-1.5"><p class="font-mincho font-bold text-sm sm:text-[15px] text-[#16284c] group-hover:text-[#b68d40] leading-snug">自律神経を整えるためには”緊張”するべし</p><p class="text-xs text-slate-600 leading-relaxed">治療実績10万人の臨床視点から、自律神経バランスを整えるための意外なコツを解説している動画です。</p><span class="inline-block text-[11px] font-semibold text-[#0369a1]">動画を見る（YouTubeへ） →</span></div></a></div></details></div><div class="pt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-100"><span>銀座そうぜん鍼灸院 公式YouTubeチャンネルで解説動画を配信中</span><a href="https://www.youtube.com/channel/UCY62Fl_Z19qeV4B2asWDlVg/search?query=%E8%87%AA%E5%BE%8B%E7%A5%9E%E7%B5%8C%E5%A4%B1%E8%AA%BF%E7%97%87" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white font-semibold transition-colors">▶ 「自律神経失調症」の動画をチャンネルで探す</a></div></section><section id="sec-acupoints" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7"><div class="rich-article"><div class="verdict">
   自律神経失調症の本質は「自律神経が壊れた」ことではなく、外的ストレス・内臓疲労・筋緊張などの影響で<strong>交感神経（活動）と副交感神経（休息）のTPO切替ができなくなっている状態</strong>です。当院では福田-安保理論・脳腸相関・体質弁証に基づき、切替力そのものを回復させます（<a href="https://www.s-treatment.com/15426068520662" target="_blank" rel="noopener">銀座そうぜん鍼灸院 公式解説</a>）。
 </div>
 
@@ -88,8 +89,7 @@
   <figcaption>図：自律神経のオン／オフ切替と迷走神経・末梢循環の調整に用いられる代表的なツボの位置目安。</figcaption>
 </figure>
 
-<div class="scroll-hint">← 表は横にスワイプして見られます →</div>
-<div class="table-wrap">
+<details class="my-4 rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden"><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c] hover:bg-slate-100/70"><span>📌 詳細データ・ツボ一覧表を開く</span><span class="chev text-slate-400">▼</span></summary><div class="bg-white border-t border-slate-200 p-2"><div class="table-wrap">
   <table>
     <thead>
       <tr>
@@ -150,13 +150,12 @@
       </tr>
     </tbody>
   </table>
-</div>
+</div></div></details>
 
 <h2>査読論文が示す「自律神経（HRV・迷走神経）×鍼灸」の科学的エビデンス</h2>
 <p>国際医学研究では、心拍変動解析（HRV：全体の自律神経適応力を示す<strong>SDNN</strong>、副交感神経指標の<strong>HF</strong>、交感・副交感バランスの<strong>LF/HF比</strong>）を用いて鍼灸の自律神経調整作用が検証されています。</p>
 
-<div class="scroll-hint">← 表は横にスワイプして見られます →</div>
-<div class="table-wrap">
+<details class="my-4 rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden"><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c] hover:bg-slate-100/70"><span>📚 査読論文データ・出典表を開く</span><span class="chev text-slate-400">▼</span></summary><div class="bg-white border-t border-slate-200 p-2"><div class="table-wrap">
   <table>
     <thead>
       <tr>
@@ -205,7 +204,7 @@
       </tr>
     </tbody>
   </table>
-</div>
+</div></div></details>
 
 <h2>セルフケアの注意点と、病院受診を最優先すべきサイン</h2>
 <div class="band-box">
@@ -231,24 +230,25 @@
   <li>Kouzuma et al., <em>Med Acupunct</em> (2022) — <a href="https://pubmed.ncbi.nlm.nih.gov/36311889/" target="_blank" rel="noopener">PubMed PMID: 36311889</a></li>
   <li>Uchida et al., <em>Med Acupunct</em> (2018) — <a href="https://pubmed.ncbi.nlm.nih.gov/29682149/" target="_blank" rel="noopener">PubMed PMID: 29682149</a></li>
   <li>菊池友和『現代鍼灸学』25(1):33–37 (2025) — <a href="https://www.jstage.jst.go.jp/article/jsmamr/25/1/25_33/_article/-char/ja" target="_blank" rel="noopener">J-STAGE</a></li>
-</ol>
-</div><section class="mb-8 mt-8"><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c] mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-[#16284c] rounded-full inline-block"></span>よくある質問（FAQ）</h2><div class="space-y-3"><div class="rounded-xl border border-slate-200 p-4 bg-slate-50/70"><p class="font-semibold text-[#16284c] text-sm sm:text-base">Q. 精神的な弱さが原因なのでしょうか？</p><p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-[#b68d40] leading-relaxed">性格や精神的な強さとは関係なく、過労・睡眠不足・環境や体の不調が重なれば誰にでも起こります。</p></div><div class="rounded-xl border border-slate-200 p-4 bg-slate-50/70"><p class="font-semibold text-[#16284c] text-sm sm:text-base">Q. 病院の検査で異常なしと言われましたが診てもらえますか？</p><p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-[#b68d40] leading-relaxed">自律神経の乱れは血液や画像検査に映らないことが多いため、体表のサインを見ながら施術方針を組み立てます。</p></div><div class="rounded-xl border border-slate-200 p-4 bg-slate-50/70"><p class="font-semibold text-[#16284c] text-sm sm:text-base">Q. マッサージや強い運動をすれば良くなりますか？</p><p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-[#b68d40] leading-relaxed">体調が整う前の強いマッサージや激しい運動は逆効果になることがあるため、まずは体の緊張を穏やかに整えることを優先します。</p></div></div></section>
-        <div class="flex flex-wrap gap-2 mb-6"><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#自律神経失調症</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#不眠</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#倦怠感</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#めまい</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#動悸</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#過敏性腸症候群</span></div>
-        <section class="mb-8 mt-8 pt-6 border-t border-slate-200"><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c] mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full inline-block"></span>あわせて読まれる関連疾患（特に対応することが多い症状）</h2><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><a href="./zunari.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">頭鳴り（ずなり）</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">頭の中で「キーン」「ザー」と音が鳴り続ける状態を、脳の過覚醒（自律神経）と首肩の深層筋から整える施術解説。</p></a><a href="./covid_kouisho.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">新型コロナウイルスの後遺症</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">感染後に長引く倦怠感・ブレインフォグ・嗅覚障害・自律神経症状に対し、全身の自己回復力を引き出す施術解説。</p></a><a href="./nokabin.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">脳過敏症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">脳の過剰興奮による聴覚過敏・頭鳴り・めまい・片頭痛に対し、筋肉・神経・内臓の乱れから脳を鎮める鍼灸解説。</p></a><a href="./chubukan.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">肘部管症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">肘の内側での尺骨神経圧迫による小指・薬指のしびれに対し、前腕の深層筋を緩め神経再生を促す施術解説。</p></a><a href="./shikyukinshu.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">子宮筋腫を小さくする鍼灸</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">30歳以上の女性の約4人に1人にみられる子宮筋腫に対し、骨盤内の血流と自律神経バランスを整える施術解説。</p></a><a href="./sekizensoku.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">薬の効かない咳喘息</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">吸入薬で止まらない長引く空咳に対し、自律神経・気管支神経の興奮と逆流性食道炎の視点から整える施術解説。</p></a></div></section>
-        <div class="rounded-2xl bg-[#faf5eb] border border-[#e5d5b5] p-6 text-center space-y-3">
-          <p class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">おひとりで悩まず、まずはご相談ください</p>
-          <p class="text-xs sm:text-sm text-slate-600">銀座本院・川口・大宮・横浜・博多・田無の各院でご予約を承っております。</p>
-          <div class="flex flex-wrap justify-center gap-3 pt-2">
-            <a href="https://sozen-harikyu.github.io/sozen-portal/" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">ご予約へ進む（全国各院ポータル）→</a>
-            <a href="./index.html" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">← 疾患一覧に戻る</a>
-          </div>
-        </div>
+</ol></div></section>
+    <section id="sec-faq" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-3"><div class="flex items-center gap-2 mb-1"><span class="w-1.5 h-5 bg-[#16284c] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">よくある質問（FAQ）</h2></div><details class="rounded-2xl border border-slate-200 bg-[#faf8f4] overflow-hidden" open><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c]"><span>Q. 精神的な弱さが原因なのでしょうか？</span><span class="chev text-slate-400">▼</span></summary><div class="px-5 pb-4 pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 bg-white">性格や精神的な強さとは関係なく、過労・睡眠不足・環境や体の不調が重なれば誰にでも起こります。</div></details><details class="rounded-2xl border border-slate-200 bg-[#faf8f4] overflow-hidden"><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c]"><span>Q. 病院の検査で異常なしと言われましたが診てもらえますか？</span><span class="chev text-slate-400">▼</span></summary><div class="px-5 pb-4 pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 bg-white">自律神経の乱れは血液や画像検査に映らないことが多いため、体表のサインを見ながら施術方針を組み立てます。</div></details><details class="rounded-2xl border border-slate-200 bg-[#faf8f4] overflow-hidden"><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c]"><span>Q. マッサージや強い運動をすれば良くなりますか？</span><span class="chev text-slate-400">▼</span></summary><div class="px-5 pb-4 pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 bg-white">体調が整う前の強いマッサージや激しい運動は逆効果になることがあるため、まずは体の緊張を穏やかに整えることを優先します。</div></details></section>
+
+    <div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#自律神経失調症</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#不眠</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#倦怠感</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#めまい</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#動悸</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#過敏性腸症候群</span></div>
+    <section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-4"><div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">あわせて読まれる関連疾患（特に対応することが多い症状）</h2></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><a href="./covid_kouisho.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">新型コロナウイルスの後遺症</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">感染後に長引く倦怠感・ブレインフォグ・嗅覚障害・自律神経症状に対し、全身の自己回復力を引き出す施術解説。</p></a><a href="./nokabin.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">脳過敏症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">脳の過剰興奮による聴覚過敏・頭鳴り・めまい・片頭痛に対し、筋肉・神経・内臓の乱れから脳を鎮める鍼灸解説。</p></a><a href="./chubukan.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">肘部管症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">肘の内側での尺骨神経圧迫による小指・薬指のしびれに対し、前腕の深層筋を緩め神経再生を促す施術解説。</p></a><a href="./shikyukinshu.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">子宮筋腫を小さくする鍼灸</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">30歳以上の女性の約4人に1人にみられる子宮筋腫に対し、骨盤内の血流と自律神経バランスを整える施術解説。</p></a><a href="./kyokakudeguchi.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">胸郭出口症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">首・鎖骨・胸まわりでの神経圧迫による腕や手のしびれを、斜角筋・小胸筋などの深層筋鍼灸で解放する解説。</p></a><a href="./zunari.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">頭鳴り（ずなり）</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">頭の中で「キーン」「ザー」と音が鳴り続ける状態を、脳の過覚醒（自律神経）と首肩の深層筋から整える施術解説。</p></a></div></section>
+
+    <section class="rounded-3xl bg-[#faf5eb] border border-[#e5d5b5] p-6 sm:p-7 text-center space-y-3">
+      <p class="font-mincho text-lg font-bold text-[#16284c]">おひとりで悩まず、まずはご相談ください</p>
+      <p class="text-xs sm:text-sm text-slate-600">銀座本院・川口・大宮・横浜・博多・田無の各院でご予約を承っております。</p>
+      <div class="flex flex-wrap justify-center gap-3 pt-2">
+        <a href="https://sozen-harikyu.github.io/sozen-portal/" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">ご予約へ進む（全国各院ポータル）→</a>
+        <a href="./index.html" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">← 疾患一覧に戻る</a>
       </div>
-    </article>
+    </section>
   </div>
+
   <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-slate-200 shadow-[0_-4px_16px_rgba(15,23,42,0.08)] px-3 py-2.5">
     <div class="max-w-lg mx-auto grid grid-cols-12 gap-2 items-center">
-      <a href="https://sozen-harikyu.github.io/sozen-portal/" class="col-span-6 py-2.5 px-3 rounded-full bg-[#16284c] text-white text-xs font-bold text-center shadow-sm active:scale-95 transition-transform">📅 空き確認・ご予約</a>
+      <a href="https://sozen-harikyu.github.io/sozen-portal/" class="col-span-6 py-2.5 px-3 rounded-full bg-[#16284c] text-white text-xs font-bold text-center shadow-sm">📅 空き確認・ご予約</a>
       <a href="../symptom-check.html" class="col-span-3 py-2.5 px-2 rounded-full bg-[#faf5eb] border border-[#e5d5b5] text-[#8c6239] text-[11px] font-bold text-center">🧭 症状ナビ</a>
       <a href="./index.html" class="col-span-3 py-2.5 px-2 rounded-full bg-slate-100 text-slate-700 text-[11px] font-semibold text-center">🔍 一覧</a>
     </div>

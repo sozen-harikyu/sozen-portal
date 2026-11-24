@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="クローン病の鍼灸解説">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21423a" />
+      <stop offset="100%" stop-color="#326155" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <rect x="456" y="55" width="135" height="135" rx="24" transform="rotate(13 500 110)" fill="#c49342" fill-opacity="0.15" /><circle cx="506" cy="246" r="95" fill="#326155" fill-opacity="0.30" />
+  <rect x="0" y="0" width="12" height="360" fill="#c49342" />
+  <rect x="44" y="42" width="132" height="30" rx="15" fill="#c49342" />
+  <text x="110.0" y="62" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">消化器のお悩み</text>
+  <text x="596" y="62" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.85">D151</text>
+  <text x="44" y="164" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="38" font-weight="700" fill="#ffffff">クローン病</text>
+  <line x1="44" y1="226" x2="180" y2="226" stroke="#c49342" stroke-width="3" stroke-linecap="round" />
+  <rect x="44" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="80.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#腹痛</text><rect x="126" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="162.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#下痢</text><rect x="208" y="258" width="110" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="263.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#肛門周囲膿瘍</text>
+  <text x="44" y="330" font-family="Noto Serif JP, serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.9">銀座そうぜん鍼灸院グループ｜症状・疾患解説</text>
+</svg>

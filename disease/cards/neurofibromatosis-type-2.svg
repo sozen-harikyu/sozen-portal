@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="神経線維腫症II型の鍼灸解説">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e2a4a" />
+      <stop offset="100%" stop-color="#304373" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <rect x="464" y="47" width="125" height="125" rx="24" transform="rotate(31 500 110)" fill="#c48f45" fill-opacity="0.15" /><circle cx="564" cy="214" r="87" fill="#304373" fill-opacity="0.30" />
+  <rect x="0" y="0" width="12" height="360" fill="#c48f45" />
+  <rect x="44" y="42" width="132" height="30" rx="15" fill="#c48f45" />
+  <text x="110.0" y="62" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">脳神経のお悩み</text>
+  <text x="596" y="62" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.85">D752</text>
+  <text x="44" y="164" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="32" font-weight="700" fill="#ffffff">神経線維腫症II型</text>
+  <line x1="44" y1="226" x2="180" y2="226" stroke="#c48f45" stroke-width="3" stroke-linecap="round" />
+  <rect x="44" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="80.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#NF2</text><rect x="126" y="258" width="82" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="167.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#指定難病</text><rect x="218" y="258" width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="280.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#両側聴神経鞘腫</text>
+  <text x="44" y="330" font-family="Noto Serif JP, serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.9">銀座そうぜん鍼灸院グループ｜症状・疾患解説</text>
+</svg>

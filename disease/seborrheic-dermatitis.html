@@ -18,121 +18,145 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet" />
-  <style>body { font-family: 'Noto Sans JP', sans-serif; background-color: #f4f7fb; color: #1e293b; } .font-mincho { font-family: 'Noto Serif JP', serif; }
-  .rich-article { color: #1e293b; font-size: 15.5px; line-height: 1.9; }
-  .rich-article h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.25rem, 2.6vw, 1.65rem); font-weight: 700; color: #16284c; margin: 2.4rem 0 1rem; padding-bottom: 0.45rem; border-bottom: 2px solid #e2e8f0; line-height: 1.4; }
-  .rich-article h3 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.05rem, 2vw, 1.2rem); font-weight: 700; color: #16284c; margin: 1.5rem 0 0.6rem; line-height: 1.45; }
-  .rich-article p { margin: 0 0 1rem; color: #334155; }
+  <style>body { font-family: 'Noto Sans JP', sans-serif; background-color: #f6f4ef; color: #1e293b; } .font-mincho { font-family: 'Noto Serif JP', serif; }
+  html { scroll-behavior: smooth; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform 0.2s ease; }
+  .rich-article { color: #1e293b; font-size: 15px; line-height: 1.88; }
+  .rich-article h2 { font-family: 'Noto Serif JP', serif; font-size: clamp(1.15rem, 2.3vw, 1.4rem); font-weight: 700; color: #16284c; margin: 2rem 0 0.85rem; padding-bottom: 0.4rem; border-bottom: 1.5px solid #e8e3d9; line-height: 1.4; }
+  .rich-article h2:first-child { margin-top: 0; }
+  .rich-article h3 { font-family: 'Noto Serif JP', serif; font-size: clamp(1rem, 1.9vw, 1.12rem); font-weight: 700; color: #16284c; margin: 1.35rem 0 0.5rem; line-height: 1.45; }
+  .rich-article p { margin: 0 0 0.9rem; color: #334155; }
   .rich-article a { color: #16284c; text-decoration: underline; text-underline-offset: 3px; }
   .rich-article a:hover { color: #b68d40; }
-  .rich-article .verdict { border-top: 2px solid #16284c; border-bottom: 1px solid #cbd5e1; padding: 16px 0; margin: 0 0 24px; font-family: 'Noto Serif JP', serif; font-size: clamp(1rem, 2vw, 1.16rem); line-height: 1.75; color: #16284c; }
+  .rich-article .verdict { background: #faf8f4; border-left: 4px solid #b68d40; border-radius: 0 16px 16px 0; padding: 16px 18px; margin: 0 0 20px; font-family: 'Noto Serif JP', serif; font-size: clamp(0.98rem, 1.9vw, 1.08rem); line-height: 1.78; color: #16284c; }
   .rich-article .verdict strong { color: #8c6239; }
-  .rich-article .diagram-frame { margin: 22px 0; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 12px; }
-  .rich-article .diagram-frame img { display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 8px; }
-  .rich-article figcaption { font-size: 12.5px; color: #64748b; line-height: 1.65; margin-top: 10px; }
-  .rich-article .scroll-hint { display: none; }
-  .rich-article .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 14px 0 24px; border: 1px solid #e2e8f0; border-radius: 12px; background: #ffffff; }
-  .rich-article table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.65; }
-  .rich-article thead th { background: #16284c; color: #ffffff; text-align: left; font-weight: 600; padding: 11px 12px; white-space: nowrap; font-size: 13px; }
-  .rich-article tbody td { padding: 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; color: #334155; }
+  .rich-article .diagram-frame { margin: 18px 0; background: #faf8f4; border: 1px solid #e8e3d9; border-radius: 16px; padding: 12px; }
+  .rich-article .diagram-frame img { display: block; width: 100%; height: auto; margin: 0 auto; border-radius: 10px; }
+  .rich-article figcaption { font-size: 12px; color: #64748b; line-height: 1.6; margin-top: 8px; text-align: center; }
+  .rich-article .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 10px; background: #ffffff; }
+  .rich-article table { width: 100%; min-width: 540px; border-collapse: collapse; font-size: 13.5px; line-height: 1.65; }
+  .rich-article thead th { background: #16284c; color: #ffffff; text-align: left; font-weight: 600; padding: 10px 12px; white-space: nowrap; font-size: 12.5px; }
+  .rich-article tbody td { padding: 10px 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; color: #334155; }
   .rich-article tbody tr:last-child td { border-bottom: none; }
   .rich-article .col-primary { font-weight: 700; color: #16284c; white-space: nowrap; background: #f8fafc; }
-  .rich-article .chart-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 18px 0 24px; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; }
-  .rich-article .chart-inner { min-width: 560px; }
-  .rich-article .band-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 14px; padding: 20px; margin: 22px 0; }
-  .rich-article .warn-box { background: #fffbeb; border-left: 4px solid #b68d40; border-radius: 0 12px 12px 0; padding: 16px 18px; margin: 18px 0; }
-  .rich-article .pull-quote { border-left: 4px solid #16284c; padding: 12px 18px; margin: 24px 0; background: #faf5eb; border-radius: 0 12px 12px 0; font-family: 'Noto Serif JP', serif; color: #16284c; font-size: 15.5px; line-height: 1.8; }
-  .rich-article .ref-list { padding-left: 1.25rem; font-size: 13.5px; color: #475569; line-height: 1.75; }
-  .rich-article .ref-list li { margin-bottom: 8px; word-break: break-word; }
-  @media (max-width: 640px) {
-    .rich-article { font-size: 16px; line-height: 1.88; }
-    .rich-article .scroll-hint { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #8c6239; background: #faf5eb; border: 1px solid #e5d5b5; padding: 4px 10px; border-radius: 999px; margin-bottom: 8px; }
-    .rich-article table { min-width: 580px; font-size: 13.5px; }
-    .rich-article thead th:first-child,
-    .rich-article tbody td:first-child { position: sticky; left: 0; z-index: 2; box-shadow: 2px 0 6px rgba(15, 23, 42, 0.08); }
-    .rich-article thead th:first-child { background: #16284c; }
-    .rich-article tbody td:first-child { background: #f8fafc; }
-  }
+  .rich-article .band-box { background: #faf8f4; border: 1px solid #e8e3d9; border-radius: 16px; padding: 18px; margin: 18px 0; }
+  .rich-article .warn-box { background: #fffbeb; border-left: 4px solid #b68d40; border-radius: 0 14px 14px 0; padding: 14px 16px; margin: 16px 0; }
+  .rich-article .pull-quote { border-left: 4px solid #16284c; padding: 12px 16px; margin: 20px 0; background: #faf5eb; border-radius: 0 14px 14px 0; font-family: 'Noto Serif JP', serif; color: #16284c; font-size: 15px; line-height: 1.8; }
+  .rich-article .ref-list { padding-left: 1.25rem; font-size: 12.5px; color: #475569; line-height: 1.75; }
+  .rich-article .ref-list li { margin-bottom: 6px; word-break: break-word; }
 </style>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalWebPage", "name": "脂漏性皮膚炎の鍼灸｜銀座そうぜん鍼灸院グループ", "description": "頭皮や顔など皮脂の多い部位に赤み・かゆみ・フケが出る脂漏性皮膚炎の原因と対策、血海・合谷・肩髎のツボを解説。銀座そうぜん鍼灸院でホルモン・自律神経バランスと肌代謝を整えます。", "url": "https://sozen-harikyu.github.io/sozen-portal/disease/seborrheic-dermatitis.html", "inLanguage": "ja", "about": {"@type": "MedicalCondition", "name": "脂漏性皮膚炎"}, "publisher": {"@type": "MedicalClinic", "name": "銀座そうぜん鍼灸院グループ", "url": "https://sozen-harikyu.github.io/sozen-portal/"}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "総合ポータル", "item": "https://sozen-harikyu.github.io/sozen-portal/"}, {"@type": "ListItem", "position": 2, "name": "症状・疾患から探す", "item": "https://sozen-harikyu.github.io/sozen-portal/disease/index.html"}, {"@type": "ListItem", "position": 3, "name": "脂漏性皮膚炎", "item": "https://sozen-harikyu.github.io/sozen-portal/disease/seborrheic-dermatitis.html"}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "皮膚科の塗り薬やローションと併用して問題ありませんか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、抗真菌薬やステロイド外用薬などの標準治療を継続しながら、再発の背景にある自律神経やホルモンバランスを整える目的で併用していただけます。"}}, {"@type": "Question", "name": "脂漏性皮膚炎の再発を防ぐために気をつけることは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "清潔と適切な保湿に加えて、ストレスを溜めないこと、十分な睡眠、紫外線対策、脂っこい食事を控える生活習慣が大切です。"}}]}</script>
 </head>
-<body class="min-h-screen antialiased pb-24 sm:pb-10">
-  <div class="max-w-3xl mx-auto px-3 sm:px-4 py-6 sm:py-10">
-    <nav class="mb-5 text-xs text-slate-500 flex flex-wrap items-center gap-2">
+<body class="min-h-screen antialiased pb-24 sm:pb-12">
+  <div class="max-w-3xl mx-auto px-3.5 sm:px-5 py-6 sm:py-9 space-y-6">
+    <nav class="text-xs text-slate-500 flex flex-wrap items-center gap-2">
       <a href="https://sozen-harikyu.github.io/sozen-portal/" class="hover:text-[#16284c] underline">総合ポータル</a><span>/</span>
       <a href="./index.html" class="hover:text-[#16284c] underline">症状・疾患から探す</a><span>/</span>
       <span class="text-[#16284c] font-medium">脂漏性皮膚炎</span>
     </nav>
-    <article class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-      <header class="bg-[#16284c] text-white px-5 sm:px-7 py-7">
-        <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-[#b68d40] text-white mb-3">皮膚のお悩み</span>
-        <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug">脂漏性皮膚炎の鍼灸</h1>
-        <p class="text-slate-200 text-sm mt-3 leading-relaxed">頭皮や顔など皮脂分泌が盛んな部位に、赤み・かゆみ・フケ・皮むけなどを繰り返す慢性的な湿疹です。</p>
-      </header>
-      <div class="p-5 sm:p-8">
-        <div class="rich-article"><div class="verdict">頭皮や顔など皮脂分泌が盛んな部位に、赤み・かゆみ・フケ・皮むけなどを繰り返す慢性的な湿疹です。（<a href="https://www.s-treatment.com/16598452841697" target="_blank" rel="noopener">銀座そうぜん鍼灸院 公式解説</a>）</div><div class="rounded-2xl overflow-hidden border border-slate-200 bg-[#faf5eb] mb-6"><img src="../images/diseases/cat_skin.png" alt="脂漏性皮膚炎の鍼灸イメージ" class="w-full max-h-80 object-cover mx-auto" /></div><section class="mb-7"><h2 class="!mt-6">このようなお悩みはありませんか？</h2><ul class="space-y-2.5 bg-slate-50 p-5 rounded-xl border border-slate-200 text-sm sm:text-base"><li class="flex items-start gap-2.5 text-slate-700"><span class="text-[#b68d40] font-bold">✓</span><span>頭皮のかゆみやフケが増え、洗髪しても改善しにくい</span></li><li class="flex items-start gap-2.5 text-slate-700"><span class="text-[#b68d40] font-bold">✓</span><span>鼻の脇や眉間・生え際などに赤みやカサカサした皮むけがある</span></li><li class="flex items-start gap-2.5 text-slate-700"><span class="text-[#b68d40] font-bold">✓</span><span>黄色っぽいベタついたかさぶたができることがある</span></li><li class="flex items-start gap-2.5 text-slate-700"><span class="text-[#b68d40] font-bold">✓</span><span>ストレスや睡眠不足、季節の変わり目に症状が再発しやすい</span></li></ul></section><section class="mb-7"><h2>原因・メカニズム</h2><p>脂漏性皮膚炎は、頭部や顔面など皮脂分泌が盛んな部位に発症する湿疹で、乳児から成人まで幅広い年齢層にみられます。皮膚の常在菌であるマラセチアの異常増殖や、自律神経・ホルモンバランスの乱れによる皮脂の過剰分泌、肌質、ストレス、紫外線、食生活の乱れなどが複合的に関与します。医療機関では抗真菌薬やステロイド外用薬、ビタミンB2・B6内服などで治療し、再発予防には生活習慣の見直しが不可欠です。</p></section><section class="mb-7"><h2>当院の施術アプローチ</h2><div class="space-y-3"><div class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm text-slate-700 text-sm sm:text-base leading-relaxed">1. ホルモンバランスを整え過剰な皮脂分泌を抑える血海や、自律神経と肌の新陳代謝を調整する合谷を中心にアプローチします</div><div class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm text-slate-700 text-sm sm:text-base leading-relaxed">2. 肌表面のトラブルを和らげる肩髎などを組み合わせ、首肩や頭皮の血流を促して回復しやすい皮膚環境を整えます</div><div class="p-4 rounded-xl border border-slate-200 bg-white shadow-sm text-slate-700 text-sm sm:text-base leading-relaxed">3. 皮膚科での薬物治療と並行し、適切な保湿・洗髪、ストレス管理、紫外線対策、ビタミンB群を意識した食生活をご提案します</div></div></section>
-<h2>皮膚のお悩みで代表的なツボとセルフケアの目安</h2>
-<p>実際の施術ではお一人おひとりの体質・症状に合わせて選穴しますが、皮膚症状（アトピー性皮膚炎・慢性蕁麻疹・掻痒感）の臨床でよく用いられる代表的な経穴（ツボ）は以下の通りです。</p>
-<figure class="diagram-frame"><img src="../images/diseases/cat_skin_acupoints.jpg" alt="皮膚のお悩みの代表的なツボ位置図解" loading="lazy" /><figcaption>図：皮膚の炎症・痒み・末梢循環と自律神経の調整に用いられる代表的なツボ（曲池・合谷・百虫窩・血海・築賓・三陰交）の位置目安。</figcaption></figure>
-<div class="scroll-hint">← 表は横にスワイプして見られます →</div>
-<div class="table-wrap">
-  <table>
-    <thead>
-      <tr>
-        <th>ツボ名（経穴）</th>
-        <th>位置の目安</th>
-        <th>主な狙い・役割</th>
-        <th>セルフケアの注意点</th>
-      </tr>
-    </thead>
-    <tbody><tr><td class="col-primary">曲池（きょくち）</td><td>肘を曲げた外側の横ジワ先端</td><td>皮膚の熱感・炎症・掻痒感の鎮静</td><td>肘に湿疹・びらん・掻き傷がある場合は直接触れない</td></tr><tr><td class="col-primary">血海（けっかい）</td><td>膝のお皿の内側上端から指3本分上</td><td>蕁麻疹・掻痒・末梢循環の調整</td><td>皮疹部の摩擦・温灸は痒みを増悪させるため回避</td></tr><tr><td class="col-primary">合谷（ごうこく）</td><td>手の甲、親指と人差し指の骨が交わる手前</td><td>顔面〜上半身の皮膚トラブル・自律神経調整</td><td>妊娠中の強刺激は避ける。手荒れ・亀裂時は押圧しない</td></tr><tr><td class="col-primary">三陰交（さんいんこう）</td><td>内くるぶし頂点から指4本分上、すね骨の後ろ際</td><td>乾燥肌・夜間掻痒・体質バランス調整</td><td>妊娠中の強刺激は避ける。保湿後に清潔な手で優しく</td></tr><tr><td class="col-primary">築賓（ちくひん）</td><td>内くるぶしから指7本分上、ふくらはぎ内側</td><td>慢性蕁麻疹・アレルギー体質・皮膚炎症緩和</td><td>強く揉まず心地よい圧で数秒キープ</td></tr><tr><td class="col-primary">百虫窩（ひゃくちゅうか）</td><td>血海からさらに指1本分ほど上</td><td>強い痒み・蕁麻疹・湿疹の鎮痒サポート</td><td>皮膚バリアを傷つけないよう必ず指の腹を使用</td></tr></tbody>
-  </table>
-</div>
 
-<h2>査読論文が示す「皮膚症状（アトピー性皮膚炎・慢性蕁麻疹・掻痒感）×鍼灸」の科学的エビデンス</h2>
-<p>個別疾患ごとの大規模試験が限られる領域も含め、国際的な医学データベース（PubMed・Cochrane等）で報告されている<strong>皮膚症状（アトピー性皮膚炎・慢性蕁麻疹・掻痒感）領域の代表的な査読済み鍼灸研究</strong>をまとめました（いずれも標準治療との併用や研究上の限界を含めて正確に掲載しています）。</p>
-<div class="scroll-hint">← 表は横にスワイプして見られます →</div>
-<div class="table-wrap">
-  <table>
-    <thead>
-      <tr>
-        <th>年・研究デザイン</th>
-        <th>対象・規模</th>
-        <th>主な結果と臨床的意義</th>
-        <th>限界・出典</th>
-      </tr>
-    </thead>
-    <tbody><tr><td class="col-primary">2023年 多施設3群RCT</td><td>慢性特発性蕁麻疹 330名（3大学病院）</td><td>4週時のUAS7変化量は真鍼-8.2 vs シャム-4.1 vs 待機-2.2と統計的有意差を確認。</td><td>最小臨床的重要差には未達・短期追跡。 <a href="https://pubmed.ncbi.nlm.nih.gov/37956431/" target="_blank" rel="noopener">Ann Intern Med (PMID: 37956431)</a></td></tr><tr><td class="col-primary">2024年 メタ解析</td><td>アトピー性皮膚炎 8 RCTs（n=463）</td><td>SCORAD（MD -10.61, p=0.004）、掻痒VAS（MD -14.71, p&lt;0.00001）、DLQI（p&lt;0.0001）が有意改善。</td><td>EASI・IgEは有意差なし、大規模検証が課題。 <a href="https://pubmed.ncbi.nlm.nih.gov/39638592/" target="_blank" rel="noopener">BMJ Open (PMID: 39638592)</a></td></tr><tr><td class="col-primary">2021年 シャム対照RCT</td><td>軽〜中等症アトピー性皮膚炎 36名（韓国）</td><td>4週時の総SCORAD変化は真鍼-11.83 vs シャム+0.45（P&lt;0.0001）、終了4週後も持続。</td><td>単施設・小規模（重症例への外挿は慎重）。 <a href="https://pubmed.ncbi.nlm.nih.gov/33926433/" target="_blank" rel="noopener">BMC Complement Med Ther (PMID: 33926433)</a></td></tr><tr><td class="col-primary">2023年 メタ解析</td><td>難治性掻痒（尿毒症性掻痒）7 RCTs（n=504）</td><td>通常治療比で有効率RR 1.28（P=0.003）、透析併用でRR 1.42（P=0.0002）と有意に掻痒軽減。</td><td>透析患者対象のため一般皮膚疾患への外挿に留意。 <a href="https://pubmed.ncbi.nlm.nih.gov/36055470/" target="_blank" rel="noopener">J Pain Symptom Manage (PMID: 36055470)</a></td></tr></tbody>
-  </table>
-</div>
+    <header class="bg-gradient-to-br from-[#16284c] via-[#1d3563] to-[#233d70] text-white rounded-3xl px-6 sm:px-8 py-7 sm:py-8 shadow-sm">
+      <div class="flex flex-wrap items-center gap-2 mb-3">
+        <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-[#b68d40] text-white">皮膚のお悩み</span>
+        
+      </div>
+      <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug tracking-tight">脂漏性皮膚炎の鍼灸</h1>
+      <p class="text-slate-200 text-sm sm:text-[15px] mt-3 leading-relaxed">頭皮や顔など皮脂分泌が盛んな部位に、赤み・かゆみ・フケ・皮むけなどを繰り返す慢性的な湿疹です。</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-6 pt-5 border-t border-white/15">
+        <a href="#sec-youtube" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">🎥 院長解説</a>
+        <a href="#sec-acupoints" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📌 ツボ・解説</a>
+        <a href="#sec-evidence" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📊 論文根拠</a>
+        <a href="#sec-faq" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">❓ よくある質問</a>
+      </div>
+    </header>
 
-<h2>医療機関の受診を最優先すべきサイン（レッドフラッグ）</h2>
-<div class="warn-box">
-  <p class="font-bold text-[#8c6239] text-sm sm:text-base mb-1">⚠ 専門医の受診・検査を最優先してください</p>
-  <p class="text-sm text-slate-700 mb-0">蕁麻疹と同時に唇・まぶた・喉の腫れや息苦しさ・めまいが出た場合（アナフィラキシー）、広範囲の水疱・皮膚剥離・高熱・粘膜ただれ（重症薬疹）、急激な発赤腫脹と発熱・膿（蜂窩織炎等の二次感染）、消えない紫斑がある場合は直ちに皮膚科・救急を受診してください。</p>
-</div>
+    <section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-5"><div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">まず知っておきたい要点と施術方針</h2></div><p class="text-sm sm:text-[15px] text-slate-700 leading-[1.85]">脂漏性皮膚炎は、頭部や顔面など皮脂分泌が盛んな部位に発症する湿疹で、乳児から成人まで幅広い年齢層にみられます。皮膚の常在菌であるマラセチアの異常増殖や、自律神経・ホルモンバランスの乱れによる皮脂の過剰分泌、肌質、ストレス、紫外線、食生活の乱れなどが複合的に関与します。医療機関では抗真菌薬やステロイド外用薬、ビタミンB2・B6内服などで治療し、再発予防には生活習慣の見直しが不可欠です。（<a href="https://www.s-treatment.com/16598452841697" target="_blank" rel="noopener" class="text-[#16284c] underline">公式解説</a>）</p><div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 sm:p-5"><p class="text-xs font-bold text-[#8c6239] mb-2.5">このようなお悩みはありませんか？</p><ul class="space-y-2"><li class="flex items-start gap-2 text-slate-700 text-sm"><span class="text-[#b68d40] font-bold">✓</span><span>頭皮のかゆみやフケが増え、洗髪しても改善しにくい</span></li><li class="flex items-start gap-2 text-slate-700 text-sm"><span class="text-[#b68d40] font-bold">✓</span><span>鼻の脇や眉間・生え際などに赤みやカサカサした皮むけがある</span></li><li class="flex items-start gap-2 text-slate-700 text-sm"><span class="text-[#b68d40] font-bold">✓</span><span>黄色っぽいベタついたかさぶたができることがある</span></li><li class="flex items-start gap-2 text-slate-700 text-sm"><span class="text-[#b68d40] font-bold">✓</span><span>ストレスや睡眠不足、季節の変わり目に症状が再発しやすい</span></li></ul></div><div class="space-y-2.5"><p class="text-xs font-bold text-[#16284c]">当院の施術アプローチ</p><div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 text-sm text-slate-700 leading-relaxed">1. ホルモンバランスを整え過剰な皮脂分泌を抑える血海や、自律神経と肌の新陳代謝を調整する合谷を中心にアプローチします</div><div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 text-sm text-slate-700 leading-relaxed">2. 肌表面のトラブルを和らげる肩髎などを組み合わせ、首肩や頭皮の血流を促して回復しやすい皮膚環境を整えます</div><div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 text-sm text-slate-700 leading-relaxed">3. 皮膚科での薬物治療と並行し、適切な保湿・洗髪、ストレス管理、紫外線対策、ビタミンB群を意識した食生活をご提案します</div></div></section>
+<section id="sec-youtube" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-4"><div class="flex items-center justify-between flex-wrap gap-2"><div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#0ea5e9] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">院長YouTube解説・関連動画</h2></div><span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#eef7fc] text-[#0369a1] border border-[#bae6fd]">公式チャンネル連動</span></div><div class="pt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600 border-t border-slate-100"><span>銀座そうぜん鍼灸院 公式YouTubeチャンネルで解説動画を配信中</span><a href="https://www.youtube.com/channel/UCY62Fl_Z19qeV4B2asWDlVg/search?query=%E8%84%82%E6%BC%8F%E6%80%A7%E7%9A%AE%E8%86%9A%E7%82%8E" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white font-semibold transition-colors">▶ 「脂漏性皮膚炎」の動画をチャンネルで探す</a></div></section>
 
-<h2>参考文献・出典</h2>
-<ol class="ref-list"><li>銀座そうぜん鍼灸院「<a href="https://www.s-treatment.com/16598452841697" target="_blank" rel="noopener">脂漏性皮膚炎の公式解説ページ</a>」</li><li>2023年 多施設3群RCT（慢性特発性蕁麻疹 330名（3大学病院））— <a href="https://pubmed.ncbi.nlm.nih.gov/37956431/" target="_blank" rel="noopener">Ann Intern Med (PMID: 37956431)</a></li><li>2024年 メタ解析（アトピー性皮膚炎 8 RCTs（n=463））— <a href="https://pubmed.ncbi.nlm.nih.gov/39638592/" target="_blank" rel="noopener">BMJ Open (PMID: 39638592)</a></li><li>2021年 シャム対照RCT（軽〜中等症アトピー性皮膚炎 36名（韓国））— <a href="https://pubmed.ncbi.nlm.nih.gov/33926433/" target="_blank" rel="noopener">BMC Complement Med Ther (PMID: 33926433)</a></li><li>2023年 メタ解析（難治性掻痒（尿毒症性掻痒）7 RCTs（n=504））— <a href="https://pubmed.ncbi.nlm.nih.gov/36055470/" target="_blank" rel="noopener">J Pain Symptom Manage (PMID: 36055470)</a></li></ol>
-</div><section class="mb-8 mt-8"><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c] mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-[#16284c] rounded-full inline-block"></span>よくある質問（FAQ）</h2><div class="space-y-3"><div class="rounded-xl border border-slate-200 p-4 bg-slate-50/70"><p class="font-semibold text-[#16284c] text-sm sm:text-base">Q. 皮膚科の塗り薬やローションと併用して問題ありませんか？</p><p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-[#b68d40] leading-relaxed">はい、抗真菌薬やステロイド外用薬などの標準治療を継続しながら、再発の背景にある自律神経やホルモンバランスを整える目的で併用していただけます。</p></div><div class="rounded-xl border border-slate-200 p-4 bg-slate-50/70"><p class="font-semibold text-[#16284c] text-sm sm:text-base">Q. 脂漏性皮膚炎の再発を防ぐために気をつけることは何ですか？</p><p class="text-slate-600 text-sm mt-2 pl-4 border-l-2 border-[#b68d40] leading-relaxed">清潔と適切な保湿に加えて、ストレスを溜めないこと、十分な睡眠、紫外線対策、脂っこい食事を控える生活習慣が大切です。</p></div></div></section>
-        <div class="flex flex-wrap gap-2 mb-6"><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#脂漏性皮膚炎</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#脂漏性湿疹</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#頭皮のフケ</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#顔の赤み</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#皮脂過剰</span><span class="px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 text-xs">#鍼灸</span></div>
-        <section class="mb-8 mt-8 pt-6 border-t border-slate-200"><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c] mb-3 flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full inline-block"></span>あわせて読まれる関連疾患（皮膚のお悩み）</h2><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><a href="./frey-syndrome.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">Frey症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">耳下腺手術や外傷の後、食事時に耳の前方や頬に発汗・赤みが出る症状です。専門医のケアと並行し、自律神経バランスを整えます。</p></a><a href="./rosacea-like-dermatitis.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">酒さ様皮膚炎</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">顔へのステロイド外用薬などの長期使用により、かゆみや灼熱感のある赤み・ニキビ様のぶつぶつが現れる皮膚炎です。</p></a><a href="./livedoid-vasculopathy.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">リベド血管症</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">膝から下や足関節周囲に網状の皮斑と強い痛みを伴う潰瘍を繰り返す難治性疾患です。皮膚科管理と併用し、潰瘍予防と回復を支えます。</p></a><a href="./pollen-dermatitis.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">花粉症皮膚炎</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">花粉が肌に付着することでまぶたや頬、首に乾燥・赤み・かゆみが起きる皮膚炎です。保湿と避粉に加え、4つのツボで体質を整えます。</p></a><a href="./pyoderma.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">膿皮症</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">黄色ブドウ球菌などの細菌感染で皮膚や皮下に膿が溜まる感染症です。抗菌薬や外科処置を最優先に、安定期の体質ケアを支えます。</p></a><a href="./polymyositis.html" class="group block rounded-xl border border-slate-200 bg-slate-50/70 hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">多発性筋炎</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">自己免疫が筋肉や皮膚を攻撃し筋力低下や倦怠感を起こす膠原病（指定難病）です。専門医治療を最優先に、安定期の体調維持を支えます。</p></a></div></section>
-        <div class="rounded-2xl bg-[#faf5eb] border border-[#e5d5b5] p-6 text-center space-y-3">
-          <p class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">おひとりで悩まず、まずはご相談ください</p>
-          <p class="text-xs sm:text-sm text-slate-600">銀座本院・川口・大宮・横浜・博多・田無の各院でご予約を承っております。</p>
-          <div class="flex flex-wrap justify-center gap-3 pt-2">
-            <a href="https://sozen-harikyu.github.io/sozen-portal/" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">ご予約へ進む（全国各院ポータル）→</a>
-            <a href="./index.html" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">← 疾患一覧に戻る</a>
+    <section id="sec-acupoints" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-5">
+      <div class="flex items-center gap-2">
+        <span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span>
+        <h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">皮膚のお悩みのツボ図解とセルフケア</h2>
+      </div>
+      <p class="text-sm text-slate-600 leading-relaxed">
+        実際の施術ではお一人おひとりの体質・症状に合わせて選穴しますが、皮膚症状（アトピー性皮膚炎・慢性蕁麻疹・掻痒感）の臨床でよく用いられる代表的なツボの目安です。
+      </p>
+      <figure class="rounded-2xl border border-slate-200 bg-[#faf8f4] p-3"><img src="../images/diseases/cat_skin_acupoints.jpg" alt="皮膚のお悩みの代表的なツボ位置図解" loading="lazy" class="w-full rounded-xl" /><figcaption class="text-xs text-slate-500 mt-2.5 text-center">図：皮膚の炎症・痒み・末梢循環と自律神経の調整に用いられる代表的なツボ（曲池・合谷・百虫窩・血海・築賓・三陰交）の位置目安。</figcaption></figure>
+      <details class="rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden">
+        <summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c] hover:bg-slate-100/70 transition-colors">
+          <span>📌 代表的なツボの詳細一覧表を開く（6穴）</span>
+          <span class="chev text-slate-400">▼</span>
+        </summary>
+        <div class="overflow-x-auto bg-white border-t border-slate-200">
+          <table class="w-full min-w-[540px] text-xs sm:text-sm text-left border-collapse">
+            <thead class="bg-[#16284c] text-white">
+              <tr><th class="p-3">ツボ名</th><th class="p-3">位置の目安</th><th class="p-3">主な狙い</th><th class="p-3">セルフケアの注意点</th></tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 text-slate-700"><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">曲池（きょくち）</td><td class="p-3">肘を曲げた外側の横ジワ先端</td><td class="p-3">皮膚の熱感・炎症・掻痒感の鎮静</td><td class="p-3">肘に湿疹・びらん・掻き傷がある場合は直接触れない</td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">血海（けっかい）</td><td class="p-3">膝のお皿の内側上端から指3本分上</td><td class="p-3">蕁麻疹・掻痒・末梢循環の調整</td><td class="p-3">皮疹部の摩擦・温灸は痒みを増悪させるため回避</td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">合谷（ごうこく）</td><td class="p-3">手の甲、親指と人差し指の骨が交わる手前</td><td class="p-3">顔面〜上半身の皮膚トラブル・自律神経調整</td><td class="p-3">妊娠中の強刺激は避ける。手荒れ・亀裂時は押圧しない</td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">三陰交（さんいんこう）</td><td class="p-3">内くるぶし頂点から指4本分上、すね骨の後ろ際</td><td class="p-3">乾燥肌・夜間掻痒・体質バランス調整</td><td class="p-3">妊娠中の強刺激は避ける。保湿後に清潔な手で優しく</td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">築賓（ちくひん）</td><td class="p-3">内くるぶしから指7本分上、ふくらはぎ内側</td><td class="p-3">慢性蕁麻疹・アレルギー体質・皮膚炎症緩和</td><td class="p-3">強く揉まず心地よい圧で数秒キープ</td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">百虫窩（ひゃくちゅうか）</td><td class="p-3">血海からさらに指1本分ほど上</td><td class="p-3">強い痒み・蕁麻疹・湿疹の鎮痒サポート</td><td class="p-3">皮膚バリアを傷つけないよう必ず指の腹を使用</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section id="sec-evidence" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-4">
+      <div class="flex items-center justify-between flex-wrap gap-2">
+        <div class="flex items-center gap-2">
+          <span class="w-1.5 h-5 bg-[#16284c] rounded-full"></span>
+          <h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">国際査読論文の科学的エビデンス</h2>
+        </div>
+        <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#faf5eb] text-[#8c6239] border border-[#e5d5b5]">PubMed / Cochrane 準拠</span>
+      </div>
+      <p class="text-sm text-slate-600 leading-relaxed">
+        国際的な医学データベース（PubMed・Cochrane等）で報告されている<strong>皮膚症状（アトピー性皮膚炎・慢性蕁麻疹・掻痒感）領域の代表的な査読済み鍼灸研究</strong>をまとめています（標準治療との併用や研究上の限界を含めて正確に掲載）。
+      </p>
+      <details class="rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden">
+        <summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c] hover:bg-slate-100/70 transition-colors">
+          <span>📚 査読論文データ・PubMed出典リンクを開く（4件）</span>
+          <span class="chev text-slate-400">▼</span>
+        </summary>
+        <div class="bg-white border-t border-slate-200 space-y-4 pb-4">
+          <div class="overflow-x-auto">
+            <table class="w-full min-w-[560px] text-xs sm:text-sm text-left border-collapse">
+              <thead class="bg-[#16284c] text-white">
+                <tr><th class="p-3">年・研究デザイン</th><th class="p-3">対象・規模</th><th class="p-3">主な結果</th><th class="p-3">限界・出典</th></tr>
+              </thead>
+              <tbody class="divide-y divide-slate-200 text-slate-700"><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">2023年 多施設3群RCT</td><td class="p-3">慢性特発性蕁麻疹 330名（3大学病院）</td><td class="p-3">4週時のUAS7変化量は真鍼-8.2 vs シャム-4.1 vs 待機-2.2と統計的有意差を確認。</td><td class="p-3">最小臨床的重要差には未達・短期追跡。 <a href="https://pubmed.ncbi.nlm.nih.gov/37956431/" target="_blank" rel="noopener" class="text-[#16284c] underline">Ann Intern Med (PMID: 37956431)</a></td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">2024年 メタ解析</td><td class="p-3">アトピー性皮膚炎 8 RCTs（n=463）</td><td class="p-3">SCORAD（MD -10.61, p=0.004）、掻痒VAS（MD -14.71, p&lt;0.00001）、DLQI（p&lt;0.0001）が有意改善。</td><td class="p-3">EASI・IgEは有意差なし、大規模検証が課題。 <a href="https://pubmed.ncbi.nlm.nih.gov/39638592/" target="_blank" rel="noopener" class="text-[#16284c] underline">BMJ Open (PMID: 39638592)</a></td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">2021年 シャム対照RCT</td><td class="p-3">軽〜中等症アトピー性皮膚炎 36名（韓国）</td><td class="p-3">4週時の総SCORAD変化は真鍼-11.83 vs シャム+0.45（P&lt;0.0001）、終了4週後も持続。</td><td class="p-3">単施設・小規模（重症例への外挿は慎重）。 <a href="https://pubmed.ncbi.nlm.nih.gov/33926433/" target="_blank" rel="noopener" class="text-[#16284c] underline">BMC Complement Med Ther (PMID: 33926433)</a></td></tr><tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">2023年 メタ解析</td><td class="p-3">難治性掻痒（尿毒症性掻痒）7 RCTs（n=504）</td><td class="p-3">通常治療比で有効率RR 1.28（P=0.003）、透析併用でRR 1.42（P=0.0002）と有意に掻痒軽減。</td><td class="p-3">透析患者対象のため一般皮膚疾患への外挿に留意。 <a href="https://pubmed.ncbi.nlm.nih.gov/36055470/" target="_blank" rel="noopener" class="text-[#16284c] underline">J Pain Symptom Manage (PMID: 36055470)</a></td></tr></tbody>
+            </table>
+          </div>
+          <div class="px-5">
+            <p class="text-xs font-bold text-[#16284c] mb-1.5">参考文献・出典</p>
+            <ol class="list-decimal pl-5 text-xs text-slate-600 space-y-1"><li>銀座そうぜん鍼灸院「<a href="https://www.s-treatment.com/16598452841697" target="_blank" rel="noopener" class="text-[#16284c] underline">脂漏性皮膚炎の公式解説ページ</a>」</li><li>2023年 多施設3群RCT（慢性特発性蕁麻疹 330名（3大学病院））— <a href="https://pubmed.ncbi.nlm.nih.gov/37956431/" target="_blank" rel="noopener" class="text-[#16284c] underline">Ann Intern Med (PMID: 37956431)</a></li><li>2024年 メタ解析（アトピー性皮膚炎 8 RCTs（n=463））— <a href="https://pubmed.ncbi.nlm.nih.gov/39638592/" target="_blank" rel="noopener" class="text-[#16284c] underline">BMJ Open (PMID: 39638592)</a></li><li>2021年 シャム対照RCT（軽〜中等症アトピー性皮膚炎 36名（韓国））— <a href="https://pubmed.ncbi.nlm.nih.gov/33926433/" target="_blank" rel="noopener" class="text-[#16284c] underline">BMC Complement Med Ther (PMID: 33926433)</a></li><li>2023年 メタ解析（難治性掻痒（尿毒症性掻痒）7 RCTs（n=504））— <a href="https://pubmed.ncbi.nlm.nih.gov/36055470/" target="_blank" rel="noopener" class="text-[#16284c] underline">J Pain Symptom Manage (PMID: 36055470)</a></li></ol>
           </div>
         </div>
+      </details>
+      <div class="rounded-2xl bg-[#fffbeb] border-l-4 border-[#b68d40] px-4 py-3.5 text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <strong class="text-[#8c6239]">⚠ 受診を最優先すべきサイン：</strong>蕁麻疹と同時に唇・まぶた・喉の腫れや息苦しさ・めまいが出た場合（アナフィラキシー）、広範囲の水疱・皮膚剥離・高熱・粘膜ただれ（重症薬疹）、急激な発赤腫脹と発熱・膿（蜂窩織炎等の二次感染）、消えない紫斑がある場合は直ちに皮膚科・救急を受診してください。
       </div>
-    </article>
+    </section>
+
+    <section id="sec-faq" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-3"><div class="flex items-center gap-2 mb-1"><span class="w-1.5 h-5 bg-[#16284c] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">よくある質問（FAQ）</h2></div><details class="rounded-2xl border border-slate-200 bg-[#faf8f4] overflow-hidden" open><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c]"><span>Q. 皮膚科の塗り薬やローションと併用して問題ありませんか？</span><span class="chev text-slate-400">▼</span></summary><div class="px-5 pb-4 pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 bg-white">はい、抗真菌薬やステロイド外用薬などの標準治療を継続しながら、再発の背景にある自律神経やホルモンバランスを整える目的で併用していただけます。</div></details><details class="rounded-2xl border border-slate-200 bg-[#faf8f4] overflow-hidden"><summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c]"><span>Q. 脂漏性皮膚炎の再発を防ぐために気をつけることは何ですか？</span><span class="chev text-slate-400">▼</span></summary><div class="px-5 pb-4 pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 bg-white">清潔と適切な保湿に加えて、ストレスを溜めないこと、十分な睡眠、紫外線対策、脂っこい食事を控える生活習慣が大切です。</div></details></section>
+
+    <div class="flex flex-wrap gap-2"><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#脂漏性皮膚炎</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#脂漏性湿疹</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#頭皮のフケ</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#顔の赤み</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#皮脂過剰</span><span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#鍼灸</span></div>
+    <section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-4"><div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span><h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">あわせて読まれる関連疾患（皮膚のお悩み）</h2></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3"><a href="./frey-syndrome.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">Frey症候群</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">耳下腺手術や外傷の後、食事時に耳の前方や頬に発汗・赤みが出る症状です。専門医のケアと並行し、自律神経バランスを整えます。</p></a><a href="./rosacea-like-dermatitis.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">酒さ様皮膚炎</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">顔へのステロイド外用薬などの長期使用により、かゆみや灼熱感のある赤み・ニキビ様のぶつぶつが現れる皮膚炎です。</p></a><a href="./livedoid-vasculopathy.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">リベド血管症</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">膝から下や足関節周囲に網状の皮斑と強い痛みを伴う潰瘍を繰り返す難治性疾患です。皮膚科管理と併用し、潰瘍予防と回復を支えます。</p></a><a href="./pollen-dermatitis.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">花粉症皮膚炎</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">花粉が肌に付着することでまぶたや頬、首に乾燥・赤み・かゆみが起きる皮膚炎です。保湿と避粉に加え、4つのツボで体質を整えます。</p></a><a href="./pyoderma.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">膿皮症</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">黄色ブドウ球菌などの細菌感染で皮膚や皮下に膿が溜まる感染症です。抗菌薬や外科処置を最優先に、安定期の体質ケアを支えます。</p></a><a href="./polymyositis.html" class="group block rounded-2xl border border-slate-200 bg-[#faf8f4] hover:bg-white hover:border-[#b68d40] p-3.5 transition-all"><div class="flex items-center justify-between gap-2"><span class="font-mincho font-bold text-sm text-[#16284c] group-hover:text-[#b68d40]">多発性筋炎</span><span class="text-xs text-slate-400 group-hover:text-[#b68d40] shrink-0">→</span></div><p class="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">自己免疫が筋肉や皮膚を攻撃し筋力低下や倦怠感を起こす膠原病（指定難病）です。専門医治療を最優先に、安定期の体調維持を支えます。</p></a></div></section>
+
+    <section class="rounded-3xl bg-[#faf5eb] border border-[#e5d5b5] p-6 sm:p-7 text-center space-y-3">
+      <p class="font-mincho text-lg font-bold text-[#16284c]">おひとりで悩まず、まずはご相談ください</p>
+      <p class="text-xs sm:text-sm text-slate-600">銀座本院・川口・大宮・横浜・博多・田無の各院でご予約を承っております。</p>
+      <div class="flex flex-wrap justify-center gap-3 pt-2">
+        <a href="https://sozen-harikyu.github.io/sozen-portal/" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">ご予約へ進む（全国各院ポータル）→</a>
+        <a href="./index.html" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">← 疾患一覧に戻る</a>
+      </div>
+    </section>
   </div>
+
   <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-slate-200 shadow-[0_-4px_16px_rgba(15,23,42,0.08)] px-3 py-2.5">
     <div class="max-w-lg mx-auto grid grid-cols-12 gap-2 items-center">
-      <a href="https://sozen-harikyu.github.io/sozen-portal/" class="col-span-6 py-2.5 px-3 rounded-full bg-[#16284c] text-white text-xs font-bold text-center shadow-sm active:scale-95 transition-transform">📅 空き確認・ご予約</a>
+      <a href="https://sozen-harikyu.github.io/sozen-portal/" class="col-span-6 py-2.5 px-3 rounded-full bg-[#16284c] text-white text-xs font-bold text-center shadow-sm">📅 空き確認・ご予約</a>
       <a href="../symptom-check.html" class="col-span-3 py-2.5 px-2 rounded-full bg-[#faf5eb] border border-[#e5d5b5] text-[#8c6239] text-[11px] font-bold text-center">🧭 症状ナビ</a>
       <a href="./index.html" class="col-span-3 py-2.5 px-2 rounded-full bg-slate-100 text-slate-700 text-[11px] font-semibold text-center">🔍 一覧</a>
     </div>

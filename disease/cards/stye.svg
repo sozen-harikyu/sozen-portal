@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="ものもらいの鍼灸解説">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b3b5c" />
+      <stop offset="100%" stop-color="#2b5887" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <rect x="497" y="75" width="126" height="126" rx="24" transform="rotate(36 500 110)" fill="#4f86b8" fill-opacity="0.15" /><circle cx="554" cy="247" r="65" fill="#2b5887" fill-opacity="0.30" />
+  <rect x="0" y="0" width="12" height="360" fill="#4f86b8" />
+  <rect x="44" y="42" width="120" height="30" rx="15" fill="#4f86b8" />
+  <text x="104.0" y="62" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">眼のお悩み</text>
+  <text x="596" y="62" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.85">D426</text>
+  <text x="44" y="164" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="38" font-weight="700" fill="#ffffff">ものもらい</text>
+  <line x1="44" y1="226" x2="180" y2="226" stroke="#4f86b8" stroke-width="3" stroke-linecap="round" />
+  <rect x="44" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="80.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#麦粒腫</text><rect x="126" y="258" width="110" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="181.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#まぶたの腫れ</text><rect x="246" y="258" width="110" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="301.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#マイボーム腺</text>
+  <text x="44" y="330" font-family="Noto Serif JP, serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.9">銀座そうぜん鍼灸院グループ｜症状・疾患解説</text>
+</svg>

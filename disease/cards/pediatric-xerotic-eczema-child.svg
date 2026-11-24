@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="小児乾燥性湿疹の鍼灸解説">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#244b5a" />
+      <stop offset="100%" stop-color="#356c80" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <circle cx="563" cy="94" r="75" fill="#d19344" fill-opacity="0.16" /><circle cx="524" cy="233" r="64" fill="#356c80" fill-opacity="0.28" /><circle cx="563" cy="94" r="46" fill="none" stroke="#d19344" stroke-opacity="0.35" stroke-width="1.5" />
+  <rect x="0" y="0" width="12" height="360" fill="#d19344" />
+  <rect x="44" y="42" width="120" height="30" rx="15" fill="#d19344" />
+  <text x="104.0" y="62" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">子供のお悩み</text>
+  <text x="596" y="62" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.85">D898</text>
+  <text x="44" y="164" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="38" font-weight="700" fill="#ffffff">小児乾燥性湿疹</text>
+  <line x1="44" y1="226" x2="180" y2="226" stroke="#d19344" stroke-width="3" stroke-linecap="round" />
+  <rect x="44" y="258" width="124" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="106.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#子ども 乾燥肌</text><rect x="178" y="258" width="110" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="233.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#湿疹 かゆみ</text><rect x="298" y="258" width="82" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="339.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#保湿ケア</text>
+  <text x="44" y="330" font-family="Noto Serif JP, serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.9">銀座そうぜん鍼灸院グループ｜症状・疾患解説</text>
+</svg>

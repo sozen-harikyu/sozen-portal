@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="一次性膜性増殖性糸球体腎炎の鍼灸解説">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#223c4e" />
+      <stop offset="100%" stop-color="#345973" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <rect x="450" y="37" width="135" height="135" rx="24" transform="rotate(17 500 110)" fill="#b58b45" fill-opacity="0.15" /><circle cx="490" cy="300" r="77" fill="#345973" fill-opacity="0.30" />
+  <rect x="0" y="0" width="12" height="360" fill="#b58b45" />
+  <rect x="44" y="42" width="132" height="30" rx="15" fill="#b58b45" />
+  <text x="110.0" y="62" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">泌尿器のお悩み</text>
+  <text x="596" y="62" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.85">D609</text>
+  <text x="44" y="148" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="30" font-weight="700" fill="#ffffff">一次性膜性増殖性糸球体腎</text><text x="44" y="190" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="30" font-weight="700" fill="#ffffff">炎</text>
+  <line x1="44" y1="226" x2="180" y2="226" stroke="#b58b45" stroke-width="3" stroke-linecap="round" />
+  <rect x="44" y="258" width="82" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="85.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#指定難病</text><rect x="136" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="172.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#蛋白尿</text><rect x="218" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="254.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#血尿</text>
+  <text x="44" y="330" font-family="Noto Serif JP, serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.9">銀座そうぜん鍼灸院グループ｜症状・疾患解説</text>
+</svg>
