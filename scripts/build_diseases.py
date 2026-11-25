@@ -1930,7 +1930,15 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
   {structured_ld_html}
 </head>
 <body class="min-h-screen antialiased pb-24 sm:pb-12">
-  <div class="max-w-3xl mx-auto px-3.5 sm:px-5 py-6 sm:py-9 space-y-6">
+  <div class="max-w-3xl mx-auto px-3.5 sm:px-5 py-5 sm:py-8 space-y-6">
+    <div class="text-center">
+      <div class="inline-flex flex-wrap justify-center items-center gap-1.5 bg-white p-1.5 rounded-2xl sm:rounded-full border border-[#e8e3d9] shadow-sm">
+        <a href="{e(PORTAL_URL)}" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:bg-[#faf5eb] hover:text-[#16284c] transition-colors">🏥 鍼灸院から探す</a>
+        <a href="{e(PORTAL_URL)}?tab=cases" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold text-[#16284c] hover:bg-[#faf5eb] transition-colors">✨ 臨床改善事例</a>
+        <a href="./index.html" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold bg-[#16284c] text-white shadow-sm">🌿 症状から探す</a>
+        <a href="../symptom-check.html" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold text-[#8c6239] hover:bg-[#faf5eb] transition-colors">🧭 30秒ナビ</a>
+      </div>
+    </div>
     <nav class="text-xs text-slate-500 flex flex-wrap items-center gap-2">
       <a href="{e(PORTAL_URL)}" class="hover:text-[#16284c] underline">🏥 鍼灸院ポータル</a><span>/</span>
       <a href="{e(PORTAL_URL)}?tab=cases" class="hover:text-[#16284c] underline">✨ 臨床改善事例</a><span>/</span>
@@ -2197,7 +2205,6 @@ def main() -> int:
             write_static_redirect_page(d["legacy_path"], d["slug"])
 
     (DISEASE_DIR / "index.html").write_text(render_index_html(diseases), encoding="utf-8")
-    ensure_portal_three_way_nav(len(diseases))
     (DISEASE_DIR / "diseases.json").write_text(json.dumps(diseases, ensure_ascii=False, indent=2), encoding="utf-8")
     (DISEASE_DIR / "legacy_redirects.json").write_text(json.dumps(legacy_map, ensure_ascii=False, indent=2), encoding="utf-8")
     (BASE_DIR / "sitemap.xml").write_text(render_sitemap(diseases), encoding="utf-8")
