@@ -1022,23 +1022,85 @@ def resolve_specialized_acupoint_profile(d: dict, base_ev: dict) -> dict:
     return merged
 
 
+def render_plan_b_visual_card(d: dict) -> str:
+    """案B：文字だらけSVGを廃止し、冒頭から専門ツボ図解＋4ステップ改善図解＋3要点チップを先出し表示する。"""
+    e = html.escape
+    ev_base = CATEGORY_EVIDENCE.get(d["category"], {})
+    ev = resolve_specialized_acupoint_profile(d, ev_base) if ev_base else {}
+
+    diag_file = ev.get("diagram", "")
+    diag_src = f"../images/diseases/{diag_file}" if diag_file and (IMAGES_DIR / diag_file).exists() else ""
+    diag_caption = ev.get("diagram_caption", f"{d['category']}の代表的なツボ位置")
+
+    mech_img_file = CATEGORY_MECH_IMAGE.get(d["category"], "mech_brain_autonomic.jpg")
+    mech_img_src = f"../images/diseases/{mech_img_file}" if (IMAGES_DIR / mech_img_file).exists() else f"./mechanisms/{d['slug']}.svg"
+
+    symptoms = split_items(d["symptoms"])
+    top_symptom = symptoms[0] if symptoms else d["name"]
+    if len(top_symptom) > 22:
+        top_symptom = top_symptom[:21] + "…"
+
+    acupoints = ev.get("acupoints", [])
+    top_points = "・".join(row[0] for row in acupoints[:2]) if acupoints else "原因部位・経絡調整"
+
+    left_fig = (
+        f'<div class="space-y-2">'
+        f'<div class="flex items-center justify-between gap-2">'
+        f'<span class="text-xs font-bold text-[#16284c]">📍 アプローチする部位・ツボ</span>'
+        f'<span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#faf5eb] text-[#8c6239] border border-[#e5d5b5]">専門ツボ図解</span>'
+        f'</div>'
+        f'<figure class="rounded-2xl border border-[#e8e3d9] bg-white p-2">'
+        f'<img src="{e(diag_src)}" alt="{e(d["name"])}の代表的なツボ図解" class="w-full h-auto rounded-xl" />'
+        f'<figcaption class="text-[11px] text-slate-500 mt-1.5 text-center leading-snug">{e(diag_caption)}</figcaption>'
+        f'</figure></div>'
+        if diag_src else ""
+    )
+
+    right_fig = (
+        f'<div class="space-y-2">'
+        f'<div class="flex items-center justify-between gap-2">'
+        f'<span class="text-xs font-bold text-[#16284c]">🔄 鍼灸で整える4ステップ</span>'
+        f'<span class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-[#faf5eb] text-[#8c6239] border border-[#e5d5b5]">改善メカニズム</span>'
+        f'</div>'
+        f'<figure class="rounded-2xl border border-[#e8e3d9] bg-white p-2">'
+        f'<img src="{e(mech_img_src)}" alt="{e(d["name"])}に対する鍼灸の改善ステップ図解" class="w-full h-auto rounded-xl" />'
+        f'<figcaption class="text-[11px] text-slate-500 mt-1.5 text-center leading-snug">神経・血流・筋緊張を段階的に整える流れ</figcaption>'
+        f'</figure></div>'
+    )
+
+    grid_cls = "grid sm:grid-cols-2 gap-4" if left_fig else "grid grid-cols-1 gap-4"
+
+    return f"""
+    <section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-5 sm:p-6 space-y-4">
+      <div class="{grid_cls}">
+        {left_fig}
+        {right_fig}
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+        <div class="p-3 rounded-2xl bg-[#faf8f4] border border-[#ece6da] text-center">
+          <div class="text-[10px] font-bold text-[#8c6239]">よくあるサイン</div>
+          <div class="text-xs font-bold text-[#16284c] mt-1 leading-snug">{e(top_symptom)}</div>
+        </div>
+        <div class="p-3 rounded-2xl bg-[#faf8f4] border border-[#ece6da] text-center">
+          <div class="text-[10px] font-bold text-[#8c6239]">代表的な使用ツボ</div>
+          <div class="text-xs font-bold text-[#16284c] mt-1 leading-snug">{e(top_points)}</div>
+        </div>
+        <div class="p-3 rounded-2xl bg-[#faf8f4] border border-[#ece6da] text-center">
+          <div class="text-[10px] font-bold text-[#8c6239]">医療機関との併用</div>
+          <div class="text-xs font-bold text-[#16284c] mt-1 leading-snug">標準治療・診察と併用OK</div>
+        </div>
+      </div>
+    </section>
+    """
+
+
 def render_category_cards(d: dict) -> str:
-    """ツボ図解カード＋論文エビデンスカード（表・文献は折りたたみ収納）を生成する。"""
+    """案B：ツボ詳細一覧・論文エビデンスを折りたたみ収納し、受診最優先サインを見やすく配置する。"""
     ev = CATEGORY_EVIDENCE.get(d["category"])
     if not ev:
         return ""
     ev = resolve_specialized_acupoint_profile(d, ev)
     e = html.escape
-
-    diag_file = ev.get("diagram", "")
-    diag_html = ""
-    if diag_file and (IMAGES_DIR / diag_file).exists():
-        diag_html = (
-            f'<figure class="rounded-2xl border border-slate-200 bg-[#faf8f4] p-3">'
-            f'<img src="../images/diseases/{e(diag_file)}" alt="{e(d["category"])}の代表的なツボ位置図解" loading="lazy" class="w-full rounded-xl" />'
-            f'<figcaption class="text-xs text-slate-500 mt-2.5 text-center">{e(ev.get("diagram_caption", ""))}</figcaption>'
-            f'</figure>'
-        )
 
     acu_rows = "".join(
         f'<tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">{e(row[0])}</td><td class="p-3">{e(row[1])}</td><td class="p-3">{e(row[2])}</td><td class="p-3">{e(row[3])}</td></tr>'
@@ -1063,66 +1125,59 @@ def render_category_cards(d: dict) -> str:
     paper_cnt = len(ev.get("papers", []))
 
     return f'''
-    <section id="sec-acupoints" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-5">
-      <div class="flex items-center gap-2">
-        <span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span>
-        <h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">{e(ev.get("heading", d["category"] + "のツボ図解とセルフケア"))}</h2>
-      </div>
-      <p class="text-sm text-slate-600 leading-relaxed">
-        実際の施術ではお一人おひとりの体質・症状に合わせて選穴しますが、{e(ev["domain_label"])}の臨床でよく用いられる代表的なツボの目安です。
-      </p>
-      {diag_html}
-      <details class="rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden">
-        <summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c] hover:bg-slate-100/70 transition-colors">
-          <span>📌 代表的なツボの詳細一覧表を開く（{len(ev.get("acupoints", []))}穴）</span>
-          <span class="chev text-slate-400">▼</span>
-        </summary>
-        <div class="overflow-x-auto bg-white border-t border-slate-200">
+    <details id="sec-acupoints" class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">
+      <summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">
+        <div>
+          <p class="text-[11px] font-bold text-[#b68d40]">04. ツボ詳細・セルフケア一覧</p>
+          <h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">{e(ev.get("heading", d["category"] + "のツボ一覧"))}（{len(ev.get("acupoints", []))}穴）</h2>
+        </div>
+        <span class="chev text-slate-400 shrink-0">▼</span>
+      </summary>
+      <div class="px-5 pb-5 pt-3 border-t border-[#ece6da] space-y-3">
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          実際の施術ではお一人おひとりの体質・症状に合わせて選穴しますが、{e(ev["domain_label"])}の臨床でよく用いられる代表的なツボの目安です。
+        </p>
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
           <table class="w-full min-w-[540px] text-xs sm:text-sm text-left border-collapse">
             <thead class="bg-[#16284c] text-white">
               <tr><th class="p-3">ツボ名</th><th class="p-3">位置の目安</th><th class="p-3">主な狙い</th><th class="p-3">セルフケアの注意点</th></tr>
             </thead>
-            <tbody class="divide-y divide-slate-200 text-slate-700">{acu_rows}</tbody>
+            <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">{acu_rows}</tbody>
           </table>
         </div>
-      </details>
-    </section>
+      </div>
+    </details>
 
-    <section id="sec-evidence" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-4">
-      <div class="flex items-center justify-between flex-wrap gap-2">
-        <div class="flex items-center gap-2">
-          <span class="w-1.5 h-5 bg-[#16284c] rounded-full"></span>
-          <h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">国際査読論文の科学的エビデンス</h2>
+    <details id="sec-evidence" class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">
+      <summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">
+        <div>
+          <p class="text-[11px] font-bold text-[#b68d40]">05. 医学的根拠・国際査読論文（PubMed / Cochrane）</p>
+          <h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">科学的エビデンス・出典リンク一覧（{paper_cnt}件）</h2>
         </div>
-        <span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#faf5eb] text-[#8c6239] border border-[#e5d5b5]">PubMed / Cochrane 準拠</span>
-      </div>
-      <p class="text-sm text-slate-600 leading-relaxed">
-        国際的な医学データベース（PubMed・Cochrane等）で報告されている<strong>{e(ev["domain_label"])}領域の代表的な査読済み鍼灸研究</strong>をまとめています（標準治療との併用や研究上の限界を含めて正確に掲載）。
-      </p>
-      <details class="rounded-2xl border border-slate-200 bg-slate-50/70 overflow-hidden">
-        <summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c] hover:bg-slate-100/70 transition-colors">
-          <span>📚 査読論文データ・PubMed出典リンクを開く（{paper_cnt}件）</span>
-          <span class="chev text-slate-400">▼</span>
-        </summary>
-        <div class="bg-white border-t border-slate-200 space-y-4 pb-4">
-          <div class="overflow-x-auto">
-            <table class="w-full min-w-[560px] text-xs sm:text-sm text-left border-collapse">
-              <thead class="bg-[#16284c] text-white">
-                <tr><th class="p-3">年・研究デザイン</th><th class="p-3">対象・規模</th><th class="p-3">主な結果</th><th class="p-3">限界・出典</th></tr>
-              </thead>
-              <tbody class="divide-y divide-slate-200 text-slate-700">{paper_rows}</tbody>
-            </table>
-          </div>
-          <div class="px-5">
-            <p class="text-xs font-bold text-[#16284c] mb-1.5">参考文献・出典</p>
-            <ol class="list-decimal pl-5 text-xs text-slate-600 space-y-1">{"".join(ref_items)}</ol>
-          </div>
+        <span class="chev text-slate-400 shrink-0">▼</span>
+      </summary>
+      <div class="px-5 pb-5 pt-3 border-t border-[#ece6da] space-y-4">
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          国際的な医学データベース（PubMed・Cochrane等）で報告されている<strong>{e(ev["domain_label"])}領域の代表的な査読済み鍼灸研究</strong>をまとめています（標準治療との併用や研究上の限界を含めて正確に掲載）。
+        </p>
+        <div class="overflow-x-auto rounded-xl border border-slate-200">
+          <table class="w-full min-w-[560px] text-xs sm:text-sm text-left border-collapse">
+            <thead class="bg-[#16284c] text-white">
+              <tr><th class="p-3">年・研究デザイン</th><th class="p-3">対象・規模</th><th class="p-3">主な結果</th><th class="p-3">限界・出典</th></tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 text-slate-700 bg-white">{paper_rows}</tbody>
+          </table>
         </div>
-      </details>
-      <div class="rounded-2xl bg-[#fffbeb] border-l-4 border-[#b68d40] px-4 py-3.5 text-xs sm:text-sm text-slate-700 leading-relaxed">
-        <strong class="text-[#8c6239]">⚠ 受診を最優先すべきサイン：</strong>{e(ev["red_flags"])}
+        <div>
+          <p class="text-xs font-bold text-[#16284c] mb-1.5">参考文献・出典</p>
+          <ol class="list-decimal pl-5 text-xs text-slate-600 space-y-1">{"".join(ref_items)}</ol>
+        </div>
       </div>
-    </section>
+    </details>
+
+    <div class="rounded-2xl bg-[#fffbeb] border-l-4 border-[#b68d40] px-4 py-3.5 text-xs sm:text-sm text-slate-700 leading-relaxed">
+      <strong class="text-[#8c6239]">⚠ 受診を最優先すべきサイン：</strong>{e(ev["red_flags"])}
+    </div>
 '''
 
 
@@ -1846,37 +1901,44 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
     structured_ld_html = "\n  ".join(ld_blocks)
     og_image_meta = f'<meta property="og:image" content="{e(og_image)}" />' if og_image else ""
 
-    # よくある質問（アコーディオンカード）
+    # よくある質問（案B：アコーディオンでスッキリ収納）
     faq_card_html = ""
     if faqs:
         faq_items = []
-        for idx, f in enumerate(faqs):
-            open_attr = " open" if idx == 0 else ""
+        for f in faqs:
             faq_items.append(
-                f'<details class="rounded-2xl border border-slate-200 bg-[#faf8f4] overflow-hidden"{open_attr}>'
-                f'<summary class="px-5 py-3.5 flex items-center justify-between text-sm font-semibold text-[#16284c]">'
-                f'<span>Q. {e(f["q"])}</span><span class="chev text-slate-400">▼</span></summary>'
-                f'<div class="px-5 pb-4 pt-3 text-sm text-slate-600 leading-relaxed border-t border-slate-200/70 bg-white">{e(f["a"])}</div>'
-                f'</details>'
+                f'<div class="rounded-xl border border-slate-200 bg-[#faf8f4] p-4 space-y-1.5">'
+                f'<p class="text-xs sm:text-sm font-bold text-[#16284c]">Q. {e(f["q"])}</p>'
+                f'<p class="text-xs sm:text-sm text-slate-600 leading-relaxed">{e(f["a"])}</p>'
+                f'</div>'
             )
         faq_card_html = (
-            f'<section id="sec-faq" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-3">'
-            f'<div class="flex items-center gap-2 mb-1"><span class="w-1.5 h-5 bg-[#16284c] rounded-full"></span>'
-            f'<h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">よくある質問（FAQ）</h2></div>'
-            f'{"".join(faq_items)}</section>'
+            f'<details id="sec-faq" class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">'
+            f'<summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">'
+            f'<div><p class="text-[11px] font-bold text-[#b68d40]">06. よくある質問（FAQ）</p>'
+            f'<h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">よくあるご質問を見る（{len(faqs)}件）</h2></div>'
+            f'<span class="chev text-slate-400 shrink-0">▼</span></summary>'
+            f'<div class="px-5 pb-5 pt-3 border-t border-[#ece6da] space-y-2.5">{"".join(faq_items)}</div>'
+            f'</details>'
         )
 
     tags_html = "".join(f'<span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#{e(t)}</span>' for t in tags)
     related_html = render_related_html(pick_related_diseases(d, by_category, limit=6), d["category"])
 
+    visual_hero_card = render_plan_b_visual_card(d)
     mech_block_html = render_mechanism_block(d)
     if rich_html:
         rich_with_mech = inject_mechanism_into_rich_html(rich_html, mech_block_html)
         content_cards = (
+            f'{visual_hero_card}'
             f'{yt_card_html}'
-            f'<section id="sec-acupoints" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7">'
-            f'<div class="rich-article">{rich_with_mech}</div>'
-            f'</section>'
+            f'<details id="sec-acupoints" class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden" open>'
+            f'<summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">'
+            f'<div><p class="text-[11px] font-bold text-[#b68d40]">詳細解説</p>'
+            f'<h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">{e(d["name"])}の詳しい医学解説・施術方針</h2></div>'
+            f'<span class="chev text-slate-400 shrink-0">▼</span></summary>'
+            f'<div class="px-5 sm:px-7 pb-6 pt-4 border-t border-[#ece6da] rich-article">{rich_with_mech}</div>'
+            f'</details>'
         )
     else:
         src_link = (
@@ -1891,18 +1953,50 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
             f'<div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 text-sm text-slate-700 leading-relaxed">{e(a)}</div>'
             for a in approaches
         )
-        overview_card = (
-            f'<section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-5">'
-            f'<div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span>'
-            f'<h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">まず知っておきたい要点と改善の流れ</h2></div>'
-            f'{render_page_summary_figure(d)}'
+        acc_mech = (
+            f'<details id="sec-mechanism" class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">'
+            f'<summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">'
+            f'<div><p class="text-[11px] font-bold text-[#b68d40]">01. 原因とメカニズム</p>'
+            f'<h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">なぜ症状が起きるのか・鍼灸の作用機序を読む</h2></div>'
+            f'<span class="chev text-slate-400 shrink-0">▼</span></summary>'
+            f'<div class="px-5 pb-5 pt-4 border-t border-[#ece6da] space-y-4">'
             f'<p class="text-sm sm:text-[15px] text-slate-700 leading-[1.85]">{e(d["mechanism"])}{src_link}</p>'
-            f'{f"""<div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 sm:p-5"><p class="text-xs font-bold text-[#8c6239] mb-2.5">このようなお悩みはありませんか？</p><ul class="space-y-2">{sym_lis}</ul></div>""" if sym_lis else ""}'
-            f'{f"""<div class="space-y-2.5"><p class="text-xs font-bold text-[#16284c]">当院の施術アプローチ・改善の流れ</p>{app_cards}</div>""" if app_cards else ""}'
             f'{mech_block_html}'
-            f'</section>'
+            f'</div></details>'
         )
-        content_cards = overview_card + "\n" + yt_card_html + "\n" + render_category_cards(d)
+        acc_sym = (
+            f'<details class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">'
+            f'<summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">'
+            f'<div><p class="text-[11px] font-bold text-[#b68d40]">02. よくあるお悩み</p>'
+            f'<h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">このような症状はありませんか？（{len(symptoms)}項目）</h2></div>'
+            f'<span class="chev text-slate-400 shrink-0">▼</span></summary>'
+            f'<div class="px-5 pb-5 pt-4 border-t border-[#ece6da]"><ul class="space-y-2">{sym_lis}</ul></div>'
+            f'</details>'
+            if sym_lis else ""
+        )
+        acc_app = (
+            f'<details class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">'
+            f'<summary class="px-5 py-4 flex items-center justify-between gap-3 cursor-pointer hover:bg-[#faf8f4] transition-colors">'
+            f'<div><p class="text-[11px] font-bold text-[#b68d40]">03. 当院の施術アプローチ</p>'
+            f'<h2 class="font-mincho text-sm sm:text-base font-bold text-[#16284c]">施術の進め方・改善のポイントを見る</h2></div>'
+            f'<span class="chev text-slate-400 shrink-0">▼</span></summary>'
+            f'<div class="px-5 pb-5 pt-4 border-t border-[#ece6da] space-y-2.5">{app_cards}</div>'
+            f'</details>'
+            if app_cards else ""
+        )
+        accordion_intro = '<p class="text-xs font-semibold text-slate-500 px-1 pt-1">▼ 詳しく知りたい項目だけタップして開けます（全項目の医学解説を収録）</p>'
+        content_cards = (
+            visual_hero_card
+            + "\n"
+            + yt_card_html
+            + "\n<div class=\"space-y-2.5\">"
+            + accordion_intro
+            + acc_mech
+            + acc_sym
+            + acc_app
+            + render_category_cards(d)
+            + "</div>"
+        )
 
     yt_badge_hero = '<span class="px-3 py-1 rounded-full text-[11px] font-medium bg-white/15 text-white/95">🎥 院長YouTube解説あり</span>' if d["has_youtube"] else ""
 
@@ -1996,6 +2090,14 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
       <a href="./index.html" class="col-span-2 py-2.5 px-1 rounded-full bg-slate-100 text-slate-700 text-[11px] font-semibold text-center">🔍 一覧</a>
     </div>
   </div>
+  <script>
+    document.querySelectorAll('a[href^="#sec-"]').forEach(function(a){{
+      a.addEventListener('click', function(){{
+        var target = document.querySelector(a.getAttribute('href'));
+        if (target && target.tagName === 'DETAILS') target.open = true;
+      }});
+    }});
+  </script>
 </body>
 </html>'''
 
@@ -2199,7 +2301,7 @@ def main() -> int:
     for d in diseases:
         (cards_dir / f"{d['slug']}.svg").write_text(generate_unique_card_svg(d), encoding="utf-8")
         (mech_dir / f"{d['slug']}.svg").write_text(generate_mechanism_svg(d), encoding="utf-8")
-        (SUMMARIES_DIR / f"{d['slug']}-summary.svg").write_text(build_page_summary_svg(d), encoding="utf-8")
+        # 案B移行により旧文字SVG生成をスキップ（実物イラスト2枚＋HTML3要約カードへ統合）
         (DISEASE_DIR / f"{d['slug']}.html").write_text(render_detail_html(d, by_category), encoding="utf-8")
         if GENERATE_STATIC_REDIRECTS and d["legacy_path"]:
             write_static_redirect_page(d["legacy_path"], d["slug"])
