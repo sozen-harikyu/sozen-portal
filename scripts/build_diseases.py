@@ -256,10 +256,11 @@ def _render_yt_chunk(lines: list[str], slug: str) -> str:
         img_match = re.match(r"^\[画像\s*[:：]\s*([^\]|]+?)(?:\s*\|\s*([^\]]+))?\]$", line)
         if img_match:
             flush_para()
+            # 旧サイト(s-treatment.com)由来のフリー素材画像はすべて除外し、当院独自の図解画像のみ許可
             fname = img_match.group(1).strip()
             caption = (img_match.group(2) or "").strip()
-            src = resolve_youtube_image_src(fname, slug)
-            if src:
+            if (IMAGES_DIR / fname).exists() and not fname.startswith(("http://", "https://")):
+                src = f"../images/diseases/{fname}"
                 cap_html = f'<figcaption class="text-xs text-slate-500 text-center mt-2">{e(caption)}</figcaption>' if caption else ""
                 blocks.append(
                     f'<figure class="my-4 max-w-lg mx-auto">'
@@ -1050,9 +1051,9 @@ def render_category_cards(d: dict) -> str:
     )
 
     ref_items = []
-    if d.get("source_url") and d["source_url"].startswith("http"):
+    if d.get("source_url") and d["source_url"].startswith("http") and "s-treatment.com" not in d["source_url"].lower():
         ref_items.append(
-            f'<li>銀座そうぜん鍼灸院「<a href="{e(d["source_url"])}" target="_blank" rel="noopener" class="text-[#16284c] underline">{e(d["name"])}の公式解説ページ</a>」</li>'
+            f'<li>一次論文・公的出典：<a href="{e(d["source_url"])}" target="_blank" rel="noopener" class="text-[#16284c] underline">{e(d["name"])}の根拠文献</a></li>'
         )
     for p in ev.get("papers", []):
         ref_items.append(
@@ -1600,6 +1601,166 @@ def inject_mechanism_into_rich_html(rich_html: str, mech_block: str) -> str:
     return rich_html + "\n" + mech_block
 
 
+
+
+SUMMARIES_DIR = DISEASE_DIR / "summaries"
+
+
+def _wrap_jp(text: str, width: int = 24, max_lines: int = 3) -> list[str]:
+    clean = re.sub(r"\s+", " ", (text or "").replace("※", " ※")).strip()
+    if not clean:
+        return []
+    lines = []
+    cur = ""
+    for ch in clean:
+        cur += ch
+        if len(cur) >= width:
+            lines.append(cur)
+            cur = ""
+            if len(lines) >= max_lines:
+                break
+    if cur and len(lines) < max_lines:
+        lines.append(cur)
+    if len(clean) > sum(len(l) for l in lines) and lines:
+        lines[-1] = lines[-1][:-1] + "…"
+    return lines
+
+
+def build_page_summary_svg(d: dict) -> str:
+    """各疾患ページの文章（要約・症状チェック・原因/施術方針）と100%整合する要点まとめ図解SVGを生成する。"""
+    e = html.escape
+    accent, gold, tint, dark = CATEGORY_PALETTES.get(d["category"], ("#16284c", "#b68d40", "#f6f4ef", "#233d70"))
+    title_lines = _wrap_jp(d["name"], width=18, max_lines=2)
+    summary_lines = _wrap_jp(d.get("summary") or d.get("meta_description") or "", width=36, max_lines=2)
+    symptoms = split_items(d.get("symptoms", ""))[:3]
+    mech_lines = _wrap_jp(d.get("mechanism", ""), width=22, max_lines=4)
+    app_lines = _wrap_jp(d.get("approach", ""), width=22, max_lines=4)
+
+    title_y = 112 if len(title_lines) == 1 else 96
+    title_svg = "".join(
+        f'<text x="56" y="{title_y + i * 44}" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">{e(ln)}</text>'
+        for i, ln in enumerate(title_lines)
+    )
+    sum_y = 166 if len(title_lines) == 1 else 176
+    sum_svg = "".join(
+        f'<text x="56" y="{sum_y + i * 26}" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">{e(ln)}</text>'
+        for i, ln in enumerate(summary_lines)
+    )
+
+    sym_svg_parts = []
+    sy = 315
+    for sym in (symptoms or ["気になる症状やお悩みに合わせて丁寧に問診・評価します"]):
+        wrapped = _wrap_jp(sym, width=18, max_lines=2)
+        sym_svg_parts.append(f'<circle cx="76" cy="{sy - 6}" r="5" fill="{gold}"/>')
+        for j, ln in enumerate(wrapped):
+            sym_svg_parts.append(
+                f'<text x="92" y="{sy + j * 24}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">{e(ln)}</text>'
+            )
+        sy += 24 * len(wrapped) + 18
+
+    mech_svg = "".join(
+        f'<text x="444" y="{315 + i * 28}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">{e(ln)}</text>'
+        for i, ln in enumerate(mech_lines or ["神経・血流・自律神経のバランスから要因を整理します。"])
+    )
+    app_svg = "".join(
+        f'<text x="824" y="{315 + i * 28}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">{e(ln)}</text>'
+        for i, ln in enumerate(app_lines or ["体質と経過に合わせた低刺激鍼灸で回復力を支えます。"])
+    )
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="{e(d['name'])}の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="{accent}"/>
+      <stop offset="100%" stop-color="{dark}"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="{gold}"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">{e(d['category'])}｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  {title_svg}
+  {sum_svg}
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="{tint}"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="{accent}">1. 主な症状・お悩み</text>
+  {''.join(sym_svg_parts)}
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="{tint}"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="{accent}">2. 原因・メカニズム</text>
+  {mech_svg}
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="{tint}"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="{accent}">3. 当院の施術アプローチ</text>
+  {app_svg}
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>"""
+
+
+def render_page_summary_figure(d: dict) -> str:
+    e = html.escape
+    return (
+        f'<figure class="rounded-2xl border border-[#e5dfd3] bg-[#faf8f4] p-2.5 sm:p-3">'
+        f'<img src="./summaries/{e(d["slug"])}-summary.svg" alt="{e(d["name"])}の要点まとめ図解" loading="lazy" class="w-full h-auto rounded-xl" />'
+        f'<figcaption class="text-[11px] sm:text-xs text-slate-500 mt-2 text-center">図：{e(d["name"])}の要点まとめ（症状・原因・当院の施術方針）</figcaption>'
+        f'</figure>'
+    )
+
+
+def strip_legacy_stock_images(html_text: str) -> str:
+    """旧サイト(s-treatment.com)やimages/youtube/由来のフリー素材imgタグと旧s-treatment.comリンクを除外する。"""
+    def _repl_img(m: re.Match) -> str:
+        tag = m.group(0)
+        if "s-treatment.com" in tag or "images/youtube/" in tag:
+            return ""
+        return tag
+    out = re.sub(r"<img\b[^>]*>", _repl_img, html_text, flags=re.IGNORECASE)
+    out = re.sub(r'<a\b[^>]*href=["\']https?://[^"\']*s-treatment\.com[^"\']*["\'][^>]*>(.*?)</a>', r"\1", out, flags=re.IGNORECASE | re.DOTALL)
+    return out
+
+
+def ensure_portal_three_way_nav(total_diseases: int) -> None:
+    """トップページ(index.html)へ三者動線（鍼灸院↔臨床改善事例↔1,200疾患解説）と?tab=cases自動切替を安全に組み込む。"""
+    root_index = BASE_DIR / "index.html"
+    if not root_index.exists():
+        return
+    html_text = root_index.read_text(encoding="utf-8")
+    marker = "data-sozen-threeway-nav"
+    snippet = f"""<script {marker}="v1">
+(function(){{
+  function initThreeWayNav(){{
+    var params = new URLSearchParams(window.location.search);
+    var wantCases = params.get('tab') === 'cases' || window.location.hash === '#cases';
+    var btns = Array.from(document.querySelectorAll('button, a'));
+    var caseBtn = btns.find(function(el){{ return /改善事例/.test(el.textContent || ''); }});
+    if (wantCases && caseBtn) {{
+      setTimeout(function(){{ caseBtn.click(); }}, 60);
+    }}
+    if (!document.getElementById('sozen-disease-portal-link') && caseBtn && caseBtn.parentElement) {{
+      var a = document.createElement('a');
+      a.id = 'sozen-disease-portal-link';
+      a.href = './disease/index.html';
+      a.textContent = '🌿 症状・疾患解説（{total_diseases:,}件）から探す →';
+      a.style.cssText = 'display:block;width:100%;max-width:460px;margin:10px auto 0;padding:12px 20px;border-radius:9999px;background:#faf5eb;border:1.5px solid #d4b886;color:#16284c;font-weight:700;font-size:14px;text-align:center;text-decoration:none;box-shadow:0 2px 8px rgba(22,40,76,0.06);';
+      caseBtn.parentElement.insertAdjacentElement('afterend', a);
+    }}
+  }}
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initThreeWayNav);
+  else initThreeWayNav();
+}})();
+</script>"""
+    if marker in html_text:
+        html_text = re.sub(r'<script[^>]*data-sozen-threeway-nav[^>]*>.*?</script>', snippet, html_text, flags=re.DOTALL)
+    elif "</body>" in html_text:
+        html_text = html_text.replace("</body>", snippet + "\n</body>", 1)
+    root_index.write_text(html_text, encoding="utf-8")
+
+
 def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
     e = html.escape
     symptoms = split_items(d["symptoms"])
@@ -1610,7 +1771,7 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
     og_image = f"{SITE_BASE_URL}/images/diseases/{d['image_file']}" if d["image_exists"] else ""
 
     rich_path = ARTICLES_DIR / f"{d['slug']}.html"
-    rich_html = fold_tables_in_rich_html(rich_path.read_text(encoding="utf-8")) if rich_path.exists() else ""
+    rich_html = strip_legacy_stock_images(fold_tables_in_rich_html(rich_path.read_text(encoding="utf-8"))) if rich_path.exists() else ""
     yt_card_html = render_youtube_section_card(d)
 
     ld_blocks = []
@@ -1685,8 +1846,8 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
         )
     else:
         src_link = (
-            f'（<a href="{e(d["source_url"])}" target="_blank" rel="noopener" class="text-[#16284c] underline">公式解説</a>）'
-            if d.get("source_url") and d["source_url"].startswith("http") else ""
+            f'（<a href="{e(d["source_url"])}" target="_blank" rel="noopener" class="text-[#16284c] underline">出典文献</a>）'
+            if d.get("source_url") and d["source_url"].startswith("http") and "s-treatment.com" not in d["source_url"].lower() else ""
         )
         sym_lis = "".join(
             f'<li class="flex items-start gap-2 text-slate-700 text-sm"><span class="text-[#b68d40] font-bold">✓</span><span>{e(s)}</span></li>'
@@ -1700,6 +1861,7 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
             f'<section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-5">'
             f'<div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span>'
             f'<h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">まず知っておきたい要点と改善の流れ</h2></div>'
+            f'{render_page_summary_figure(d)}'
             f'<p class="text-sm sm:text-[15px] text-slate-700 leading-[1.85]">{e(d["mechanism"])}{src_link}</p>'
             f'{f"""<div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 sm:p-5"><p class="text-xs font-bold text-[#8c6239] mb-2.5">このようなお悩みはありませんか？</p><ul class="space-y-2">{sym_lis}</ul></div>""" if sym_lis else ""}'
             f'{f"""<div class="space-y-2.5"><p class="text-xs font-bold text-[#16284c]">当院の施術アプローチ・改善の流れ</p>{app_cards}</div>""" if app_cards else ""}'
@@ -1736,8 +1898,9 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
 <body class="min-h-screen antialiased pb-24 sm:pb-12">
   <div class="max-w-3xl mx-auto px-3.5 sm:px-5 py-6 sm:py-9 space-y-6">
     <nav class="text-xs text-slate-500 flex flex-wrap items-center gap-2">
-      <a href="{e(PORTAL_URL)}" class="hover:text-[#16284c] underline">総合ポータル</a><span>/</span>
-      <a href="./index.html" class="hover:text-[#16284c] underline">症状・疾患から探す</a><span>/</span>
+      <a href="{e(PORTAL_URL)}" class="hover:text-[#16284c] underline">🏥 鍼灸院ポータル</a><span>/</span>
+      <a href="{e(PORTAL_URL)}?tab=cases" class="hover:text-[#16284c] underline">✨ 臨床改善事例</a><span>/</span>
+      <a href="./index.html" class="hover:text-[#16284c] underline">🌿 症状・疾患から探す</a><span>/</span>
       <span class="text-[#16284c] font-medium">{e(d["name"])}</span>
     </nav>
 
@@ -1763,21 +1926,32 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
     <div class="flex flex-wrap gap-2">{tags_html}</div>
     {related_html}
 
+    <section class="rounded-3xl bg-white border border-[#e8e3d9] shadow-sm p-6 sm:p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="space-y-1">
+        <p class="text-[11px] font-bold tracking-wider text-[#b68d40]">CLINICAL RECOVERY CASES</p>
+        <h2 class="font-mincho text-base sm:text-lg font-bold text-[#16284c]">✨ 実際の臨床改善事例・回復経過を見る</h2>
+        <p class="text-xs sm:text-sm text-slate-600">銀座本院をはじめ各院での実際の改善事例を症状別に絞り込んでご確認いただけます。</p>
+      </div>
+      <a href="{e(PORTAL_URL)}?tab=cases" class="shrink-0 px-5 py-2.5 rounded-full bg-[#faf5eb] border border-[#d4b886] hover:bg-[#b68d40] hover:text-white text-[#16284c] text-xs sm:text-sm font-bold transition-colors">改善事例一覧へ →</a>
+    </section>
+
     <section class="rounded-3xl bg-[#faf5eb] border border-[#e5d5b5] p-6 sm:p-7 text-center space-y-3">
       <p class="font-mincho text-lg font-bold text-[#16284c]">おひとりで悩まず、まずはご相談ください</p>
       <p class="text-xs sm:text-sm text-slate-600">銀座本院・川口・大宮・横浜・博多・田無の各院でご予約を承っております。</p>
-      <div class="flex flex-wrap justify-center gap-3 pt-2">
-        <a href="{e(PORTAL_URL)}" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">ご予約へ進む（全国各院ポータル）→</a>
+      <div class="flex flex-wrap justify-center gap-2.5 pt-2">
+        <a href="{e(PORTAL_URL)}" class="px-6 py-3 rounded-full bg-[#16284c] hover:bg-[#243b6b] text-white text-sm font-semibold transition-colors">🏥 ご予約・全国各院を探す →</a>
+        <a href="{e(PORTAL_URL)}?tab=cases" class="px-5 py-3 rounded-full bg-white border border-[#d4b886] hover:bg-[#faf5eb] text-[#16284c] text-sm font-semibold transition-colors">✨ 臨床改善事例を見る</a>
         <a href="./index.html" class="px-5 py-3 rounded-full bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors">← 疾患一覧に戻る</a>
       </div>
     </section>
   </div>
 
   <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-slate-200 shadow-[0_-4px_16px_rgba(15,23,42,0.08)] px-3 py-2.5">
-    <div class="max-w-lg mx-auto grid grid-cols-12 gap-2 items-center">
-      <a href="{e(PORTAL_URL)}" class="col-span-6 py-2.5 px-3 rounded-full bg-[#16284c] text-white text-xs font-bold text-center shadow-sm">📅 空き確認・ご予約</a>
-      <a href="../symptom-check.html" class="col-span-3 py-2.5 px-2 rounded-full bg-[#faf5eb] border border-[#e5d5b5] text-[#8c6239] text-[11px] font-bold text-center">🧭 症状ナビ</a>
-      <a href="./index.html" class="col-span-3 py-2.5 px-2 rounded-full bg-slate-100 text-slate-700 text-[11px] font-semibold text-center">🔍 一覧</a>
+    <div class="max-w-lg mx-auto grid grid-cols-12 gap-1.5 items-center">
+      <a href="{e(PORTAL_URL)}" class="col-span-4 py-2.5 px-2 rounded-full bg-[#16284c] text-white text-[11px] font-bold text-center shadow-sm">📅 ご予約</a>
+      <a href="{e(PORTAL_URL)}?tab=cases" class="col-span-3 py-2.5 px-1.5 rounded-full bg-[#faf5eb] border border-[#d4b886] text-[#16284c] text-[11px] font-bold text-center">✨ 事例</a>
+      <a href="../symptom-check.html" class="col-span-3 py-2.5 px-1.5 rounded-full bg-[#faf5eb] border border-[#e5d5b5] text-[#8c6239] text-[11px] font-bold text-center">🧭 ナビ</a>
+      <a href="./index.html" class="col-span-2 py-2.5 px-1 rounded-full bg-slate-100 text-slate-700 text-[11px] font-semibold text-center">🔍 一覧</a>
     </div>
   </div>
 </body>
@@ -1814,7 +1988,7 @@ def render_index_html(diseases: list[dict]) -> str:
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>症状・疾患から探す｜そうぜん鍼灸院グループ</title>
-  <meta name="description" content="銀座そうぜん鍼灸院グループが対応する全1,085疾患・症状をひらがな・キーワード・カテゴリから検索できる総合解説ページです。" />
+  <meta name="description" content="銀座そうぜん鍼灸院グループが対応する全{len(diseases):,}疾患・症状をひらがな・キーワード・カテゴリから検索できる総合解説ページです。" />
   {robots_meta_tag()}
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1827,10 +2001,11 @@ def render_index_html(diseases: list[dict]) -> str:
     <header class="text-center mb-7">
       <h1 class="font-mincho text-2xl sm:text-3xl font-bold text-[#16284c]">そうぜん鍼灸院グループ</h1>
       <p class="text-xs sm:text-sm text-slate-500 mt-1.5">症状・疾患から探す 解説ポータル</p>
-      <div class="inline-flex items-center gap-2 bg-white p-1.5 rounded-full border border-[#e8e3d9] shadow-sm mt-5">
-        <a href="{e(PORTAL_URL)}" class="px-3.5 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:text-[#16284c]">🏥 鍼灸院から探す</a>
-        <span class="px-3.5 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#16284c] text-white">📝 症状から探す</span>
-        <a href="../symptom-check.html" class="px-3.5 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#8c6239] hover:bg-[#faf5eb]">🧭 30秒ナビ</a>
+      <div class="inline-flex flex-wrap justify-center items-center gap-1.5 sm:gap-2 bg-white p-1.5 rounded-2xl sm:rounded-full border border-[#e8e3d9] shadow-sm mt-5">
+        <a href="{e(PORTAL_URL)}" class="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium text-slate-600 hover:text-[#16284c]">🏥 鍼灸院から探す</a>
+        <a href="{e(PORTAL_URL)}?tab=cases" class="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#16284c] hover:bg-[#faf5eb]">✨ 臨床改善事例</a>
+        <span class="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-[#16284c] text-white">🌿 症状から探す</span>
+        <a href="../symptom-check.html" class="px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-[#8c6239] hover:bg-[#faf5eb]">🧭 30秒ナビ</a>
       </div>
     </header>
     <section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-5 sm:p-6 space-y-4 mb-6">
@@ -1978,14 +2153,17 @@ def main() -> int:
     cards_dir.mkdir(parents=True, exist_ok=True)
     mech_dir = DISEASE_DIR / "mechanisms"
     mech_dir.mkdir(parents=True, exist_ok=True)
+    SUMMARIES_DIR.mkdir(parents=True, exist_ok=True)
     for d in diseases:
         (cards_dir / f"{d['slug']}.svg").write_text(generate_unique_card_svg(d), encoding="utf-8")
         (mech_dir / f"{d['slug']}.svg").write_text(generate_mechanism_svg(d), encoding="utf-8")
+        (SUMMARIES_DIR / f"{d['slug']}-summary.svg").write_text(build_page_summary_svg(d), encoding="utf-8")
         (DISEASE_DIR / f"{d['slug']}.html").write_text(render_detail_html(d, by_category), encoding="utf-8")
         if GENERATE_STATIC_REDIRECTS and d["legacy_path"]:
             write_static_redirect_page(d["legacy_path"], d["slug"])
 
     (DISEASE_DIR / "index.html").write_text(render_index_html(diseases), encoding="utf-8")
+    ensure_portal_three_way_nav(len(diseases))
     (DISEASE_DIR / "diseases.json").write_text(json.dumps(diseases, ensure_ascii=False, indent=2), encoding="utf-8")
     (DISEASE_DIR / "legacy_redirects.json").write_text(json.dumps(legacy_map, ensure_ascii=False, indent=2), encoding="utf-8")
     (BASE_DIR / "sitemap.xml").write_text(render_sitemap(diseases), encoding="utf-8")
