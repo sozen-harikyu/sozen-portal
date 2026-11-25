@@ -1,33 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="肺胞微石症の要点まとめ図解">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="肺胞微石症の3ステップ要点図解">
   <defs>
-    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrA" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#1f3c58"/>
       <stop offset="100%" stop-color="#2f577e"/>
     </linearGradient>
+    <clipPath id="clip1"><rect x="52" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip2"><rect x="440" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip3"><rect x="828" y="330" width="320" height="140"/></clipPath>
   </defs>
-  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
-  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
-  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
-  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
-  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
-  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
-  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">肺胞微石症</text>
-  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">肺胞内に微小結石がたまる指定難病の肺胞微石症。呼吸器専門医管理を最優先に</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">、安定期・主治医許可下で心身の負担を和らげます。</text>
+  <rect width="1200" height="620" rx="24" fill="#faf8f4"/>
+  <rect width="1200" height="148" rx="24" fill="url(#hdrA)"/>
+  <rect y="120" width="1200" height="28" fill="url(#hdrA)"/>
+  <rect x="48" y="28" width="248" height="28" rx="14" fill="#c28b3b"/>
+  <text x="172" y="47" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜3ステップ図解</text>
+  <text x="1152" y="47" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="48" y="106" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">肺胞微石症の整理と施術方針</text>
 
-  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
-  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
-  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">労作時の息切れや呼吸困難が徐々に気に</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">なってきた</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">乾いた咳や胸の痛み・圧迫感を感じるこ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">とがある</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性的な疲労感やだるさが抜けにくい</text>
+  <rect x="44" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="212" cy="242" r="34" fill="#faf5eb" stroke="#c28b3b" stroke-width="2"/>
+  <text x="212" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#c28b3b">01</text>
+  <text x="212" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#1f3c58">よくあるサイン</text>
+  <line x1="84" y1="322" x2="340" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip1)"><text x="66" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・労作時の息切れや呼吸困難が…</text><text x="66" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・乾いた咳や胸の痛み・圧迫感…</text><text x="66" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・慢性的な疲労感やだるさが抜…</text></g>
+  <rect x="72" y="478" width="280" height="44" rx="12" fill="#f3f8fc"/>
+  <text x="212" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#1f3c58">まず原因部位を丁寧に見極め</text>
 
-  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
-  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
-  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">肺胞微石症は、肺の酸素交換を担う肺胞内にリン</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">酸カルシウムを主成分とする微小結石（微石）が</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">蓄積していく稀な指定難病です。主な原因は常染</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">色体劣性遺伝によるSLC34A2遺伝子の変…</text>
+  <polygon points="392,365 416,350 416,380" fill="#c28b3b" transform="rotate(180 404 365)"/>
 
-  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
-  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
-  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 指定難病のため呼吸器専門医の継続診療と</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">主治医の許可を最優先とし、気胸リスクや呼吸状</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">態に配慮して胸背部への深刺を避けた極めて穏や</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">かな施術を行います / 2. 公式サイトで…</text>
+  <rect x="432" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="600" cy="242" r="34" fill="#f3f8fc" stroke="#1f3c58" stroke-width="2"/>
+  <text x="600" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#1f3c58">02</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#1f3c58">体の中で起きていること</text>
+  <line x1="472" y1="322" x2="728" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip2)"><text x="454" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・肺胞微石症は</text><text x="454" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・肺の酸素交換を担う肺胞内に…</text><text x="454" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・主な原因は常染色体劣性遺伝…</text></g>
+  <rect x="460" y="478" width="280" height="44" rx="12" fill="#faf5eb"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#8c6239">神経・血流・筋緊張から整理</text>
 
-  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+  <polygon points="780,365 804,350 804,380" fill="#c28b3b" transform="rotate(180 792 365)"/>
+
+  <rect x="820" y="182" width="336" height="366" rx="20" fill="#1f3c58"/>
+  <circle cx="988" cy="242" r="34" fill="#c28b3b"/>
+  <text x="988" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#ffffff">03</text>
+  <text x="988" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#ffffff">当院の鍼灸アプローチ</text>
+  <line x1="860" y1="322" x2="1116" y2="322" stroke="#ffffff33" stroke-width="2"/>
+  <g clip-path="url(#clip3)"><text x="842" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・指定難病のため呼吸器専門医…</text><text x="842" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・気胸リスクや呼吸状態に配慮…</text><text x="842" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・公式サイトで紹介している陰郄</text></g>
+  <rect x="848" y="478" width="280" height="44" rx="12" fill="#c28b3b"/>
+  <text x="988" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">段階的に回復と安定を目指す</text>
+
+  <text x="600" y="592" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
 </svg>

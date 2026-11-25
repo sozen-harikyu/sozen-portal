@@ -1,33 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="膝崩れの要点まとめ図解">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="膝崩れの3ステップ要点図解">
   <defs>
-    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrA" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#1b3a4b"/>
       <stop offset="100%" stop-color="#2a556c"/>
     </linearGradient>
+    <clipPath id="clip1"><rect x="52" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip2"><rect x="440" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip3"><rect x="828" y="330" width="320" height="140"/></clipPath>
   </defs>
-  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
-  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
-  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
-  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c58b3c"/>
-  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜要点まとめ</text>
-  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
-  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">膝崩れ</text>
-  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">歩行中に膝がガクッと抜ける膝崩れに対し、腸腰筋・大腰筋・梨状筋の深層筋鍼</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">灸で神経再生を促す解説。</text>
+  <rect width="1200" height="620" rx="24" fill="#faf8f4"/>
+  <rect width="1200" height="148" rx="24" fill="url(#hdrA)"/>
+  <rect y="120" width="1200" height="28" fill="url(#hdrA)"/>
+  <rect x="48" y="28" width="248" height="28" rx="14" fill="#c58b3c"/>
+  <text x="172" y="47" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜3ステップ図解</text>
+  <text x="1152" y="47" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="48" y="106" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">膝崩れの整理と施術方針</text>
 
-  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
-  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">1. 主な症状・お悩み</text>
-  <circle cx="76" cy="309" r="5" fill="#c58b3c"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">歩いているときや方向転換の瞬間に、急</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に膝がガクッと抜ける</text><circle cx="76" cy="375" r="5" fill="#c58b3c"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">朝起きた直後に膝の噛み合わせが悪く、</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">痛みや水が溜まることがある</text><circle cx="76" cy="441" r="5" fill="#c58b3c"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">お尻に力が入らず、足のしびれや筋力低</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">下を同時に感じる</text>
+  <rect x="44" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="212" cy="242" r="34" fill="#faf5eb" stroke="#c58b3c" stroke-width="2"/>
+  <text x="212" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#c58b3c">01</text>
+  <text x="212" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#1b3a4b">よくあるサイン</text>
+  <line x1="84" y1="322" x2="340" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip1)"><text x="66" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・歩いているときや方向転換の…</text><text x="66" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・朝起きた直後に膝の噛み合わ…</text><text x="66" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・お尻に力が入らず、足のしび…</text></g>
+  <rect x="72" y="478" width="280" height="44" rx="12" fill="#f4f7f9"/>
+  <text x="212" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#1b3a4b">まず原因部位を丁寧に見極め</text>
 
-  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
-  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">2. 原因・メカニズム</text>
-  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">膝崩れは膝関節の噛み合わせによるもののほか、</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">お腹の奥の腸腰筋（大腰筋）が硬くなって大腿神</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">経を圧迫するケースや、お尻の梨状筋の硬結から</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">筋力低下・しびれを伴うケースがあります。放…</text>
+  <polygon points="392,365 416,350 416,380" fill="#c58b3c" transform="rotate(180 404 365)"/>
 
-  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
-  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">3. 当院の施術アプローチ</text>
-  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 膝関節由来か、腸腰筋（大腿神経圧迫）ま</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">たはお尻（梨状筋）由来か原因を見極める / </text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">2. 手が届かない深層筋の腸腰筋（大腰筋）や</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">梨状筋へ直接鍼灸を行い、筋肉の柔軟性を取り…</text>
+  <rect x="432" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="600" cy="242" r="34" fill="#f4f7f9" stroke="#1b3a4b" stroke-width="2"/>
+  <text x="600" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#1b3a4b">02</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#1b3a4b">体の中で起きていること</text>
+  <line x1="472" y1="322" x2="728" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip2)"><text x="454" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・膝崩れは膝関節の噛み合わせ…</text><text x="454" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・お腹の奥の腸腰筋（大腰筋）…</text><text x="454" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・お尻の梨状筋の硬結から筋力…</text></g>
+  <rect x="460" y="478" width="280" height="44" rx="12" fill="#faf5eb"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#8c6239">神経・血流・筋緊張から整理</text>
 
-  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+  <polygon points="780,365 804,350 804,380" fill="#c58b3c" transform="rotate(180 792 365)"/>
+
+  <rect x="820" y="182" width="336" height="366" rx="20" fill="#1b3a4b"/>
+  <circle cx="988" cy="242" r="34" fill="#c58b3c"/>
+  <text x="988" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#ffffff">03</text>
+  <text x="988" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#ffffff">当院の鍼灸アプローチ</text>
+  <line x1="860" y1="322" x2="1116" y2="322" stroke="#ffffff33" stroke-width="2"/>
+  <g clip-path="url(#clip3)"><text x="842" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・膝関節由来か</text><text x="842" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・腸腰筋（大腿神経圧迫）また…</text><text x="842" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・手が届かない深層筋の腸腰筋…</text></g>
+  <rect x="848" y="478" width="280" height="44" rx="12" fill="#c58b3c"/>
+  <text x="988" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">段階的に回復と安定を目指す</text>
+
+  <text x="600" y="592" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
 </svg>

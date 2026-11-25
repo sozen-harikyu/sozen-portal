@@ -1,33 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="慢性特発性蕁麻疹の要点まとめ図解">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="慢性特発性蕁麻疹の3ステップ要点図解">
   <defs>
-    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrA" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#3c3a2a"/>
       <stop offset="100%" stop-color="#59563f"/>
     </linearGradient>
+    <clipPath id="clip1"><rect x="52" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip2"><rect x="440" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip3"><rect x="828" y="330" width="320" height="140"/></clipPath>
   </defs>
-  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
-  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
-  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
-  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28f45"/>
-  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">皮膚のお悩み｜要点まとめ</text>
-  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
-  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">慢性特発性蕁麻疹</text>
-  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">薬を飲んでも繰り返す慢性特発性蕁麻疹に対し、自律神経と免疫過敏の土台を整</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">える解説。</text>
+  <rect width="1200" height="620" rx="24" fill="#faf8f4"/>
+  <rect width="1200" height="148" rx="24" fill="url(#hdrA)"/>
+  <rect y="120" width="1200" height="28" fill="url(#hdrA)"/>
+  <rect x="48" y="28" width="248" height="28" rx="14" fill="#c28f45"/>
+  <text x="172" y="47" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">皮膚のお悩み｜3ステップ図解</text>
+  <text x="1152" y="47" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="48" y="106" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">慢性特発性蕁麻疹の整理と施術方針</text>
 
-  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="44" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
-  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">1. 主な症状・お悩み</text>
-  <circle cx="76" cy="309" r="5" fill="#c28f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">6週間以上、夕方〜夜や疲労時に地図状</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">のじんましんが繰り返し出る</text><circle cx="76" cy="375" r="5" fill="#c28f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・抗ヒスタミン薬を飲んでいるがスッキ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">リ治まらない</text><circle cx="76" cy="441" r="5" fill="#c28f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・ストレスや睡眠不足・寒暖差でかゆみ</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が悪化しやすい</text>
+  <rect x="44" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="212" cy="242" r="34" fill="#faf5eb" stroke="#c28f45" stroke-width="2"/>
+  <text x="212" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#c28f45">01</text>
+  <text x="212" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#3c3a2a">よくあるサイン</text>
+  <line x1="84" y1="322" x2="340" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip1)"><text x="66" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・週間以上、夕方〜夜や疲労時…</text><text x="66" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・抗ヒスタミン薬を飲んでいる…</text><text x="66" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・ストレスや睡眠不足・寒暖差…</text></g>
+  <rect x="72" y="478" width="280" height="44" rx="12" fill="#faf8f2"/>
+  <text x="212" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#3c3a2a">まず原因部位を丁寧に見極め</text>
 
-  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="422" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
-  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">2. 原因・メカニズム</text>
-  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">肥満細胞の活性化閾値低下に自律神経の乱れ・ス</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トレス・疲労が関与します。Ann Inter</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">n Med 2023年の3大学病院RCT（n</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">=330）では、4週時点の蕁麻疹活動性スコ…</text>
+  <polygon points="392,365 416,350 416,380" fill="#c28f45" transform="rotate(180 404 365)"/>
 
-  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="800" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
-  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">3. 当院の施術アプローチ</text>
-  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 皮膚科の標準内服治療を継続しながら、曲</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">池・血海・築賓・三陰交で痒みと自律神経を調整</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> / 2. 膨疹や掻き傷のある皮膚へは直接刺</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">鍼・摩擦を避けて安全に施術 / 3. 睡眠…</text>
+  <rect x="432" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="600" cy="242" r="34" fill="#faf8f2" stroke="#3c3a2a" stroke-width="2"/>
+  <text x="600" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#3c3a2a">02</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#3c3a2a">体の中で起きていること</text>
+  <line x1="472" y1="322" x2="728" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip2)"><text x="454" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・肥満細胞の活性化閾値低下に…</text><text x="454" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・ストレス</text><text x="454" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・疲労が関与します</text></g>
+  <rect x="460" y="478" width="280" height="44" rx="12" fill="#faf5eb"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#8c6239">神経・血流・筋緊張から整理</text>
 
-  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+  <polygon points="780,365 804,350 804,380" fill="#c28f45" transform="rotate(180 792 365)"/>
+
+  <rect x="820" y="182" width="336" height="366" rx="20" fill="#3c3a2a"/>
+  <circle cx="988" cy="242" r="34" fill="#c28f45"/>
+  <text x="988" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#ffffff">03</text>
+  <text x="988" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#ffffff">当院の鍼灸アプローチ</text>
+  <line x1="860" y1="322" x2="1116" y2="322" stroke="#ffffff33" stroke-width="2"/>
+  <g clip-path="url(#clip3)"><text x="842" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・皮膚科の標準内服治療を継続…</text><text x="842" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・三陰交で痒みと自律神経を調整</text><text x="842" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・膨疹や掻き傷のある皮膚へは…</text></g>
+  <rect x="848" y="478" width="280" height="44" rx="12" fill="#c28f45"/>
+  <text x="988" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">段階的に回復と安定を目指す</text>
+
+  <text x="600" y="592" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
 </svg>

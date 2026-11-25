@@ -1,33 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="過活動膀胱の要点まとめ図解">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="過活動膀胱の3ステップ要点図解">
   <defs>
-    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrA" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#223c4e"/>
       <stop offset="100%" stop-color="#345973"/>
     </linearGradient>
+    <clipPath id="clip1"><rect x="52" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip2"><rect x="440" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip3"><rect x="828" y="330" width="320" height="140"/></clipPath>
   </defs>
-  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
-  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
-  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
-  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b58b45"/>
-  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">泌尿器のお悩み｜要点まとめ</text>
-  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
-  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">過活動膀胱</text>
-  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">急な我慢できない尿意や頻尿に対し、中極・中髎・曲泉のツボ施術と自律神経・</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">行動療法サポートで改善を目指します。</text>
+  <rect width="1200" height="620" rx="24" fill="#faf8f4"/>
+  <rect width="1200" height="148" rx="24" fill="url(#hdrA)"/>
+  <rect y="120" width="1200" height="28" fill="url(#hdrA)"/>
+  <rect x="48" y="28" width="248" height="28" rx="14" fill="#b58b45"/>
+  <text x="172" y="47" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">泌尿器のお悩み｜3ステップ図解</text>
+  <text x="1152" y="47" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="48" y="106" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">過活動膀胱の整理と施術方針</text>
 
-  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
-  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">1. 主な症状・お悩み</text>
-  <circle cx="76" cy="309" r="5" fill="#b58b45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">急に我慢できないほど強い尿意が襲って</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">くる</text><circle cx="76" cy="375" r="5" fill="#b58b45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">日中8回以上トイレに行き1回の尿量が</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">少ない</text><circle cx="76" cy="441" r="5" fill="#b58b45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">夜間に何度もトイレで目が覚めてしまう</text>
+  <rect x="44" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="212" cy="242" r="34" fill="#faf5eb" stroke="#b58b45" stroke-width="2"/>
+  <text x="212" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#b58b45">01</text>
+  <text x="212" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#223c4e">よくあるサイン</text>
+  <line x1="84" y1="322" x2="340" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip1)"><text x="66" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・急に我慢できないほど強い尿…</text><text x="66" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・日中8回以上トイレに行き1…</text><text x="66" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・夜間に何度もトイレで目が覚…</text></g>
+  <rect x="72" y="478" width="280" height="44" rx="12" fill="#f3f7fa"/>
+  <text x="212" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#223c4e">まず原因部位を丁寧に見極め</text>
 
-  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
-  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">2. 原因・メカニズム</text>
-  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">膀胱にうまく尿を貯められず、少量の尿でも膀胱</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が過敏に収縮してしまう状態で、40歳以上の約</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">8人に1人に見られます。脳と膀胱を結ぶ神経の</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トラブルによる神経因性と、加齢・骨盤底筋の…</text>
+  <polygon points="392,365 416,350 416,380" fill="#b58b45" transform="rotate(180 404 365)"/>
 
-  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
-  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">3. 当院の施術アプローチ</text>
-  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 排尿日誌の活用と医療連携：泌尿器科での</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">評価や抗コリン薬・β3作動薬などの治療を尊重</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">し、1日の排尿回数や尿意の出方、冷え・ストレ</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">スとの関連を丁寧に確認します。 / 2. …</text>
+  <rect x="432" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="600" cy="242" r="34" fill="#f3f7fa" stroke="#223c4e" stroke-width="2"/>
+  <text x="600" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#223c4e">02</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#223c4e">体の中で起きていること</text>
+  <line x1="472" y1="322" x2="728" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip2)"><text x="454" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・膀胱にうまく尿を貯められず</text><text x="454" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・少量の尿でも膀胱が過敏に収…</text><text x="454" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・歳以上の約8人に1人に見ら…</text></g>
+  <rect x="460" y="478" width="280" height="44" rx="12" fill="#faf5eb"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#8c6239">神経・血流・筋緊張から整理</text>
 
-  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+  <polygon points="780,365 804,350 804,380" fill="#b58b45" transform="rotate(180 792 365)"/>
+
+  <rect x="820" y="182" width="336" height="366" rx="20" fill="#223c4e"/>
+  <circle cx="988" cy="242" r="34" fill="#b58b45"/>
+  <text x="988" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#ffffff">03</text>
+  <text x="988" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#ffffff">当院の鍼灸アプローチ</text>
+  <line x1="860" y1="322" x2="1116" y2="322" stroke="#ffffff33" stroke-width="2"/>
+  <g clip-path="url(#clip3)"><text x="842" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・排尿日誌の活用と医療連携：…</text><text x="842" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・β3作動薬などの治療を尊重し</text><text x="842" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・日の排尿回数や尿意の出方</text></g>
+  <rect x="848" y="478" width="280" height="44" rx="12" fill="#b58b45"/>
+  <text x="988" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">段階的に回復と安定を目指す</text>
+
+  <text x="600" y="592" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
 </svg>

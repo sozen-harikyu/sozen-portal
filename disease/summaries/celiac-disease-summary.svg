@@ -1,33 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="セリアック病の要点まとめ図解">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="セリアック病の3ステップ要点図解">
   <defs>
-    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrA" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#21423a"/>
       <stop offset="100%" stop-color="#326155"/>
     </linearGradient>
+    <clipPath id="clip1"><rect x="52" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip2"><rect x="440" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip3"><rect x="828" y="330" width="320" height="140"/></clipPath>
   </defs>
-  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
-  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
-  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
-  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c49342"/>
-  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">消化器のお悩み｜要点まとめ</text>
-  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
-  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">セリアック病</text>
-  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">グルテンへの自己免疫反応で小腸粘膜が萎縮する疾患。厳格なグルテンフリー食</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">と並行し胃腸と体力を整えます。</text>
+  <rect width="1200" height="620" rx="24" fill="#faf8f4"/>
+  <rect width="1200" height="148" rx="24" fill="url(#hdrA)"/>
+  <rect y="120" width="1200" height="28" fill="url(#hdrA)"/>
+  <rect x="48" y="28" width="248" height="28" rx="14" fill="#c49342"/>
+  <text x="172" y="47" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">消化器のお悩み｜3ステップ図解</text>
+  <text x="1152" y="47" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="48" y="106" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">セリアック病の整理と施術方針</text>
 
-  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
-  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">1. 主な症状・お悩み</text>
-  <circle cx="76" cy="309" r="5" fill="#c49342"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">小麦製品などの摂取後に腹痛や腹部膨満</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感が出る</text><circle cx="76" cy="375" r="5" fill="#c49342"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性的な下痢または便秘・体重減少が続</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いている</text><circle cx="76" cy="441" r="5" fill="#c49342"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">原因不明の強い疲労感や頭痛・口内炎が</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ある</text>
+  <rect x="44" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="212" cy="242" r="34" fill="#faf5eb" stroke="#c49342" stroke-width="2"/>
+  <text x="212" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#c49342">01</text>
+  <text x="212" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#21423a">よくあるサイン</text>
+  <line x1="84" y1="322" x2="340" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip1)"><text x="66" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・小麦製品などの摂取後に腹痛…</text><text x="66" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・慢性的な下痢または便秘・体…</text><text x="66" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・原因不明の強い疲労感や頭痛…</text></g>
+  <rect x="72" y="478" width="280" height="44" rx="12" fill="#f3faf7"/>
+  <text x="212" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#21423a">まず原因部位を丁寧に見極め</text>
 
-  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
-  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">2. 原因・メカニズム</text>
-  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">小麦・大麦・ライ麦などに含まれるタンパク質グ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ルテン（分解産物グリアジン）に対して自己免疫</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">反応が起こり、小腸粘膜が炎症・萎縮して栄養吸</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">収障害を引き起こす疾患です。遺伝的要因（H…</text>
+  <polygon points="392,365 416,350 416,380" fill="#c49342" transform="rotate(180 404 365)"/>
 
-  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
-  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">3. 当院の施術アプローチ</text>
-  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 医師の診断とグルテンフリー食の徹底確認</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">（血液検査・小腸生検による診断と一生涯の厳格</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">なグルテンフリー食、不足栄養素の補充を治療の</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">根幹として確認します） / 2. 胃腸の冷…</text>
+  <rect x="432" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="600" cy="242" r="34" fill="#f3faf7" stroke="#21423a" stroke-width="2"/>
+  <text x="600" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#21423a">02</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#21423a">体の中で起きていること</text>
+  <line x1="472" y1="322" x2="728" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip2)"><text x="454" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・ライ麦などに含まれるタンパ…</text><text x="454" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・小腸粘膜が炎症</text><text x="454" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・萎縮して栄養吸収障害を引き…</text></g>
+  <rect x="460" y="478" width="280" height="44" rx="12" fill="#faf5eb"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#8c6239">神経・血流・筋緊張から整理</text>
 
-  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+  <polygon points="780,365 804,350 804,380" fill="#c49342" transform="rotate(180 792 365)"/>
+
+  <rect x="820" y="182" width="336" height="366" rx="20" fill="#21423a"/>
+  <circle cx="988" cy="242" r="34" fill="#c49342"/>
+  <text x="988" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#ffffff">03</text>
+  <text x="988" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#ffffff">当院の鍼灸アプローチ</text>
+  <line x1="860" y1="322" x2="1116" y2="322" stroke="#ffffff33" stroke-width="2"/>
+  <g clip-path="url(#clip3)"><text x="842" y="362" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・医師の診断とグルテンフリー…</text><text x="842" y="400" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・小腸生検による診断と一生涯…</text><text x="842" y="438" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#f1f5f9">・不足栄養素の補充を治療の根…</text></g>
+  <rect x="848" y="478" width="280" height="44" rx="12" fill="#c49342"/>
+  <text x="988" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">段階的に回復と安定を目指す</text>
+
+  <text x="600" y="592" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
 </svg>
