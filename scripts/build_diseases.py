@@ -1022,15 +1022,157 @@ def resolve_specialized_acupoint_profile(d: dict, base_ev: dict) -> dict:
     return merged
 
 
+
+# ==============================================================================
+# 部位・カテゴリ内 自動バリエーションプール（300種段階拡張対応）
+# 同じ部位・カテゴリの疾患ページごとに決定論的ランダム（slugハッシュ）で
+# 最適なツボ図解バリエーションを自動割り当て（部位ミスマッチ防止＋視覚的鮮度アップ）
+# ==============================================================================
+ACUPOINT_VARIATION_POOLS: dict[str, list[tuple[str, str]]] = {
+    "muscle_lowerback": [
+        ("var_muscle_lowerback_01.jpg", "腰背部・腰痛の主要ツボ（腎兪・大腸兪・志室・委中）"),
+        ("var_muscle_sciatica_02.jpg", "殿部・下肢後面（坐骨神経）の主要ツボ（環跳・殷門・承山・崑崙）"),
+        ("rijokin_acupoints.jpg", "腰殿部・坐骨神経まわりの主要ツボ図解"),
+    ],
+    "muscle_neck_shoulder": [
+        ("muscle_neck_shoulder_acupoints.jpg", "首・肩・肩甲骨周囲の代表的なツボ位置"),
+        ("var_muscle_neck_cervical_04.jpg", "頚椎・首肩こりの主要ツボ（風池・天柱・大椎・肩井）"),
+        ("var_muscle_shoulder_frozen_03.jpg", "肩関節・五十肩の主要ツボ（肩髃・天宗・肩貞・肩井）"),
+        ("var_muscle_thoracic_back_07.jpg", "背部痛・肋間神経痛の主要ツボ（肺兪・心兪・膈兪・膏肓）"),
+    ],
+    "muscle_elbow_wrist": [
+        ("muscle_elbow_wrist_acupoints.jpg", "肘・前腕・手首の代表的なツボ位置"),
+        ("var_muscle_wrist_hand_06.jpg", "手首・腱鞘炎の主要ツボ（合谷・陽渓・外関・大陵）"),
+    ],
+    "muscle_hip_knee": [
+        ("muscle_hip_knee_acupoints.jpg", "股関節・膝周囲の代表的なツボ位置"),
+        ("var_muscle_knee_osteo_05.jpg", "膝関節・膝痛の主要ツボ（血海・梁丘・陽陵泉・足三里）"),
+        ("var_muscle_sciatica_02.jpg", "殿部・下肢後面の主要ツボ（環跳・殷門・承山・崑崙）"),
+    ],
+    "muscle_ankle_foot": [
+        ("muscle_ankle_foot_acupoints.jpg", "足首・足部の代表的なツボ位置"),
+        ("var_muscle_plantar_calf_08.jpg", "足底・ふくらはぎの主要ツボ（湧泉・承山・太渓・照海）"),
+    ],
+    "muscle_general": [
+        ("var_muscle_lowerback_01.jpg", "腰背部・体幹の主要ツボ（腎兪・大腸兪・志室・委中）"),
+        ("var_muscle_thoracic_back_07.jpg", "背部・胸郭まわりの主要ツボ（肺兪・心兪・膈兪・膏肓）"),
+        ("var_muscle_neck_cervical_04.jpg", "頚椎・首肩こりの主要ツボ（風池・天柱・大椎・肩井）"),
+        ("var_muscle_knee_osteo_05.jpg", "膝・下肢の主要ツボ（血海・梁丘・陽陵泉・足三里）"),
+        ("var_muscle_plantar_calf_08.jpg", "足底・下肢循環の主要ツボ（湧泉・承山・太渓・照海）"),
+    ],
+    "neuro_headache": [
+        ("sys_headache_migraine_acupoints.jpg", "頭痛・片頭痛の代表的なツボ位置"),
+        ("var_neuro_headache_temporal_01.jpg", "片頭痛・側頭部痛の主要ツボ（百会・率谷・太陽・風池）"),
+        ("var_neuro_dizziness_head_04.jpg", "めまい・脳過敏の主要ツボ（百会・四神聡・完骨・太衝）"),
+    ],
+    "neuro_autonomic_sleep": [
+        ("jiritsushinkei_acupoints.jpg", "自律神経調整の代表的なツボ位置"),
+        ("sys_sleep_mental_acupoints.jpg", "睡眠・メンタルケアの代表的なツボ位置"),
+        ("var_neuro_insomnia_calm_02.jpg", "不眠・睡眠ケアの主要ツボ（百会・安眠・神門・内関）"),
+        ("var_neuro_autonomic_vagus_03.jpg", "自律神経・迷走神経調整の主要ツボ（膻中・中脘・内関・足三里）"),
+        ("var_neuro_stress_chest_05.jpg", "不安感・息苦しさの主要ツボ（膻中・内関・神門・合谷）"),
+        ("var_neuro_fatigue_burnout_06.jpg", "慢性疲労・体力回復の主要ツボ（気海・関元・足三里・三陰交）"),
+    ],
+    "neuro_brain_nerve": [
+        ("cat_neuro_acupoints.jpg", "脳神経領域の代表的なツボ位置"),
+        ("var_neuro_dizziness_head_04.jpg", "めまい・脳過敏の主要ツボ（百会・四神聡・完骨・太衝）"),
+        ("var_neuro_trigeminal_jaw_07.jpg", "顔面・顎・三叉神経の主要ツボ（下関・頬車・翳風・合谷）"),
+        ("var_neuro_stroke_limb_08.jpg", "手足のしびれ・神経回復の主要ツボ（曲池・合谷・陽陵泉・太衝）"),
+        ("var_neuro_headache_temporal_01.jpg", "頭頸部・神経調整の主要ツボ（百会・率谷・太陽・風池）"),
+    ],
+    "ent_ear": [
+        ("ear_hearing_tmj_acupoints.jpg", "耳・聴覚・顎関節周囲の代表的なツボ位置"),
+        ("var_ent_tinnitus_ear_01.jpg", "耳鳴り・難聴の主要ツボ（耳門・聴宮・聴会・翳風）"),
+        ("var_ent_vertigo_neck_04.jpg", "耳性めまい・平衡感覚の主要ツボ（聴宮・完骨・風池・豊隆）"),
+    ],
+    "ent_nose": [
+        ("nose_allergy_smell_acupoints.jpg", "鼻・副鼻腔・嗅覚周囲の代表的なツボ位置"),
+        ("var_ent_sinus_nose_02.jpg", "鼻炎・副鼻腔炎の主要ツボ（上星・印堂・迎香・合谷）"),
+    ],
+    "ent_throat": [
+        ("throat_nasopharynx_acupoints.jpg", "喉・上咽頭・嚥下周囲の代表的なツボ位置"),
+        ("var_ent_throat_voice_03.jpg", "喉の違和感・声ケアの主要ツボ（廉泉・天突・列缺・照海）"),
+    ],
+    "ent_general": [
+        ("cat_ent_acupoints.jpg", "耳鼻咽喉領域の代表的なツボ位置"),
+        ("var_ent_tinnitus_ear_01.jpg", "耳鳴り・難聴の主要ツボ（耳門・聴宮・聴会・翳風）"),
+        ("var_ent_sinus_nose_02.jpg", "鼻炎・副鼻腔炎の主要ツボ（上星・印堂・迎香・合谷）"),
+        ("var_ent_throat_voice_03.jpg", "喉の違和感・声ケアの主要ツボ（廉泉・天突・列缺・照海）"),
+        ("var_ent_vertigo_neck_04.jpg", "耳性めまい・平衡感覚の主要ツボ（聴宮・完骨・風池・豊隆）"),
+    ],
+    "eye_general": [
+        ("cat_eye_acupoints.jpg", "眼疾患・視神経周囲の代表的なツボ位置"),
+        ("eye_dryeye_fatigue_acupoints.jpg", "眼精疲労・ドライアイの代表的なツボ位置"),
+        ("eye_glaucoma_optic_acupoints.jpg", "緑内障・視神経血流ケアの代表的なツボ位置"),
+        ("eye_retina_macula_acupoints.jpg", "網膜・黄斑ケアの代表的なツボ位置"),
+        ("var_eye_strain_front_01.jpg", "眼精疲労・かすみ目の主要ツボ（睛明・攢竹・太陽・合谷）"),
+        ("var_eye_dry_orbit_02.jpg", "ドライアイ・まぶた痙攣の主要ツボ（絲竹空・四白・太陽・太渓）"),
+        ("var_eye_optic_circulation_03.jpg", "視神経・眼血流ケアの主要ツボ（睛明・風池・光明・太衝）"),
+        ("var_eye_macula_systemic_04.jpg", "網膜・全身眼養生の主要ツボ（肝兪・腎兪・足三里・太渓）"),
+    ],
+}
+
+
+def pick_variation_diagram(d: dict, ev: dict) -> tuple[str, str]:
+    """疾患の部位・カテゴリに適合するバリエーションプールから、ページごとに異なる図解を自動選出する。"""
+    cat = d.get("category", "")
+    text = f"{d.get('name', '')} {d.get('keywords', '')} {d.get('summary', '')}"
+    pool_key = None
+
+    if cat == "筋肉、骨のお悩み":
+        if any(k in text for k in ["腰", "坐骨", "梨状筋", "脊柱管", "椎間板", "仙腸", "すべり症", "ぎっくり", "骨盤"]):
+            pool_key = "muscle_lowerback"
+        elif any(k in text for k in ["肘", "手首", "腱鞘炎", "手根管", "ばね指", "指", "前腕", "上顆炎", "テニス肘", "ゴルフ肘"]):
+            pool_key = "muscle_elbow_wrist"
+        elif any(k in text for k in ["首", "頚", "頸", "肩", "五十肩", "四十肩", "寝違え", "むちうち", "胸郭出口", "背中", "背部", "肋間"]):
+            pool_key = "muscle_neck_shoulder"
+        elif any(k in text for k in ["膝", "股関節", "大腿", "半月板", "オスグッド", "変形性膝"]):
+            pool_key = "muscle_hip_knee"
+        elif any(k in text for k in ["足首", "足底", "アキレス", "外反母趾", "ふくらはぎ", "こむら返り", "捻挫", "踵", "モートン"]):
+            pool_key = "muscle_ankle_foot"
+        else:
+            pool_key = "muscle_general"
+    elif cat == "眼のお悩み":
+        pool_key = "eye_general"
+    elif cat == "耳鼻咽喉のお悩み":
+        if any(k in text for k in ["耳", "難聴", "メニエール", "めまい", "耳鳴"]):
+            pool_key = "ent_ear"
+        elif any(k in text for k in ["鼻", "花粉", "副鼻腔", "蓄膿", "嗅覚"]):
+            pool_key = "ent_nose"
+        elif any(k in text for k in ["喉", "咽頭", "声", "扁桃", "嚥下", "ヒステリー球"]):
+            pool_key = "ent_throat"
+        else:
+            pool_key = "ent_general"
+    elif cat in ("自律神経のお悩み", "特に対応することが多い症状"):
+        if any(k in text for k in ["頭痛", "片頭痛", "頭鳴", "脳過敏"]):
+            pool_key = "neuro_headache"
+        else:
+            pool_key = "neuro_autonomic_sleep"
+    elif cat in ("脳神経のお悩み", "神経のお悩み"):
+        if any(k in text for k in ["頭痛", "片頭痛"]):
+            pool_key = "neuro_headache"
+        elif any(k in text for k in ["顔面", "三叉", "顎"]):
+            pool_key = "neuro_brain_nerve"
+        else:
+            pool_key = "neuro_brain_nerve"
+
+    if pool_key and pool_key in ACUPOINT_VARIATION_POOLS:
+        candidates = [item for item in ACUPOINT_VARIATION_POOLS[pool_key] if (IMAGES_DIR / item[0]).exists()]
+        if candidates:
+            h = int(hashlib.md5(d.get("slug", d.get("name", "")).encode("utf-8")).hexdigest(), 16)
+            return candidates[h % len(candidates)]
+
+    return ev.get("diagram", ""), ev.get("diagram_caption", f"{cat}の代表的なツボ位置")
+
+
 def render_plan_b_visual_card(d: dict) -> str:
     """案B：文字だらけSVGを廃止し、冒頭から専門ツボ図解＋4ステップ改善図解＋3要点チップを先出し表示する。"""
     e = html.escape
     ev_base = CATEGORY_EVIDENCE.get(d["category"], {})
     ev = resolve_specialized_acupoint_profile(d, ev_base) if ev_base else {}
 
-    diag_file = ev.get("diagram", "")
+    diag_file, diag_caption = pick_variation_diagram(d, ev)
     diag_src = f"../images/diseases/{diag_file}" if diag_file and (IMAGES_DIR / diag_file).exists() else ""
-    diag_caption = ev.get("diagram_caption", f"{d['category']}の代表的なツボ位置")
 
     mech_img_file = CATEGORY_MECH_IMAGE.get(d["category"], "mech_brain_autonomic.jpg")
     mech_img_src = f"../images/diseases/{mech_img_file}" if (IMAGES_DIR / mech_img_file).exists() else f"./mechanisms/{d['slug']}.svg"
