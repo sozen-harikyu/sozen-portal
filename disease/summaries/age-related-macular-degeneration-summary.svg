@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="加齢黄斑変性の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3b5c"/>
+      <stop offset="100%" stop-color="#2b5887"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#4f86b8"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">眼のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">加齢黄斑変性</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">加齢に伴い黄斑部が障害され中心視力が低下する病気です。眼科での標準治療を</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">最優先に、安定期の血流・体調ケアを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#4f86b8"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">見たい部分の中心がゆがんだり欠けたり</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">する</text><circle cx="76" cy="375" r="5" fill="#4f86b8"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">視界の中心が暗く文字が読みにくい</text><circle cx="76" cy="417" r="5" fill="#4f86b8"/><text x="92" y="423" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">眼科で抗VEGF薬注射や定期検査を続</text><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">けている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">加齢に伴い網膜の中心部（黄斑）に老廃物が蓄積</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">したり、もろい新生血管が発生して出血やむくみ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を起こしたりすることで視機能が低下する病気で</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">す。進行が緩やかな萎縮型と、急速に視力低下…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 滲出型の活動期や出血・浮腫がある急性期</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">は鍼灸禁忌とし、眼科での抗VEGF薬硝子体注</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">射などの標準治療を最優先とします / 2. </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">症状が安定し主治医の許可を得た段階で、眼の…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

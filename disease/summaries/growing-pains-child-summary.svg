@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="成長痛の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">成長痛</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">夕方〜夜間に膝やふくらはぎが痛む成長痛。医療機関で異常がないことを確認の</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">うえ、優しく巡りを整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">夕方から夜にかけて膝やすね、ふくらは</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ぎが痛む</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">翌朝には痛みが消えて元気に活動できる</text><circle cx="76" cy="417" r="5" fill="#d19344"/><text x="92" y="423" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">痛む場所が毎回違ったり漠然としていた</text><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">りする</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">成長痛は幼児期から学童期（特に3〜5歳や8〜</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">12歳頃）の子どもに多くみられる下肢の痛みで</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、明確な単一原因は解明されていません。未熟な</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">下肢の筋肉や関節に日中の運動疲労が蓄積する…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 関節炎・骨端症・骨折など他の疾患を除外</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">するため、腫れや発熱、日中の痛みが続く場合は</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">まず小児科・整形外科での精査をご案内します </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">/ 2. 成長痛と確認されたケースでは、膝…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

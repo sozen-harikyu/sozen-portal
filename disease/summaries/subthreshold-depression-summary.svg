@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="閾値下うつ病（軽症抑うつ・気分の落ち込み）の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3557"/>
+      <stop offset="100%" stop-color="#2c4e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#a9844f"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">自律神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="96" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">閾値下うつ病（軽症抑うつ・気分の落ち</text><text x="56" y="140" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">込み）</text>
+  <text x="56" y="176" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">本格的なうつ病へ悪化する前の「気分の落ち込み・意欲低下・眠りの浅さ」を身</text><text x="56" y="202" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">体から整える解説。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#a9844f"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">病院へ行くほどではないと感じるが、気</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">分の落ち込みや意欲低下が何週間も続く</text><circle cx="76" cy="375" r="5" fill="#a9844f"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・以前楽しめていたことがおっくうにな</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り、朝の目覚めも重い</text><circle cx="76" cy="441" r="5" fill="#a9844f"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・本格的な不調へ進行する前に、心と体</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の土台を整えたい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性ストレス・睡眠負債・自律神経の過覚醒によ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り、脳の疲労回復と感情調整機能が低下した状態</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">です。2025年のランダム化比較試験（PMC</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">12729069）でも、閾値下うつ病に対す…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 首肩・胸郭・みぞおちの緊張を解き、深い</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">呼吸と睡眠の質を取り戻す低刺激の自律神経調整</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> / 2. 百会・印堂・神門・太衝を中心に、</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">脳の疲労と交感神経の高ぶりを穏やかに鎮静 …</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

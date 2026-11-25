@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="弱視の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3b5c"/>
+      <stop offset="100%" stop-color="#2b5887"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#4f86b8"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">眼のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">弱視</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">視覚発達期の障害で矯正視力が十分に育たない状態です。特に小児は眼科での早</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">期治療を最優先とし、主治医許可下で疲労ケアを行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#4f86b8"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">お子さまが目を細めて見たり、片目を覆</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ったりする仕草がある</text><circle cx="76" cy="375" r="5" fill="#4f86b8"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">3歳児健診や就学時健診で視力の左右差</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を指摘された</text><circle cx="76" cy="441" r="5" fill="#4f86b8"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">眼鏡をかけても十分な視力が出ず、眼科</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">で訓練を続けている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">視力が発達する幼少期（生後から3歳頃にかけて</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">発達し、8歳頃に成熟）に、強い遠視・乱視など</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の屈折異常、斜視、先天白内障や眼瞼下垂による</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">視野の妨げなどがあると、脳が片眼からの視覚…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小児の弱視は視覚の感受性期（8歳頃まで</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">）の眼科専門治療（屈折矯正・アイパッチ訓練・</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">点眼・手術）が最優先であり、鍼灸で標準治療を</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">代替することはありません / 2. 主治医…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

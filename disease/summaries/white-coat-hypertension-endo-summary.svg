@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="白衣高血圧の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16284c"/>
+      <stop offset="100%" stop-color="#233d70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b68d40"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">内分泌のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">白衣高血圧</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">家庭では正常なのに病院など慣れない場所で緊張し一時的に血圧が上がる状態。</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">交感神経の過緊張を和らげる自律神経ケアを行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b68d40"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">自宅では正常なのに病院で測ると血圧が</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">高い</text><circle cx="76" cy="375" r="5" fill="#b68d40"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">健診や診察室に入ると緊張してドキドキ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">する</text><circle cx="76" cy="441" r="5" fill="#b68d40"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">将来、持続的な高血圧に移行しないか不</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">安</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">病院などの慣れない環境で無意識に緊張し、自律</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">神経のバランスが乱れて交感神経が優位になるこ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">とで、一時的に血圧が上昇する状態です。病院で</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">高血圧と判定された人の約15〜30％にみら…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 起床後1時間前後での家庭血圧測定と医療</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">機関での定期フォローを基本とし、持続性高血圧</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">への移行を見逃さない管理を重視します / 2</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">. 緊張時に交感神経が過剰に高ぶりやすい体…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

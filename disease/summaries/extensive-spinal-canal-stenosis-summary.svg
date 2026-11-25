@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="広範脊柱管狭窄症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3a4b"/>
+      <stop offset="100%" stop-color="#2a556c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c58b3c"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">広範脊柱管狭窄症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">複数箇所の脊柱管が狭まる疾患。医療機関での治療を優先し、過度な外力を避け</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">た補完ケアで筋緊張を和らげます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c58b3c"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">手のしびれや細かな作業のしにくさがあ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る</text><circle cx="76" cy="375" r="5" fill="#c58b3c"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">足腰の痛み・しびれ・つっぱり感で歩き</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">にくい</text><circle cx="76" cy="441" r="5" fill="#c58b3c"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">つまずきやすい・足首に力が入りにくい</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">など歩行に不安がある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頚椎・胸椎・腰椎のうち2ヶ所以上で脊柱管が狭</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">くなり、脊髄神経が圧迫されて日常生活に支障を</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">きたす疾患です。中年以降の男性、特に60代に</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">多く見られます。明確な原因は解明されていま…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 医療機関での検査・治療（装具・薬物・手</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">術等）を最優先とし、しびれの進行や排尿障害が</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ある場合は早急な受診を案内 / 2. 頚椎・</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">腰椎への急激な外力や強い負荷は厳禁とし、医…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="スピッツ母斑の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">スピッツ母斑</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">小児期に急激に現れる良性腫瘍のスピッツ母斑。皮膚科での悪性黒色腫鑑別と切</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">除・管理を最優先します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">顔や首、腕などに突然ピンク〜赤褐色や</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">黒色の盛り上がりが出た</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">短い期間で数ミリ〜1cmほどへ急に大</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">きくなった</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">衣服の摩擦などで擦れて炎症や出血が起</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">きないか心配</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">スピッツ母斑は主に乳幼児から学童期に発生する</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">後天性の色素性母斑の一種で、メラノサイト由来</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の良性皮膚腫瘍です。ピンクや赤茶色、黒色のド</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ーム状・円錐状の丘疹や結節が短期間で急激に…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 皮膚科でのダーモスコピー検査による悪性</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">黒色腫との鑑別、および医師の判断に基づく外科</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">的切除や厳重な定期観察を最優先にご案内します</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> / 2. スピッツ母斑の患部への直接刺鍼…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

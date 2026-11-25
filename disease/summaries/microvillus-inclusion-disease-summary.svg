@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="微絨毛封入体病の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21423a"/>
+      <stop offset="100%" stop-color="#326155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c49342"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">消化器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">微絨毛封入体病</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">MYO5B遺伝子異常等で大量の水様下痢を起こす希少難病。専門チーム医療が</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">最優先で安定期を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c49342"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">生後数日以内から大量の水様下痢が続い</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ている</text><circle cx="76" cy="375" r="5" fill="#c49342"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">急速な脱水や電解質異常・代謝性アシド</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ーシスを指摘された</text><circle cx="76" cy="441" r="5" fill="#c49342"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">経口・経腸での栄養吸収が難しく静脈栄</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">養管理を行っている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">腸管上皮細胞の微絨毛が腸管腔側に正しく局在で</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">きず、大量の水様下痢と重度の栄養吸収障害を起</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">こす極めてまれな遺伝性疾患（先天性微絨毛萎縮</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">症）です。主にMYO5B遺伝子（一部でST…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 専門医療チームによる栄養・輸液管理の最</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">優先（早期の中心静脈ルート確保、経静脈栄養、</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">電解質・感染管理、重症例での小腸移植検討など</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、専門医療機関の多職種チーム治療が生命維持…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

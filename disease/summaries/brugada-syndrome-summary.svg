@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="ブルガダ症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4b2230"/>
+      <stop offset="100%" stop-color="#6d3448"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48a47"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">循環器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">ブルガダ症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">夜間や安静時に心室細動を起こし得る遺伝性不整脈疾患です。循環器専門医での</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">厳重な管理を最優先に、安定期のストレス管理を支援します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48a47"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">健診の心電図でブルガダ型波形を指摘さ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れた</text><circle cx="76" cy="375" r="5" fill="#c48a47"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">原因不明の失神や意識を失いかけたこと</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">がある</text><circle cx="76" cy="441" r="5" fill="#c48a47"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">夜間や安静時の動悸・めまい・胸の不快</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感が不安</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">心筋細胞の電気的活動を司るナトリウムチャネル</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">（SCN5A遺伝子など）の異常により、心臓の</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">電気的安定性が乱れ、突然「心室細動」という致</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">死性不整脈を引き起こすことがある病気です。…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 循環器専門医でのリスク評価、定期心電図</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">検査、必要に応じたICD（植込み型除細動器）</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">や薬物管理を絶対最優先とし、失神歴がある未管</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">理状態や発熱・体調不良時は鍼灸禁忌とします…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

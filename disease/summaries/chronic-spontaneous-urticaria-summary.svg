@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="慢性特発性蕁麻疹の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3c3a2a"/>
+      <stop offset="100%" stop-color="#59563f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">皮膚のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">慢性特発性蕁麻疹</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">薬を飲んでも繰り返す慢性特発性蕁麻疹に対し、自律神経と免疫過敏の土台を整</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">える解説。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">6週間以上、夕方〜夜や疲労時に地図状</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">のじんましんが繰り返し出る</text><circle cx="76" cy="375" r="5" fill="#c28f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・抗ヒスタミン薬を飲んでいるがスッキ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">リ治まらない</text><circle cx="76" cy="441" r="5" fill="#c28f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・ストレスや睡眠不足・寒暖差でかゆみ</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が悪化しやすい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">肥満細胞の活性化閾値低下に自律神経の乱れ・ス</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トレス・疲労が関与します。Ann Inter</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">n Med 2023年の3大学病院RCT（n</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">=330）では、4週時点の蕁麻疹活動性スコ…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 皮膚科の標準内服治療を継続しながら、曲</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">池・血海・築賓・三陰交で痒みと自律神経を調整</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> / 2. 膨疹や掻き傷のある皮膚へは直接刺</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">鍼・摩擦を避けて安全に施術 / 3. 睡眠…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

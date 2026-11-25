@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="小児喘息の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">小児喘息</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">小児科の標準治療を最優先に、安定期の穏やかな小児はりとツボケアで気道の過</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">敏さや自律神経の乱れを整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">夜間や早朝・運動後に咳や息苦しさが悪</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">化する</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">呼吸時にヒューヒュー・ゼーゼーと喘鳴</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が聞こえる</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">乳幼児で苦しさを言葉にできず泣いたり</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ぐずったりする</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">気管支の粘膜に慢性的な炎症があり、ハウスダス</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トやダニ、花粉、ペットの毛、風邪などの刺激に</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">対して気道が過敏に収縮し、呼吸困難発作を繰り</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">返す疾患です。発症は3歳までに約70％、5…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 急性発作時（唇の変色・陥没呼吸・横にな</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れない等）は即吸入・小児科受診を最優先とし施</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">術対象外 / 2. 安定期・主治医管理下で、</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">刺さない小児はりを用い肺兪・中府・労宮・孔…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

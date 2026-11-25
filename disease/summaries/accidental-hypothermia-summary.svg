@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="偶発低体温症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4b2230"/>
+      <stop offset="100%" stop-color="#6d3448"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48a47"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">循環器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">偶発低体温症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">寒冷環境などのアクシデントで深部体温が35℃未満に低下する緊急状態です。</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">救急医療を最優先とし、回復後の体調管理を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48a47"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">強い震えや手足の冷え、意識のもうろう</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感がある</text><circle cx="76" cy="375" r="5" fill="#c48a47"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">寒冷地や屋外でのアクシデント後に体調</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が戻らない</text><circle cx="76" cy="441" r="5" fill="#c48a47"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">回復後も強い冷えやすさや倦怠感が残っ</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">雪山での遭難、寒冷時の屋外での飲酒・転倒、冷</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">水への転落など予期せぬアクシデントにより体か</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ら熱が奪われ、体の中心温度（深部体温）が35</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">℃未満に低下した状態です。体温が下がるほど…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 偶発低体温症の発症時・急性期は命に関わ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る救急疾患のため鍼灸の適応外であり、直ちに1</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">19番通報や救急医療機関での適切な復温・循環</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">管理を受けていただきます。 / 2. 医療…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

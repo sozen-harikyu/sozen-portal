@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="類宦官症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#223c4e"/>
+      <stop offset="100%" stop-color="#345973"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b58b45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">泌尿器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">類宦官症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">男性ホルモンの分泌低下により二次性徴や体調に変化が生じる状態です。専門医</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">での原因精査とホルモン療法を最優先に、体調面を補完します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b58b45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">声変わりやヒゲ・体毛の発達など二次性</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">徴が十分にみられません</text><circle cx="76" cy="375" r="5" fill="#b58b45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">筋力の低下や強い疲労感、気分の落ち込</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">みが続いています</text><circle cx="76" cy="441" r="5" fill="#b58b45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">性欲の低下や勃起の不調、将来の不妊に</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ついて不安があります</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">類宦官症は性腺機能低下症の一部で、男性ホルモ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ン（テストステロン）の分泌低下により発症しま</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">す。精巣自体の異常による原発性（クラインフェ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ルター症候群、腫瘍、外傷、ムンプス睾丸炎な…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 内分泌内科・泌尿器科での基礎疾患の精査</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">やテストステロン・ゴナドトロピン製剤によるホ</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ルモン補充療法、骨密度管理を最優先とし、主治</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">医の許可のもとで補完的ケアを行います / …</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

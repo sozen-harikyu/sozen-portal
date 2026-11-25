@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="馬尾腫瘍の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#272643"/>
+      <stop offset="100%" stop-color="#3d3b66"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b88a44"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">馬尾腫瘍</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">腰椎内の馬尾神経に腫瘍が生じ、腰痛・下肢のしびれや麻痺・排尿排便障害を引</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">き起こす疾患で、専門医の精査と外科治療が最優先です。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f5f4fa"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#272643">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b88a44"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">腰やお尻の痛みが続き、特に夜間や横に</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">なると痛みが強くなる</text><circle cx="76" cy="375" r="5" fill="#b88a44"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">太ももから足先にかけて痛みやしびれ、</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感覚の鈍さがある</text><circle cx="76" cy="441" r="5" fill="#b88a44"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">足首や足指が上がりにくい・力が入らな</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いなど下肢の麻痺を感じる</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f5f4fa"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#272643">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">第1〜2腰椎より下位で脊髄から枝分かれした末</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">梢神経の束（馬尾）に発生する腫瘍で、脊髄腫瘍</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の約3割を占めます。50歳前後に多く、多くは</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">良性の神経鞘腫や上衣腫ですが、まれに悪性腫…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f5f4fa"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#272643">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 下肢の麻痺や排尿・排便障害、会陰部のし</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">びれがある場合は緊急性が高いため、施術よりも</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">直ちに整形外科・脳神経外科での受診と外科的摘</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">出手術を最優先にご案内します / 2. 鍼…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

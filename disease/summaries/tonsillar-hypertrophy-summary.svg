@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="扁桃肥大の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">扁桃肥大</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">喉の奥の扁桃が肥大し、いびきや呼吸障害・嚥下時の違和感が生じる状態です。</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">耳鼻科での評価と治療を最優先に、安定期の呼吸環境と体調を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">喉の奥の扁桃が大きく、いびきや睡眠時</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の無呼吸を指摘される</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">食べ物や飲み物が飲み込みにくく、喉の</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">狭さを感じる</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">扁桃炎や風邪を繰り返して扁桃の腫れが</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">引きにくい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">扁桃肥大は、喉の奥にある扁桃が腫れて大きくな</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">った状態で、生理的なものと病的なものに分けら</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れます。生理的肥大は免疫活動が活発な4〜8歳</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頃に多く成長とともに縮小しますが、病的肥大…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 睡眠時無呼吸や強い呼吸障害・感染症状が</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ある場合は耳鼻咽喉科での精査と手術適応の評価</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を最優先にご案内します / 2. 感染や強い</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">腫れのない安定期に、公式サイトで紹介してい…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

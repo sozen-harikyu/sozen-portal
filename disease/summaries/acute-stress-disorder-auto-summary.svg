@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="急性ストレス障害の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3557"/>
+      <stop offset="100%" stop-color="#2c4e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#a9844f"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">自律神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">急性ストレス障害</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">強い衝撃や危機体験から4週間以内に発症する急性ストレス障害。専門医の早期</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">治療を最優先に、落ち着いた時期の自律神経調整を補完します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#a9844f"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">強いショック体験の後に悪夢やフラッシ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ュバックが続いている</text><circle cx="76" cy="375" r="5" fill="#a9844f"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ぼーっとする・現実感が薄れるなど感情</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が鈍くなることがある</text><circle cx="76" cy="441" r="5" fill="#a9844f"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">小さな物音にも過敏に反応し夜も十分に</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">眠れない</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">急性ストレス障害は、交通事故や暴行、命の危機</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">など極めて強いショック体験や精神的ストレスか</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ら4週間以内に発症し、通常2日〜4週間以内に</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">経過する一過性の精神障害です。脳と自律神経…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. まず精神科・心療内科での早期受診と安全</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">確保を最優先とし、主治医の許可を得た安定した</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">時期に無理のない範囲で対応します / 2. </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">四神聡（四神総）や百会で自律神経と不眠傾向…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

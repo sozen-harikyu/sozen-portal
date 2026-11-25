@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="突き指の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3a4b"/>
+      <stop offset="100%" stop-color="#2a556c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c58b3c"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">突き指</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">指先への衝撃による腱・靭帯・骨の損傷。骨折や脱臼の確認を優先し、回復期の</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">循環と可動域回復を支援します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c58b3c"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ボールが当たる・転倒するなどして指が</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">強く腫れて痛む</text><circle cx="76" cy="375" r="5" fill="#c58b3c"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">指の関節がぐらつく、または第一関節が</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">曲がったまま伸ばしにくい</text><circle cx="76" cy="441" r="5" fill="#c58b3c"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">受傷から5〜15分以内に強い腫れや変</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">形が出た</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ボールの直撃や転倒などで指先に縦方向の強い力</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">や過度な伸展・屈曲が瞬間的に加わり、伸筋腱・</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">靭帯・骨を損傷する外傷です。バスケットボール</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・バレーボール・野球などで多く、軽度の打撲…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 受傷直後は無理に引っ張らず安静・冷却・</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">軽固定・挙上を行い、強い腫れ・変形や1週間以</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">上続く症状は整形外科での骨折確認を最優先 /</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> 2. 骨折や重度損傷が除外され急性期を過…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

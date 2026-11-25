@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="びまん性汎細気管支炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">びまん性汎細気管支炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">気管の末端である呼吸細気管支に慢性炎症が起こる病気です。呼吸器専門医の標</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">準治療を最優先に、安定期の呼吸を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">長期間にわたって咳や多量の痰が続いて</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いる</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">階段の上り下りや動作時に息苦しさを感</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">じる</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性的な副鼻腔炎（鼻詰まり・鼻汁）を</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">合併している</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">びまん性汎細気管支炎（DPB）は、肺胞につな</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">がる呼吸細気管支を中心に両肺びまん性に慢性炎</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">症が生じる疾患で、1969年に日本から提唱さ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れました。環境・遺伝・体質的要因が関与し、…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 呼吸器専門医でのマクロライド療法など標</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">準治療を最優先とし、安定期・主治医許可のもと</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">で補完的ケアを行います / 2. 肺兪・天突</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・大椎のツボと胸郭・背部の深層筋を優しく整…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="抗NMDA受容体脳炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2a4a"/>
+      <stop offset="100%" stop-color="#304373"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">脳神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">抗NMDA受容体脳炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">脳のNMDA受容体に対する自己抗体で発症する自己免疫性脳炎。急性期の入院</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">治療が必須であり、回復期以降の体調管理を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">発熱や頭痛など風邪様症状の後に幻覚・</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">妄想・興奮などが急に出た</text><circle cx="76" cy="375" r="5" fill="#c48f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">けいれん発作や不随意運動、意識障害、</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">言語障害を伴う</text><circle cx="76" cy="441" r="5" fill="#c48f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">血圧・心拍・体温の激しい変動や呼吸抑</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">制など自律神経症状がある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">抗NMDA受容体脳炎は、脳内の神経伝達を担う</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">NMDA受容体に対して自己抗体が作られ、脳に</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">炎症を引き起こす自己免疫性脳炎です。若年女性</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に多く良性の卵巣奇形腫などの腫瘍が引き金と…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 急性期は入院下でのステロイドパルス・ガ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ンマグロブリン・血漿交換や腫瘍摘出などの免疫</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">療法が絶対必須のため施術対象外です / 2.</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> 脳神経内科での専門管理と再発予防を最優先…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

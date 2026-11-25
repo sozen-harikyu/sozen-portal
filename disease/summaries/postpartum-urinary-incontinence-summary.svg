@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="産後尿失禁（出産後の尿漏れ・骨盤底筋訓練併用）の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a2545"/>
+      <stop offset="100%" stop-color="#6b3764"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c98b5b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">女性のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="96" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">産後尿失禁（出産後の尿漏れ・骨盤底筋</text><text x="56" y="140" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">訓練併用）</text>
+  <text x="56" y="176" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">出産後のくしゃみや抱っこによる尿漏れ（産後尿失禁）に対し、骨盤底筋訓練（</text><text x="56" y="202" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">PFMT）と併用して回復を後押しする産後鍼灸ケア。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c98b5b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">出産後、くしゃみ・咳・笑い・赤ちゃん</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を抱き上げた拍子に尿が漏れる ・骨…</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">妊娠中の子宮増大による骨盤底への持続負荷と、</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">経腟分娩時の骨盤底筋群・陰部神経の伸展損傷に</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">より、尿道閉鎖機能が低下して産後尿失禁が生じ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ます。2026年4月Frontiers i…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">産婦人科の1か月健診等で産褥経過に問題がない</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ことを確認したうえで、自宅での骨盤底筋訓練（</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">PFMT）と併用して施術します。仙骨部（次髎</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・中髎など）や下腹部・下肢の関連経穴（三陰…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

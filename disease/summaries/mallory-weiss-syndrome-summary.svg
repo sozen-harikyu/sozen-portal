@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="マロリー・ワイス症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21423a"/>
+      <stop offset="100%" stop-color="#326155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c49342"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">消化器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">マロリー・ワイス症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">激しい嘔吐で食道と胃の接合部粘膜が裂け出血する疾患。止血医療が最優先で回</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">復期の胃腸ケアを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c49342"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">激しい嘔吐を繰り返したあとに吐血した</text><circle cx="76" cy="351" r="5" fill="#c49342"/><text x="92" y="357" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">コーヒーの残りかすのような嘔吐物や黒</text><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">色便が出た</text><circle cx="76" cy="417" r="5" fill="#c49342"/><text x="92" y="423" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">みぞおちや胸・背中に痛みがある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">激しい嘔吐を繰り返すことで腹圧が急激に上昇し</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、食道と胃の接合部周辺の粘膜や血管が縦に裂け</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">て出血・吐血を起こす病気です。過度な飲酒（ア</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ルコール摂取）が大きく関与するほか、妊娠中…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 急性出血時の医療機関受診を最優先（吐血</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・黒色便・立ちくらみ・低血圧などがある場合は</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">直ちに医療機関を受診し、輸液や内視鏡的止血処</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">置・胃酸抑制薬による治療を受けていただきま…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

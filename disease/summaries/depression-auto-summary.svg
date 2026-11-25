@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="うつ病の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3557"/>
+      <stop offset="100%" stop-color="#2c4e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#a9844f"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">自律神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">うつ病</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">持続する抑うつ気分と多彩な身体症状を伴ううつ病。精神科の標準治療と十分な</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">休養を最優先に、自律神経と身体の不調を補完的に整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#a9844f"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">気分の落ち込みや興味・意欲の低下が2</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">週間以上続いている</text><circle cx="76" cy="375" r="5" fill="#a9844f"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">不眠や過眠、食欲低下、強い倦怠感が抜</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">けない</text><circle cx="76" cy="441" r="5" fill="#a9844f"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頭痛・肩こり・動悸・胃腸の不調・めま</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いがつらい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">うつ病は、感情や意欲を司る脳機能の不調により</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">精神症状と身体症状が続き、日常生活に支障をき</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">たす気分障害です。辛い出来事だけでなく結婚や</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">就職など嬉しい環境変化を含むストレス、身体…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 主治医の治療方針・服薬状況と体調の波を</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">確認し、休養を妨げない穏やかな刺激量で施術計</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">画を組み立てます / 2. 緊張や息苦しさに</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">は膻中、精神的疲労や胃部不快感・不眠には鳩…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

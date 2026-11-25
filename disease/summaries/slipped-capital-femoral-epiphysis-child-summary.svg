@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="大腿骨頭すべり症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">大腿骨頭すべり症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">思春期に大腿骨頭が成長板でずれる疾患。整形外科での緊急手術と免荷が絶対最</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">優先で、術後安定期のケアのみ補完します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">股関節のこわばりや痛み、または太もも</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・膝の痛みが続いている</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">歩く時に足を引きずる（跛行）や足先が</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">外向きになっている</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">股関節を内側にひねる・深く曲げる動き</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が硬く制限されている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">思春期早期（男児や肥満傾向のお子様に多い）に</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、大腿骨の先端にある骨頭が成長板の部位でずれ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">たり分離したりする整形外科疾患です。機械的ス</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トレスに加え、思春期のホルモン変動、肥満、…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 疑わしい症状がある段階や急性期は、直ち</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に歩行を中止（免荷）し整形外科での緊急診断・</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">手術（内固定術等）を受けることが絶対最優先で</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">あり、術前・急性期の圧迫や強刺激は厳禁・施…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

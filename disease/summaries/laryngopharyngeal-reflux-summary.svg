@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="咽喉頭逆流症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">咽喉頭逆流症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">胃酸の逆流が喉まで達し、声のかすれや喉の違和感を起こす疾患です。医療機関</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">での胃酸対策と並行し、自律神経と喉・胸部の緊張を鍼灸で整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">胸やけはあまりないのに、喉のイガイガ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感や引っかかり感が続く</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">朝起きたときの声のかすれや、頻繁な咳</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">払い・痰の絡みが気になる</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">食後や横になったときに喉の違和感や乾</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いた咳が出やすい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">咽喉頭逆流症（LPR）は、胃酸や消化液が食道</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を通って下咽頭や喉頭まで逆流し、繊細な喉の粘</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">膜を刺激することで耳鼻咽喉科領域の症状が現れ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る病気です。一般的な逆流性食道炎と異なり胸…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 耳鼻咽喉科・消化器内科での内視鏡検査や</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">薬物療法を基本とし、症状が長引く場合の補完的</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ケアとして自律神経と消化器の働きを整えます </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">/ 2. 横隔膜周囲・胸部・首肩の深層筋の…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

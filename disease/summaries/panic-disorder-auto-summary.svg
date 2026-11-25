@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="パニック障害の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3557"/>
+      <stop offset="100%" stop-color="#2c4e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#a9844f"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">自律神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">パニック障害</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">繰り返す発作への予期不安や過緊張に対し、医療機関での治療を前提に自律神経</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">と呼吸リズムを整える補完ケアを行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#a9844f"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">突然の動悸・息苦しさ・めまいなどの発</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">作に襲われることがある</text><circle cx="76" cy="375" r="5" fill="#a9844f"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">また発作が起きるのではという予期不安</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">で外出や電車が怖い</text><circle cx="76" cy="441" r="5" fill="#a9844f"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">首肩や胸周りが常にこわばり呼吸が浅く</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">なっている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">パニック障害は、明らかな危険がない状況で突然</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">強い恐怖や動悸、息苦しさ、めまいなどのパニッ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ク発作が生じ、再発への予期不安や回避行動を伴</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">う状態です。脳内の神経伝達物質のバランス異…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 医療機関での治療を最優先としつつ、交感</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">神経の過敏な興奮を鎮めて自律神経のバランスを</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">穏やかに調整 / 2. 発作や予期不安でこわ</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ばりやすい首・肩・胸郭周りの筋緊張を緩め、…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

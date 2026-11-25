@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="限局性皮質異形成の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">限局性皮質異形成</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">胎児期の大脳皮質形成異常により薬剤抵抗性てんかんを起こす指定難病。専門医</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">の治療を最優先に睡眠と休息の安定を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">抗てんかん薬を服用しても発作が繰り返</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">し起きやすい</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">乳幼児期からの発作や発達の遅れが気に</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">なっている</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">発熱時や疲労・睡眠不足、月経前後に発</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">作が増えやすい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">胎児期に脳が作られる過程での形成異常により、</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">大脳皮質の一部に奇形が生じる疾患です。明確な</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">原因は未解明ですが、一部では細胞増殖に関わる</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">体細胞遺伝子変異の関与が分かっており、原則…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小児神経科・てんかん専門医での精密評価</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、抗てんかん薬の継続および適応に応じた外科手</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">術が絶対最優先であり、発作頻発期や急性期は施</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">術対象外です / 2. 発作がコントロール…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

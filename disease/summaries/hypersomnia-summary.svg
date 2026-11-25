@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="過眠症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2a4a"/>
+      <stop offset="100%" stop-color="#304373"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">脳神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">過眠症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">夜間の睡眠量にかかわらず日中の強い眠気が続く睡眠障害です。専門医の鑑別を</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">優先しつつ、ツボ刺激と養生で自律神経を整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">夜しっかり寝ても日中に耐え難い眠気や</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">居眠りが1か月以上続く</text><circle cx="76" cy="375" r="5" fill="#c48f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">笑う・驚くなどの感情変化で急に力が抜</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ける（情動脱力発作）</text><circle cx="76" cy="441" r="5" fill="#c48f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1時間以上昼寝をしてもすっきりせずだ</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">るさが残る</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">夜間に十分な睡眠をとっているにもかかわらず、</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">日常生活に支障をきたす日中の過度な眠気が1か</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">月以上続く睡眠障害の総称です。視床下部のオレ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">キシン低下が関わるナルコレプシー（14〜1…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 睡眠専門医での原因鑑別と治療を優先：ナ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ルコレプシーや睡眠時無呼吸症候群など原因疾患</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の診断と覚醒維持薬・睡眠薬による治療を優先し</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、医師管理下の補完ケアとして対応します /…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="カサンドラ症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3557"/>
+      <stop offset="100%" stop-color="#2c4e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#a9844f"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">自律神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">カサンドラ症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">身近な人との情緒的な共感の乏しさと周囲の無理解から心身が疲弊する状態。心</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">理支援と並行し、百会・期門等で自律神経と倦怠感を整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#a9844f"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">パートナーと気持ちを通わせにくく強い</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">孤独感や自己否定感がある</text><circle cx="76" cy="375" r="5" fill="#a9844f"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">周囲に相談しても理解されず一人でスト</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">レスを抱え込んでいる</text><circle cx="76" cy="441" r="5" fill="#a9844f"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性的な頭痛・胃痛・吐き気・強い倦怠</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感や不眠が続いている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">カサンドラ症候群は正式な医学診断名ではありま</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">せんが、パートナーや家族との情緒的な相互交流</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・共感の築きにくさに加え、周囲からも理解を得</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">られない孤立感が長期化することで、不安・抑…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 強い抑うつ・不眠が続く場合は心療内科・</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">精神科受診やカウンセリング・ピアサポートの活</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">用を優先とし、補完的な心身ケアを実施 / 2</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">. 自律神経を整え頭痛・気分の沈みを和らげ…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

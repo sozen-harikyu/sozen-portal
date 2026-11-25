@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="仮性近視の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3b5c"/>
+      <stop offset="100%" stop-color="#2b5887"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#4f86b8"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">眼のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">仮性近視</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">近くを見続けることで毛様体筋が緊張し一時的に遠くがぼやける状態です。眼科</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">検査と併用しピント調節の負担を和らげます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#4f86b8"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">近くは見えるのに遠くの看板や黒板がぼ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">やける</text><circle cx="76" cy="375" r="5" fill="#4f86b8"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">朝や夕方など時間帯によって見え方が変</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">動する</text><circle cx="76" cy="441" r="5" fill="#4f86b8"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">休憩したり遠くを眺めたりすると一時的</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に見やすくなる</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">仮性近視は「偽近視」「調節緊張」「調節痙攣」</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">とも呼ばれ、長時間の近業や悪い姿勢での読書・</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">デジタル機器使用によって、水晶体の厚みを調節</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">する毛様体筋が過度に緊張したまま戻らなくな…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 眼科での屈折検査や点眼薬による管理を基</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">本としつつ、攢竹・太陽・晴明周辺など安全なツ</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ボ刺激で毛様体筋周囲の血流と神経反射を整えま</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">す / 2. 悪い姿勢による首・肩・後頭部…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

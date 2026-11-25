@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="薬剤起因性腸炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21423a"/>
+      <stop offset="100%" stop-color="#326155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c49342"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">消化器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">薬剤起因性腸炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">抗菌薬や鎮痛剤等の影響で腸粘膜に炎症が起こる疾患。医師の処置を最優先に、</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">回復期の胃腸機能を補完します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c49342"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">抗菌薬や鎮痛剤の服用後に水様下痢や腹</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">痛が出た</text><circle cx="76" cy="375" r="5" fill="#c49342"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">血便や粘液便・発熱を伴う腸の不調があ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">った</text><circle cx="76" cy="441" r="5" fill="#c49342"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">医師の指導で薬を変更・中止し回復期に</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">入っている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">抗菌薬（広域セフェム系・クリンダマイシン・ペ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ニシリン系など）や消炎鎮痛剤（NSAIDs）</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、PPI、免疫抑制薬、抗がん剤などの服用によ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り、腸粘膜の障害や血流低下、腸内細菌叢の乱…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 医療機関での速やかな診断・原因薬の中止</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">や変更、点滴・薬物治療を最優先とし、発熱・血</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">便・強い腹痛がある急性期は受診をご案内 / </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">2. 医師の治療を経て状態が安定した回復期…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

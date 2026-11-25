@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="ムコ多糖症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">ムコ多糖症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">ムコ多糖を分解する酵素の先天性欠損によるライソゾーム病。専門医の酵素補充</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">療法などを最優先に、安定期の穏やかな補完ケアを行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">関節のこわばりや骨格の変形、低身長が</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">徐々に目立ってきた</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">肝臓・脾臓の腫れによるお腹の張りや特</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">徴的な顔貌の変化がある</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">視力・聴力の低下や心臓・神経症状の定</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">期検査を受けている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">体内のムコ多糖（グリコサミノグリカン）を分解</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">するライソゾーム酵素が遺伝的に欠損することで</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、未分解の物質が全身の組織に蓄積する先天性代</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">謝異常症です。病型により症状や進行度は異な…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小児代謝・遺伝専門医での早期診断および</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">酵素補充療法・造血幹細胞移植・循環器や耳鼻科</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">などの多科管理を絶対最優先とし、急性合併症や</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">体調不安定時・感染時は施術対象外です / …</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

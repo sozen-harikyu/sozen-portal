@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="声帯炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">声帯炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">ウイルス感染や酷使で声帯が腫れて声枯れを起こす声帯炎に対し、専門医治療と</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">安静を基本に回復を助ける鍼灸を行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">風邪をひいた後から声が枯れて高い声や</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">細い声が出ない</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">声帯の腫れ感や喉の痛み、渇き・かゆみ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・咳が続いている</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">重い時はほとんど声が出ず、会話や仕事</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に支障が出ている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">声帯炎は、喉頭の中でも発声を担う声帯に炎症が</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">起きて粘膜が腫れ、声枯れや失声を招く病気です</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">。多くはウイルス感染による風邪の一症状（急性</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">声帯炎）として発症し、大声の出し過ぎや喫煙…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 喉の回復を助けるツボへの施術：公式サイ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トでも紹介している列缺・少商などを活用し、喉</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の違和感や咳、首後ろのこわばりを優しく和らげ</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ます。 / 2. 首肩・呼吸筋の巡り改善：…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

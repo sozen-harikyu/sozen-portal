@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="空気嚥下症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">空気嚥下症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">ストレスや噛み締め癖などで無意識に空気を過剰に飲み込み、げっぷや腹部膨満</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">を起こす状態です。自律神経と胃腸を整えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頻繁にげっぷが出て人前で気になってし</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">まう</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">上腹部の膨満感や圧迫感、おならが多く</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">つらい</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ストレス時に無意識に歯を噛み締める癖</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">がある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">空気嚥下症（呑気症）は、飲食時以外にも無意識</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に唾液と一緒に空気を過剰に飲み込むことで胃腸</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">にガスが溜まり、げっぷや腹部膨満感、圧迫感、</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">吐き気、頭痛、睡眠障害などを引き起こす状態…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 消化器機能を促す天枢などの腹部ツボを用</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いて、胃腸の巡りと働きを整え膨満感や不快感の</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">軽減をサポートします / 2. 顎周囲・首肩</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の深層筋を丁寧に緩めて噛み締め癖の負担を和…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

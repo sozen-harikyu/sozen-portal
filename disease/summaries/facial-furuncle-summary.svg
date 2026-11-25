@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="面疔の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3c3a2a"/>
+      <stop offset="100%" stop-color="#59563f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">皮膚のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">面疔</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">鼻や口元など顔の中心部に黄色ブドウ球菌が感染して赤く腫れ膿と強い痛みを生</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">じるできもので、皮膚科診療が最優先です。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">鼻や口元など顔の中心部に赤く硬く腫れ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">たできものができた</text><circle cx="76" cy="375" r="5" fill="#c28f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ズキズキとした明らかな痛みや熱感があ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り中心に膿がたまっている</text><circle cx="76" cy="441" r="5" fill="#c28f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ニキビと思って潰した後に急に腫れや痛</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">みが悪化した</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">面疔（めんちょう）は、毛嚢炎の中でも鼻や口元</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">など顔の中心部にできる赤く腫れたできもの（お</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">でき）です。アクネ菌によるニキビとは異なり、</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">主に黄色ブドウ球菌が毛穴や汗腺に感染して発…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 強い腫れ・膿・痛み・発熱がある急性期は</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、速やかに皮膚科で抗生物質や適切な処置を受け</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ることが最優先です。患部を触ったり潰したりし</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ないでください / 2. 感染と炎症が落ち…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

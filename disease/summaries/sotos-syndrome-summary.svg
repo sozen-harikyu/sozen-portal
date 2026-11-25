@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="ソトス症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">ソトス症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">NSD1遺伝子異常により出生時から過成長や大頭症、筋緊張低下を生じる先天</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">性疾患。専門医の定期管理を最優先に、安定期の穏やかな補完ケアとご家族支…</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">出生時から身長や頭囲が大きく発達の遅</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れや筋緊張低下がある</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">哺乳のしにくさや言葉の遅れ・療育につ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いて悩んでいる</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">原因不明の発熱や尿路感染症・腎臓の合</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">併症が心配</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ソトス症候群は、1万〜2万人に1人程度の頻度</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">で発症する過成長症候群で、多くはNSD1遺伝</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">子の新生変異や微細欠失によって起こります（一</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">部原因不明やNFIX関連の類似例あり）。出…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小児科・整形外科・泌尿器科など専門医で</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の定期検診と合併症管理を絶対最優先とし、発熱</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">やけいれん等の急性期は施術対象外です / 2</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">. 症状が安定した時期に主治医の許可を得た…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

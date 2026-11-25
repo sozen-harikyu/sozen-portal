@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="皮下脂肪織炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3c3a2a"/>
+      <stop offset="100%" stop-color="#59563f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">皮膚のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">皮下脂肪織炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">皮膚の下の脂肪組織に炎症が起き、脚や腕などに圧痛のある赤い膨らみや硬結が</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">生じる疾患で、専門医の精査が最優先です。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">脚や腕、臀部などの皮膚の下に押すと痛</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">む赤い膨らみがある</text><circle cx="76" cy="375" r="5" fill="#c28f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">直径数センチほどの硬いしこりや凹凸・</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">むくみを感じる</text><circle cx="76" cy="441" r="5" fill="#c28f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">皮膚の症状とともに発熱や関節痛・筋肉</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">痛・だるさがある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">皮下脂肪織炎は、皮膚の下にある脂肪組織に炎症</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が生じる疾患で、結節性紅斑も含まれます。原因</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">は感染症、寒冷刺激、外傷のほか、全身性エリテ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">マトーデス、膵臓の病気、炎症性腸疾患、結節…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#faf8f2"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#3c3a2a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 基礎疾患の有無を確認することが極めて重</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">要であり、発熱や強い圧痛がある急性期は皮膚科</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・内科での診断と薬物治療を最優先とします /</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> 2. 医師の管理下で炎症が落ち着いた回復…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

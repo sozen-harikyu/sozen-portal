@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="翼状片の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3b5c"/>
+      <stop offset="100%" stop-color="#2b5887"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#4f86b8"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">眼のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">翼状片</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">鼻側の結膜組織が角膜へ伸びてくる良性の変化です。眼科での経過観察や手術を</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">基本とし、鍼灸で眼精疲労や首肩の緊張をケアします。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#4f86b8"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">目頭側の白目が黒目に向かって三角形に</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">伸びてきている</text><circle cx="76" cy="375" r="5" fill="#4f86b8"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">目の充血やゴロゴロした異物感・乾燥感</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が続く</text><circle cx="76" cy="441" r="5" fill="#4f86b8"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">以前より乱視が強くなり、物がぶれて見</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">えにくい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">翼状片は、鼻側の結膜下組織が異常に増殖し、三</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">角形の形をして角膜中央に向かって入り込んでく</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る良性の疾患です。明確な原因は解明されていま</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">せんが、高齢者や屋外労働者に多いことから、…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 翼状片そのものは点眼薬や鍼灸で退縮しな</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">いため、眼科での経過観察・抗炎症点眼や、進行</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">時の切除手術・羊膜移植などの標準治療を基本と</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">します / 2. 乱視の悪化や違和感によっ…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

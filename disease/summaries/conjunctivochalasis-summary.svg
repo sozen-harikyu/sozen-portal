@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="結膜弛緩症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3b5c"/>
+      <stop offset="100%" stop-color="#2b5887"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#4f86b8"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">眼のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">結膜弛緩症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">白目の結膜が過度に緩み涙目や異物感が生じる状態です。眼科での点眼や手術管</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">理を基本とし、目周囲の疲労と乾燥対策を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#4f86b8"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">目にゴミが入ったようなゴロゴロした異</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">物感がある</text><circle cx="76" cy="375" r="5" fill="#4f86b8"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">悲しくもないのに涙があふれてこぼれや</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">すい</text><circle cx="76" cy="441" r="5" fill="#4f86b8"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">白目の充血や結膜下出血を何度も繰り返</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">している</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">結膜弛緩症は、白目を覆う半透明の膜（結膜）の</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">緩みが平均以上に強くなり、下まぶたに沿ってし</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">わのように折り重なる状態です。加齢に伴って増</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">えるほか、ドライアイ、シェーグレン症候群、…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3b5c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 眼科での人工涙液・抗炎症点眼薬、重度の</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">場合の結膜切除手術など標準治療を最優先とし、</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">眼球や結膜への直接刺激は一切行いません / </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">2. ドライアイや眼精疲労が併発しやすい目…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

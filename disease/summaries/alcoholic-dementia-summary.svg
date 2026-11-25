@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="アルコール性認知症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2a4a"/>
+      <stop offset="100%" stop-color="#304373"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">脳神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">アルコール性認知症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">多量飲酒による脳萎縮や栄養障害で起こる認知症。専門医での禁酒・栄養治療を</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">最優先に、安定期の睡眠やストレスケアを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">多量飲酒が続いており急激に激しい物忘</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れが増えた</text><circle cx="76" cy="375" r="5" fill="#c48f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">今がいつでどこにいるのか時間や場所が</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">分からなくなる</text><circle cx="76" cy="441" r="5" fill="#c48f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">記憶の空白を埋めるように事実と異なる</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">話をしてしまう</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">長期間の多量飲酒によって引き起こされる脳梗塞</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">などの脳血管障害、ビタミンB1欠乏に伴う栄養</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">障害、さらにアルコール自体の神経毒性による脳</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">萎縮が重なって発症します。高齢者に限らず若…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 脳神経内科やアルコール専門外来での診断</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、ビタミンB1補充などの栄養管理、離脱症状へ</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の医療対応と早期禁酒が最優先であり、離脱症状</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">や急性障害がある時期は鍼灸対象外です / …</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

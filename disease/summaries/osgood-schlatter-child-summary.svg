@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="オスグッドの要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">オスグッド</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">成長期の膝下の突出と痛みを招くオスグッドに対し、大腿四頭筋の緊張緩和と穏</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">やかなケアでスポーツ復帰を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">サッカーやバスケ・バレーボール等の後</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">に膝のお皿の下が痛む</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">膝の下の骨（脛骨粗面）が少しずつ突出</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">し赤く腫れたり熱を持ったりする</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">休むと痛みは引くが、スポーツを再開す</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ると再び痛む</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">成長期の男子に多くみられるスポーツ障害（正式</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">名称：オスグッド・シュラッター病）で、サッカ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ーやバスケットボール、バレーボールなど膝を繰</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り返し伸ばす種目で好発します。骨の成長スピ…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 強い腫れ・熱感がある時期は整形外科での</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">診断とスポーツ休止・湿布や投薬などの標準対応</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を最優先 / 2. 突出部への直接の強い刺激</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を避け、成長期に合わせた穏やかな鍼灸・手技…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

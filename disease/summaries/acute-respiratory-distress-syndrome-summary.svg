@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="急性呼吸窮迫症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">急性呼吸窮迫症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">命に関わる重篤な急性呼吸不全（ARDS）です。発症時はICUでの救急治療</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">が絶対最優先で鍼灸は絶対禁忌とし、退院・回復後のみ主治医許可下でケアし…</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">急激な息苦しさや呼吸回数の増加、唇の</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">青白さがある（直ちに救急受診が必要）</text><circle cx="76" cy="375" r="5" fill="#c28b3b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ARDSからの回復・退院後も全身の強</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">い疲労感や筋力低下が残っている</text><circle cx="76" cy="441" r="5" fill="#c28b3b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">長期臥床後の首・肩・背中のこわばりや</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">呼吸の浅さが気になる</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">急性呼吸窮迫症候群（ARDS）は、重症肺炎・</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">敗血症・多発外傷・誤嚥・急性膵炎などをきっか</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">けに肺全体で激しい炎症が起こり、肺胞に水分が</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">しみ出して急激かつ重篤な低酸素血症を引き起…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. ARDSの急性期・入院中・呼吸不全があ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る状態ではICUでの救急医療が絶対最優先であ</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り、鍼灸施術は絶対禁忌として一切行いません </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">/ 2. 医療機関での治療を完了し退院・病…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

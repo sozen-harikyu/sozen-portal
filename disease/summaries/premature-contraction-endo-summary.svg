@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="期外収縮の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16284c"/>
+      <stop offset="100%" stop-color="#233d70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b68d40"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">内分泌のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">期外収縮</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">正常な拍動の間に不規則な拍動が混じり脈が飛ぶ不整脈。心疾患の有無を医師に</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">確認したうえで、自律神経と生活リズムを整えるケアを行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b68d40"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">脈が一瞬飛ぶ・胸が一瞬つまずくような</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感覚がある</text><circle cx="76" cy="375" r="5" fill="#b68d40"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">胸のつまり感や喉が押されるような不快</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">感がある</text><circle cx="76" cy="441" r="5" fill="#b68d40"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ストレスや疲労・睡眠不足のときに症状</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が増える</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">期外収縮は正常な拍動の間に時々不規則な拍動が</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">現れる不整脈の一つで、心房で異常な電気が生じ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る心房期外収縮と心室で生じる心室期外収縮があ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ります。多くは原因不明で良性ですが、心臓弁…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 心疾患や高血圧など基礎疾患の有無と心室</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">期外収縮のリスク評価を循環器内科で受けること</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を最優先とし、めまい・失神・強い動悸がある急</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">性期は施術対象外とします / 2. 基礎疾…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

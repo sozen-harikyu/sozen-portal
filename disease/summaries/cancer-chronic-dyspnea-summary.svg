@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="がん・慢性呼吸器疾患に伴う呼吸困難（息苦しさ緩和補助）の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16284c"/>
+      <stop offset="100%" stop-color="#233d70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b68d40"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">がんの種類｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="96" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">がん・慢性呼吸器疾患に伴う呼吸困難（</text><text x="56" y="140" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">息苦しさ緩和補助）</text>
+  <text x="56" y="176" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">がんや慢性呼吸器疾患に伴うつらい息苦しさ（呼吸困難）に対し、標準治療・緩</text><text x="56" y="202" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">和ケアと併用して呼吸補助筋と不安を和らげる補助鍼灸。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b68d40"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">少し動くだけで息切れや息苦しさが強く</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">出る ・息苦しさへの不安から肩や胸…</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">がんの進行や慢性閉塞性肺疾患（COPD）等に</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">よる呼吸困難では、換気障害だけでなく首肩・胸</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">郭の呼吸補助筋の過緊張や、大脳辺縁系を介した</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">「息苦しさへの恐怖・不安」が悪循環を生みま…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">主治医・緩和ケアチームの治療（酸素療法・薬物</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">療法等）と連携し、呼吸に負担をかけない座位や</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">半座位など楽な姿勢で施術します。胸部への深い</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">刺鍼は避け、手足の遠隔経穴（内関・魚際・合…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

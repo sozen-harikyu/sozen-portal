@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="チック症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3557"/>
+      <stop offset="100%" stop-color="#2c4e7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#a9844f"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">自律神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">チック症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">自分の意思に反して素早い動きや発声が繰り返される状態です。専門医の管理下</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">で、成人の自律神経と筋緊張を整える補完的ケアを行います。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#a9844f"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">まばたきや顔しかめ、首振りなどを無意</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">識に繰り返す</text><circle cx="76" cy="375" r="5" fill="#a9844f"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">咳払いや鼻鳴らしなど意図しない音声が</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">出てしまう</text><circle cx="76" cy="441" r="5" fill="#a9844f"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">緊張・疲労・ストレスが重なると症状が</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">強まりやすい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">チック症は、脳内の神経伝達物質であるドーパミ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ンの分泌バランスや受容体の過敏性、遺伝的要因</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、脳の興奮と抑制の調整機能のアンバランスが関</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">与すると考えられています。心理的・環境的ス…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f2f7fb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1d3557">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 脳や神経の過興奮を落ち着かせるため百会</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・神門・太衝を用いた自律神経調整 / 2. </text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">チック動作に伴う首・肩・背中など全身の筋緊張</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を丁寧に緩める鍼灸施術 / 3. 眼精疲労…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

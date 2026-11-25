@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="卵巣のう腫茎捻転の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a2545"/>
+      <stop offset="100%" stop-color="#6b3764"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c98b5b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">女性のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">卵巣のう腫茎捻転</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">発症時は緊急手術が必要な救急疾患です。術後・安定期の体調回復や自律神経ケ</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">アを遠隔ツボで補完します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c98b5b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">突然、片側の下腹部に激しい痛みが起き</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">た</text><circle cx="76" cy="375" r="5" fill="#c98b5b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">姿勢を変えても治まらない腹痛と吐き気</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">がある</text><circle cx="76" cy="441" r="5" fill="#c98b5b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">卵巣のう腫を指摘され再発や体調面が不</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">安</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">卵巣に液体や脂肪などが溜まる卵巣のう腫（4〜</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">5cm以上でリスク上昇）が、子宮とつなぐ茎（</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">靭帯）を中心にねじれ、卵巣への血流が途絶える</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">救急疾患です。急な運動や腹圧上昇、妊娠、排…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 発症時は救急・産婦人科の緊急手術が絶対</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">最優先：突然の下腹部激痛や吐き気・めまいがあ</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る場合は鍼灸の適応外であり、直ちに救急医療機</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">関・産婦人科を受診してください / 2. …</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

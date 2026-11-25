@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="月経前不快気分障害の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a2545"/>
+      <stop offset="100%" stop-color="#6b3764"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c98b5b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">女性のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">月経前不快気分障害</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">生理前の激しい気分の落ち込みや怒り、強い不安で日常に支障が出るPMDDに</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">対し、自律神経と血流を整える鍼灸で心身の安定を目指します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c98b5b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">生理前に突然強いイライラや怒りが抑え</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">られなくなる</text><circle cx="76" cy="375" r="5" fill="#c98b5b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">理由のない涙や絶望感、自己嫌悪に襲わ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れる</text><circle cx="76" cy="441" r="5" fill="#c98b5b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">下腹部の張りや胸の痛み、頭痛・倦怠感</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">がつらい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">月経前不快気分障害（PMDD）は、排卵後のエ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ストロゲンやプロゲステロンの急激な変動に対し</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">て脳が過敏に反応し、気分を安定させる脳内セロ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">トニンの働きが低下することが関与すると考え…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 自律神経とホルモンリズムを整える鍼灸：</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">気海・三陰交・関元を中心に骨盤内血流を促し、</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">交感神経の過緊張を和らげて心身の揺らぎを整え</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ます / 2. 生理周期に合わせた温灸・セ…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="無精子症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#223c4e"/>
+      <stop offset="100%" stop-color="#345973"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b58b45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">泌尿器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">無精子症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">精液中に精子が認められない男性不妊の原因の一つです。専門医での鑑別・生殖</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">医療を基本に、心身のコンディショニングを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b58b45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">精液検査で精子が確認されず、無精子症</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">と診断された</text><circle cx="76" cy="375" r="5" fill="#b58b45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">閉塞性か非閉塞性かの検査やホルモン療</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">法・TESE等を検討している</text><circle cx="76" cy="441" r="5" fill="#b58b45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">自覚症状がないまま診断を受け、強い不</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">安やストレスを抱えている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">無精子症は、精液中に精子が全く確認されない状</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">態であり、精巣で精子は作られているが精管など</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の通り道が詰まっている「閉塞性無精子症」と、</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">精巣での精子形成自体が障害されている「非閉…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f7fa"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#223c4e">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 泌尿器科・男性不妊専門医での精液検査・</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ホルモン検査・手術（精路再建術やTESE/M</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">icro-TESE）・顕微授精などの標準治療</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を最優先とします / 2. 治療と並行して…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="慢性閉塞性肺疾患の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f3c58"/>
+      <stop offset="100%" stop-color="#2f577e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c28b3b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">耳鼻咽喉のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">慢性閉塞性肺疾患</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">喫煙などの有害物質で気道や肺が傷むCOPD。禁煙と呼吸器専門医管理を最優</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">先に、安定期・主治医許可下で呼吸のしやすさを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c28b3b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">階段の上り下りや歩行で息切れしやすい</text><circle cx="76" cy="351" r="5" fill="#c28b3b"/><text x="92" y="357" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">咳や痰が長い期間ずっと続いている</text><circle cx="76" cy="393" r="5" fill="#c28b3b"/><text x="92" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">胸の圧迫感や呼吸時のヒューヒュー音が</text><text x="92" y="423" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性閉塞性肺疾患（COPD）は、タバコの煙な</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">どの有害物質を長期間吸い込むことで気管支の慢</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">性炎症や肺胞の破壊（肺気腫）が進み、空気の出</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">し入れが妨げられる進行性の肺疾患です。原因…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f8fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1f3c58">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 呼吸器専門医での吸入療法や禁煙治療を最</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">優先とし、肺気腫に伴う気胸リスクに配慮して胸</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">背部への深刺は行わず、主治医許可下の安定期に</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">穏やかな施術を行います / 2. 公式サイ…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

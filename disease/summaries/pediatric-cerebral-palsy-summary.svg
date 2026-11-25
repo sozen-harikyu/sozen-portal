@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="小児脳性麻痺（リハビリ併用ケア）の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">小児脳性麻痺（リハビリ併用ケア）</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">小児科・療育リハビリを軸に、手足の過緊張緩和と睡眠・体調管理を優しく支え</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">る解説。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">療育や理学療法・作業療法を受けている</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が、手足のこわばり（筋緊張異常）が…</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・夜の眠りが浅く、便秘や体調不良も起</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">こしやすい</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・痛みの少ない方法でリハビリを後押し</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">できるケアを探している</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">発達期脳の非進行性病変により運動・姿勢制御や</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">筋緊張バランスに障害が生じます。21 RCT</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">s（n=1,718）のメタ解析（PubMed</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> 29926839）では、通常リハビリへの…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小児科主治医・リハビリ専門職の療育計画</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を最優先とし、恐怖感のない「刺さない小児はり</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">」から開始 / 2. 過緊張筋の穏やかな緩和</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">と、睡眠・便秘など生活の質を左右する自律神…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

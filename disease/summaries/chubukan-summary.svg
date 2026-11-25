@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="肘部管症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16284c"/>
+      <stop offset="100%" stop-color="#243b6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b68d40"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">特に対応することが多い症状｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">肘部管症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">肘の内側での尺骨神経圧迫による小指・薬指のしびれに対し、前腕の深層筋を緩</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">め神経再生を促す施術解説。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#faf5eb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b68d40"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">小指と薬指の内側半分がビリビリしびれ</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る、感覚が鈍い</text><circle cx="76" cy="375" r="5" fill="#b68d40"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・肘の内側から前腕にかけて痛みやしび</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">れが放散する</text><circle cx="76" cy="441" r="5" fill="#b68d40"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・肘を長時間曲げている（スマホ・デス</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">クワーク・就寝時）と悪化する</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#faf5eb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">肘の内側（肘部管）を通る尺骨神経が、尺側手根</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">屈筋・浅指屈筋・深指屈筋などの筋肉の硬結や肘</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">関節の摩擦・圧迫を受けることで発症します。放</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">置して神経障害が進行すると、指が伸びにくく…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#faf5eb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小指のみか前腕まで広がるかなど、しびれ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">のパターンと進行度（痛み→しびれ→麻痺）を見</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">極める / 2. 肘部管を構成する前腕内側の</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">深層筋やツボ（小海など）へ鍼灸を行い、神経…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

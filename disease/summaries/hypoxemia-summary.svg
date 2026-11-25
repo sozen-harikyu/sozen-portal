@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="低酸素血症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4b2230"/>
+      <stop offset="100%" stop-color="#6d3448"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48a47"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">循環器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">低酸素血症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">動脈血中の酸素が不足した状態です。医療機関での酸素投与と原因疾患の治療を</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">最優先に、安定期の呼吸環境や疲労感をサポートします。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48a47"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">息苦しさや呼吸の浅さ、動悸を感じやす</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">い</text><circle cx="76" cy="375" r="5" fill="#c48a47"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">手足の冷えや皮膚・唇の血色の悪さがあ</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る</text><circle cx="76" cy="441" r="5" fill="#c48a47"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頭痛やめまい、強い倦怠感が続いている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">動脈を流れる血液中の酸素が不足した状態で、動</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">脈血ガス分析などで評価されます。肺炎・肺線維</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">症・COPDなどの呼吸器疾患、心不全などの循</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">環器疾患、呼吸中枢や神経筋の障害、貧血、出…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 強い呼吸困難・チアノーゼ・意識障害・急</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">な酸素飽和度低下がある急性期は鍼灸禁忌とし、</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">直ちに医療機関での酸素吸入と基礎疾患の診断・</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">治療を最優先とします / 2. 呼吸器内科…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

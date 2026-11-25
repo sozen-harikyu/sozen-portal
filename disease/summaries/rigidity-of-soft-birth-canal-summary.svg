@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="軟産道強靭の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a2545"/>
+      <stop offset="100%" stop-color="#6b3764"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c98b5b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">女性のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">軟産道強靭</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">軟産道強靭は産婦人科での適切な分娩管理が最優先です。分娩時・緊急時は鍼灸</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">対象外とし、産後回復期や主治医許可下の体調管理を支援します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c98b5b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">分娩時に陣痛があるのに子宮口がなかな</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">か開かないと言われた</text><circle cx="76" cy="375" r="5" fill="#c98b5b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">子宮筋腫や過去の子宮頸部手術による産</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">道の硬さが心配</text><circle cx="76" cy="441" r="5" fill="#c98b5b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">高齢初産で分娩遷延や会陰裂傷のリスク</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が気になっている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">軟産道強靭は、産道のうち子宮頸部や腟、筋肉な</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">どの軟産道が非常に硬く伸展しにくいため、胎児</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の下降が妨げられる状態です。原因には子宮筋腫</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">や過去の子宮頸管炎・円錐切除術などによる瘢…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 産婦人科での事前評価と安全な分娩管理が</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">最優先（分娩期は鍼灸対象外）：超音波検査によ</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る評価や、必要に応じた頸管拡張・軟化薬・帝王</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">切開など母児の安全を守る産科医療が最優先で…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

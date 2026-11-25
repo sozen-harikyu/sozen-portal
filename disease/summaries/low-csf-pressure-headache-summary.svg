@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="低髄液圧性頭痛の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2a4a"/>
+      <stop offset="100%" stop-color="#304373"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">脳神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">低髄液圧性頭痛</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">髄液圧低下で起立性頭痛が生じる低髄液圧性頭痛に対し、専門医での安静補液や</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">ブラッドパッチを最優先とし安定期を補完ケアします。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">座ったり立ったりすると強く痛み、横に</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">なると頭痛が和らぐ</text><circle cx="76" cy="375" r="5" fill="#c48f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">腰椎穿刺や脊髄麻酔・外傷のあとから起</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">立性頭痛が始まった</text><circle cx="76" cy="441" r="5" fill="#c48f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頚部硬直・首肩こり、吐き気、めまい、</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">耳鳴り・耳閉感を伴う</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">低髄液圧性頭痛は、髄液が失われて脳周囲の圧力</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">が低下し、起立時に脳が下方へ牽引されることで</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">生じる頭痛です。多くは腰椎穿刺後（最大約3分</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の1に発生）や脊髄麻酔・外傷による髄液漏れ…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 脳神経外科・脳神経内科での画像診断およ</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">び専門治療（臥床安静・補液療法・鎮痛薬・硬膜</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">外自家血注入＝ブラッドパッチ療法）を絶対最優</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">先とし、急性期や未診断の起立性頭痛は鍼灸対…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

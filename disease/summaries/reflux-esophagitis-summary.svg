@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="逆流性食道炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#21423a"/>
+      <stop offset="100%" stop-color="#326155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c49342"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">消化器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">逆流性食道炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">胃酸の逆流による食道粘膜の炎症。自律神経と胃腸のバランスを整える鍼灸で症</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">状の緩和を目指します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c49342"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">食後や就寝時に胸やけが起こる</text><circle cx="76" cy="351" r="5" fill="#c49342"/><text x="92" y="357" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">酸っぱい液体が喉までこみ上げる（呑酸</text><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">）</text><circle cx="76" cy="417" r="5" fill="#c49342"/><text x="92" y="423" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">喉の違和感や長引く咳・声のかすれがあ</text><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">る</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">強い酸性である胃液や胃内容物が、酸への防御機</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">能を持たない食道へ逆流し、粘膜に炎症やびらん</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、潰瘍が生じる状態です。加齢や高脂肪食、喫煙</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・飲酒による下部食道括約筋の筋力低下に加え…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3faf7"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#21423a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 医療機関での検査・服薬状況を確認したう</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">えで、不眠やストレスなど背景にある自律神経の</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">乱れを丁寧に評価 / 2. 体性内臓反射を応</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">用し、中脘・気舎・天柱などのツボへ鍼灸を行…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

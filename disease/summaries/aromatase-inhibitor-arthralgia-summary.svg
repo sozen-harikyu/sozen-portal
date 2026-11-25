@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="アロマターゼ阻害薬誘発性関節痛の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16284c"/>
+      <stop offset="100%" stop-color="#233d70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b68d40"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">がんの種類｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">アロマターゼ阻害薬誘発性関節痛</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">乳がんホルモン療法に伴う手足・膝の関節痛や朝のこわばりを、標準治療を継続</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">しながら和らげる鍼灸解説。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b68d40"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">朝の指や手首、膝のこわばり・痛みが強</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">い</text><circle cx="76" cy="375" r="5" fill="#b68d40"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・ホルモン療法（アロマターゼ阻害薬）</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を続けたいが関節痛がつらい</text><circle cx="76" cy="441" r="5" fill="#b68d40"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・鎮痛薬を増やさず日常の痛みを軽くし</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">たい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">エストロゲン低下に伴う関節周囲の炎症感受性亢</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">進や末梢循環低下が関与します。複数のRCT・</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">メタ解析および診療ガイドラインで、6〜8週の</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">鍼灸による有意な疼痛軽減と強い推奨が報告さ…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 主治医のホルモン療法を継続しながら、痛</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">みの強い関節周囲と遠位経穴を穏やかに調整 /</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> 2. 強い刺激を避け、末梢循環と疼痛抑制系</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を整えて朝のこわばりを軽減 / 3. 体調…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

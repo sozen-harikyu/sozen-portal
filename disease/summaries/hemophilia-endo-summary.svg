@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="血友病の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16284c"/>
+      <stop offset="100%" stop-color="#233d70"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#b68d40"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">内分泌のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">血友病</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">血液凝固第8・第9因子の欠乏により出血が止まりにくい遺伝性疾患です。重篤</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">な出血リスクのため刺鍼は絶対禁忌とし、専門医治療を最優先します。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#b68d40"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">肘・膝・足首などの関節や筋肉に内出血</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・腫れが起きやすい</text><circle cx="76" cy="375" r="5" fill="#b68d40"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">青あざができやすく、鼻血や歯茎からの</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">出血が止まりにくい</text><circle cx="76" cy="441" r="5" fill="#b68d40"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">繰り返す関節内出血による痛みや可動域</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の不安がある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">血友病はX染色体上の第8因子遺伝子（血友病A</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">）または第9因子遺伝子（血友病B）の異常によ</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">り、生まれつき血液凝固因子が不足して血が固ま</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">りにくくなる疾患で、多くは男性に発症します…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f6f4ef"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#16284c">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 血友病は重篤な皮下・筋内・深部出血リス</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">クが高いため、当院では刺鍼（鍼を刺す施術）お</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">よび強い圧迫・吸玉などの侵襲的刺激を絶対禁忌</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">として実施しません / 2. 血液凝固因子…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

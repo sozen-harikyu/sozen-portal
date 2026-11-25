@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="慢性頸部痛（非特異的慢性首痛）の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3a4b"/>
+      <stop offset="100%" stop-color="#2a556c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c58b3c"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">慢性頸部痛（非特異的慢性首痛）</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">レントゲン異常のない長引く首の痛み・重だるさを、深層筋トリガーポイントか</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">ら解放する解説。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c58b3c"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">3か月以上、首の後ろや付け根の痛み・</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">重だるさが取れない</text><circle cx="76" cy="375" r="5" fill="#c58b3c"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・デスクワークやスマホ操作のあと首を</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">動かしにくく頭痛も出る</text><circle cx="76" cy="441" r="5" fill="#c58b3c"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・強いマッサージを受けると翌日に揉み</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">返しで悪化しやすい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">頭板状筋・頸半棘筋・後頭下筋群など首深層筋の</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">慢性的な微小循環障害と疼痛過敏が主因です。3</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">9 RCTs（n=20,827）の大規模IP</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">Dメタ解析（J Pain 2018）で、慢…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 表面を強く揉まず、痛みの震源地となる首</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">深層筋の硬結へ繊細にアプローチ / 2. 肩</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">甲骨・胸部・腕の連動筋も同時に整え、首への負</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">担を根本から分散 / 3. 首を痛めにくい…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

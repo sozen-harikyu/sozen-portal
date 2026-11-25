@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="反応性関節炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3a4b"/>
+      <stop offset="100%" stop-color="#2a556c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c58b3c"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">反応性関節炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">微生物感染後の免疫反応で起こる関節炎。医療機関での炎症・感染治療を最優先</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">し回復期を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c58b3c"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">腸管感染症や尿路感染症の4〜6週間後</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">から膝や足首などが痛み腫れてきた</text><circle cx="76" cy="375" r="5" fill="#c58b3c"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">関節の赤みや熱感、動かしにくさが非対</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">称に1〜数ヶ所現れている</text><circle cx="76" cy="441" r="5" fill="#c58b3c"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">関節症状に加えて排尿時の痛み（尿道炎</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">）や目の充血・痛み（結膜炎）がある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">クラミジア菌、サルモネラ菌、赤痢菌、エルシニ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ア菌、キャンピロバクターなどの微生物感染（腸</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">管感染症や性・尿路感染症、水痘・帯状疱疹ウイ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ルス等）をきっかけに、体を守る免疫系が異常…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 免疫反応による炎症の鎮静と原因感染症の</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">治療が最優先のため、まず医療機関での診断・薬</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">物療法（NSAIDs・抗生物質・抗リウマチ薬</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">・免疫抑制薬・生物学的製剤等）を最優先に案…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

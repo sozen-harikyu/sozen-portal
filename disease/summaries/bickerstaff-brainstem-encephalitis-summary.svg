@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="ビッカースタッフ脳幹脳炎の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e2a4a"/>
+      <stop offset="100%" stop-color="#304373"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48f45"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">脳神経のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">ビッカースタッフ脳幹脳炎</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">感染後の自己免疫異常により脳幹に炎症が起きる疾患です。急性期の入院・免疫</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">療法を最優先に、回復期の体調・後遺症ケアを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48f45"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">風邪や下痢のあとに物が二重に見える（</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">複視）ようになった</text><circle cx="76" cy="375" r="5" fill="#c48f45"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">急にふらついて歩けない・意識がぼんや</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">りする</text><circle cx="76" cy="441" r="5" fill="#c48f45"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">入院での免疫療法を終え回復期の歩行や</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">疲労を整えたい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ウイルスや細菌感染（強い風邪や下痢など）を契</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">機に、自己の免疫系が誤って脳幹などの神経を攻</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">撃してしまう自己免疫性疾患で、年齢を問わず発</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">症します（やや男性に多い）。突然の眼球運動…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f3f6fc"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1e2a4a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 急性期の入院・免疫療法を絶対最優先：発</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">症初期は血圧・脈拍の全身管理のもとで行う免疫</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">グロブリン静注療法・血漿交換療法・副腎皮質ス</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">テロイド治療が最優先であり、急性期は鍼灸の…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

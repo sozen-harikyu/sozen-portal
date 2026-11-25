@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="行為障害の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#244b5a"/>
+      <stop offset="100%" stop-color="#356c80"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#d19344"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">子供のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">行為障害</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">規則違反や他者の権利侵害を繰り返す行為障害。児童精神科・環境調整を最優先</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">し、神門・百会・合谷等で緊張と不眠を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#d19344"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">年齢に合わない規則違反や他者の権利侵</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">害・物損・嘘・盗みを繰り返す</text><circle cx="76" cy="375" r="5" fill="#d19344"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">相手への共感が乏しく、些細な言動を脅</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">しと受け取って攻撃的になる</text><circle cx="76" cy="441" r="5" fill="#d19344"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">家出や無断欠席、衝動性・イライラ・不</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">眠など深刻な状態が続いている</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">小児期後期〜青年期初期に多く（男児に非常に多</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">い）、繰り返し規則を破り他者の基本的権利を侵</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">害する状態（素行症）です。遺伝的要因や家庭・</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">周囲の環境影響、衝動性や欲求不満耐性の低さ…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4fafb"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#244b5a">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 小児精神科・児童精神科での専門評価、認</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">知行動療法・SST・環境調整・必要時の薬物療</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">法、および自殺念慮や薬物乱用など危険徴候時の</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">医療対応を絶対最優先にご案内します / 2…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

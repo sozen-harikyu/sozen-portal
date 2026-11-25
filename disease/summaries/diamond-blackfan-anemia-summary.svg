@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="ダイアモンド・ブラックファン貧血の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4b2230"/>
+      <stop offset="100%" stop-color="#6d3448"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48a47"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">循環器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">ダイアモンド・ブラックファン貧血</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">骨髄で赤血球のもととなる赤芽球のみが著しく減少する希少な先天性貧血です。</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">専門医治療を最優先に、安定期・主治医許可下で体調管理を支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48a47"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">乳児期や幼少期から顔色の悪さや貧血を</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">指摘されてきた</text><circle cx="76" cy="375" r="5" fill="#c48a47"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">息切れ・動悸・めまい・疲れやすさが日</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">常生活の負担になっている</text><circle cx="76" cy="441" r="5" fill="#c48a47"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ステロイド療法や輸血、鉄キレート療法</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">を継続しながら生活している</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ダイアモンド・ブラックファン貧血（DBA）は</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、骨髄で赤血球前駆細胞である赤芽球のみが著し</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">く減少する希少な先天性貧血です。約半数でリボ</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ソームタンパク（RP）遺伝子などの変異が特…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 専門医による赤血球輸血・ステロイド・免</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">疫抑制薬・骨髄移植や、長期輸血に伴う鉄過剰症</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">への鉄キレート療法を絶対最優先とします / </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">2. 貧血の増悪期や免疫抑制による感染リス…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

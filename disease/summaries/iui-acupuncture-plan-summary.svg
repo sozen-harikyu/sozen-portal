@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="人工授精前後の鍼灸プランの要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a2545"/>
+      <stop offset="100%" stop-color="#6b3764"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c98b5b"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">女性のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">人工授精前後の鍼灸プラン</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">不妊専門クリニックの人工授精（AIH）日程に合わせ、排卵前の血流促進と処</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">置後の穏やかな着床サポートを行う周期連動型鍼灸プランです。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c98b5b"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">人工授精（AIH）を予定しており、前</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">後の体調を万全に整えたい</text><circle cx="76" cy="375" r="5" fill="#c98b5b"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">排卵期に向けて子宮内膜の厚みや骨盤内</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">の血流を高めたい</text><circle cx="76" cy="441" r="5" fill="#c98b5b"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">人工授精後の高温期に緊張しやすく、リ</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ラックスして過ごしたい</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">人工授精（AIH）は排卵のタイミングに合わせ</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">て調整した精子を子宮内へ直接注入する医療処置</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">であり、良好な卵胞発育・子宮内膜環境と、処置</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">後の受精・着床を支える穏やかな自律神経バラ…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f8"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4a2545">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 産婦人科・不妊専門クリニックでの人工授</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">精スケジュールと主治医の治療方針を最優先とし</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">、処置前後の日程に合わせて補完ケアを組みます</text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155"> / 2. 人工授精前（低温期〜排卵期）は…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

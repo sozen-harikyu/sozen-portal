@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="大動脈弁閉鎖不全症の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4b2230"/>
+      <stop offset="100%" stop-color="#6d3448"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c48a47"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">循環器のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">大動脈弁閉鎖不全症</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">大動脈弁の閉じが悪くなり左心室へ血液が逆流する弁膜症です。循環器内科の標</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">準治療を最優先に、安定期のコンディションを支えます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c48a47"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">階段や歩行など体を動かすと息切れや動</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">悸が出る</text><circle cx="76" cy="375" r="5" fill="#c48a47"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">足や腕のむくみ、夜間の頻尿が気になる</text><circle cx="76" cy="417" r="5" fill="#c48a47"/><text x="92" y="423" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">横になると息苦しくなることがある</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">左心室から全身へ血液を送り出す関門である大動</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">脈弁が、心臓の拡張期にきちんと閉じなくなり、</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">大動脈から左心室へ血液が逆流する病気です。加</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">齢による弁の変性、高血圧や動脈硬化、先天性…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#fcf4f6"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#4b2230">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 急な息切れ・仰向けでの呼吸困難・胸痛・</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">失神がある場合は緊急受診が必須であり、急性期</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">や心不全増悪期は鍼灸禁忌とします / 2. </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">循環器内科での降圧薬・利尿薬・抗凝固薬など…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>

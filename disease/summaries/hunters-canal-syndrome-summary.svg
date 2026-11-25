@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="ハンター管症候群の要点まとめ図解">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b3a4b"/>
+      <stop offset="100%" stop-color="#2a556c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
+  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
+  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
+  <rect x="56" y="34" width="240" height="30" rx="15" fill="#c58b3c"/>
+  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">筋肉、骨のお悩み｜要点まとめ</text>
+  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="56" y="112" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">ハンター管症候群</text>
+  <text x="56" y="166" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">太もも内側のハンター管で伏在神経が圧迫される障害。関連筋の過緊張を鍼灸で</text><text x="56" y="192" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">丁寧に緩めます。</text>
+
+  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="44" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">1. 主な症状・お悩み</text>
+  <circle cx="76" cy="309" r="5" fill="#c58b3c"/><text x="92" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">膝の内側から脛・ふくらはぎの内側にか</text><text x="92" y="339" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">けてピリッと痛む</text><circle cx="76" cy="375" r="5" fill="#c58b3c"/><text x="92" y="381" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">内くるぶし周りのしびれや感覚の鈍さが</text><text x="92" y="405" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ある</text><circle cx="76" cy="441" r="5" fill="#c58b3c"/><text x="92" y="447" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">歩くときや立ち上がるとき、膝を伸ばす</text><text x="92" y="471" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">ときに痛みが増す</text>
+
+  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="422" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">2. 原因・メカニズム</text>
+  <text x="444" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">太もも内側にあるハンター管（内転筋管：内側広</text><text x="444" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">筋・大内転筋・縫工筋・内転筋筋膜で構成）の中</text><text x="444" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">で感覚神経の伏在神経が圧迫されて起こる絞扼性</text><text x="444" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">神経障害です。筋トレのしすぎによる筋肥大や…</text>
+
+  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
+  <rect x="800" y="252" width="356" height="42" rx="20" fill="#f4f7f9"/>
+  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="#1b3a4b">3. 当院の施術アプローチ</text>
+  <text x="824" y="315" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">1. 圧痛部位や動作時の痛みを確認し、腫瘍・</text><text x="824" y="343" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">嚢胞や重症例など医療機関での検査・手術検討が</text><text x="824" y="371" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">必要な場合は受診を優先案内します / 2. </text><text x="824" y="399" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">内転筋群や膝・下腿の関連筋、血海・三陰交・…</text>
+
+  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+</svg>
