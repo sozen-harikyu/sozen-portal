@@ -1626,79 +1626,113 @@ def _wrap_jp(text: str, width: int = 24, max_lines: int = 3) -> list[str]:
     return lines
 
 
+def _short_bullet(text: str, max_chars: int = 14) -> str:
+    clean = re.sub(r"^[・•\-*0-9.０-９．、\s]+", "", (text or "").strip())
+    clean = re.sub(r"\s+", " ", clean)
+    if len(clean) <= max_chars:
+        return clean
+    return clean[: max_chars - 1] + "…"
+
+
+def _split_clauses(text: str, limit: int = 3, max_chars: int = 14) -> list[str]:
+    clean = re.sub(r"\s+", " ", (text or "").replace("※", "。")).strip()
+    parts = [p.strip() for p in re.split(r"[。、/／・\n]+", clean) if len(p.strip()) >= 4]
+    out = []
+    for p in parts:
+        b = _short_bullet(p, max_chars=max_chars)
+        if b and b not in out:
+            out.append(b)
+        if len(out) >= limit:
+            break
+    return out
+
+
 def build_page_summary_svg(d: dict) -> str:
-    """各疾患ページの文章（要約・症状チェック・原因/施術方針）と100%整合する要点まとめ図解SVGを生成する。"""
+    """パターンA：3ステップ矢印フロー型（文字はみ出し完全ゼロ設計）の要点まとめ図解SVGを生成する。"""
     e = html.escape
     accent, gold, tint, dark = CATEGORY_PALETTES.get(d["category"], ("#16284c", "#b68d40", "#f6f4ef", "#233d70"))
-    title_lines = _wrap_jp(d["name"], width=18, max_lines=2)
-    summary_lines = _wrap_jp(d.get("summary") or d.get("meta_description") or "", width=36, max_lines=2)
-    symptoms = split_items(d.get("symptoms", ""))[:3]
-    mech_lines = _wrap_jp(d.get("mechanism", ""), width=22, max_lines=4)
-    app_lines = _wrap_jp(d.get("approach", ""), width=22, max_lines=4)
+    title_str = d["name"]
+    if len(title_str) > 16:
+        title_text = title_str[:15] + "…の整理と施術方針"
+    else:
+        title_text = f"{title_str}の整理と施術方針"
+    if len(title_text) > 24:
+        title_size = 26
+    elif len(title_text) > 19:
+        title_size = 30
+    else:
+        title_size = 34
 
-    title_y = 112 if len(title_lines) == 1 else 96
-    title_svg = "".join(
-        f'<text x="56" y="{title_y + i * 44}" font-family="Noto Serif JP, serif" font-size="34" font-weight="700" fill="#ffffff">{e(ln)}</text>'
-        for i, ln in enumerate(title_lines)
-    )
-    sum_y = 166 if len(title_lines) == 1 else 176
-    sum_svg = "".join(
-        f'<text x="56" y="{sum_y + i * 26}" font-family="Noto Sans JP, sans-serif" font-size="18" fill="#e2e8f0">{e(ln)}</text>'
-        for i, ln in enumerate(summary_lines)
-    )
+    sym_items = [_short_bullet(s, 14) for s in split_items(d.get("symptoms", ""))[:3]]
+    if not sym_items:
+        sym_items = ["気になるつらい症状がある", "日常や睡眠に支障が出ている", "体質から整えたい"]
+    mech_items = _split_clauses(d.get("mechanism", ""), limit=3, max_chars=14)
+    if not mech_items:
+        mech_items = ["神経・血流のバランス乱れ", "深層筋の防御性こわばり", "自律神経の過緊張が持続"]
+    app_items = _split_clauses(d.get("approach", ""), limit=3, max_chars=14)
+    if not app_items:
+        app_items = ["過敏な神経の興奮を鎮静", "深層筋と微小循環を整える", "標準治療と安全に併用可能"]
 
-    sym_svg_parts = []
-    sy = 315
-    for sym in (symptoms or ["気になる症状やお悩みに合わせて丁寧に問診・評価します"]):
-        wrapped = _wrap_jp(sym, width=18, max_lines=2)
-        sym_svg_parts.append(f'<circle cx="76" cy="{sy - 6}" r="5" fill="{gold}"/>')
-        for j, ln in enumerate(wrapped):
-            sym_svg_parts.append(
-                f'<text x="92" y="{sy + j * 24}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">{e(ln)}</text>'
-            )
-        sy += 24 * len(wrapped) + 18
+    def _render_bullets(items: list[str], x: int, color: str) -> str:
+        return "".join(
+            f'<text x="{x}" y="{362 + i * 38}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="{color}">・{e(item)}</text>'
+            for i, item in enumerate(items[:3])
+        )
 
-    mech_svg = "".join(
-        f'<text x="444" y="{315 + i * 28}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">{e(ln)}</text>'
-        for i, ln in enumerate(mech_lines or ["神経・血流・自律神経のバランスから要因を整理します。"])
-    )
-    app_svg = "".join(
-        f'<text x="824" y="{315 + i * 28}" font-family="Noto Sans JP, sans-serif" font-size="16" fill="#334155">{e(ln)}</text>'
-        for i, ln in enumerate(app_lines or ["体質と経過に合わせた低刺激鍼灸で回復力を支えます。"])
-    )
+    sym_svg = _render_bullets(sym_items, 66, "#334155")
+    mech_svg = _render_bullets(mech_items, 454, "#334155")
+    app_svg = _render_bullets(app_items, 842, "#f1f5f9")
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="{e(d['name'])}の要点まとめ図解">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="{e(d['name'])}の3ステップ要点図解">
   <defs>
-    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="hdrA" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="{accent}"/>
       <stop offset="100%" stop-color="{dark}"/>
     </linearGradient>
+    <clipPath id="clip1"><rect x="52" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip2"><rect x="440" y="330" width="320" height="140"/></clipPath>
+    <clipPath id="clip3"><rect x="828" y="330" width="320" height="140"/></clipPath>
   </defs>
-  <rect width="1200" height="675" rx="28" fill="#faf8f4"/>
-  <rect x="0" y="0" width="1200" height="226" rx="28" fill="url(#hdr)"/>
-  <rect x="0" y="196" width="1200" height="30" fill="url(#hdr)"/>
-  <rect x="56" y="34" width="240" height="30" rx="15" fill="{gold}"/>
-  <text x="176" y="54" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">{e(d['category'])}｜要点まとめ</text>
-  <text x="1144" y="54" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
-  {title_svg}
-  {sum_svg}
+  <rect width="1200" height="620" rx="24" fill="#faf8f4"/>
+  <rect width="1200" height="148" rx="24" fill="url(#hdrA)"/>
+  <rect y="120" width="1200" height="28" fill="url(#hdrA)"/>
+  <rect x="48" y="28" width="248" height="28" rx="14" fill="{gold}"/>
+  <text x="172" y="47" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">{e(d['category'])}｜3ステップ図解</text>
+  <text x="1152" y="47" text-anchor="end" font-family="Noto Serif JP, serif" font-size="14" fill="#cbd5e1">銀座そうぜん鍼灸院グループ</text>
+  <text x="48" y="106" font-family="Noto Serif JP, serif" font-size="{title_size}" font-weight="700" fill="#ffffff">{e(title_text)}</text>
 
-  <rect x="44" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="44" y="252" width="356" height="42" rx="20" fill="{tint}"/>
-  <text x="64" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="{accent}">1. 主な症状・お悩み</text>
-  {''.join(sym_svg_parts)}
+  <rect x="44" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="212" cy="242" r="34" fill="#faf5eb" stroke="{gold}" stroke-width="2"/>
+  <text x="212" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="{gold}">01</text>
+  <text x="212" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="{accent}">よくあるサイン</text>
+  <line x1="84" y1="322" x2="340" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip1)">{sym_svg}</g>
+  <rect x="72" y="478" width="280" height="44" rx="12" fill="{tint}"/>
+  <text x="212" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="{accent}">まず原因部位を丁寧に見極め</text>
 
-  <rect x="422" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="422" y="252" width="356" height="42" rx="20" fill="{tint}"/>
-  <text x="442" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="{accent}">2. 原因・メカニズム</text>
-  {mech_svg}
+  <polygon points="392,365 416,350 416,380" fill="{gold}" transform="rotate(180 404 365)"/>
 
-  <rect x="800" y="252" width="356" height="352" rx="20" fill="#ffffff" stroke="#e5dfd3" stroke-width="2"/>
-  <rect x="800" y="252" width="356" height="42" rx="20" fill="{tint}"/>
-  <text x="820" y="279" font-family="Noto Serif JP, serif" font-size="17" font-weight="700" fill="{accent}">3. 当院の施術アプローチ</text>
-  {app_svg}
+  <rect x="432" y="182" width="336" height="366" rx="20" fill="#ffffff" stroke="#e2dcd0" stroke-width="2"/>
+  <circle cx="600" cy="242" r="34" fill="{tint}" stroke="{accent}" stroke-width="2"/>
+  <text x="600" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="{accent}">02</text>
+  <text x="600" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="{accent}">体の中で起きていること</text>
+  <line x1="472" y1="322" x2="728" y2="322" stroke="#efeae0" stroke-width="2"/>
+  <g clip-path="url(#clip2)">{mech_svg}</g>
+  <rect x="460" y="478" width="280" height="44" rx="12" fill="#faf5eb"/>
+  <text x="600" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#8c6239">神経・血流・筋緊張から整理</text>
 
-  <text x="600" y="644" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
+  <polygon points="780,365 804,350 804,380" fill="{gold}" transform="rotate(180 792 365)"/>
+
+  <rect x="820" y="182" width="336" height="366" rx="20" fill="{accent}"/>
+  <circle cx="988" cy="242" r="34" fill="{gold}"/>
+  <text x="988" y="251" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="22" font-weight="700" fill="#ffffff">03</text>
+  <text x="988" y="304" text-anchor="middle" font-family="Noto Serif JP, serif" font-size="20" font-weight="700" fill="#ffffff">当院の鍼灸アプローチ</text>
+  <line x1="860" y1="322" x2="1116" y2="322" stroke="#ffffff33" stroke-width="2"/>
+  <g clip-path="url(#clip3)">{app_svg}</g>
+  <rect x="848" y="478" width="280" height="44" rx="12" fill="{gold}"/>
+  <text x="988" y="505" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="14" font-weight="700" fill="#ffffff">段階的に回復と安定を目指す</text>
+
+  <text x="600" y="592" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#64748b">※標準治療・専門医の診察と併用し、お一人おひとりの体質と経過に合わせて施術内容を調整します</text>
 </svg>"""
 
 
