@@ -1110,6 +1110,65 @@ ACUPOINT_VARIATION_POOLS: dict[str, list[tuple[str, str]]] = {
         ("var_eye_optic_circulation_03.jpg", "視神経・眼血流ケアの主要ツボ（睛明・風池・光明・太衝）"),
         ("var_eye_macula_systemic_04.jpg", "網膜・全身眼養生の主要ツボ（肝兪・腎兪・足三里・太渓）"),
     ],
+    "digest_general": [
+        ("cat_digestive_acupoints.jpg", "消化器領域の代表的なツボ位置"),
+        ("sys_stomach_gerd_acupoints.jpg", "胃腸・逆流性食道炎ケアの代表的なツボ位置"),
+        ("var_digest_stomach_01.jpg", "胃痛・逆流性食道炎の主要ツボ（中脘・内関・足三里・公孫）"),
+        ("var_digest_ibs_bowel_02.jpg", "腸の不調・便秘・下痢の主要ツボ（天枢・大腸兪・上巨虚・合谷）"),
+        ("var_digest_liver_biliary_03.jpg", "お腹の張り・肝胆ケアの主要ツボ（期門・肝兪・陽陵泉・太衝）"),
+        ("var_digest_nausea_appetite_04.jpg", "吐き気・胃腸虚弱の主要ツボ（中脘・脾兪・内関・足三里）"),
+    ],
+    "women_general": [
+        ("sys_women_fertility_acupoints.jpg", "女性・骨盤内血流ケアの代表的なツボ位置"),
+        ("shikyukinshu_acupoints.jpg", "婦人科領域の代表的なツボ位置"),
+        ("var_women_pms_pain_01.jpg", "月経痛・PMSの主要ツボ（関元・血海・地機・三陰交）"),
+        ("var_women_menopause_02.jpg", "更年期・ほてりケアの主要ツボ（百会・内関・三陰交・太渓）"),
+        ("var_women_fertility_03.jpg", "妊活・骨盤内血流の主要ツボ（関元・子宮・腎兪・三陰交）"),
+        ("var_women_postpartum_04.jpg", "産後ケア・冷え・むくみの主要ツボ（気海・足三里・三陰交・太渓）"),
+    ],
+    "child_general": [
+        ("cat_child_acupoints.jpg", "小児はり領域の代表的なツボ位置"),
+        ("sys_pediatric_shonishin_acupoints.jpg", "小児はり・発育サポートの代表的なツボ位置"),
+        ("var_child_nightcry_01.jpg", "小児はり・夜泣きケアの主要ツボ（百会・身柱・合谷・足三里）"),
+        ("var_child_enuresis_02.jpg", "夜尿症・おねしょケアの主要ツボ（関元・腎兪・三陰交・太渓）"),
+        ("var_child_asthma_allergy_03.jpg", "小児喘息・呼吸ケアの主要ツボ（定喘・身柱・肺兪・尺沢）"),
+        ("var_child_tic_focus_04.jpg", "チック・落ち着き・睡眠の主要ツボ（百会・印堂・神門・太衝）"),
+    ],
+    "skin_general": [
+        ("cat_skin_acupoints.jpg", "皮膚領域の代表的なツボ位置"),
+        ("sys_skin_allergy_acupoints.jpg", "皮膚・アレルギーケアの代表的なツボ位置"),
+        ("var_skin_atopy_itch_01.jpg", "アトピー・かゆみの主要ツボ（曲池・合谷・血海・三陰交）"),
+        ("var_skin_urticaria_02.jpg", "蕁麻疹・アレルギー肌の主要ツボ（曲池・血海・足三里・築賓）"),
+        ("var_skin_shingles_03.jpg", "帯状疱疹・神経痛ケアの主要ツボ（夾脊・支溝・合谷・陽陵泉）"),
+        ("var_skin_alopecia_04.jpg", "頭皮血流・脱毛ケアの主要ツボ（百会・角孫・風池・太渓）"),
+    ],
+    "cardio_general": [
+        ("cat_circulatory_acupoints.jpg", "循環器領域の代表的なツボ位置"),
+        ("sys_cardio_circulation_acupoints.jpg", "循環・血流ケアの代表的なツボ位置"),
+        ("var_cardio_palpitation_01.jpg", "動悸・息切れケアの主要ツボ（膻中・心兪・内関・神門）"),
+        ("var_cardio_bp_cold_02.jpg", "血圧・冷え・末端循環の主要ツボ（合谷・三陰交・太衝・湧泉）"),
+    ],
+    "uro_general": [
+        ("cat_urology_acupoints.jpg", "泌尿器領域の代表的なツボ位置"),
+        ("sys_kidney_urology_acupoints.jpg", "腎・泌尿器ケアの代表的なツボ位置"),
+        ("var_uro_bladder_freq_01.jpg", "頻尿・過活動膀胱の主要ツボ（中極・腎兪・三陰交・太渓）"),
+        ("var_uro_kidney_edema_02.jpg", "むくみ・腎ケアの主要ツボ（水分・腎兪・復溜・太渓）"),
+    ],
+    "cancer_general": [
+        ("cat_cancer_acupoints.jpg", "がん支持療法の代表的なツボ位置"),
+        ("cancer_cinv_anorexia_acupoints.jpg", "がん支持療法・吐き気・食欲ケアのツボ位置"),
+        ("cancer_cipn_numbness_acupoints.jpg", "がん支持療法・しびれケアのツボ位置"),
+        ("cancer_fatigue_crf_acupoints.jpg", "がん支持療法・倦怠感ケアのツボ位置"),
+        ("cancer_pain_palliative_acupoints.jpg", "がん支持療法・緩和ケアのツボ位置"),
+        ("var_cancer_chemo_care_01.jpg", "がん支持療法・吐き気と疲労の主要ツボ（中脘・内関・足三里・三陰交）"),
+        ("var_cancer_neuropathy_02.jpg", "手足のしびれ・支持療法の主要ツボ（八邪・合谷・太衝・八風）"),
+    ],
+    "endo_general": [
+        ("cat_endo_acupoints.jpg", "内分泌領域の代表的なツボ位置"),
+        ("sys_endo_diabetes_thyroid_acupoints.jpg", "内分泌・代謝ケアの代表的なツボ位置"),
+        ("var_endo_thyroid_01.jpg", "甲状腺・代謝ケアの主要ツボ（人迎・合谷・三陰交・太渓）"),
+        ("var_endo_diabetes_02.jpg", "内分泌・代謝バランスの主要ツボ（脾兪・腎兪・足三里・三陰交）"),
+    ],
 }
 
 
@@ -1155,6 +1214,22 @@ def pick_variation_diagram(d: dict, ev: dict) -> tuple[str, str]:
             pool_key = "neuro_brain_nerve"
         else:
             pool_key = "neuro_brain_nerve"
+    elif cat == "消化器のお悩み":
+        pool_key = "digest_general"
+    elif cat == "女性のお悩み":
+        pool_key = "women_general"
+    elif cat == "子供のお悩み":
+        pool_key = "child_general"
+    elif cat == "皮膚のお悩み":
+        pool_key = "skin_general"
+    elif cat == "循環器のお悩み":
+        pool_key = "cardio_general"
+    elif cat == "泌尿器のお悩み":
+        pool_key = "uro_general"
+    elif cat == "がんの種類":
+        pool_key = "cancer_general"
+    elif cat == "内分泌のお悩み":
+        pool_key = "endo_general"
 
     if pool_key and pool_key in ACUPOINT_VARIATION_POOLS:
         candidates = [item for item in ACUPOINT_VARIATION_POOLS[pool_key] if (IMAGES_DIR / item[0]).exists()]
