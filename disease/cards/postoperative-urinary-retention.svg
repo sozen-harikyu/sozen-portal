@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-label="術後尿閉（手術後の排尿困難）の鍼灸解説">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#223c4e" />
+      <stop offset="100%" stop-color="#345973" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)" />
+  <circle cx="519" cy="97" r="83" fill="#b58b45" fill-opacity="0.16" /><circle cx="574" cy="289" r="67" fill="#345973" fill-opacity="0.28" /><circle cx="519" cy="97" r="51" fill="none" stroke="#b58b45" stroke-opacity="0.35" stroke-width="1.5" />
+  <rect x="0" y="0" width="12" height="360" fill="#b58b45" />
+  <rect x="44" y="42" width="132" height="30" rx="15" fill="#b58b45" />
+  <text x="110.0" y="62" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#ffffff">泌尿器のお悩み</text>
+  <text x="596" y="62" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.85">D1151</text>
+  <text x="44" y="148" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="30" font-weight="700" fill="#ffffff">術後尿閉（手術後の排尿困</text><text x="44" y="190" font-family="Noto Serif JP, Hiragino Mincho ProN, serif" font-size="30" font-weight="700" fill="#ffffff">難）</text>
+  <line x1="44" y1="226" x2="180" y2="226" stroke="#b58b45" stroke-width="3" stroke-linecap="round" />
+  <rect x="44" y="258" width="82" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="85.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#術後尿閉</text><rect x="136" y="258" width="82" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="177.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#排尿困難</text><rect x="228" y="258" width="72" height="28" rx="14" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-opacity="0.25" /><text x="264.0" y="276" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="600" fill="#f8fafc">#残尿感</text>
+  <text x="44" y="330" font-family="Noto Serif JP, serif" font-size="13" font-weight="600" fill="#e2e8f0" fill-opacity="0.9">銀座そうぜん鍼灸院グループ｜症状・疾患解説</text>
+</svg>
