@@ -26,9 +26,11 @@
 </head>
 <body>
   <iframe src="https://script.google.com/macros/s/AKfycbzC0GNYQv17835U9S73zAp0sRkoP3KP9xGQg65IB0U6GJcwOCfuyv9asgyOKQuxrck5BA/exec" allow="geolocation"></iframe>
-<nav style="position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:9999;display:flex;gap:8px;width:calc(100% - 24px);max-width:460px;padding:8px;border-radius:9999px;background:rgba(255,255,255,0.96);border:1.5px solid #e5d5b5;box-shadow:0 8px 24px rgba(22,40,76,0.18);backdrop-filter:blur(8px);font-family:'Noto Sans JP',sans-serif;">
-    <a href="./disease/index.html" style="flex:1;padding:10px 12px;border-radius:9999px;background:#16284c;color:#fff;font-size:13px;font-weight:700;text-align:center;text-decoration:none;white-space:nowrap;">🌿 症状・疾患（1,200件）</a>
-    <a href="./symptom-check.html" style="padding:10px 14px;border-radius:9999px;background:#faf5eb;border:1px solid #d4b886;color:#8c6239;font-size:13px;font-weight:700;text-align:center;text-decoration:none;white-space:nowrap;">🧭 30秒ナビ</a>
-  </nav>
+<script>
+    if (location.search.indexOf('tab=cases') !== -1) {
+      var f = document.querySelector('iframe');
+      if (f) f.src = f.src + (f.src.indexOf('?') === -1 ? '?tab=cases' : '&tab=cases');
+    }
+  </script>
 </body>
 </html>
