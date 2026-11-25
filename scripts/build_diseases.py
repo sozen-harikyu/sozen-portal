@@ -703,6 +703,270 @@ def generate_unique_card_svg(d: dict) -> str:
 """
 
 
+
+CATEGORY_MECHANISMS = {
+    "特に対応することが多い症状": {
+        "title": "脳の過覚醒鎮静と深層筋・自律神経の連動メカニズム",
+        "steps": [
+            ("STEP 1", "経穴・深層筋への繊細な刺激", "首肩や手足の経穴に痛みの少ない微細刺激を入れ、末梢の感覚受容器へ信号を送ります。"),
+            ("STEP 2", "脊髄・脳幹（孤束核）へ伝達", "刺激信号が脊髄・脳幹へ伝わり、過剰に高ぶった交感神経の興奮ブレーキを作動させます。"),
+            ("STEP 3", "大脳・自律神経の過覚醒を鎮静", "視床下部や大脳皮質の過敏性を穏やかに鎮め、深層筋の緊張と局所血流の悪循環を断ちます。"),
+            ("STEP 4", "神経可塑性による安定定着", "体の土台が整った段階で施術間隔を空け、症状が出にくい静かな状態の定着を促します。"),
+        ],
+    },
+    "筋肉、骨のお悩み": {
+        "title": "トリガーポイント解放と疼痛抑制系の作用機序",
+        "steps": [
+            ("STEP 1", "深層筋の硬結へ直接アプローチ", "手技では届きにくい深層筋の硬結（トリガーポイント）へ繊細な鍼で直接刺激を届けます。"),
+            ("STEP 2", "軸索反射による局所血流改善", "CGRPや一酸化窒素の放出により微小血管が拡張し、滞っていた発痛物質の洗い流しを促します。"),
+            ("STEP 3", "脊髄ゲート制御＋下行性疼痛抑制", "脊髄後角で痛み信号を遮断し、脳幹からの内因性鎮痛物質（エンドルフィン等）の働きを高めます。"),
+            ("STEP 4", "筋柔軟性の回復と再発予防", "防御性の筋スパズムが解け、関節可動域と本来の動きやすさが段階的に回復します。"),
+        ],
+    },
+    "神経のお悩み": {
+        "title": "末梢神経の微小循環改善と中枢性感作の鎮静機序",
+        "steps": [
+            ("STEP 1", "該当神経走行・遠位経穴の調整", "過敏な皮膚への過剰刺激を避けつつ、神経の走行に沿った安全な部位と遠位穴を刺激します。"),
+            ("STEP 2", "神経周囲の微小血流・栄養促進", "神経を圧迫する周囲筋の過緊張を緩め、神経線維の修復に必要な酸素と血流環境を整えます。"),
+            ("STEP 3", "脊髄・脳の疼痛過敏（中枢性感作）抑制", "微細な刺激で過敏化した痛み伝達回路を鎮静し、ピリピリ感や放散痛の波を和らげます。"),
+            ("STEP 4", "感覚と生活機能の安定化", "睡眠不足や自律神経の緊張も同時に整え、しびれ・神経痛による生活支障度を軽減します。"),
+        ],
+    },
+    "脳神経のお悩み": {
+        "title": "脳循環・三叉神経血管系と神経可塑性の調整機序",
+        "steps": [
+            ("STEP 1", "頭部・後頸部・四肢経穴への刺激", "百会・風池・合谷などの経穴刺激が三叉神経や大後頭神経・体性感覚路へ穏やかに作用します。"),
+            ("STEP 2", "脳幹・視床下部の神経伝達調整", "脳幹の自律神経中枢やセロトニン・GABA系のバランスを整え、神経の過敏発火を鎮めます。"),
+            ("STEP 3", "頭頸部の微小循環と筋緊張緩和", "後頭下筋群や首深部のこわばりを解き、頭部・内耳・顔面周囲の血流環境をサポートします。"),
+            ("STEP 4", "標準治療・リハビリ効果の後押し", "神経回路の再学習（可塑性）と睡眠の質を高め、専門医の治療やリハビリの土台を支えます。"),
+        ],
+    },
+    "自律神経のお悩み": {
+        "title": "体性-自律神経反射による交感・副交感神経の切替機序",
+        "steps": [
+            ("STEP 1", "体表の緊張サイン評価と低刺激刺鍼", "首肩・みぞおち・手足の過緊張ポイントへ、交感神経を刺激しすぎない優しい刺激を行います。"),
+            ("STEP 2", "迷走神経（副交感神経）の活性化", "体性-自律神経反射を通じて脳幹の迷走神経核へ働きかけ、心拍変動（HF/SDNN）を整えます。"),
+            ("STEP 3", "ストレス応答系（HPA軸）の鎮静", "過剰なコルチゾール分泌や過覚醒状態を落ち着かせ、深い呼吸と入眠スイッチを引き出します。"),
+            ("STEP 4", "自律神経の自然な切り替え回復", "「活動（昼）」と「休息（夜）」のメリハリが戻り、動悸・不眠・倦怠感の波が穏やかになります。"),
+        ],
+    },
+    "耳鼻咽喉のお悩み": {
+        "title": "耳周囲・頸部の微小循環改善と聴覚・粘膜調整機序",
+        "steps": [
+            ("STEP 1", "耳周囲・後頸部・遠位経穴の調整", "翳風・風池・合谷など、耳鼻咽喉領域の神経・血管と連動する経穴へ繊細にアプローチします。"),
+            ("STEP 2", "内耳・鼻咽腔の微小循環サポート", "首・顎まわりの深層筋緊張を緩め、内耳や粘膜周囲の滞った血流とリンパ循環を促します。"),
+            ("STEP 3", "自律神経と聴覚・粘膜過敏の鎮静", "ストレスや睡眠不足で高ぶった交感神経を鎮め、音への過敏反応や粘膜の過剰反応を和らげます。"),
+            ("STEP 4", "耳鼻科治療と併用した回復促進", "標準治療を妨げない設計で、生活支障度（THI等）の軽減と再発しにくい体調づくりを支えます。"),
+        ],
+    },
+    "消化器のお悩み": {
+        "title": "脳腸相関と迷走神経反射による胃腸運動の調整機序",
+        "steps": [
+            ("STEP 1", "足三里・内関・天枢への経穴刺激", "胃腸機能と深く結びつく四肢・腹部の経穴を刺激し、体性感覚神経から中枢へ信号を送ります。"),
+            ("STEP 2", "迷走神経遠心路の活性化", "脳幹を経由した体性-内臓反射により、副交感神経（迷走神経）経由で胃腸の働きを調整します。"),
+            ("STEP 3", "胃排出・腸管蠕動と内臓知覚の正常化", "弱まったぜん動を促す一方、下痢型の過剰な収縮や内臓知覚過敏は穏やかに鎮静します。"),
+            ("STEP 4", "脳腸相関の安定と食後・排便リズム回復", "ストレスで乱れにくい胃腸の土台を整え、胃もたれ・便通異常・吐き気の軽減を目指します。"),
+        ],
+    },
+    "女性のお悩み": {
+        "title": "視床下部-下垂体-卵巣（HPO）軸と骨盤内血流の調整機序",
+        "steps": [
+            ("STEP 1", "三陰交・腰仙部（八髎穴）への優しい刺激", "骨盤内臓器と同じ脊髄分節を共有する腰仙部や下肢経穴へ、体質に合わせた刺激を行います。"),
+            ("STEP 2", "骨盤内微小循環と冷えの改善", "骨盤周囲の自律神経反射を介して子宮・卵巣周囲の血流を促し、冷えやうっ血を和らげます。"),
+            ("STEP 3", "視床下部（自律神経・体温中枢）の安定", "ホルモン変動で過敏になった視床下部を鎮静し、ほてり・発汗・気分の揺らぎを穏やかにします。"),
+            ("STEP 4", "周期・ライフステージに寄り添う体調維持", "婦人科治療とも協調しながら、月経・妊娠・更年期それぞれの負担を軽くする土台を整えます。"),
+        ],
+    },
+    "がんの種類": {
+        "title": "迷走神経抗炎症反射と標準治療を支える支持療法機序",
+        "steps": [
+            ("STEP 1", "安全領域（遠位経穴）への低刺激アプローチ", "手術創・リンパ節郭清側・患部を厳格に避け、内関・足三里・合谷など安全な経穴を刺激します。"),
+            ("STEP 2", "中枢性鎮痛・制吐経路の活性化", "内因性鎮痛系や延髄嘔吐中枢の抑制経路へ働きかけ、痛み・吐き気・しびれの軽減を助けます。"),
+            ("STEP 3", "迷走神経抗炎症反射と自律神経調整", "治療に伴う炎症性サイトカイン反応や過覚醒を穏やかに整え、倦怠感や不眠の負担を和らげます。"),
+            ("STEP 4", "標準がん治療を完遂しやすいQOL維持", "主治医の治療計画を最優先に、体力と生活の質を保ちながら治療を続けられる環境を支えます。"),
+        ],
+    },
+    "皮膚のお悩み": {
+        "title": "神経性炎症・掻痒（かゆみ）伝達と自律神経の鎮静機序",
+        "steps": [
+            ("STEP 1", "皮疹を避けた安全な経穴刺激", "湿疹・傷口への直接刺激を避け、曲池・血海・築賓・三陰交など全身の調整穴へアプローチします。"),
+            ("STEP 2", "末梢・中枢の掻痒（かゆみ）シグナル抑制", "痒み感覚を伝える神経経路の過敏性を鎮め、「かゆい→掻く→悪化」の悪循環を断ちます。"),
+            ("STEP 3", "自律神経と末梢循環・皮膚バリアの支援", "交感神経の過緊張や夜間覚醒を和らげ、皮膚の修復が進みやすい血流と睡眠環境を整えます。"),
+            ("STEP 4", "皮膚科治療と併用した再燃しにくい体質へ", "標準の保湿・外用・内服治療と協調し、ストレスや季節変化で悪化しにくい土台を支えます。"),
+        ],
+    },
+    "循環器のお悩み": {
+        "title": "心拍変動・血管トーンを整える自律神経サポート機序",
+        "steps": [
+            ("STEP 1", "内関（PC6）・神門など心包経・心経の調整", "循環器専門医の標準治療を絶対前提とし、手首や背部の安全な経穴へ低刺激でアプローチします。"),
+            ("STEP 2", "交感神経過剰興奮の抑制と迷走神経調整", "心臓への過剰な交感神経刺激を穏やかに鎮め、心拍リズムと血管緊張の急変を抑えます。"),
+            ("STEP 3", "胸郭・背部の筋緊張緩和と深い呼吸", "ストレスで固まりやすい胸郭や横隔膜の緊張を解き、酸素摂取とリラックス反応を促します。"),
+            ("STEP 4", "標準治療下での発作不安・睡眠の質改善", "内服管理を厳守しながら、疲労やストレスが引き金となる症状不安の軽減を支えます。"),
+        ],
+    },
+    "泌尿器のお悩み": {
+        "title": "仙髄排尿反射（陰部神経）と骨盤底の協調調整機序",
+        "steps": [
+            ("STEP 1", "腰仙部（八髎穴周囲）と下肢経穴の調整", "膀胱・尿道括約筋を支配する仙髄神経（S2〜S4）領域の経穴へ的確にアプローチします。"),
+            ("STEP 2", "陰部神経・骨盤神経の反射機能調整", "弱まった骨盤底筋の収縮サポートと、過敏になった膀胱排尿筋の鎮静をバランスよく促します。"),
+            ("STEP 3", "骨盤内血流改善と冷え・緊張の緩和", "腰殿部と下腹部の血流を高め、冷えや過緊張による頻尿・違和感・痛みを和らげます。"),
+            ("STEP 4", "骨盤底筋訓練・標準治療との相乗サポート", "泌尿器科の評価やセルフエクササイズと併用し、安心して外出できる日常の回復を支えます。"),
+        ],
+    },
+    "眼のお悩み": {
+        "title": "後頸部〜眼周囲の微小循環と毛様体筋・自律神経調整機序",
+        "steps": [
+            ("STEP 1", "後頸部・側頭部・遠位経穴への安全アプローチ", "眼球周囲の危険な深刺しを避け、風池・天柱・合谷・太衝など安全な経穴へ繊細に施術します。"),
+            ("STEP 2", "頭頸部・眼周囲の血流と筋緊張緩和", "PC・スマホ作業や緊張で固まった首深層筋と眼輪筋周囲の血流を促し、重だるさを軽減します。"),
+            ("STEP 3", "副交感神経の調整とピント疲労ケア", "交感神経優位による目の乾き・ピント調節疲労を鎮め、涙液分泌とリラックス反応を助けます。"),
+            ("STEP 4", "眼科標準治療を前提とした視覚負担軽減", "眼科の点眼・定期検査を最優先としつつ、日々の眼精疲労や頭痛・肩こりの連鎖を整えます。"),
+        ],
+    },
+    "子供のお悩み": {
+        "title": "「刺さない小児はり」による皮膚感覚〜自律神経の鎮静機序",
+        "steps": [
+            ("STEP 1", "皮膚を優しく撫でる無痛アプローチ", "刺さない専用の「小児はり（てい鍼）」で、背中や手足の皮膚をリズミカルに優しく撫でます。"),
+            ("STEP 2", "C触覚線維を介した心地よい神経伝達", "皮膚への穏やかな触覚刺激が脳へ伝わり、安心ホルモン（オキシトシン等）と副交感神経を促します。"),
+            ("STEP 3", "未熟な自律神経・睡眠・胃腸リズムの安定", "興奮しやすい子どもの神経バランスを落ち着かせ、夜泣き・おねしょ・起立不調の土台を整えます。"),
+            ("STEP 4", "小児科・療育と連携した健やかな成長支援", "保護者の方と寄り添いながら、お子さまの体調と成長ペースに合わせた無理のないケアを続けます。"),
+        ],
+    },
+    "内分泌のお悩み": {
+        "title": "神経-内分泌-免疫ネットワークと末梢循環の調整機序",
+        "steps": [
+            ("STEP 1", "全身の経穴による体質・緊張バランス評価", "内科専門医の薬物・食事管理を前提に、足三里・三陰交・背部経穴へ安全にアプローチします。"),
+            ("STEP 2", "視床下部・自律神経を介した代謝環境調整", "ストレス由来の交感神経過緊張を鎮め、ホルモン分泌や血糖・尿酸管理を乱す疲労要因を軽減します。"),
+            ("STEP 3", "末梢微小循環と胃腸・神経機能のサポート", "手足や内臓の血流を促し、合併しやすいしびれ・胃もたれ・倦怠感・関節痛の負担を和らげます。"),
+            ("STEP 4", "専門医管理と協調した長期コンディション維持", "皮膚衛生や低刺激を徹底し、日々の生活習慣改善を続けやすい安定した体調づくりを支えます。"),
+        ],
+    },
+}
+
+
+
+CATEGORY_MECH_IMAGE = {
+    "特に対応することが多い症状": "mech_brain_autonomic.jpg",
+    "脳神経のお悩み": "mech_brain_autonomic.jpg",
+    "自律神経のお悩み": "mech_brain_autonomic.jpg",
+    "耳鼻咽喉のお悩み": "mech_brain_autonomic.jpg",
+    "眼のお悩み": "mech_brain_autonomic.jpg",
+    "筋肉、骨のお悩み": "mech_muscle_nerve.jpg",
+    "神経のお悩み": "mech_muscle_nerve.jpg",
+    "消化器のお悩み": "mech_digestive_vagus.jpg",
+    "呼吸器のお悩み": "mech_digestive_vagus.jpg",
+    "女性のお悩み": "mech_women_endocrine.jpg",
+    "内分泌のお悩み": "mech_women_endocrine.jpg",
+    "泌尿器のお悩み": "mech_women_endocrine.jpg",
+    "がんの種類": "mech_cancer_support.jpg",
+    "循環器のお悩み": "mech_cancer_support.jpg",
+    "皮膚のお悩み": "mech_cancer_support.jpg",
+    "子供のお悩み": "mech_pediatric_shonishin.jpg",
+}
+
+
+def generate_mechanism_svg(d: dict) -> str:
+    """各疾患ページ専用の「鍼灸が働く4ステップ作用機序」図解SVGを自動生成する。"""
+    e = html.escape
+    mech = CATEGORY_MECHANISMS.get(d["category"], CATEGORY_MECHANISMS["特に対応することが多い症状"])
+    primary, accent, _, secondary = CATEGORY_PALETTES.get(
+        d["category"], ("#16284c", "#b68d40", "#faf5eb", "#243b6b")
+    )
+    steps = mech["steps"]
+    boxes = []
+    xs = [24, 212, 400, 588]
+    for idx, (tag, head, desc) in enumerate(steps):
+        x = xs[idx]
+        # Wrap head to max 11 chars per line, desc to 3 short lines
+        h_lines = [head[:11], head[11:22]] if len(head) > 11 else [head]
+        d_lines = [desc[i:i+13] for i in range(0, min(len(desc), 39), 13)]
+        if len(desc) > 39:
+            d_lines[-1] = d_lines[-1][:-1] + "…"
+        h_svg = "".join(
+            f'<text x="{x+14}" y="{114 + i*18}" font-family="Noto Serif JP, serif" font-size="13.5" font-weight="700" fill="{primary}">{e(ln)}</text>'
+            for i, ln in enumerate(h_lines)
+        )
+        d_y0 = 152 if len(h_lines) > 1 else 138
+        d_svg = "".join(
+            f'<text x="{x+14}" y="{d_y0 + i*17}" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#475569">{e(ln)}</text>'
+            for i, ln in enumerate(d_lines)
+        )
+        boxes.append(
+            f'<rect x="{x}" y="68" width="168" height="156" rx="16" fill="#ffffff" stroke="#e2ddd2" stroke-width="1.5" />'
+            f'<rect x="{x+14}" y="80" width="56" height="20" rx="10" fill="{accent if idx in (0,3) else primary}" />'
+            f'<text x="{x+42}" y="94" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff">{e(tag)}</text>'
+            f'{h_svg}{d_svg}'
+        )
+        if idx < 3:
+            ax = x + 173
+            boxes.append(
+                f'<path d="M{ax} 146 L{ax+10} 146 M{ax+6} 141 L{ax+11} 146 L{ax+6} 151" '
+                f'stroke="{accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />'
+            )
+
+    title_str = f"{d['name']}における鍼灸の作用機序（4ステップ）"
+    if len(title_str) > 34:
+        title_str = f"{d['name'][:18]}…の鍼灸作用機序"
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 250" width="780" height="250" role="img" aria-label="{e(title_str)}">
+  <rect width="780" height="250" rx="20" fill="#faf8f4" />
+  <rect x="0" y="0" width="780" height="48" rx="20" fill="{primary}" />
+  <rect x="0" y="28" width="780" height="20" fill="{primary}" />
+  <text x="24" y="31" font-family="Noto Serif JP, serif" font-size="15.5" font-weight="700" fill="#ffffff">🔬 {e(title_str)}</text>
+  <text x="756" y="30" text-anchor="end" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#e2e8f0">銀座そうぜん鍼灸院</text>
+  {"".join(boxes)}
+</svg>
+"""
+
+
+def render_mechanism_block(d: dict) -> str:
+    """概要・改善の流れの中に自然に組み込まれる作用機序（イラスト＋4ステップ解説）ブロックを生成する。"""
+    e = html.escape
+    mech = CATEGORY_MECHANISMS.get(d["category"], CATEGORY_MECHANISMS["特に対応することが多い症状"])
+    mech_img_file = CATEGORY_MECH_IMAGE.get(d["category"], "mech_brain_autonomic.jpg")
+    mech_img_src = f"../images/diseases/{mech_img_file}" if (IMAGES_DIR / mech_img_file).exists() else f"./mechanisms/{d['slug']}.svg"
+    step_items = "".join(
+        f'<div class="rounded-2xl bg-white border border-[#e8e3d9] p-3.5">'
+        f'<div class="flex items-center gap-2 mb-1">'
+        f'<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[#16284c] text-white">{e(st[0])}</span>'
+        f'<span class="font-bold text-xs sm:text-sm text-[#16284c]">{e(st[1])}</span>'
+        f'</div>'
+        f'<p class="text-xs text-slate-600 leading-relaxed !mb-0">{e(st[2])}</p>'
+        f'</div>'
+        for st in mech["steps"]
+    )
+    return (
+        f'<div id="sec-mechanism" class="my-6 rounded-2xl bg-[#faf8f4] border border-[#e8e3d9] p-4 sm:p-5 space-y-4">'
+        f'<div class="flex items-center justify-between flex-wrap gap-2">'
+        f'<div class="flex items-center gap-2">'
+        f'<span class="w-1.5 h-5 bg-[#b68d40] rounded-full inline-block"></span>'
+        f'<h3 class="font-mincho text-base sm:text-lg font-bold text-[#16284c] !m-0">なぜ鍼灸で改善へ向かうのか？（作用機序の図解）</h3>'
+        f'</div>'
+        f'<span class="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white text-[#8c6239] border border-[#e5d5b5]">神経生理学的メカニズム</span>'
+        f'</div>'
+        f'<p class="text-xs sm:text-sm text-slate-600 leading-relaxed !mb-0">{e(d["name"])}に対する鍼灸は、<strong>{e(mech["title"])}</strong>を通じて、お体本来の回復力を引き出します。</p>'
+        f'<figure class="rounded-2xl border border-[#e8e3d9] bg-white p-2 overflow-hidden !my-2">'
+        f'<img src="{e(mech_img_src)}" alt="{e(d["name"])}に対する鍼灸の作用機序イラスト" loading="lazy" class="w-full h-auto rounded-xl" />'
+        f'<figcaption class="text-xs text-slate-500 mt-2 text-center">図：{e(d["name"])}に対する鍼灸の作用機序（{e(mech["title"])}）</figcaption>'
+        f'</figure>'
+        f'<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">{step_items}</div>'
+        f'</div>'
+    )
+
+
+def inject_mechanism_into_rich_html(rich_html: str, mech_block: str) -> str:
+    """個別詳細記事(articles/*.html)内の「改善の流れ・概要」の直後（ツボ見出しの直前）に作用機序ブロックを挿入する。"""
+    # 「ツボ」を含む <h2> の直前に挿入（頭鳴り等では「改善の流れ」の直後になる）
+    m = re.search(r'<h2[^>]*>[^<]*ツボ[^<]*</h2>', rich_html)
+    if m:
+        return rich_html[:m.start()] + mech_block + "\n" + rich_html[m.start():]
+    # 該当がなければ2つ目の <h2> の直前に挿入
+    matches = list(re.finditer(r'<h2[^>]*>', rich_html))
+    if len(matches) >= 2:
+        pos = matches[1].start()
+        return rich_html[:pos] + mech_block + "\n" + rich_html[pos:]
+    return rich_html + "\n" + mech_block
+
+
 def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
     e = html.escape
     symptoms = split_items(d["symptoms"])
@@ -777,11 +1041,13 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
     tags_html = "".join(f'<span class="px-3 py-1 rounded-full bg-white border border-[#e8e3d9] text-slate-600 text-xs">#{e(t)}</span>' for t in tags)
     related_html = render_related_html(pick_related_diseases(d, by_category, limit=6), d["category"])
 
+    mech_block_html = render_mechanism_block(d)
     if rich_html:
+        rich_with_mech = inject_mechanism_into_rich_html(rich_html, mech_block_html)
         content_cards = (
             f'{yt_card_html}'
             f'<section id="sec-acupoints" class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7">'
-            f'<div class="rich-article">{rich_html}</div>'
+            f'<div class="rich-article">{rich_with_mech}</div>'
             f'</section>'
         )
     else:
@@ -800,10 +1066,11 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
         overview_card = (
             f'<section class="bg-white rounded-3xl border border-[#e8e3d9] shadow-sm p-6 sm:p-7 space-y-5">'
             f'<div class="flex items-center gap-2"><span class="w-1.5 h-5 bg-[#b68d40] rounded-full"></span>'
-            f'<h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">まず知っておきたい要点と施術方針</h2></div>'
+            f'<h2 class="font-mincho text-lg sm:text-xl font-bold text-[#16284c]">まず知っておきたい要点と改善の流れ</h2></div>'
             f'<p class="text-sm sm:text-[15px] text-slate-700 leading-[1.85]">{e(d["mechanism"])}{src_link}</p>'
             f'{f"""<div class="rounded-2xl bg-[#faf8f4] border border-[#ece6da] p-4 sm:p-5"><p class="text-xs font-bold text-[#8c6239] mb-2.5">このようなお悩みはありませんか？</p><ul class="space-y-2">{sym_lis}</ul></div>""" if sym_lis else ""}'
-            f'{f"""<div class="space-y-2.5"><p class="text-xs font-bold text-[#16284c]">当院の施術アプローチ</p>{app_cards}</div>""" if app_cards else ""}'
+            f'{f"""<div class="space-y-2.5"><p class="text-xs font-bold text-[#16284c]">当院の施術アプローチ・改善の流れ</p>{app_cards}</div>""" if app_cards else ""}'
+            f'{mech_block_html}'
             f'</section>'
         )
         content_cards = overview_card + "\n" + yt_card_html + "\n" + render_category_cards(d)
@@ -848,11 +1115,12 @@ def render_detail_html(d: dict, by_category: dict[str, list[dict]]) -> str:
       </div>
       <h1 class="font-mincho text-2xl sm:text-3xl font-bold leading-snug tracking-tight">{e(d["name"])}の鍼灸</h1>
       <p class="text-slate-200 text-sm sm:text-[15px] mt-3 leading-relaxed">{e(d["summary"])}</p>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-6 pt-5 border-t border-white/15">
-        <a href="#sec-youtube" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">🎥 院長解説</a>
-        <a href="#sec-acupoints" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📌 ツボ・解説</a>
-        <a href="#sec-evidence" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📊 論文根拠</a>
-        <a href="#sec-faq" class="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">❓ よくある質問</a>
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 mt-6 pt-5 border-t border-white/15">
+        <a href="#sec-mechanism" class="flex items-center justify-center gap-1 py-2 px-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">🔬 作用機序</a>
+        <a href="#sec-youtube" class="flex items-center justify-center gap-1 py-2 px-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">🎥 院長動画</a>
+        <a href="#sec-acupoints" class="flex items-center justify-center gap-1 py-2 px-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📌 ツボ解説</a>
+        <a href="#sec-evidence" class="flex items-center justify-center gap-1 py-2 px-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">📊 論文根拠</a>
+        <a href="#sec-faq" class="col-span-2 sm:col-span-1 flex items-center justify-center gap-1 py-2 px-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-semibold transition-colors">❓ FAQ</a>
       </div>
     </header>
 
@@ -1075,8 +1343,11 @@ def main() -> int:
     DISEASE_DIR.mkdir(parents=True, exist_ok=True)
     cards_dir = DISEASE_DIR / "cards"
     cards_dir.mkdir(parents=True, exist_ok=True)
+    mech_dir = DISEASE_DIR / "mechanisms"
+    mech_dir.mkdir(parents=True, exist_ok=True)
     for d in diseases:
         (cards_dir / f"{d['slug']}.svg").write_text(generate_unique_card_svg(d), encoding="utf-8")
+        (mech_dir / f"{d['slug']}.svg").write_text(generate_mechanism_svg(d), encoding="utf-8")
         (DISEASE_DIR / f"{d['slug']}.html").write_text(render_detail_html(d, by_category), encoding="utf-8")
         if GENERATE_STATIC_REDIRECTS and d["legacy_path"]:
             write_static_redirect_page(d["legacy_path"], d["slug"])
