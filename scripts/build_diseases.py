@@ -1509,6 +1509,469 @@ def render_plan_b_visual_card(d: dict) -> str:
     """
 
 
+# === SUBDOMAIN_EVIDENCE_PAPERS_START ===
+SUBDOMAIN_EVIDENCE_PAPERS: dict[str, dict] = {
+    # --- 耳鼻咽喉 ---
+    "ent_nose": {
+        "label": "鼻炎・副鼻腔炎・嗅覚",
+        "papers": [
+            ["2013年 大規模多施設RCT", "季節性アレルギー性鼻炎 422名（ドイツ）", "8週後の鼻炎QOL（RQLQ）と抗ヒスタミン薬使用量がシャム鍼・無治療群より有意に改善。", "16週以降は群間差が縮小。", "Ann Intern Med (PMID: 23420231)", "https://pubmed.ncbi.nlm.nih.gov/23420231/"],
+            ["2024年 メタ解析（TSA付）", "アレルギー性鼻炎 13 RCTs（n=1,186）", "鼻閉・鼻汁などの総鼻症状スコア（TNSS）およびQOL改善を示唆。", "試験間の刺激法・評価時期の異質性が課題。", "Int Forum Allergy Rhinol (PMID: 39017391)", "https://pubmed.ncbi.nlm.nih.gov/39017391/"],
+            ["2020年 耳鼻咽喉科レビュー", "鼻炎・ウイルス後嗅覚障害等 30研究", "アレルギー性鼻炎では補助療法として診療ガイドラインでも言及が増加。", "嗅覚障害などは方法論の統一と大規模RCTが必要。", "Ann Otol Rhinol Laryngol (PMID: 32090591)", "https://pubmed.ncbi.nlm.nih.gov/32090591/"],
+        ],
+    },
+    "ent_ear": {
+        "label": "耳鳴り・難聴・めまい",
+        "papers": [
+            ["2021年 メタ解析", "耳鳴り 8 RCTs（n=504）", "耳鳴り苦痛度（THI）や自覚的うるささの軽減傾向を報告。", "シャム対照の設計や長期追跡に課題。", "Acupunct Med (PMID: 32772848)", "https://pubmed.ncbi.nlm.nih.gov/32772848/"],
+            ["2026年 ネットワークメタ解析", "突発性難聴 36研究（n=3,360・標準治療併用）", "ステロイド等の標準治療への鍼灸併用で聴力回復率の向上が示唆。", "発症早期の耳鼻科受診が最優先で、研究バイアスに留意。", "Complement Ther Med (PMID: 42918509)", "https://pubmed.ncbi.nlm.nih.gov/42918509/"],
+            ["2024年 メタ解析", "メニエール病・めまい", "めまい障害指数（DHI）・耳鳴り（THI）・耳閉感・聴力スコアの改善を示唆。", "盲検化の困難さと長期追跡RCTの不足が限界。", "Front Med (PMID: 39722819)", "https://pubmed.ncbi.nlm.nih.gov/39722819/"],
+        ],
+    },
+    "ent_throat": {
+        "label": "喉・嚥下・咽頭・声",
+        "papers": [
+            ["2021年 メタ解析", "嚥下障害 35研究（n=3,024）", "標準リハビリへの鍼治療併用で嚥下機能評価（SSA・VFSS・WST）が改善。", "評価基準の統一と厳密な多施設RCTが必要。", "Evid Based Complement Alternat Med (PMID: 33531922)", "https://pubmed.ncbi.nlm.nih.gov/33531922/"],
+            ["2023年 メタ解析", "嚥下障害（舌鍼・体鍼併用）15研究（n=1,094）", "嚥下機能スコア（SSA）および総合有効率の改善を報告。", "対象や併用療法にばらつきあり。", "Medicine (PMID: 37304013)", "https://pubmed.ncbi.nlm.nih.gov/37304013/"],
+            ["2020年 耳鼻咽喉科レビュー", "発声障害・扁桃術後など 30研究", "耳鼻咽喉領域の安全性と補助的有用性を整理。", "発声・咽頭領域はさらなる高品質RCTが必要。", "Ann Otol Rhinol Laryngol (PMID: 32090591)", "https://pubmed.ncbi.nlm.nih.gov/32090591/"],
+        ],
+    },
+    "ent_tmj": {
+        "label": "顎関節症・食いしばり",
+        "papers": [
+            ["2023年 メタ解析", "成人顎関節症 22 RCTs統合（n=471）", "疼痛軽減および開口域改善で対照群を上回る傾向を報告。", "小規模試験が多く長期持続性の検証が必要。", "Medicine (PMID: 37746950)", "https://pubmed.ncbi.nlm.nih.gov/37746950/"],
+            ["2018年 IPDメタ解析", "慢性筋骨格痛 39 RCTs（n=20,827）", "慢性疼痛全般でプラセボ効果を超える持続的な疼痛緩和を確認。", "顎関節単独ではなく慢性痛全体の統合解析。", "J Pain (PMID: 29198932)", "https://pubmed.ncbi.nlm.nih.gov/29198932/"],
+        ],
+    },
+    # --- 筋肉・骨 ---
+    "muscle_lowerback": {
+        "label": "腰痛・坐骨神経痛・骨盤",
+        "papers": [
+            ["2020年 Cochraneレビュー", "慢性非特異的腰痛 33 RCTs（n=8,270）", "無治療比で疼痛・機能障害が臨床的に有意に改善（即時〜短期）。", "シャム鍼比の差は小さく、エビデンスの質は低〜中等度。", "Cochrane (PMID: 33306198)", "https://pubmed.ncbi.nlm.nih.gov/33306198/"],
+            ["2024年 多施設RCT", "慢性坐骨神経痛 216名（6病院・52週追跡）", "4週後の下肢痛（VAS）と機能障害（ODI）がシャム鍼比で有意に改善し52週維持。", "椎間板ヘルニア由来が対象で全腰痛への一般化は注意。", "JAMA Intern Med (PMID: 39401008)", "https://pubmed.ncbi.nlm.nih.gov/39401008/"],
+            ["2018年 IPDメタ解析", "慢性筋骨格痛 39 RCTs（n=20,827）", "腰痛・首肩痛等でプラセボ効果を超える持続的鎮痛を確認。", "対照群の設定により効果量が変動。", "J Pain (PMID: 29198932)", "https://pubmed.ncbi.nlm.nih.gov/29198932/"],
+        ],
+    },
+    "muscle_neck_shoulder": {
+        "label": "首痛・肩こり・五十肩・背部",
+        "papers": [
+            ["2025年 メタ解析（TSA付）", "成人頸部痛 26 RCTs（n=3,520）", "通常治療で十分な改善が得られない頸部痛に対し安全かつ有効な選択肢を示唆。", "試験間の異質性が高くエビデンスの質は低〜中等度。", "PubMed (PMID: 41322280)", "https://pubmed.ncbi.nlm.nih.gov/41322280/"],
+            ["2016年 Cochraneレビュー", "慢性頸部障害", "治療終了時および短期フォローでシャム鍼より疼痛緩和に中等度の質のエビデンス。", "長期効果のさらなる検証が必要。", "Cochrane (PMID: 27145001)", "https://pubmed.ncbi.nlm.nih.gov/27145001/"],
+            ["2024年 メタ解析", "凍結肩（五十肩）13 RCTs（n=1,034）", "疼痛（VAS）や肩関節機能スコア（CMS）の改善を示唆。", "低質のエビデンスであり厳密なRCTが必要。", "Curr Pain Headache Rep (PMID: 39096470)", "https://pubmed.ncbi.nlm.nih.gov/39096470/"],
+        ],
+    },
+    "muscle_elbow_wrist": {
+        "label": "肘痛・手首・腱鞘炎・手根管",
+        "papers": [
+            ["2020年 メタ解析", "外側上顆炎（テニス肘）10 RCTs（n=796）", "薬物・ブロック療法等と比較し臨床有効率で優位な傾向を報告。", "組み入れ試験の質が低く大規模RCTが必要。", "PubMed (PMID: 32318130)", "https://pubmed.ncbi.nlm.nih.gov/32318130/"],
+            ["2024年 系統的レビュー", "外側上顆腱障害 47 RCTs", "シャム鍼比で短期的な機能障害スコア軽減（MD -9.1）を報告。", "エビデンス確実性は低くさらなる検証が必要。", "PubMed (PMID: 38402668)", "https://pubmed.ncbi.nlm.nih.gov/38402668/"],
+            ["2018年 Cochraneレビュー", "手根管症候群 12試験（n=869）", "軽〜中等度の症状緩和の補助選択肢として評価。", "シャム鍼比では明確な差が乏しく確実性は低い。", "Cochrane (PMID: 30521680)", "https://pubmed.ncbi.nlm.nih.gov/30521680/"],
+        ],
+    },
+    "muscle_hip_knee": {
+        "label": "膝関節・股関節・大腿",
+        "papers": [
+            ["2016年 メタ解析", "変形性膝関節症 10 RCTs", "短期〜中期で膝痛および身体機能の改善を確認。", "シャム対照との効果差や長期持続性に議論あり。", "JBJS Am (PMID: 27655986)", "https://pubmed.ncbi.nlm.nih.gov/27655986/"],
+            ["2018年 IPDメタ解析", "変形性関節症を含む慢性痛 39 RCTs（n=20,827）", "変形性関節症の疼痛緩和でプラセボを超える持続効果を確認。", "運動療法や体重管理との併用が基本。", "J Pain (PMID: 29198932)", "https://pubmed.ncbi.nlm.nih.gov/29198932/"],
+        ],
+    },
+    "muscle_ankle_foot": {
+        "label": "足首・足底腱膜炎・アキレス腱",
+        "papers": [
+            ["2017年 系統的レビュー", "足底腱膜炎（かかと痛）", "4〜8週間の短期的な疼痛（VAS）軽減と少ない副作用を報告。", "8週以降の長期効果についてはエビデンス不足。", "Acupunct Med (PMID: 27526703)", "https://pubmed.ncbi.nlm.nih.gov/27526703/"],
+            ["2020年 メタ解析", "急性足関節捻挫 17研究", "RICE処置単独と比較し疼痛緩和および回復率向上の傾向を示唆。", "試験の質と異質性から大規模RCTが必要。", "Evid Based Complement Alternat Med (PMID: 33123213)", "https://pubmed.ncbi.nlm.nih.gov/33123213/"],
+            ["2014年 Cochraneレビュー", "成人急性足関節捻挫", "保存療法との併用効果を検討。", "研究間の異質性が高く決定的結論には追加検証が必要。", "Cochrane (PMID: 24953665)", "https://pubmed.ncbi.nlm.nih.gov/24953665/"],
+        ],
+    },
+    # --- 眼 ---
+    "eye_dryeye": {
+        "label": "ドライアイ・眼精疲労",
+        "papers": [
+            ["2024年 メタ解析", "ドライアイ 16試験（n=1,383・人工涙液併用）", "人工涙液単独比で涙液層破壊時間（TBUT）・シルマー試験・自覚症状が改善。", "点眼治療との併用が前提で盲検化に限界あり。", "Medicine (PMID: 38181299)", "https://pubmed.ncbi.nlm.nih.gov/38181299/"],
+            ["2019年 二重盲検RCT", "ドライアイ 49名（米国・6か月追跡）", "OSDI自覚症状スコアがシャム鍼比で有意に改善し6か月持続。", "単施設・小規模であり客観指標の差は限定的。", "Clin Ophthalmol (PMID: 31114151)", "https://pubmed.ncbi.nlm.nih.gov/31114151/"],
+        ],
+    },
+    "eye_glaucoma": {
+        "label": "緑内障・眼圧・視神経",
+        "papers": [
+            ["2020年 Cochraneレビュー", "緑内障・高眼圧症 3 RCTs（n=137）", "眼圧・視野に対する補助的検討を総括。", "確実性は極めて低く、眼科での点眼・手術管理が最優先。", "Cochrane (PMID: 32032457)", "https://pubmed.ncbi.nlm.nih.gov/32032457/"],
+            ["2025年 メタ解析", "変性眼疾患 21研究（緑内障・黄斑変性等）", "標準眼科治療との併用で視力・眼血流指標の補助的改善を示唆。", "研究の異質性が高く標準治療の代替にはならない。", "Complement Ther Med (PMID: 40850524)", "https://pubmed.ncbi.nlm.nih.gov/40850524/"],
+        ],
+    },
+    "eye_retina": {
+        "label": "網膜・黄斑・視力養生",
+        "papers": [
+            ["2025年 メタ解析", "変性眼疾患 21研究（黄斑変性・網膜症等）", "眼科標準治療との併用で視機能・眼循環サポートの可能性を示唆。", "エビデンスの質に課題があり眼科定期管理が必須。", "Complement Ther Med (PMID: 40850524)", "https://pubmed.ncbi.nlm.nih.gov/40850524/"],
+            ["2024年 メタ解析", "眼表面・涙液環境 16試験（n=1,383）", "眼周囲の血流・涙液安定など自覚的眼疲労の緩和を報告。", "網膜疾患そのものではなく眼環境サポートの参考データ。", "Medicine (PMID: 38181299)", "https://pubmed.ncbi.nlm.nih.gov/38181299/"],
+        ],
+    },
+    # --- 消化器 ---
+    "digest_stomach": {
+        "label": "胃痛・機能性ディスペプシア・逆流性食道炎",
+        "papers": [
+            ["2020年 多施設RCT", "機能性ディスペプシア（PDS）278名（5施設）", "4週後の症状改善率83.0%（シャム群51.6%）で12週後まで維持。", "食後愁訴型が中心で器質的胃疾患の除外が前提。", "Ann Intern Med (PMID: 32422066)", "https://pubmed.ncbi.nlm.nih.gov/32422066/"],
+            ["2017年 メタ解析", "胃食道逆流症（GERD）12 RCTs（n=1,235）", "PPI単独比で胸やけ・逆流症状の改善と再発抑制傾向を報告。", "試験の質にばらつきがあり標準薬併用が基本。", "Acupunct Med (PMID: 28689187)", "https://pubmed.ncbi.nlm.nih.gov/28689187/"],
+            ["2024年 RCT", "食後愁訴症候群（PDS）51名解析", "胃排出能および自律神経バランス指標の改善を報告。", "小規模研究のため大規模追試が必要。", "Chin Med (PMID: 39568071)", "https://pubmed.ncbi.nlm.nih.gov/39568071/"],
+        ],
+    },
+    "digest_bowel": {
+        "label": "過敏性腸症候群（IBS）・便秘・下痢",
+        "papers": [
+            ["2025年 多施設RCT", "下痢型過敏性腸症候群（IBS-D）280名（6病院）", "腹痛および便性状の複合レスポンダー率がシャム鍼比で有意に改善。", "下痢型中心のデータで他病型への拡張は検証継続中。", "Gastroenterology (PMID: 40441496)", "https://pubmed.ncbi.nlm.nih.gov/40441496/"],
+            ["2016年 大規模多施設RCT", "慢性重症機能性便秘 1,075名（15病院）", "電鍼8週で週あたり完全自発排便回数がシャム鍼比で有意増加し12週持続。", "器質的腸閉塞や炎症性腸疾患の除外が前提。", "Ann Intern Med (PMID: 27618593)", "https://pubmed.ncbi.nlm.nih.gov/27618593/"],
+        ],
+    },
+    # --- 皮膚 ---
+    "skin_atopy": {
+        "label": "アトピー性皮膚炎・湿疹・かゆみ",
+        "papers": [
+            ["2024年 メタ解析", "アトピー性皮膚炎 8 RCTs（n=463）", "EASI重症度スコアおよび掻痒VASの軽減傾向を報告。", "小規模試験が中心で皮膚科外用治療との併用が基本。", "BMJ Open (PMID: 39638592)", "https://pubmed.ncbi.nlm.nih.gov/39638592/"],
+            ["2021年 シャム対照RCT", "軽〜中等症アトピー性皮膚炎 36名（韓国）", "SCORADスコアおよびかゆみ指標がシャム鍼比で有意に低下。", "症例数が少なく長期追跡が必要。", "BMC Complement Med Ther (PMID: 33926433)", "https://pubmed.ncbi.nlm.nih.gov/33926433/"],
+            ["2023年 メタ解析", "難治性掻痒 7 RCTs（n=504）", "かゆみ強度スコアの軽減を示唆。", "基礎疾患の管理が最優先。", "J Pain Symptom Manage (PMID: 36055470)", "https://pubmed.ncbi.nlm.nih.gov/36055470/"],
+        ],
+    },
+    "skin_urticaria": {
+        "label": "蕁麻疹・赤み・かゆみ",
+        "papers": [
+            ["2023年 多施設3群RCT", "慢性特発性蕁麻疹 330名（3大学病院）", "4週後の週間蕁麻疹活動スコア（UAS7）がシャム鍼・待機群より有意に改善。", "抗ヒスタミン薬等の標準皮膚科治療との併用・相談が基本。", "Ann Intern Med (PMID: 37956431)", "https://pubmed.ncbi.nlm.nih.gov/37956431/"],
+            ["2023年 メタ解析", "難治性掻痒 7 RCTs（n=504）", "慢性掻痒に対するかゆみ軽減の補助効果を報告。", "症例背景の異質性に留意。", "J Pain Symptom Manage (PMID: 36055470)", "https://pubmed.ncbi.nlm.nih.gov/36055470/"],
+        ],
+    },
+    "skin_shingles": {
+        "label": "帯状疱疹・帯状疱疹後神経痛",
+        "papers": [
+            ["2019年 メタ解析", "帯状疱疹後神経痛（PHN）系統的レビュー", "疼痛強度（VAS）の軽減と睡眠・QOL改善傾向を報告。", "急性期は抗ウイルス薬の早期投与が最優先。", "J Pain Res (PMID: 31410050)", "https://pubmed.ncbi.nlm.nih.gov/31410050/"],
+            ["2023年 メタ解析", "神経障害性疼痛 8 RCTs（n=338）", "神経痛の疼痛スコア軽減で対照群を上回る傾向を示唆。", "症例規模が小さく薬物療法との併用が基本。", "Front Neurol (PMID: 36698895)", "https://pubmed.ncbi.nlm.nih.gov/36698895/"],
+        ],
+    },
+    "skin_acne": {
+        "label": "大人ニキビ・尋常性ざ瘡・肌トラブル",
+        "papers": [
+            ["2018年 メタ解析", "尋常性ざ瘡（ニキビ）12 RCTs", "ガイドライン推奨治療と同等の改善傾向で副作用が少ない可能性を報告。", "組み入れ研究の方法論的質が低く慎重解釈が必要。", "Evid Based Complement Alternat Med (PMID: 29721027)", "https://pubmed.ncbi.nlm.nih.gov/29721027/"],
+            ["2024年 メタ解析", "炎症性皮膚疾患（アトピー）8 RCTs（n=463）", "皮膚炎症・かゆみの緩和補助を示唆。", "皮膚科標準治療との併用が前提。", "BMJ Open (PMID: 39638592)", "https://pubmed.ncbi.nlm.nih.gov/39638592/"],
+        ],
+    },
+    # --- 自律神経・脳神経・神経 ---
+    "neuro_headache": {
+        "label": "片頭痛・緊張型頭痛・慢性頭痛",
+        "papers": [
+            ["2016年 Cochraneレビュー", "反復性片頭痛 22 RCTs（n=4,985）", "予防薬と同等の発作頻度減少効果を示し、副作用による脱落が少ない。", "シャム鍼比の差は小〜中等度。", "Cochrane (PMID: 27351677)", "https://pubmed.ncbi.nlm.nih.gov/27351677/"],
+            ["2017年 多施設RCT", "前兆のない片頭痛 249名（16週追跡）", "真鍼群で片頭痛発作回数がシャム鍼比-1.1回、待機群比-1.8回有意に減少。", "前兆のある片頭痛や二次性頭痛の除外が必要。", "JAMA Intern Med (PMID: 28241154)", "https://pubmed.ncbi.nlm.nih.gov/28241154/"],
+            ["2016年 Cochraneレビュー", "頻発・慢性緊張型頭痛", "通常ケア・シャム鍼比で頭痛日数の減少を確認し非薬物選択肢として評価。", "中等度〜低質のエビデンス。", "Cochrane (PMID: 27092807)", "https://pubmed.ncbi.nlm.nih.gov/27092807/"],
+        ],
+    },
+    "neuro_insomnia": {
+        "label": "不眠・睡眠障害",
+        "papers": [
+            ["2022年 ネットワークメタ解析", "原発性不眠症 57 RCTs（n=4,678）", "通常治療比で睡眠の質（PSQI）の有意な改善を示唆。", "エビデンス確実性は中等度〜低。", "Sleep Med Rev (PMID: 35405419)", "https://pubmed.ncbi.nlm.nih.gov/35405419/"],
+            ["2020年 メタ解析", "成人不眠症 13研究（n=911）", "睡眠の質（PSQI）スコアの改善を報告。", "プラセボ効果との切り分けや盲検化に課題。", "Sleep Med (PMID: 32005059)", "https://pubmed.ncbi.nlm.nih.gov/32005059/"],
+        ],
+    },
+    "neuro_anxiety_autonomic": {
+        "label": "自律神経失調・不安・ストレス・動悸",
+        "papers": [
+            ["2025年 メタ解析", "全般性不安障害（GAD）14 RCTs（n=968）", "シャム鍼比で不安尺度（HAMA・GAD-7）および睡眠（PSQI）が有意に改善。", "効果量は中等度でプロトコル標準化が課題。", "Front Psychiatry (PMID: 41312341)", "https://pubmed.ncbi.nlm.nih.gov/41312341/"],
+            ["2025年 メタ解析", "自律神経・心拍変動（HRV）10 RCTs（n=744）", "副交感神経指標（HF・RMSSD）の上昇と自律神経バランス調整を示唆。", "測定条件のばらつきあり。", "Front Neurosci (PMID: 41230507)", "https://pubmed.ncbi.nlm.nih.gov/41230507/"],
+            ["2023年 メタ解析", "手技鍼 vs シャム鍼（自律神経）9 RCTs", "自律神経反応の調整作用を報告。", "短期評価が中心で長期臨床転帰は要検証。", "Complement Ther Med (PMID: 36494036)", "https://pubmed.ncbi.nlm.nih.gov/36494036/"],
+        ],
+    },
+    "brain_facial": {
+        "label": "顔面神経麻痺（ベル麻痺）・三叉神経痛",
+        "papers": [
+            ["2013年 多施設RCT", "ベル麻痺（顔面神経麻痺）338名（ステロイド併用）", "得気（響き）を伴う鍼併用群で6か月後の顔面機能回復率が有意に向上。", "発症早期のステロイド標準治療との併用が前提。", "CMAJ (PMID: 23439629)", "https://pubmed.ncbi.nlm.nih.gov/23439629/"],
+            ["2022年 ネットワークメタ解析", "原発性三叉神経痛 58 RCTs（n=4,126）", "標準薬（カルバマゼピン）比または併用で疼痛軽減・有効率改善を示唆。", "組み入れ試験の質にばらつきがあり神経内科管理と併用。", "Front Neurol (PMID: 35237333)", "https://pubmed.ncbi.nlm.nih.gov/35237333/"],
+        ],
+    },
+    "brain_parkinson": {
+        "label": "パーキンソン病・ふるえ・運動症状",
+        "papers": [
+            ["2024年 シャム対照RCT", "パーキンソン病の睡眠障害 78名解析", "真鍼群でパーキンソン病睡眠尺度（PDSS）がシャム鍼比で有意に改善し4週維持。", "神経内科の薬物療法を継続したうえでの併用効果。", "JAMA Netw Open (PMID: 38922617)", "https://pubmed.ncbi.nlm.nih.gov/38922617/"],
+            ["2025年 メタ解析", "自律神経・心拍変動（HRV）10 RCTs（n=744）", "非運動症状に関わる自律神経バランスの調整を示唆。", "パーキンソン病単独の長期進行抑制効果は未確立。", "Front Neurosci (PMID: 41230507)", "https://pubmed.ncbi.nlm.nih.gov/41230507/"],
+        ],
+    },
+    "brain_stroke": {
+        "label": "脳卒中後遺症・リハビリ・嚥下",
+        "papers": [
+            ["2016年 Cochraneレビュー", "脳卒中後リハビリ 31 RCTs（n=2,257）", "日常生活動作（ADL）や神経機能スコアの補助的改善を示唆。", "エビデンスの質は低く標準リハビリとの併用が前提。", "Cochrane (PMID: 27562656)", "https://pubmed.ncbi.nlm.nih.gov/27562656/"],
+            ["2021年 メタ解析", "脳卒中後嚥下障害 35研究（n=3,024）", "標準リハビリ併用で嚥下機能評価（SSA・VFSS）が改善。", "厳密な盲検化RCTの蓄積が必要。", "Evid Based Complement Alternat Med (PMID: 33531922)", "https://pubmed.ncbi.nlm.nih.gov/33531922/"],
+        ],
+    },
+    "nerve_peripheral": {
+        "label": "末梢神経障害・しびれ・神経痛",
+        "papers": [
+            ["2024年 メタ解析", "化学療法誘発性末梢神経障害（CIPN）21研究（n=2,121）", "手足のしびれ・神経痛スコアおよびQOLの改善を示唆。", "研究間のプロトコル差が大きく標準治療と併用。", "Front Neurol (PMID: 39555482)", "https://pubmed.ncbi.nlm.nih.gov/39555482/"],
+            ["2023年 メタ解析", "神経障害性疼痛全般 8 RCTs（n=338）", "疼痛強度の軽減傾向を報告。", "小規模研究が多く薬物療法との併用が基本。", "Front Neurol (PMID: 36698895)", "https://pubmed.ncbi.nlm.nih.gov/36698895/"],
+        ],
+    },
+    # --- 女性 ---
+    "women_menstrual": {
+        "label": "月経痛・PMS・生理不順",
+        "papers": [
+            ["2016年 Cochraneレビュー", "原発性月経困難症 42 RCTs（n=4,640）", "無治療・NSAIDs比で月経痛の軽減を示唆。", "研究の質は低〜極低が多く器質的疾患の婦人科確認が前提。", "Cochrane (PMID: 27087494)", "https://pubmed.ncbi.nlm.nih.gov/27087494/"],
+            ["2018年 Cochraneレビュー", "PMS・PMDD 5 RCTs（n=277）", "シャム鍼比で月経前の身体・気分症状の軽減傾向を報告。", "小規模試験が多くエビデンスの確実性は低い。", "Cochrane (PMID: 30105749)", "https://pubmed.ncbi.nlm.nih.gov/30105749/"],
+        ],
+    },
+    "women_menopause": {
+        "label": "更年期症状・ホットフラッシュ",
+        "papers": [
+            ["2013年 Cochraneレビュー", "更年期ホットフラッシュ 16 RCTs（n=1,155）", "無治療比でほてりの頻度・重症度軽減およびQOL改善を報告。", "シャム鍼比の差は小さくホルモン補充療法より効果は緩やか。", "Cochrane (PMID: 23897589)", "https://pubmed.ncbi.nlm.nih.gov/23897589/"],
+            ["2022年 国内RCT", "更年期女性 48名（日本式鍼7穴×4週）", "更年期症状スコアおよび自律神経自覚症状の改善を報告。", "小規模であり長期追跡が必要。", "Med Acupunct (PMID: 36311889)", "https://pubmed.ncbi.nlm.nih.gov/36311889/"],
+        ],
+    },
+    "women_fertility": {
+        "label": "妊活・不妊・PCOS・産前産後",
+        "papers": [
+            ["2018年 大規模多施設RCT", "体外受精（IVF）848名（豪州・NZ 16施設）", "移植前後の短期間鍼では生児獲得率に有意差なし（18.3% vs 17.8%）。", "不妊治療の代替ではなく、ストレス緩和・体調管理の補助として位置づけ。", "JAMA (PMID: 29800212)", "https://pubmed.ncbi.nlm.nih.gov/29800212/"],
+            ["2017年 大規模多施設RCT", "多嚢胞性卵巣症候群（PCOS）1,000名（21施設）", "クロミフェン併用有無にかかわらず鍼による生児獲得率上昇は認めず。", "生殖医療を最優先とし、心身の巡りケアとして併用検討。", "JAMA (PMID: 28655015)", "https://pubmed.ncbi.nlm.nih.gov/28655015/"],
+        ],
+    },
+    # --- 泌尿器 ---
+    "uro_incontinence": {
+        "label": "尿失禁・尿漏れ・骨盤底",
+        "papers": [
+            ["2017年 大規模多施設RCT", "腹圧性尿失禁女性 504名（12病院・腰仙部電鍼）", "6週後の1時間パッド試験の尿漏れ量がシャム電鍼比で有意に減少。", "腹圧性尿失禁が対象で骨盤底筋訓練との併用が推奨。", "JAMA (PMID: 28655016)", "https://pubmed.ncbi.nlm.nih.gov/28655016/"],
+            ["2022年 Cochraneレビュー", "過活動膀胱 15研究（n=1,395）", "切迫性尿失禁を含む下部尿路症状の緩和可能性を評価。", "エビデンス確実性は低〜中等度。", "Cochrane (PMID: 36148895)", "https://pubmed.ncbi.nlm.nih.gov/36148895/"],
+        ],
+    },
+    "uro_oab": {
+        "label": "頻尿・過活動膀胱・夜間頻尿",
+        "papers": [
+            ["2022年 Cochraneレビュー", "過活動膀胱 15研究（n=1,395）", "シャム鍼比で頻尿・尿意切迫感の改善可能性を報告。", "薬物療法と同等かは不確実で泌尿器科評価が前提。", "Cochrane (PMID: 36148895)", "https://pubmed.ncbi.nlm.nih.gov/36148895/"],
+            ["2023年 メタ解析", "過活動膀胱 30研究統合", "排尿回数・切迫感スコアの改善傾向を示唆。", "研究間の異質性が高い。", "Front Neurol (PMID: 36712423)", "https://pubmed.ncbi.nlm.nih.gov/36712423/"],
+        ],
+    },
+    "uro_prostate": {
+        "label": "慢性前立腺炎・骨盤痛・排尿違和感",
+        "papers": [
+            ["2021年 大規模多施設RCT", "慢性前立腺炎/CPPS男性 440名（10病院）", "8週後のNIH-CPSI症状改善率60.6%（シャム群36.8%）で32週まで維持。", "細菌性前立腺炎や悪性疾患の泌尿器科除外が前提。", "Ann Intern Med (PMID: 34399062)", "https://pubmed.ncbi.nlm.nih.gov/34399062/"],
+            ["2022年 Cochraneレビュー", "下部尿路・膀胱症状 15研究（n=1,395）", "排尿不快感の補助的緩和を総括。", "泌尿器科標準管理と併用。", "Cochrane (PMID: 36148895)", "https://pubmed.ncbi.nlm.nih.gov/36148895/"],
+        ],
+    },
+    # --- 循環器 ---
+    "cardio_bp": {
+        "label": "血圧バランス・高血圧補助ケア",
+        "papers": [
+            ["2007年 シャム対照RCT", "本態性高血圧 140名完了（ドイツ・24時間ABPM）", "6週間の鍼で24時間収縮期血圧が-5.4mmHg低下（シャム群は変化なし）。", "中止後3〜6か月で戻るため降圧薬の代替ではなく併用補助。", "Circulation (PMID: 17548730)", "https://pubmed.ncbi.nlm.nih.gov/17548730/"],
+            ["2015年 メタ解析", "高血圧 23 RCTs（n=1,788）", "降圧薬への鍼併用で単独治療より血圧低下幅が大きい傾向。", "試験の質にばらつきがあり主治医管理が必須。", "PLoS One (PMID: 26207806)", "https://pubmed.ncbi.nlm.nih.gov/26207806/"],
+        ],
+    },
+    "cardio_heart": {
+        "label": "動悸・狭心症・心拍自律調整",
+        "papers": [
+            ["2019年 大規模多施設RCT", "慢性安定狭心症 398名解析（標準薬物療法併用）", "標準薬への経穴鍼併用で狭心症発作頻度がシャム鍼比で有意に減少。", "急性冠症候群の除外と循環器専門医の継続管理が必須。", "JAMA Intern Med (PMID: 31355870)", "https://pubmed.ncbi.nlm.nih.gov/31355870/"],
+            ["2025年 メタ解析", "心拍変動（HRV）10 RCTs（n=744）", "副交感神経指標の上昇による心拍リズム安定作用を示唆。", "不整脈の診断・治療は循環器科が最優先。", "Front Neurosci (PMID: 41230507)", "https://pubmed.ncbi.nlm.nih.gov/41230507/"],
+        ],
+    },
+    # --- 子供 ---
+    "child_enuresis": {
+        "label": "小児夜尿症・おねしょ",
+        "papers": [
+            ["2022年 メタ解析", "小児夜尿症 13試験（n=890）", "夜尿頻度の減少および改善率向上の傾向を報告。", "小児科での生活指導・アラーム療法等との併用が基本。", "Explore (PMID: 34893441)", "https://pubmed.ncbi.nlm.nih.gov/34893441/"],
+        ],
+    },
+    "child_asthma": {
+        "label": "小児喘息・呼吸ケア",
+        "papers": [
+            ["2025年 メタ解析", "小児喘息 16 RCTs（n=1,675・標準治療併用）", "標準薬物治療への併用で発作症状・呼吸機能指標の補助的改善を示唆。", "吸入ステロイド等の小児科標準管理の代替にはならない。", "Front Med (PMID: 40740962)", "https://pubmed.ncbi.nlm.nih.gov/40740962/"],
+        ],
+    },
+    "child_rhinitis": {
+        "label": "小児アレルギー性鼻炎・鼻づまり",
+        "papers": [
+            ["2024年 メタ解析（TSA付）", "小児アレルギー性鼻炎 13 RCTs（n=1,186）", "鼻症状スコアおよびQOLの改善傾向を報告。", "試験間の刺激法の差が大きく小児科・耳鼻科管理と併用。", "Int Forum Allergy Rhinol (PMID: 39017391)", "https://pubmed.ncbi.nlm.nih.gov/39017391/"],
+        ],
+    },
+    "child_colic_general": {
+        "label": "小児はり・夜泣き・乳児疝痛・お腹ケア",
+        "papers": [
+            ["2017年 多施設3群RCT（ACU-COL）", "乳児疝痛・夜泣き 147名（スウェーデン）", "標準育児支援単独比で泣き時間の相対的減少を安全に確認。", "当院では刺さない小児はりでさらに低刺激に対応。", "Acupunct Med (PMID: 28093383)", "https://pubmed.ncbi.nlm.nih.gov/28093383/"],
+            ["2018年 IPD系統的レビュー", "乳児疝痛 3 RCTs（n=307）", "盲検化の制約から一律の推奨には慎重姿勢を示唆。", "発熱・脱水など急変時は小児科受診が最優先。", "Acta Paediatr (PMID: 29338487)", "https://pubmed.ncbi.nlm.nih.gov/29338487/"],
+            ["2016年 メタ解析", "小児術後悪心嘔吐（PONV）8研究", "内関（PC6）刺激による小児の吐き気軽減を報告。", "術後・吐き気ケアの参考エビデンス。", "Laryngoscope (PMID: 26864736)", "https://pubmed.ncbi.nlm.nih.gov/26864736/"],
+        ],
+    },
+    # --- がん支持療法 ---
+    "cancer_pain": {
+        "label": "がん支持療法・疼痛緩和",
+        "papers": [
+            ["2022年 国際診療ガイドライン", "SIO-ASCO合同ガイドライン（227文献レビュー）", "乳がんアロマターゼ阻害薬関連関節痛や一般がん疼痛への鍼治療を推奨。", "主治医（腫瘍内科）と連携した支持療法として実施。", "J Clin Oncol (PMID: 36122322)", "https://pubmed.ncbi.nlm.nih.gov/36122322/"],
+            ["2020年 メタ解析", "がん関連疼痛 17 RCTs（n=1,111）", "疼痛強度の軽減および鎮痛薬使用量の減少を報告。", "エビデンス確実性は中等度。", "JAMA Oncol (PMID: 31855257)", "https://pubmed.ncbi.nlm.nih.gov/31855257/"],
+        ],
+    },
+    "cancer_cipn": {
+        "label": "がん支持療法・手足のしびれ（CIPN）",
+        "papers": [
+            ["2024年 メタ解析", "化学療法誘発性末梢神経障害（CIPN）21研究（n=2,121）", "しびれ・神経痛およびQOLの改善傾向を報告。", "抗がん剤治療中の主治医連携が前提。", "Front Neurol (PMID: 39555482)", "https://pubmed.ncbi.nlm.nih.gov/39555482/"],
+            ["2020年 3群パイロットRCT", "CIPN 75名（米国MSKがんセンター）", "通常ケア比でしびれ・疼痛スコアの改善を確認。", "パイロット規模のため大規模検証が進行中。", "JAMA Netw Open (PMID: 32159808)", "https://pubmed.ncbi.nlm.nih.gov/32159808/"],
+            ["2022年 国際診療ガイドライン", "SIO-ASCO合同ガイドライン", "CIPNに対する補助的選択肢として言及。", "血球減少・感染リスクへの配慮が必要。", "J Clin Oncol (PMID: 36122322)", "https://pubmed.ncbi.nlm.nih.gov/36122322/"],
+        ],
+    },
+    "cancer_cinv": {
+        "label": "がん支持療法・吐き気（CINV）・食欲",
+        "papers": [
+            ["2023年 メタ解析", "化学療法誘発性悪心嘔吐（CINV）38 RCTs（n=2,503）", "制吐薬への鍼灸併用で悪心・嘔吐の軽減を報告。", "標準制吐薬療法との併用が前提。", "Cancer Med (PMID: 37226372)", "https://pubmed.ncbi.nlm.nih.gov/37226372/"],
+            ["2022年 国際診療ガイドライン", "SIO-ASCO合同ガイドライン", "がん支持療法における安全な補完ケアの位置づけを整理。", "主治医への共有を推奨。", "J Clin Oncol (PMID: 36122322)", "https://pubmed.ncbi.nlm.nih.gov/36122322/"],
+        ],
+    },
+    "cancer_fatigue": {
+        "label": "がん支持療法・倦怠感（CRF）・体力維持",
+        "papers": [
+            ["2026年 メタ解析", "がん関連倦怠感（CRF）28 RCTs", "対照群比で倦怠感スコア（PFS）の有意な改善を報告。", "全体的な研究の質は低くさらなる高品質RCTが必要。", "PubMed (PMID: 42164120)", "https://pubmed.ncbi.nlm.nih.gov/42164120/"],
+            ["2022年 国際診療ガイドライン", "SIO-ASCO合同ガイドライン", "がん治療に伴う心身負担への補完的ケアを評価。", "標準がん治療と連携して実施。", "J Clin Oncol (PMID: 36122322)", "https://pubmed.ncbi.nlm.nih.gov/36122322/"],
+        ],
+    },
+    # --- 内分泌 ---
+    "endo_diabetes": {
+        "label": "糖尿病・血糖・糖尿病性神経障害",
+        "papers": [
+            ["2026年 メタ解析", "2型糖尿病 20 RCTs（n=1,479）", "標準治療併用で空腹時血糖・HbA1cの補助的改善を示唆。", "食事・運動・薬物療法が基本であり代替ではない。", "Postgrad Med J (PMID: 41052150)", "https://pubmed.ncbi.nlm.nih.gov/41052150/"],
+            ["2025年 メタ解析", "糖尿病性末梢神経障害（DPN）14 RCTs（n=1,169）", "下肢しびれ・神経伝導速度の改善傾向を報告。", "血糖管理とフットケアの併用が必須。", "Curr Pain Headache Rep (PMID: 40220243)", "https://pubmed.ncbi.nlm.nih.gov/40220243/"],
+        ],
+    },
+    "endo_thyroid": {
+        "label": "甲状腺疾患・橋本病・ホルモンバランス",
+        "papers": [
+            ["2024年 メタ解析", "橋本病（慢性甲状腺炎）14 RCTs（n=1,020）", "標準ホルモン補充療法への併用で自己抗体や自覚症状の改善傾向を報告。", "内分泌内科での血液検査・薬物管理が必須。", "Medicine (PMID: 38428856)", "https://pubmed.ncbi.nlm.nih.gov/38428856/"],
+        ],
+    },
+    "endo_obesity": {
+        "label": "代謝低下・肥満・生活習慣サポート",
+        "papers": [
+            ["2024年 メタ解析", "単純性肥満 25 RCTs（n=2,018・生活習慣併用）", "食事・運動指導への併用でBMI・腹囲減少の補助効果を示唆。", "生活習慣改善との併用が前提。", "Diabetes Metab Syndr Obes (PMID: 39582784)", "https://pubmed.ncbi.nlm.nih.gov/39582784/"],
+            ["2026年 メタ解析", "糖代謝（2型糖尿病）20 RCTs（n=1,479）", "糖代謝・インスリン抵抗性サポートの可能性を報告。", "内科管理と併用。", "Postgrad Med J (PMID: 41052150)", "https://pubmed.ncbi.nlm.nih.gov/41052150/"],
+        ],
+    },
+}
+
+
+def resolve_subdomain_papers(d: dict, ev: dict) -> tuple[str, list]:
+    """疾患の部位・器官・症状に厳密一致するサブ領域の査読論文リストだけを返す。"""
+    cat = d.get("category", "")
+    text = f"{d.get('name', '')} {d.get('keywords', '')} {d.get('summary', '')}"
+    key = None
+
+    if cat == "耳鼻咽喉のお悩み":
+        if any(k in text for k in ["顎関節", "食いしばり", "歯ぎしり", "開口"]):
+            key = "ent_tmj"
+        elif any(k in text for k in ["鼻", "花粉", "副鼻腔", "蓄膿", "嗅覚", "後鼻漏", "アレルギー性鼻炎"]):
+            key = "ent_nose"
+        elif any(k in text for k in ["耳", "難聴", "メニエール", "めまい", "耳鳴", "耳管", "前庭"]):
+            key = "ent_ear"
+        elif any(k in text for k in ["喉", "咽頭", "声", "扁桃", "嚥下", "ヒステリー球", "梅核気", "咳", "気管"]):
+            key = "ent_throat"
+    elif cat == "筋肉、骨のお悩み":
+        if any(k in text for k in ["顎関節", "食いしばり"]):
+            key = "ent_tmj"
+        elif any(k in text for k in ["腰", "坐骨", "梨状筋", "脊柱管", "椎間板", "仙腸", "すべり症", "ぎっくり", "骨盤"]):
+            key = "muscle_lowerback"
+        elif any(k in text for k in ["肘", "手首", "腱鞘炎", "手根管", "ばね指", "指", "前腕", "上顆炎", "テニス肘", "ゴルフ肘", "ドケルバン", "TFCC"]):
+            key = "muscle_elbow_wrist"
+        elif any(k in text for k in ["首", "頚", "頸", "肩", "五十肩", "四十肩", "寝違え", "むちうち", "胸郭出口", "背中", "背部", "肋間", "肩甲骨", "ストレートネック"]):
+            key = "muscle_neck_shoulder"
+        elif any(k in text for k in ["膝", "股関節", "大腿", "半月板", "オスグッド", "変形性膝", "鵞足", "腸脛"]):
+            key = "muscle_hip_knee"
+        elif any(k in text for k in ["足首", "足底", "アキレス", "外反母趾", "ふくらはぎ", "こむら返り", "捻挫", "踵", "かかと", "モートン", "シンスプリント"]):
+            key = "muscle_ankle_foot"
+    elif cat == "眼のお悩み":
+        if any(k in text for k in ["緑内障", "眼圧", "視神経"]):
+            key = "eye_glaucoma"
+        elif any(k in text for k in ["網膜", "黄斑", "白内障", "飛蚊", "視力", "近視"]):
+            key = "eye_retina"
+        else:
+            key = "eye_dryeye"
+    elif cat == "消化器のお悩み":
+        if any(k in text for k in ["腸", "便秘", "下痢", "過敏性", "IBS", "大腸", "潰瘍性", "クローン", "ガス", "膨満"]):
+            key = "digest_bowel"
+        else:
+            key = "digest_stomach"
+    elif cat == "皮膚のお悩み":
+        if any(k in text for k in ["蕁麻疹", "じんましん"]):
+            key = "skin_urticaria"
+        elif any(k in text for k in ["帯状疱疹", "ヘルペス"]):
+            key = "skin_shingles"
+        elif any(k in text for k in ["ニキビ", "ざ瘡", "吹き出物", "脂漏"]):
+            key = "skin_acne"
+        else:
+            key = "skin_atopy"
+    elif cat in ("自律神経のお悩み", "特に対応することが多い症状"):
+        if any(k in text for k in ["頭痛", "片頭痛", "頭鳴"]):
+            key = "neuro_headache"
+        elif any(k in text for k in ["不眠", "睡眠", "寝つき", "中途覚醒", "早朝覚醒"]):
+            key = "neuro_insomnia"
+        elif any(k in text for k in ["胃", "ディスペプシア", "吐き気", "逆流"]):
+            key = "digest_stomach"
+        elif any(k in text for k in ["更年期", "ホットフラッシュ"]):
+            key = "women_menopause"
+        else:
+            key = "neuro_anxiety_autonomic"
+    elif cat in ("脳神経のお悩み", "神経のお悩み"):
+        if any(k in text for k in ["頭痛", "片頭痛"]):
+            key = "neuro_headache"
+        elif any(k in text for k in ["顔面", "ベル麻痺", "三叉", "眼瞼痙攣"]):
+            key = "brain_facial"
+        elif any(k in text for k in ["パーキンソン", "ふるえ", "振戦"]):
+            key = "brain_parkinson"
+        elif any(k in text for k in ["脳卒中", "脳梗塞", "脳出血", "片麻痺", "嚥下"]):
+            key = "brain_stroke"
+        elif any(k in text for k in ["帯状疱疹"]):
+            key = "skin_shingles"
+        elif any(k in text for k in ["手根管"]):
+            key = "muscle_elbow_wrist"
+        elif any(k in text for k in ["不眠", "睡眠"]):
+            key = "neuro_insomnia"
+        else:
+            key = "nerve_peripheral"
+    elif cat == "女性のお悩み":
+        if any(k in text for k in ["更年期", "ほてり", "ホットフラッシュ", "閉経"]):
+            key = "women_menopause"
+        elif any(k in text for k in ["妊活", "不妊", "体外受精", "PCOS", "多嚢胞", "妊娠", "つわり", "産後", "逆子"]):
+            key = "women_fertility"
+        else:
+            key = "women_menstrual"
+    elif cat == "泌尿器のお悩み":
+        if any(k in text for k in ["前立腺", "骨盤痛", "精巣", "ED"]):
+            key = "uro_prostate"
+        elif any(k in text for k in ["尿失禁", "尿漏れ", "尿もれ", "腹圧性"]):
+            key = "uro_incontinence"
+        else:
+            key = "uro_oab"
+    elif cat == "循環器のお悩み":
+        if any(k in text for k in ["高血圧", "低血圧", "血圧"]):
+            key = "cardio_bp"
+        else:
+            key = "cardio_heart"
+    elif cat == "子供のお悩み":
+        if any(k in text for k in ["夜尿", "おねしょ"]):
+            key = "child_enuresis"
+        elif any(k in text for k in ["喘息", "ぜんそく", "咳", "気管支"]):
+            key = "child_asthma"
+        elif any(k in text for k in ["鼻炎", "花粉", "鼻づまり", "副鼻腔"]):
+            key = "child_rhinitis"
+        else:
+            key = "child_colic_general"
+    elif cat == "がんの種類":
+        if any(k in text for k in ["しびれ", "末梢神経", "CIPN"]):
+            key = "cancer_cipn"
+        elif any(k in text for k in ["吐き気", "悪心", "嘔吐", "食欲", "胃", "食道", "大腸", "膵", "肝"]):
+            key = "cancer_cinv"
+        elif any(k in text for k in ["倦怠", "疲労", "だる", "白血病", "リンパ腫"]):
+            key = "cancer_fatigue"
+        else:
+            key = "cancer_pain"
+    elif cat == "内分泌のお悩み":
+        if any(k in text for k in ["甲状腺", "橋本", "バセドウ"]):
+            key = "endo_thyroid"
+        elif any(k in text for k in ["肥満", "メタボ", "脂質", "コレステロール", "痛風"]):
+            key = "endo_obesity"
+        else:
+            key = "endo_diabetes"
+
+    if key and key in SUBDOMAIN_EVIDENCE_PAPERS:
+        info = SUBDOMAIN_EVIDENCE_PAPERS[key]
+        return info["label"], info["papers"]
+    return ev.get("domain_label", cat), ev.get("papers", [])
+# === SUBDOMAIN_EVIDENCE_PAPERS_END ===
+
+
 def render_category_cards(d: dict) -> str:
     """案B：ツボ詳細一覧・論文エビデンスを折りたたみ収納し、受診最優先サインを見やすく配置する。"""
     ev = CATEGORY_EVIDENCE.get(d["category"])
@@ -1521,23 +1984,33 @@ def render_category_cards(d: dict) -> str:
         f'<tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">{e(row[0])}</td><td class="p-3">{e(row[1])}</td><td class="p-3">{e(row[2])}</td><td class="p-3">{e(row[3])}</td></tr>'
         for row in ev.get("acupoints", [])
     )
-    paper_rows = "".join(
-        f'<tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">{e(p[0])}</td><td class="p-3">{e(p[1])}</td><td class="p-3">{e(p[2])}</td>'
-        f'<td class="p-3">{e(p[3])} <a href="{e(p[5])}" target="_blank" rel="noopener" class="text-[#16284c] underline">{e(p[4])}</a></td></tr>'
-        for p in ev.get("papers", [])
-    )
+    ev_domain_label, matched_papers = resolve_subdomain_papers(d, ev)
+    paper_rows_list = []
+    if d.get("source_url") and d["source_url"].startswith("http") and "s-treatment.com" not in d["source_url"].lower():
+        paper_rows_list.append(
+            f'<tr class="bg-[#faf6ee]"><td class="p-3 font-bold text-[#b68d40] whitespace-nowrap">個別疾患・一次出典</td>'
+            f'<td class="p-3 font-bold text-[#16284c]">{e(d["name"])}</td>'
+            f'<td class="p-3">本疾患に特化した一次論文・公的ガイドラインを参照しています。</td>'
+            f'<td class="p-3"><a href="{e(d["source_url"])}" target="_blank" rel="noopener" class="text-[#16284c] underline font-bold">一次文献を確認する</a></td></tr>'
+        )
+    for p in matched_papers:
+        paper_rows_list.append(
+            f'<tr><td class="p-3 font-bold text-[#16284c] whitespace-nowrap">{e(p[0])}</td><td class="p-3">{e(p[1])}</td><td class="p-3">{e(p[2])}</td>'
+            f'<td class="p-3">{e(p[3])} <a href="{e(p[5])}" target="_blank" rel="noopener" class="text-[#16284c] underline">{e(p[4])}</a></td></tr>'
+        )
+    paper_rows = "".join(paper_rows_list)
 
     ref_items = []
     if d.get("source_url") and d["source_url"].startswith("http") and "s-treatment.com" not in d["source_url"].lower():
         ref_items.append(
             f'<li>一次論文・公的出典：<a href="{e(d["source_url"])}" target="_blank" rel="noopener" class="text-[#16284c] underline">{e(d["name"])}の根拠文献</a></li>'
         )
-    for p in ev.get("papers", []):
+    for p in matched_papers:
         ref_items.append(
             f'<li>{e(p[0])}（{e(p[1])}）— <a href="{e(p[5])}" target="_blank" rel="noopener" class="text-[#16284c] underline">{e(p[4])}</a></li>'
         )
 
-    paper_cnt = len(ev.get("papers", []))
+    paper_cnt = len(paper_rows_list)
 
     return f'''
     <details id="sec-acupoints" class="bg-white rounded-2xl border border-[#e8e3d9] shadow-sm overflow-hidden">
@@ -1573,7 +2046,7 @@ def render_category_cards(d: dict) -> str:
       </summary>
       <div class="px-5 pb-5 pt-3 border-t border-[#ece6da] space-y-4">
         <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-          国際的な医学データベース（PubMed・Cochrane等）で報告されている<strong>{e(ev["domain_label"])}領域の代表的な査読済み鍼灸研究</strong>をまとめています（標準治療との併用や研究上の限界を含めて正確に掲載）。
+          国際的な医学データベース（PubMed・Cochrane等）で報告されている<strong>{e(ev_domain_label)}領域の代表的な査読済み鍼灸研究</strong>をまとめています（標準治療との併用や研究上の限界を含めて正確に掲載）。
         </p>
         <div class="overflow-x-auto rounded-xl border border-slate-200">
           <table class="w-full min-w-[560px] text-xs sm:text-sm text-left border-collapse">
